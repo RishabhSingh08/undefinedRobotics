@@ -1,0 +1,92 @@
+<script>
+    import IconLogo from "../images/logo.png";
+
+    import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+  import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+  import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+
+</script>
+
+<footer class=" backdrop-blur-sm border-t border-white/10 text-white dm-sans">
+
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Logo and Description -->
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-3 mb-4">
+            <img src={IconLogo} alt="Undefined Robotics Logo" class="h-12 w-12" />
+            <span class="text-2xl font-bold">Undefined Robotics</span>
+          </div>
+          <p class="text-gray-400 max-w-md mb-6">
+            A high school level private robotics team based in Plano, Texas, promoting a culture of learning and STEM in our community.
+          </p>
+
+          <div class="flex space-x-6  mt-8">
+            <a
+              href="https://www.instagram.com/undefinedrobotics"
+              aria-label="Instagram"
+              class="text-gray-400 hover:text-yellow-400 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram} class="w-6 h-6" />
+            </a>
+          
+            <!-- YouTube -->
+            <a
+              href="https://www.youtube.com/@undefinedrobotics"
+              aria-label="YouTube"
+              class="text-gray-400 hover:text-yellow-400 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faYoutube} class="w-8 h-6" />
+            </a>
+          
+            <!-- Email -->
+            <a
+              href="mailto:team@undefinedrobotics.org"
+              aria-label="Email"
+              class="text-gray-400 hover:text-yellow-400 transition-colors"
+            >
+              <FontAwesomeIcon icon={faEnvelope} class="w-6 h-6" />
+            </a>
+          </div>
+                  </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="/team" class="text-gray-400 hover:text-yellow-400 transition-colors">Our Team</a></li>
+            <li><a href="/contact" class="text-gray-400 hover:text-yellow-400 transition-colors">Contact</a></li>
+            <li><a href="/impact" class="text-gray-400 hover:text-yellow-400 transition-colors">Outreach</a></li>
+            <li><a href="/record" class="text-gray-400 hover:text-yellow-400 transition-colors">Record</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+          <div class="space-y-2 text-gray-400">
+            <p>📍 Plano, Texas</p>
+            <p>📧 info@undefinedrobotics.com</p>
+            <p>📱 (555) 123-4567</p>
+            <p>🕐 Mon-Fri: 3:00 PM - 8:00 PM</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © 2025 Undefined Robotics. All rights reserved.
+        </p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Code of Conduct</a>
+        </div>
+      </div>
+    </div>
+  </footer>
