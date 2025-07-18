@@ -11,7 +11,6 @@
 
     <div class="max-w-7xl mx-auto px-4 py-12">
       <div class="grid md:grid-cols-4 gap-8">
-        <!-- Logo and Description -->
         <div class="md:col-span-2">
           <div class="flex items-center space-x-3 mb-4">
             <img src={IconLogo} alt="Undefined Robotics Logo" class="h-12 w-12" />
@@ -32,7 +31,6 @@
               <FontAwesomeIcon icon={faInstagram} class="w-6 h-6" />
             </a>
           
-            <!-- YouTube -->
             <a
               href="https://www.youtube.com/@undefinedrobotics"
               aria-label="YouTube"
@@ -43,7 +41,6 @@
               <FontAwesomeIcon icon={faYoutube} class="w-8 h-6" />
             </a>
           
-            <!-- Email -->
             <a
               href="mailto:team@undefinedrobotics.org"
               aria-label="Email"
@@ -54,7 +51,6 @@
           </div>
                   </div>
         
-        <!-- Quick Links -->
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
@@ -65,7 +61,6 @@
           </ul>
         </div>
         
-        <!-- Contact Info -->
         <div>
           <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
           <div class="space-y-2 text-gray-400">
@@ -77,7 +72,6 @@
         </div>
       </div>
       
-      <!-- Bottom Bar -->
       <div class="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-400 text-sm">
           © 2025 Undefined Robotics. All rights reserved.

@@ -1,4 +1,3 @@
-<!-- RECORD PAGE -->
 <script>
     import achievements from '../../lib/images/bigImages/1.png';
     import future from '../../lib/images/bigImages/1.png';
@@ -10,7 +9,6 @@
 
   <div class="max-w-5xl mx-auto">
     
-    <!-- Header -->
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
         Our Record
@@ -20,7 +18,6 @@
       </p>
     </div>
 
-    <!-- Achievements Section -->
     <div class="mb-20">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-4">
@@ -33,17 +30,12 @@
 
 
 
-      <!-- Enhanced Timeline -->
       <div class="relative max-w-4xl mx-auto">
-        <!-- Central Timeline Line -->
         <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-yellow-400 via-blue-400 to-green-400 rounded-full"></div>
         
-        <!-- 2022-23 Season -->
         <div class="relative mb-16">
-          <!-- Timeline Dot -->
           <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-gray-900 z-10"></div>
           
-          <!-- Content Box - Left Side -->
           <div class="flex justify-end pr-8 md:pr-12">
             <div class="w-full md:w-96 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div class="inline-block bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold text-lg mb-6">
@@ -90,12 +82,9 @@
           </div>
         </div>
 
-        <!-- 2023-24 Season -->
         <div class="relative mb-16">
-          <!-- Timeline Dot -->
           <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-400 rounded-full border-4 border-gray-900 z-10"></div>
           
-          <!-- Content Box - Right Side -->
           <div class="flex justify-start pl-8 md:pl-12">
             <div class="w-full md:w-96 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div class="inline-block bg-blue-400 text-gray-900 px-4 py-2 rounded-full font-bold text-lg mb-6">
@@ -149,12 +138,10 @@
           </div>
         </div>
         
-        <!-- Future Timeline Dot -->
         <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-green-400 rounded-full border-4 border-gray-900 z-10 bottom-0"></div>
       </div>
     </div>
 
-    <!-- The Next Step Section -->
     <div class="border-t border-white/20 pt-16">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-green-300 mb-4">
@@ -165,7 +152,6 @@
         </p>
       </div>
 
-      <!-- Future Vision Image -->
       <div class="mb-12 text-center">
         <img 
           src={future} 
@@ -174,7 +160,6 @@
         />
       </div>
 
-      <!-- 2024-25 Goals -->
       <div class="mb-12">
         <div class="text-center mb-8">
           <div class="inline-block bg-green-400 text-gray-900 px-6 py-3 rounded-full font-bold text-xl mb-4">
@@ -209,7 +194,6 @@
         </div>
       </div>
 
-      <!-- Mission Pillars -->
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center hover:bg-white/10 transition-all duration-300">
           <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -249,5 +233,4 @@
 </section>
 
 <style>
-  /* Add any additional custom styles here if needed */
 </style>

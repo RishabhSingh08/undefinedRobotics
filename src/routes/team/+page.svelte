@@ -169,14 +169,12 @@
         <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-700 rounded-full blur-3xl opacity-5 transform translate-y-1/2"></div>
       </div>
 
-    <!-- Team Members Grid -->
     <section class="relative z-10 px-4">
       <div class="max-w-[80%] mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-32">
           {#each teamMembers as member}
             <div class="group bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:border-yellow-400/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/10">
               <div class="flex flex-col items-center text-center space-y-4">
-                <!-- Profile Image -->
                 <div class="relative">
                   <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
                   <img 
@@ -186,7 +184,6 @@
                   />
                 </div>
                 
-                <!-- Member Info -->
                 <div class="space-y-2">
                   <h3 class="text-lg font-semibold text-white group-hover:text-yellow-300 transition-colors duration-300">
                     {member.name}

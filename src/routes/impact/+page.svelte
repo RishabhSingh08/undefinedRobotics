@@ -1,4 +1,3 @@
-<!-- OUTREACH PAGE -->
 
 <script>
     import hero from '../../lib/images/bigImages/1.png';

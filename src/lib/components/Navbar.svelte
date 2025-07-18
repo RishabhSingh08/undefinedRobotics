@@ -23,12 +23,10 @@
   
   <nav class="fixed top-0 left-0 right-0 z-50 px-4 py-4 dm-sans backdrop-blur-xl text-lg  border-white/20 border-b">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <!-- Logo -->
       <a href="/" class="flex items-center space-x-3 group">
         <img src={IconLogo} alt="Undefined Robotics Logo" class="h-12 w-12" />
       </a>
       
-      <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center space-x-8">
         {#each navItems as item}
           <a 
@@ -41,7 +39,6 @@
         {/each}
       </div>
       
-      <!-- Mobile Menu Button -->
       <button 
         class="md:hidden text-white p-2"
         on:click={() => mobileMenuOpen = !mobileMenuOpen}
@@ -56,7 +53,6 @@
       </button>
     </div>
     
-    <!-- Mobile Menu -->
     {#if mobileMenuOpen}
       <div class="md:hidden mt-4 bg-black/95 backdrop-blur-sm rounded-lg border border-white/10">
         <div class="px-6 py-4 space-y-4">

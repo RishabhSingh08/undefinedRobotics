@@ -1,4 +1,3 @@
-<!-- RECORD PAGE -->
 <script>  
 </script>
 
@@ -7,7 +6,6 @@
 
   <div class="max-w-5xl mx-auto">
     
-    <!-- Header -->
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
         Contact
@@ -22,5 +20,4 @@
 </section>
 
 <style>
-  /* Add any additional custom styles here if needed */
 </style>

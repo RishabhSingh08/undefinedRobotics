@@ -10,26 +10,6 @@
   import s5 from "../lib/images/sponsors/s5.png";
   import s6 from "../lib/images/sponsors/s6.png";
 
-  const cards = [
-    {
-      title: "Culture of Learning & STEM",
-      description: "Promoting a vibrant culture of learning and STEM engagement within our community, making education fun and accessible."
-    },
-    {
-      title: "Hands-on Practical Skills",
-      description: "Offering immersive, hands-on experiences where young people develop practical skills in engineering, programming, and problem-solving."
-    },
-    {
-      title: "Teamwork & Community Outreach",
-      description: "Fostering collaboration, creativity, and outreach by actively giving back to our community and inspiring the next generation."
-    },
-    {
-      title: "Robotics for Everyone",
-      description: "Believing that robotics is for all, empowering every student to achieve success and acquire essential skills, regardless of background."
-    }
-  ];
-
-  // Array of sponsor images for easy iteration
   const sponsors = [s, s1, s2, s3, s4, s5, s6];
 </script>
 
@@ -73,34 +53,33 @@
     animation-delay: 4s;
   }
 
-  /* Keyframes for the scrolling carousel */
   @keyframes scroll-left {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%); /* Scroll to the middle of the duplicated content */
+      transform: translateX(-50%); 
     }
   }
 
   .carousel-container {
     overflow: hidden;
-    white-space: nowrap; /* Prevent items from wrapping */
+    white-space: nowrap; 
   }
 
   .carousel-track {
-    display: inline-flex; /* Keep items in a single line */
-    animation: scroll-left 20s linear infinite; /* Adjust duration for speed */
+    display: inline-flex; 
+    animation: scroll-left 20s linear infinite; 
   }
 
   .carousel-track:hover {
-    animation-play-state: paused; /* Pause on hover */
+    animation-play-state: paused; 
   }
 
   .carousel-item {
-    display: inline-block; /* Ensure images stay in line */
-    padding: 0 5rem; /* Spacing between logos */
-    flex-shrink: 0; /* Prevent items from shrinking */
+    display: inline-block; 
+    padding: 0 5rem; 
+    flex-shrink: 0; 
   }
 </style>
 
@@ -224,7 +203,6 @@
         </div>
 
       <div class="grid lg:grid-cols-3 gap-12 mb-16">
-        <!-- Current Project -->
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
           <div class="flex items-center mb-6">
             <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
@@ -240,7 +218,6 @@
           </div>
         </div>
 
-        <!-- Most Recent Event -->
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
           <div class="flex items-center mb-6">
             <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
@@ -256,7 +233,6 @@
           </div>
         </div>
 
-        <!-- Season Highlights -->
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
           <h3 class="text-2xl font-bold text-blue-300 mb-6">Season Highlights</h3>
           <div class="space-y-4">
@@ -285,7 +261,6 @@
         </div>
       </div>
 
-      <!-- Upcoming Events -->
       <div class="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
         <h3 class="text-3xl font-bold text-white mb-8 text-center">Upcoming Events</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
