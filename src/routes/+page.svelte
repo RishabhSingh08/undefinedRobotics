@@ -86,76 +86,74 @@
 <main class="text-white min-h-screen overflow-hidden  relative dm-sans">
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
-  <section class="relative z-10">
-    <div class="py-44 min-h-screen flex items-center justify-center overflow-hidden">
-      <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-5 transform -translate-y-1/2 "></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-700 rounded-full blur-3xl opacity-5 transform translate-y-1/2"></div>
-      </div>
+    <section class="relative z-10">
+      <div class="h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-5 transform -translate-y-1/2"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-700 rounded-full blur-3xl opacity-5 transform translate-y-1/2"></div>
+        </div>
 
-      <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center">
-        <div class="space-y-16 text-center">
-          <div class="lg:col-span-3 flex justify-center">
-            <div class="relative  ">
-              <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-20 z-0"></div>
-              <img src={IconLogo} alt="Undefined Robotics Logo" class="md:w-80 w-36 relative z-10"/>
+        <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center h-full justify-center">
+          <div class="space-y-6 sm:space-y-8 md:space-y-12 text-center">
+            <div class="lg:col-span-3 flex justify-center">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-20 z-0"></div>
+                <img src={IconLogo} alt="Undefined Robotics Logo" class="w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 relative z-10"/>
+              </div>
             </div>
-          </div>
 
-          <div class="space-y-12">
-            <h1 class="text-4xl md:text-8xl tracking-wider lg:h-24">
-              UNDEFINED ROBOTICS
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto ">
-              A high school level private robotics team based in Plano, Texas, promoting a culture of learning and STEM in our community.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center"> 
-              <a href="/impact">
-                <button class="bg-white text-black px-8 py-4 rounded-full text-lg hover:bg-gray-200 transition-colors group">
+            <div class="space-y-4 sm:space-y-6 md:space-y-8">
+              <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl tracking-wider">
+                UNDEFINED ROBOTICS
+              </h1>
+              <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-2xl mx-auto px-4">
+                A high school level private robotics team based in Plano, Texas, promoting a culture of learning and STEM in our community.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4"> 
+                <a href="/impact">
+                  <button class="bg-white text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-gray-200 transition-colors group">
                     Our Impact
                     <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
-                </button>
-              </a>
-              <a href="/record">
-                  <button class="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition-colors">
-                      View Our Achievements
                   </button>
-              </a>
-          </div>
+                </a>
+                <a href="/record">
+                  <button class="border border-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-white hover:text-black transition-colors">
+                    View Our Achievements
+                  </button>
+                </a>
+              </div>
+            </div>
 
-          </div>
-          <div class=" flex flex-col items-center animate-bounce ">
-            <span class="text-md text-gray-400 mb-2">Learn more about us</span>
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex flex-col items-center animate-bounce">
+              <span class="text-xs sm:text-sm md:text-base text-gray-400 mb-2">Learn more about us</span>
+              <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
+              </svg>
+            </div>
+          </div>
         </div>
 
+        <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
+        <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
+      </div>
+    </section>
+
+
+    <section class="relative z-10 overflow-hidden">
+      <div class="w-full flex justify-center items-center min-h-[500px]">
+        <div class="relative w-full h-full">
+          <img src={TeamPhoto} alt="Undefined Robotics Team" class="w-full h-full object-cover rounded-none" />
+          <div class="absolute bottom-8 right-8">
+            <a href="/team">
+              <button class="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition-colors duration-300 backdrop-blur-sm bg-white/20">
+                View Our Team
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-
-      <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
-      <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
-      <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
-    </div>
-
-  
-    
-  </section>
-  <section class="relative z-10 overflow-hidden">
-    <div class="w-full flex justify-center items-center min-h-[500px]">
-      <div class="relative w-full h-full">
-        <img src={TeamPhoto} alt="Undefined Robotics Team" class="w-full h-full object-cover rounded-none" />
-        <div class="absolute bottom-8 right-8">
-          <a href="/team">
-            <button class="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition-colors duration-300 backdrop-blur-sm bg-white/20">
-              View Our Team
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
   <section id="mission" class="px-4 py-32 relative z-10">
