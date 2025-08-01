@@ -23,7 +23,7 @@
       <div class="relative mb-20 rounded-3xl overflow-hidden text-white">
         <img
           src={images.hero}
-          alt="Our Impact"
+          alt="Mentorship"
           class="w-full h-[500px] object-cover"
         />
       
@@ -34,29 +34,30 @@
             Our Impact
           </h1>
           <p class="text-lg md:text-2xl text-gray-200 max-w-2xl">
-            Transforming communities through robotics education, mentorship, and STEM outreach across North Texas
+            Transforming communities through robotics education, mentorship, and STEM outreach across the world.
           </p>
         </div>
       </div>
               
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-        <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">36+</div>
-          <div class="text-gray-300">FTC Teams Supported</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">2,800+</div>
-          <div class="text-gray-300">Students Reached</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">20+</div>
-          <div class="text-gray-300">Administrators Engaged</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">13</div>
-          <div class="text-gray-300">Major Events</div>
-        </div>
-      </div>
+   <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+  <div class="text-center">
+    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">$50K+</div>
+    <div class="text-gray-300">Value Raised</div>
+  </div>
+  <div class="text-center">
+    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">4,000+</div>
+    <div class="text-gray-300">Underserved Individuals Reached</div>
+  </div>
+  <div class="text-center">
+    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">36+</div>
+    <div class="text-gray-300">FTC Teams Supported</div>
+  </div>
+  <div class="text-center">
+    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">10+</div>
+    <div class="text-gray-300">Regional/National Awards</div>
+  </div>
+</div>
+
   
       <div class="space-y-16">
         
@@ -218,7 +219,10 @@
             </div>
           </div>
         </div>
-  
+  <div class="mb-16 text-center text-sm text-gray-400 italic px-4">
+  Some events are not shown, as our current season is still in progress and many projects are confidential until revealed.
+</div>
+
 
   
       </div>
