@@ -5,7 +5,7 @@
     let mobileMenuOpen = false;
     
     const navItems = [
-      { name: 'Our Team', href: '/team' },
+      { name: 'Our Family', href: '/family' },
       { name: 'Contact', href: '/contact' },
       { name: 'Impact', href: '/impact' },
       { name: 'Record', href: '/record' }

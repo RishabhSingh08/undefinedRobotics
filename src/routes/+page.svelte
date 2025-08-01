@@ -121,6 +121,9 @@
                     View Our Achievements
                   </button>
                 </a>
+<button onclick={alert("hi")} class="bg-blue-500 text-white px-4 py-2 rounded">
+  Click me
+</button>
               </div>
             </div>
 
@@ -145,7 +148,7 @@
         <div class="relative w-full h-full">
           <img src={TeamPhoto} alt="Undefined Robotics Team" class="w-full h-full object-cover rounded-none" />
           <div class="absolute bottom-8 right-8">
-            <a href="/team">
+            <a href="/family">
               <button class="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition-colors duration-300 backdrop-blur-sm bg-white/20">
                 View Our Team
               </button>
@@ -326,7 +329,7 @@
 
   </section>
   <section class="w-full py-8 overflow-hidden relative z-10">
-    <div class="carousel-container bg-white/10 py-6">
+    <div class="carousel-container  py-6">
       <div class="carousel-track">
         {#each [...sponsors, ...sponsors] as sponsor, i} <div class="carousel-item">
             <img src={sponsor} alt="Sponsor Logo {i + 1}" class="h-16 sm:h-20 max-w-none" />

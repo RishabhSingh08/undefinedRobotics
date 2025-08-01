@@ -15,10 +15,8 @@
 	}
 </style>
 
-<body class="bg-gradient-to-b from-black to-gray-900 text-white dm-sans ">
+<main class="bg-gradient-to-b from-black to-gray-900 text-white dm-sans ">
 	<Navbar />
-	<main>
 		{@render children()}
-	</main>
 	<Footer />
-</body>
+</main>

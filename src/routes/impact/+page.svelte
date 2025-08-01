@@ -11,6 +11,7 @@
       communityBanner,
       inspiringBanner,
     };
+    
   </script>
   
   <section id="impact" class="px-4 py-32 relative z-10">
@@ -63,7 +64,7 @@
           <div class="relative bg-cover bg-center h-32" style="background-image: url({images.mentorshipBanner});">
             <div class="absolute inset-0 bg-gradient-to-r from-yellow-900/80 to-yellow-800/60"></div>
             <div class="relative h-full flex items-center justify-center">
-              <h3 class="text-3xl font-bold text-yellow-100">Mentorships</h3>
+              <h3 class="text-3xl font-bold text-yellow-100">Mentorship</h3>
             </div>
           </div>
           
@@ -105,7 +106,7 @@
           <div class="relative bg-cover bg-center h-32" style="background-image: url({images.communityBanner});">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/60"></div>
             <div class="relative h-full flex items-center justify-center">
-              <h3 class="text-3xl font-bold text-blue-100">Community Involvement</h3>
+              <h3 class="text-3xl font-bold text-blue-100">Connecting With the Community</h3>
             </div>
           </div>
           
@@ -173,7 +174,7 @@
           <div class="relative bg-cover bg-center h-32" style="background-image: url({images.inspiringBanner});">
             <div class="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-purple-800/60"></div>
             <div class="relative h-full flex items-center justify-center">
-              <h3 class="text-3xl font-bold text-purple-100">Inspiring the Future</h3>
+              <h3 class="text-3xl font-bold text-purple-100">Motivating the Future</h3>
             </div>
           </div>
           
