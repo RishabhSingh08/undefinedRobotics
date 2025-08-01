@@ -9,8 +9,19 @@
   import s4 from "../lib/images/sponsors/s4.png";
   import s5 from "../lib/images/sponsors/s5.png";
   import s6 from "../lib/images/sponsors/s6.png";
+  import s7 from "../lib/images/sponsors/s7.png";
 
-  const sponsors = [s, s1, s2, s3, s4, s5, s6];
+  const sponsors = [
+    { src: s, href: 'https://www.cafell.com/' },
+    { src: s1, href: 'https://bank.hackclub.com/' },
+    { src: s2, href: 'https://polymaker.com/' },
+    { src: s3, href: 'https://www.twc.texas.gov/' },
+    { src: s4, href: 'https://www.dekaresearch.com/about/deka-foundation/' },
+    { src: s5, href: 'https://www.bosch.com/' },
+    { src: s6, href: 'https://www.jabil.com/' },
+    { src: s7, href: 'https://www.solaceglobal.world/' }
+  ];
+
 </script>
 
 <style>
@@ -326,17 +337,19 @@
       </div>
 
   </section>
-  <section class="w-full py-8 overflow-hidden relative z-10">
-    <div class="carousel-container  py-6">
-      <div class="carousel-track">
-        {#each [...sponsors, ...sponsors] as sponsor, i} <div class="carousel-item">
-            <img src={sponsor} alt="Sponsor Logo {i + 1}" class="h-16 sm:h-20 max-w-none" />
-          </div>
-        {/each}
-      </div>
+<section class="w-full  overflow-hidden relative z-10 bg-white/10">
+  <div class="carousel-container py-6">
+    <div class="carousel-track">
+      {#each [...sponsors, ...sponsors] as sponsor, i}
+        <div class="carousel-item">
+          <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label="Sponsor {i + 1}">
+            <img src={sponsor.src} alt="Sponsor Logo {i + 1}" class="h-16 sm:h-20 max-w-none" />
+          </a>
+        </div>
+      {/each}
     </div>
-  </section>
-
+  </div>
+</section>
 
 </main>
 

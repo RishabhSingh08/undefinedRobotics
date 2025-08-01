@@ -1,6 +1,6 @@
 <script>
   import IconLogo from "../images/logo.png";
-  import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+  import { faInstagram, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons';
   import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
   import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 
@@ -40,22 +40,21 @@
               <FontAwesomeIcon icon={faYoutube} class="w-8 h-6" />
             </a>
           
-            <a
-              href="mailto:team@undefinedrobotics.org"
-              aria-label="Email"
-              class="text-gray-400 hover:text-yellow-400 transition-colors"
-            >
-              <FontAwesomeIcon icon={faEnvelope} class="w-6 h-6" />
-            </a>
+            <p class="text-gray-400 hover:text-yellow-400 transition-colors">
+              <FontAwesomeIcon icon={faDiscord} class="w-6 h-6" />
+              <span>
+                - undefinedrobotics
+              </span>
+          </p>
           </div>
                   </div>
         
         <div>
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="/team" class="text-gray-400 hover:text-yellow-400 transition-colors">Our Team</a></li>
+            <li><a href="/family" class="text-gray-400 hover:text-yellow-400 transition-colors">Our Family</a></li>
             <li><a href="/contact" class="text-gray-400 hover:text-yellow-400 transition-colors">Contact</a></li>
-            <li><a href="/impact" class="text-gray-400 hover:text-yellow-400 transition-colors">Outreach</a></li>
+            <li><a href="/impact" class="text-gray-400 hover:text-yellow-400 transition-colors">Impact</a></li>
             <li><a href="/record" class="text-gray-400 hover:text-yellow-400 transition-colors">Record</a></li>
           </ul>
         </div>
@@ -64,9 +63,9 @@
           <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
           <div class="space-y-2 text-gray-400">
             <p>📍 Plano, Texas</p>
-            <p>📧 info@undefinedrobotics.com</p>
-            <p>📱 (555) 123-4567</p>
-            <p>🕐 Mon-Fri: 3:00 PM - 8:00 PM</p>
+            <p>📧 team@undefinedrobotics.org</p>
+            <p>📧 missingamps.ftc@gmail.com</p>
+            <p>📱 (469) 819-7461</p>
           </div>
         </div>
       </div>
