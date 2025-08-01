@@ -121,9 +121,7 @@
                     View Our Achievements
                   </button>
                 </a>
-<button onclick={alert("hi")} class="bg-blue-500 text-white px-4 py-2 rounded">
-  Click me
-</button>
+
               </div>
             </div>
 
