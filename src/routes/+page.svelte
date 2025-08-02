@@ -203,7 +203,7 @@
 
 
 
-
+<!--
   <section id="events" class="px-4 py-32 relative z-10">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20">
@@ -336,7 +336,9 @@
         </div>
       </div>
 
+      
   </section>
+  -->
 <section class="w-full  overflow-hidden relative z-10 bg-white/10">
   <div class="carousel-container py-6">
     <div class="carousel-track">

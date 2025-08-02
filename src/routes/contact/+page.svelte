@@ -190,7 +190,7 @@
                                 class="w-full bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                 disabled={submitStatus === 'Sending...'}
                             >
-                                Start Your Web Project
+                                Send Message
                             </button>
                             
                             {#if submitStatus}

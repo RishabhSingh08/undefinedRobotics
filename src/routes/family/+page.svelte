@@ -1,5 +1,21 @@
 <script>
   import IconLogo from "../../lib/images/logo.png";
+  import akshat from "../../lib/family/akshat_kumar.png";
+  import punit from "../../lib/family/punit_lakhotiya.png";
+  import navin from "../../lib/family/navin_rao.png";
+  import lucas from "../../lib/family/lucas_silva.png";
+  import swaraj from "../../lib/family/swaraj_nibandhe.png";
+  import xander from "../../lib/family/xander_kuksov.png";
+  import samanyu from "../../lib/family/samanyu_earna.png";
+  import azalea from "../../lib/family/azalea_tang.png";
+  import ainesh from "../../lib/family/ainesh_gupta.png";
+  import erik from "../../lib/family/erik_wang.png";
+  import mahit from "../../lib/family/mahit_cherku.png";
+  import vedant from "../../lib/family/vedant_teware.png";
+  import ashwin from "../../lib/family/ashwin_gupta.png";
+  import rishabh from "../../lib/family/rishabh_singh.png";
+  import nishant from "../../lib/family/nishant_sinari.png";
+
   
   let activeTab = 'undefined';
 
@@ -9,243 +25,175 @@
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
       school: "Plano Senior High School",
-      image: "https://www.undefinedrobotics.org/akshat_kumar.png"
+      image: akshat
     },
     {
       name: "Neel M",
       grade: "11th Grade",
       role: "Engineer",
       school: "Plano Senior High School",
-      image: "https://www.undefinedrobotics.org/akshat_kumar.png"
+      image: "https://i.postimg.cc/44BsdgkP/Neel-PFP.webp"
     },
     {
       name: "Rishabh Singh",
       grade: "11th Grade",
       role: "Chief Technical Officer",
       school: "Plano Senior High School",
-      image: "https://www.undefinedrobotics.org/akshat_kumar.png"
+      image: rishabh
     },
     {
       name: "Punit Lakhotiya",
       grade: "11th Grade",
       role: "Finance/Team Management/Engineer",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/punit_lakhotiya.png"
+      image: punit
     },
     {
       name: "Aarav G",
       grade: "11th Grade",
       role: "Outreach",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/punit_lakhotiya.png"
+      image: "https://i.postimg.cc/SxbTbnTv/AlooPFP.webp"
     },
     {
       name: "Navin Rao",
       grade: "11th Grade",
       role: "CAD Modeler/Engineer",
       school: "Plano Senior High School",
-      image: "https://www.undefinedrobotics.org/navin_rao.png"
+      image: navin
     },
     {
       name: "Lucas Silva",
       grade: "11th Grade",
       role: "Engineer/Driver",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/lucas_silva.png"
+      image: lucas
     },
     {
       name: "Swaraj Nibandhe",
       grade: "11th Grade",
       role: "Engineer/Team Lead",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/swaraj_nibandhe.png"
+      image: swaraj
     },
     {
       name: "Xander Kuksov",
       grade: "11th Grade",
       role: "Programmer",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/xander_kuksov.png"
+      image: xander
     },
     {
       name: "Samanyu Earna",
       grade: "11th Grade",
       role: "Programmer",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/samanyu_earna.png"
+      image: samanyu
     },
     {
       name: "Azalea Tang",
       grade: "11th Grade",
       role: "Programmer",
       school: "Texas Academy of Math and Science",
-      image: "https://www.undefinedrobotics.org/azalea_tang.png"
+      image: azalea
     },
     {
       name: "Ainesh Gupta",
       grade: "11th Grade",
       role: "Engineer",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/ainesh_gupta.png"
+      image: ainesh
     },
     {
       name: "Erik Wang",
       grade: "11th Grade",
       role: "Engineer/Outreach/Driver",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/erik_wang.png"
+      image: erik
     },
     {
       name: "Mahit Cherku",
       grade: "11th Grade",
       role: "Outreach/Engineer",
       school: "Memorial High School",
-      image: "https://www.undefinedrobotics.org/mahit_cherku.png"
+      image: mahit
     },
     {
       name: "Vedant Teware",
       grade: "11th Grade",
       role: "Outreach/Engineer",
       school: "Lone Star High School",
-      image: "https://www.undefinedrobotics.org/vedant_teware.png"
+      image: vedant
     },
     {
       name: "Ashwin Gupta",
       grade: "11th Grade",
       role: "Engineer",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/ashwin_gupta.png"
+      image: ashwin
     },
     {
       name: "Nishant Sinari",
       grade: "11th Grade",
       role: "Outreach/CAD Lead",
       school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/nishant_sinari.png"
+      image: nishant
     },
-    {
-      name: "Shriya Mohan",
-      grade: "11th Grade",
-      role: "Outreach",
-      school: "Plano Senior High School",
-      image: "https://www.undefinedrobotics.org/shriya_mohan.png"
-    },
-    {
-      name: "Darrien Kwan",
-      grade: "11th Grade",
-      role: "Outreach",
-      school: "Plano West Senior High School",
-      image: "https://www.undefinedrobotics.org/darrien_kwan.png"
-    }
+    
   ];
 
   // Dummy data for Missing Amps team
   const missingAmpsMembers = [
     {
-      name: "Sarah Chen",
-      grade: "12th Grade",
-      role: "Captain/Electrical Lead",
-      school: "Plano East Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=SC"
-    },
-    {
-      name: "Marcus Thompson",
+      name: "Neel T.",
       grade: "11th Grade",
-      role: "Co-Captain/Programmer",
+      role: "Captain/CAD Modeler/Engineer",
       school: "Plano Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=MT"
+      image: "https://i.postimg.cc/44BsdgkP/Neel-PFP.webp"
     },
     {
-      name: "Isabella Rodriguez",
+      name: "Big HD",
       grade: "11th Grade",
-      role: "Chief Designer/CAD",
-      school: "Plano West Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=IR"
-    },
-    {
-      name: "James Park",
-      grade: "10th Grade",
-      role: "Engineer/Driver",
-      school: "Plano East Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=JP"
-    },
-    {
-      name: "Maya Patel",
-      grade: "11th Grade",
-      role: "Programmer/Controls",
-      school: "Clark High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=MP"
-    },
-    {
-      name: "Tyler Johnson",
-      grade: "11th Grade",
-      role: "Build Team Lead",
+      role: "Captain/CAD Modeler/Engineer",
       school: "Plano Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=TJ"
+      image: "https://images.emojiterra.com/twitter/v14.0/1024px/1f633.png"
     },
     {
-      name: "Sophia Kim",
-      grade: "10th Grade",
-      role: "Outreach/Marketing",
-      school: "Plano West Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=SK"
-    },
-    {
-      name: "Daniel Garcia",
+      name: "Ishaan N.",
       grade: "11th Grade",
-      role: "Engineer/Fabrication",
-      school: "Legacy High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=DG"
-    },
-    {
-      name: "Emma Wilson",
-      grade: "10th Grade",
-      role: "Programmer/Vision",
-      school: "Plano East Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=EW"
-    },
-    {
-      name: "Ryan Martinez",
-      grade: "11th Grade",
-      role: "Scout/Strategy",
+      role: "Captain/CAD Modeler/Engineer",
       school: "Plano Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=RM"
+      image: "https://i.postimg.cc/7L0qYJwJ/Ishaan-PFP.webp"
     },
     {
-      name: "Olivia Chang",
-      grade: "10th Grade",
-      role: "CAD/Design",
-      school: "Jasper High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=OC"
-    },
-    {
-      name: "Alex Turner",
+      name: "Aarav B.",
       grade: "11th Grade",
-      role: "Engineer/Testing",
-      school: "Plano West Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=AT"
+      role: "Captain/CAD Modeler/Engineer",
+      school: "Plano Senior High School",
+      image: "https://i.postimg.cc/SxbTbnTv/AlooPFP.webp"
     },
     {
-      name: "Grace Liu",
-      grade: "10th Grade",
-      role: "Finance/Fundraising",
-      school: "Allen High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=GL"
-    },
-    {
-      name: "Ethan Davis",
+      name: "Rishabh M.",
       grade: "11th Grade",
-      role: "Engineer/Assembly",
-      school: "Plano East Senior High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=ED"
+      role: "Captain/CAD Modeler/Engineer",
+      school: "Plano Senior High School",
+      image: "https://i.postimg.cc/FRFFWsXf/Rishabh-Zest.webp"
     },
     {
-      name: "Zoe Anderson",
-      grade: "10th Grade",
-      role: "Media/Documentation",
-      school: "Frisco High School",
-      image: "https://via.placeholder.com/300x300/3B82F6/FFFFFF?text=ZA"
-    }
+      name: "Goutham R.",
+      grade: "11th Grade",
+      role: "Captain/CAD Modeler/Engineer",
+      school: "Plano Senior High School",
+      image: "https://i.postimg.cc/VNJPdrwW/Goutham-Goon.webp"
+    },
+    {
+      name: "Hrudhai L.",
+      grade: "11th Grade",
+      role: "Captain/CAD Modeler/Engineer",
+      school: "Plano Senior High School",
+      image: "https://i.postimg.cc/52r0VSg9/cropped-image-min.png"
+    },
+    
   ];
 
   // Chiefs (specified names)
@@ -372,11 +320,10 @@
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
             <h3 class="text-xl font-bold mb-4 text-yellow-400">Team Information</h3>
             <div class="space-y-3">
-              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#2024</span></div>
-              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length} Students</span></div>
-              <div><span class="text-gray-400">Coach:</span> <span class="text-white font-semibold">Mr. Johnson</span></div>
-              <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2020</span></div>
-              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FRC</span></div>
+              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#25782</span></div>
+              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-2} Students</span></div>
+              <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2024</span></div>
+              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC</span></div>
             </div>
           </div>
           
@@ -434,10 +381,9 @@
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
             <h3 class="text-xl font-bold mb-4 text-blue-400">Team Information</h3>
             <div class="space-y-3">
-              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#8547</span></div>
+              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#30801</span></div>
               <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Students</span></div>
-              <div><span class="text-gray-400">Coach:</span> <span class="text-white font-semibold">Ms. Rodriguez</span></div>
-              <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2021</span></div>
+              <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2025</span></div>
               <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC</span></div>
             </div>
           </div>
@@ -445,10 +391,9 @@
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
             <h3 class="text-xl font-bold mb-4 text-blue-400">Our Story</h3>
             <p class="text-gray-300 leading-relaxed">
-              Missing Amps emerged from the desire to electrify the world of competitive robotics. 
-              We focus on precision engineering and innovative electrical solutions. Our name reflects 
-              our mission: to find the missing piece that powers extraordinary robotic performance 
-              and brings energy to every challenge we face.
+              Missing Amps is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
+              With experience at the UIL State Championship, we now compete in the FIRST® Tech Challenge while giving back through STEM outreach.
+              Our mission is to inspire the next generation of innovators by engaging local youth, partnering with businesses, and building a strong platform for future STEM leaders.
             </p>
           </div>
         </div>
@@ -469,7 +414,6 @@
                   />
                 </div>
                 <h3 class="text-base font-semibold mb-2 text-white">{member.name}</h3>
-                <p class="text-blue-400 font-medium mb-2 text-sm">{member.role}</p>
                 <p class="text-gray-400 text-xs mb-1">{member.school}</p>
                 <p class="text-gray-500 text-xs">{member.grade}</p>
               </div>

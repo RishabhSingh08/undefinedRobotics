@@ -4,12 +4,40 @@
     import mentorshipBanner from '../../lib/images/bigImages/2.png';
     import communityBanner from '../../lib/images/bigImages/3.png';
     import inspiringBanner from '../../lib/images/bigImages/1.png';
+    import three from '../../lib/events/3d.jpg';
+    import env from '../../lib/events/env.jpg';
+    import smart from '../../lib/events/smart.jpg';
+    import week from '../../lib/events/week.jpg';
+    import career from '../../lib/events/career.jpg';
+    import tribe from '../../lib/events/tribe.jpg';
+    import int from '../../lib/events/int.jpg';
+    import climate from '../../lib/events/climate.jpg';
+    import sticker from '../../lib/events/sticky.jpg';
+
+    
+    
+
+   
+    
 
     export let images = {
       hero,
       mentorshipBanner,
       communityBanner,
       inspiringBanner,
+      three,
+      env,
+      smart,
+      week,
+      career,
+      tribe,
+      int,
+      climate,
+      sticker
+
+
+
+
     };
     
   </script>
@@ -41,7 +69,7 @@
               
    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
   <div class="text-center">
-    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">$50K+</div>
+    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">$25K+</div>
     <div class="text-gray-300">Value Raised</div>
   </div>
   <div class="text-center">
@@ -69,34 +97,67 @@
             </div>
           </div>
           
+          
           <div class="p-8">
             <div class="grid md:grid-cols-3 gap-6">
               <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                      <img src={images.three} alt="3D" class="w-full h-32 object-cover rounded-md mb-4" />
+
+                <div class="flex items-center mb-4">
+                  <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
+                  <h4 class="text-xl font-semibold text-white">3D Print Showcase</h4>
+                </div>
+                <p class="text-gray-300 mb-4">Organized a multi-location STEM outreach event across North Texas. Distributed over 200 eco-friendly 3D-printed robots to families in malls and parks. Engaged professionals from Tesla and Amazon to spark STEM dialogue.
+</p>
+                <div class="text-sm text-blue-300 font-semibold">
+                  Impact: 
+
+                </div>
+                  <div class="text-sm text-blue-300 font-semibold">
+                  Engaged 500+ families in STEM
+                  <div class="text-sm text-blue-300 font-semibold">Distributed 200+ 3D-printed robots</div>
+                </div>
+              </div>
+              
+              
+              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                      <img src={images.smart  } alt="Smart Seniors!" class="w-full h-55 object-cover rounded-md mb-4" />
+
                 <div class="flex items-center mb-4">
                   <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Ravenclaw Robotics</h4>
+                  <h4 class="text-xl font-semibold text-white">Smart Seniors (Video Series)</h4>
                 </div>
-                <p class="text-gray-300 mb-4">Helped our feeder school FTC team via assisting in the development of their robot and developing competition strategies.</p>
-                <div class="text-sm text-blue-300 font-semibold">Impact: 6 FTC Teams, 70 People</div>
+                <p class="text-gray-300 mb-4">Partnered with Solace Global to teach senior citizens about online safety through an accessible video series focused on phishing, scams, and fraud prevention.
+</p>
+                <div class="text-sm text-blue-300 font-semibold">
+                  Impact: 
+
+                </div>
+                  <div class="text-sm text-blue-300 font-semibold">
+                  Educated 300+ seniors
+                  <div class="text-sm text-blue-300 font-semibold">Created video series to increase digital literacy</div>
+                </div>
               </div>
               
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                      <img src={images.env} alt="Enviromental Workshop" class="w-full h-32 object-cover rounded-md mb-4" />
+
                 <div class="flex items-center mb-4">
                   <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Senior Team Partnership</h4>
+                  <h4 class="text-xl font-semibold text-white">Enviormental Sustainability Workshop</h4>
                 </div>
-                <p class="text-gray-300 mb-4">Senior teams greatly helped employ our designs and functionality, forming the pillars of our success. Notable contributors include Plano West HS and the Association of Chinese Professionals (ACP).</p>
-                <div class="text-sm text-green-300 font-semibold">Impact: 30+ Students</div>
-              </div>
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-purple-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Evan Mead of UTD</h4>
+                <p class="text-gray-300 mb-4">Hosted a hands-on workshop in collaboration with Solace Global to demonstrate how robotics can help tackle environmental issues like waste and renewable energy.
+</p>
+                <div class="text-sm text-blue-300 font-semibold">
+                  Impact: 
+
                 </div>
-                <p class="text-gray-300 mb-4">Evan Mead is an FTC alumni currently studying at UTD and kickstarted our 2022 season with valuable insights on robot design.</p>
-                <div class="text-sm text-purple-300 font-semibold">Impact: Team Development</div>
+                  <div class="text-sm text-blue-300 font-semibold">
+                  Taught 20+ students about robotics and sustainability
+                  <div class="text-sm text-blue-300 font-semibold">Sparked curiosity in STEM with real-world environmental problems</div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -114,58 +175,49 @@
           <div class="p-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                                      <img src={images.week} alt="Weekly Coding Classes" class="w-full h-40 object-cover rounded-md mb-4" />
+
                 <div class="flex items-center mb-4">
                   <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Scrimmage Hosting</h4>
+                  <h4 class="text-xl font-semibold text-white">Weekly Girls Coding Classes</h4>
                 </div>
-                <p class="text-gray-300 mb-4">Hosted scrimmage at our school with 6 local teams, providing some teams their first opportunity to use a full practice field and run real matches.</p>
-                <div class="text-sm text-yellow-300 font-semibold">Impact: 6 FTC Teams</div>
+                <p class="text-gray-300 mb-4">Collaborated with Code.org to host an 8-week beginner-friendly course based on AP Computer Science Principles for girls aged 10–14.</p>
+                <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                <div class="text-sm text-yellow-300 font-semibold">Introduced 50+ girls to coding</div>
+                <div class="text-sm text-yellow-300 font-semibold">Built multiple real-world applications</div>
               </div>
               
               <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                      <img src={images.career} alt="Career" class="w-full h-50   object-cover rounded-md mb-4" />
+
                 <div class="flex items-center mb-4">
                   <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">League Tournament Hosting</h4>
+                  <h4 class="text-xl font-semibold text-white">Career Literacy Program</h4>
                 </div>
-                <p class="text-gray-300 mb-4">Hosted the FIRST in Texas E&F League Tournament in our school which provided a platform for 30+ teams to compete in the qualifying/knockout stages of the FIRST Tech Challenge championship.</p>
-                <div class="text-sm text-blue-300 font-semibold">Impact: 30+ FTC Teams, 800+ people</div>
+                <p class="text-gray-300 mb-4">Created 25+ career videos with Solace Global showcasing real-world engineering disciplines. Each video averaged 2,000 views, broadening access to STEM guidance.</p>
+                <div class="text-sm text-blue-300 font-semibold">Impact:</div>
+                                <div class="text-sm text-blue-300 font-semibold">Produced 25+ career videos
+</div>
+                <div class="text-sm text-blue-300 font-semibold">Each received ~2,000 views
+</div>
+
               </div>
               
               <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                                      <img src={images.tribe} alt="Career" class="w-full h-40 object-cover rounded-md mb-4" />
+
                 <div class="flex items-center mb-4">
                   <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Tech the Halls</h4>
+                  <h4 class="text-xl font-semibold text-white">Spreading First to tribes in South Asia</h4>
                 </div>
-                <p class="text-gray-300 mb-4">Winter collaboration event with other school-centric STEM organizations that taught students the fundamentals of the Engineering Design Process via interactive engineering, CAD modeling, and coding workshops.</p>
-                <div class="text-sm text-green-300 font-semibold">Impact: 2000+ Students</div>
+                <p class="text-gray-300 mb-4">Worked with Janajati Ashram and StepsToDo to introduce tribal children in rural India to STEM via hands-on windmill building and renewable energy concepts.</p>
+                <div class="text-sm text-green-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-green-300 font-semibold">Empowered 40+ tribal children</div>
+                <div class="text-sm text-green-300 font-semibold">Donated ₹10,000 in STEM supplies</div>
+
               </div>
               
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-purple-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">FIRST Seminar</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Partnered with accomplished FTC teams and notable alumni in conducting a seminar on the impact of the FIRST organization and incentivized participants to spread STEM learning.</p>
-                <div class="text-sm text-purple-300 font-semibold">Impact: Jasper HS students, 90 people in-person, 20+ online viewers</div>
-              </div>
               
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">PISD Robotics Demo</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Advocated for improving upon STEM application at our school and showcased the application of STEM education to district admins by building and programming robots to incentivize increased funding, resources, and reach.</p>
-                <div class="text-sm text-yellow-300 font-semibold">Impact: School Administrators</div>
-              </div>
-  
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-red-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Annual School Pep Rally</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Featured our robot and team while conveying FIRST and STEM ideals at Jasper HS Spring Pep Rally which all students and staff attend. The day of the event is dedicated to showcasing our robot and giving opportunities for others to be involved.</p>
-                <div class="text-sm text-red-300 font-semibold">Impact: Jasper HS staff and student body</div>
-              </div>
             </div>
           </div>
         </div>
@@ -179,43 +231,53 @@
             </div>
           </div>
           
-          <div class="p-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+           <div class="p-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Coding Camps</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Partnered with UTD grads to teach students under 13 Java programming via interactive meetings and informative activities.</p>
-                <div class="text-sm text-blue-300 font-semibold">Impact: 10 people</div>
-              </div>
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">What is Robotics?</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Discussed the basics of robotics and its significance to 4th-grade students and helped establish a full-time FIRST Lego League team.</p>
-                <div class="text-sm text-green-300 font-semibold">Impact: 1 FLL Team Established</div>
-              </div>
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                                      <img src={images.int} alt="International Girls Robotics " class="w-full h-32 object-cover rounded-md mb-4" />
+
                 <div class="flex items-center mb-4">
                   <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Intro to FTC</h4>
+                  <h4 class="text-xl font-semibold text-white">International Girl Robotics</h4>
                 </div>
-                <p class="text-gray-300 mb-4">Introduced FTC to the Robinson FLL team as a step up and encouraged involvement in the FTC Jasper Robotics community.</p>
-                <div class="text-sm text-yellow-300 font-semibold">Impact: 2 Teams Transitioned</div>
+                <p class="text-gray-300 mb-4">Partnered with Naihati New Life Society, West India’s largest orphanage for girls affected by abuse, to donate EV3 and SPIKE Prime kits and host robotics/STEM workshops.</p>
+                <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                <div class="text-sm text-yellow-300 font-semibold">Reached 15+ abuse survivors</div>
+                <div class="text-sm text-yellow-300 font-semibold">Donated $3,000 in robotics kits</div>
               </div>
               
               <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                      <img src={images.climate} alt="Career" class="w-full h-32 object-cover rounded-md mb-4" />
+
                 <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-red-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Annual 8th Grade Night</h4>
+                  <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+                  <h4 class="text-xl font-semibold text-white">Robotics for Climate Change</h4>
                 </div>
-                <p class="text-gray-300 mb-4">Showcased the Jasper robotics program to upcoming 8th graders from our feeder middle schools and highlighted its impacts on the community (~1500 students over the course of two years).</p>
-                <div class="text-sm text-red-300 font-semibold">Impact: 1,500+ Students</div>
+                <p class="text-gray-300 mb-4">PRIME robots for climate-related challenges. The project gained viral reach.</p>
+                <div class="text-sm text-blue-300 font-semibold">Impact:</div>
+                                <div class="text-sm text-blue-300 font-semibold">Introduced 15+ young students to robotics & climate
+</div>
+                <div class="text-sm text-blue-300 font-semibold">Earned 6,000+ TikTok views
+</div>
+
               </div>
+              
+              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                                      <img src={images.sticker} alt="Sticker" class="w-full h-32 object-cover rounded-md mb-4" />
+
+                <div class="flex items-center mb-4">
+                  <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+                  <h4 class="text-xl font-semibold text-white">Stem Sticker to Shanti Bhavan</h4>
+                </div>
+                <p class="text-gray-300 mb-4">Collaborated with Shanti Bhavan and Hack Club to send 300+ STEM-themed stickers to children in India’s largest orphanage to spark tech curiosity.
+</p>
+                <div class="text-sm text-green-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-green-300 font-semibold">Delivered 300+ STEM stickers</div>
+                <div class="text-sm text-green-300 font-semibold">Encouraged tech engagement and creativity</div>
+
+              </div>
+              
+              
             </div>
           </div>
         </div>
