@@ -100,64 +100,56 @@
           
           <div class="p-8">
             <div class="grid md:grid-cols-3 gap-6">
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                      <img src={images.three} alt="3D" class="w-full h-32 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">3D Print Showcase</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Organized a multi-location STEM outreach event across North Texas. Distributed over 200 eco-friendly 3D-printed robots to families in malls and parks. Engaged professionals from Tesla and Amazon to spark STEM dialogue.
-</p>
-                <div class="text-sm text-blue-300 font-semibold">
-                  Impact: 
-
-                </div>
-                  <div class="text-sm text-blue-300 font-semibold">
-                  Engaged 500+ families in STEM
-                  <div class="text-sm text-blue-300 font-semibold">Distributed 200+ 3D-printed robots</div>
-                </div>
-              </div>
-              
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                      <img src={images.smart  } alt="Smart Seniors!" class="w-full h-55 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Smart Seniors (Video Series)</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Partnered with Solace Global to teach senior citizens about online safety through an accessible video series focused on phishing, scams, and fraud prevention.
-</p>
-                <div class="text-sm text-blue-300 font-semibold">
-                  Impact: 
-
-                </div>
-                  <div class="text-sm text-blue-300 font-semibold">
-                  Educated 300+ seniors
-                  <div class="text-sm text-blue-300 font-semibold">Created video series to increase digital literacy</div>
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.three} alt="3D" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">3D Print Showcase</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Organized a multi-location STEM outreach event across North Texas. Distributed over 200 eco-friendly 3D-printed robots to families in malls and parks. Engaged professionals from Tesla and Amazon to spark STEM dialogue.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Engaged 500+ families in STEM</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Distributed 200+ 3D-printed robots</div>
+                  </div>
                 </div>
               </div>
-              
-                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                      <img src={images.env} alt="Enviromental Workshop" class="w-full h-32 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Enviormental Sustainability Workshop</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Hosted a hands-on workshop in collaboration with Solace Global to demonstrate how robotics can help tackle environmental issues like waste and renewable energy.
-</p>
-                <div class="text-sm text-blue-300 font-semibold">
-                  Impact: 
-
-                </div>
-                  <div class="text-sm text-blue-300 font-semibold">
-                  Taught 20+ students about robotics and sustainability
-                  <div class="text-sm text-blue-300 font-semibold">Sparked curiosity in STEM with real-world environmental problems</div>
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.smart} alt="Smart Seniors!" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">Smart Seniors (Video Series)</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Partnered with Solace Global to teach senior citizens about online safety through an accessible video series focused on phishing, scams, and fraud prevention.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-blue-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-blue-300 font-semibold">Educated 300+ seniors</div>
+                    <div class="text-sm text-blue-300 font-semibold">Created video series to increase digital literacy</div>
+                  </div>
                 </div>
               </div>
-
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.env} alt="Enviromental Workshop" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">Enviormental Workshop</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Hosted a hands-on workshop in collaboration with Solace Global to demonstrate how robotics can help tackle environmental issues like waste and renewable energy.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-green-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-green-300 font-semibold">Taught 20+ students about robotics and sustainability</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -174,50 +166,57 @@
           
           <div class="p-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                                      <img src={images.week} alt="Weekly Coding Classes" class="w-full h-40 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Weekly Girls Coding Classes</h4>
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.week} alt="Weekly Coding Classes" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">Weekly Girls Coding Classes</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Collaborated with Code.org to host an 8-week beginner-friendly course based on AP Computer Science Principles for girls aged 10–14.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Introduced 50+ girls to coding</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Built multiple real-world applications</div>
+                  </div>
                 </div>
-                <p class="text-gray-300 mb-4">Collaborated with Code.org to host an 8-week beginner-friendly course based on AP Computer Science Principles for girls aged 10–14.</p>
-                <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
-                <div class="text-sm text-yellow-300 font-semibold">Introduced 50+ girls to coding</div>
-                <div class="text-sm text-yellow-300 font-semibold">Built multiple real-world applications</div>
               </div>
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                      <img src={images.career} alt="Career" class="w-full h-50   object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Career Literacy Program</h4>
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.career} alt="Career" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">Career Literacy Program</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Created 25+ career videos with Solace Global showcasing real-world engineering disciplines. Each video averaged 2,000 views, broadening access to STEM guidance.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-blue-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-blue-300 font-semibold">Produced 25+ career videos</div>
+                    <div class="text-sm text-blue-300 font-semibold">Each received ~2,000 views</div>
+                  </div>
                 </div>
-                <p class="text-gray-300 mb-4">Created 25+ career videos with Solace Global showcasing real-world engineering disciplines. Each video averaged 2,000 views, broadening access to STEM guidance.</p>
-                <div class="text-sm text-blue-300 font-semibold">Impact:</div>
-                                <div class="text-sm text-blue-300 font-semibold">Produced 25+ career videos
-</div>
-                <div class="text-sm text-blue-300 font-semibold">Each received ~2,000 views
-</div>
-
               </div>
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                                      <img src={images.tribe} alt="Career" class="w-full h-40 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Spreading First to tribes in South Asia</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Worked with Janajati Ashram and StepsToDo to introduce tribal children in rural India to STEM via hands-on windmill building and renewable energy concepts.</p>
-                <div class="text-sm text-green-300 font-semibold">Impact:</div>
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.tribe} alt="Career" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">Spreading First in South Asia</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Worked with Janajati Ashram and StepsToDo to introduce tribal children in rural India to STEM via hands-on windmill building and renewable energy concepts.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-green-300 font-semibold">Impact:</div>
                     <div class="text-sm text-green-300 font-semibold">Empowered 40+ tribal children</div>
-                <div class="text-sm text-green-300 font-semibold">Donated ₹10,000 in STEM supplies</div>
-
+                    <div class="text-sm text-green-300 font-semibold">Donated ₹10,000 in STEM supplies</div>
+                  </div>
+                </div>
               </div>
-              
-              
             </div>
           </div>
         </div>
@@ -233,56 +232,63 @@
           
            <div class="p-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                                      <img src={images.int} alt="International Girls Robotics " class="w-full h-32 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">International Girl Robotics</h4>
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.int} alt="International Girls Robotics " class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">International Girl Robotics</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Partnered with Naihati New Life Society, West India’s largest orphanage for girls affected by abuse, to donate EV3 and SPIKE Prime kits and host robotics/STEM workshops.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Reached 15+ abuse survivors</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Donated $3,000 in robotics kits</div>
+                  </div>
                 </div>
-                <p class="text-gray-300 mb-4">Partnered with Naihati New Life Society, West India’s largest orphanage for girls affected by abuse, to donate EV3 and SPIKE Prime kits and host robotics/STEM workshops.</p>
-                <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
-                <div class="text-sm text-yellow-300 font-semibold">Reached 15+ abuse survivors</div>
-                <div class="text-sm text-yellow-300 font-semibold">Donated $3,000 in robotics kits</div>
               </div>
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                      <img src={images.climate} alt="Career" class="w-full h-32 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Robotics for Climate Change</h4>
-                </div>
-                <p class="text-gray-300 mb-4">PRIME robots for climate-related challenges. The project gained viral reach.</p>
-                <div class="text-sm text-blue-300 font-semibold">Impact:</div>
-                                <div class="text-sm text-blue-300 font-semibold">Introduced 15+ young students to robotics & climate
-</div>
-                <div class="text-sm text-blue-300 font-semibold">Earned 6,000+ TikTok views
-</div>
-
-              </div>
-              
-              <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                                      <img src={images.sticker} alt="Sticker" class="w-full h-32 object-cover rounded-md mb-4" />
-
-                <div class="flex items-center mb-4">
-                  <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-                  <h4 class="text-xl font-semibold text-white">Stem Sticker to Shanti Bhavan</h4>
-                </div>
-                <p class="text-gray-300 mb-4">Collaborated with Shanti Bhavan and Hack Club to send 300+ STEM-themed stickers to children in India’s largest orphanage to spark tech curiosity.
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.climate} alt="Career" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">Robotics for Climate Change</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">With a UTD researcher, taught students in grades 1–6 how to build and program SPARK PRIME robots for climate-related challenges. The project gained viral reach.
 </p>
-                <div class="text-sm text-green-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-green-300 font-semibold">Delivered 300+ STEM stickers</div>
-                <div class="text-sm text-green-300 font-semibold">Encouraged tech engagement and creativity</div>
-
+                  </div>
+                  <div>
+                    <div class="text-sm text-blue-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-blue-300 font-semibold">Introduced 15+ young students to STEM</div>
+                    <div class="text-sm text-blue-300 font-semibold">Earned 6,000+ TikTok views</div>
+                  </div>
+                </div>
               </div>
-              
-              
+              <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <img src={images.sticker} alt="Sticker" class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />
+                <div class="flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+                      <h4 class="text-xl font-semibold text-white">Stem Sticker to Shanti Bhavan</h4>
+                    </div>
+                    <p class="text-gray-300 mb-4">Collaborated with Shanti Bhavan and Hack Club to send 300+ STEM-themed stickers to children in India’s largest orphanage to spark tech curiosity.</p>
+                  </div>
+                  <div>
+                    <div class="text-sm text-green-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-green-300 font-semibold">Delivered 300+ STEM stickers</div>
+                    <div class="text-sm text-green-300 font-semibold">Encouraged tech engagement and creativity</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
   <div class="mb-16 text-center text-sm text-gray-400 italic px-4">
-  Some events are not shown, as our current season is still in progress and many projects are confidential until revealed.
+  Certain events and projects are not displayed, as our season is still in progress.
 </div>
 
 
@@ -292,5 +298,8 @@
   </section>
 
   <style>
-
+  .impact-card {
+    min-height: 420px;
+    height: 100%;
+  }
   </style>
