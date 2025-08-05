@@ -66,10 +66,10 @@
           <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
           <ul class="space-y-2">
             <li><a href="/family" class="text-gray-400 hover:text-yellow-400 transition-colors">Our Family</a></li>
-            <li><a href="/contact" class="text-gray-400 hover:text-yellow-400 transition-colors">Contact</a></li>
+            <li><a href="/robot" class="text-gray-400 hover:text-yellow-400 transition-colors">Robots</a></li>
             <li><a href="/impact" class="text-gray-400 hover:text-yellow-400 transition-colors">Impact</a></li>
             <li><a href="/record" class="text-gray-400 hover:text-yellow-400 transition-colors">Record</a></li>
-            <li><a href="/robot" class="text-gray-400 hover:text-yellow-400 transition-colors">Robot</a></li>
+            <li><a href="/contact" class="text-gray-400 hover:text-yellow-400 transition-colors">Contact</a></li>
             <li><a href="/donate" class="text-gray-400 hover:text-yellow-400 transition-colors">Donate</a></li>
           </ul>
         </div>

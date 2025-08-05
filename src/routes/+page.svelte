@@ -231,7 +231,7 @@
           </div>
           <h4 class="text-xl font-semibold text-white mb-4">Manufacturing Facility Tour</h4>
           <p class="text-gray-300 leading-relaxed mb-4">
-            Our team had the opportunity to tour a local manufacturing facility, where we engaged in meaningful discussions with industry professionals and explored real-world applications of automation and engineering. It was an inspiring experience that opened the door for potential future collaboration.
+            Our team had the opportunity to tour a local manufacturing facility, where we engaged in meaningful discussions with industry professionals and explored real-world applications of automation and engineering.
 
 
           </p>

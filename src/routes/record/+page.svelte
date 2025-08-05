@@ -77,10 +77,10 @@
     ];
 </script>
 
-<section id="record" class="px-4 py-32 relative z-10 min-h-screen">
+<section id="record" class="px-6 md:px-8 lg:px-10 py-32 relative z-10 min-h-screen">
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
-    <div class="max-w-[115rem] mx-auto">
+    <div class="max-w-[115rem] mx-auto px-0">
         <div class="text-center mb-16">
             <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
                 Our Record
@@ -91,12 +91,12 @@
         </div>
 
         <div class="relative mx-auto">
-          <div class=" hidden lg:block absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-green-400 rounded-full border-4 border-gray-900 z-10 bottom-0"></div>
-            <div class=" hidden lg:block absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-yellow-400 via-blue-400 to-green-400 rounded-full"></div>
+          <div class="hidden lg:block absolute left-[calc(theme(spacing.10))] md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-green-400 rounded-full border-4 border-gray-900 z-10 bottom-0"></div>
+            <div class="hidden lg:block absolute left-[calc(theme(spacing.12))] md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-yellow-400 via-blue-400 to-green-400 rounded-full"></div>
 
             {#each seasons as season, i}
                 <div class="relative mb-16">
-                    <div class="hidden lg:block absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 {season.nodeColor} rounded-full border-4 border-gray-900 z-10"></div>
+                    <div class="hidden lg:block absolute left-[calc(theme(spacing.10))] md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 {season.nodeColor} rounded-full border-4 border-gray-900 z-10"></div>
                     
                     <div 
                         class="flex justify-start"

@@ -16,6 +16,8 @@
   import rishabh from "../../lib/family/rishabh_singh.png";
   import nishant from "../../lib/family/nishant_sinari.png";
   import team from "../../lib/family/teamphoto.png";
+  import harsh from "../../lib/family/harsh.jpg";
+
 
 
   
@@ -152,7 +154,7 @@
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
       school: "Plano West Senior High School",
-      image: "https://images.emojiterra.com/twitter/v14.0/1024px/1f633.png"
+      image: harsh
     },
     {
       name: "Ishaan N.",
@@ -339,7 +341,7 @@
             <h3 class="text-xl font-bold mb-4 text-yellow-400">Team Information</h3>
             <div class="space-y-3">
               <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">25782</span></div>
-              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-4} Seniors</span></div>
+              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-2} Seniors</span></div>
               <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2024</span></div>
               <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT S-League</span></div>
             </div>
