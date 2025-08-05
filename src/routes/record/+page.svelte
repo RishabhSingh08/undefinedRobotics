@@ -26,8 +26,18 @@
         <!-- 2023–24 Season -->
         <div class="relative mb-16">
           <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-gray-900 z-10"></div>
-          <div class="flex justify-end pr-8 md:pr-12">
-            <div class="w-full md:w-96 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+          <div class="relative">
+            <div class="absolute -left-96 -top-8 w-64 h-48">
+              <img src={achievements} alt="2023-24 Season Top" class="w-full h-full object-cover rounded-xl" />
+            </div>
+            <div class="absolute -left-[26rem] top-48 w-80 h-64">
+              <img src={achievements} alt="2023-24 Season Middle" class="w-full h-full object-cover rounded-xl" />
+            </div>
+            <div class="absolute -left-96 top-[28rem] w-64 h-48">
+              <img src={achievements} alt="2023-24 Season Bottom" class="w-full h-full object-cover rounded-xl" />
+            </div>
+            <div class="flex justify-end pr-8 md:pr-12">
+              <div class="w-full md:w-96 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div class="inline-block bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold text-lg mb-6">
                 🏆 2023–24 Season
               </div>
@@ -105,8 +115,12 @@
         <!-- 2024–25 Season -->
         <div class="relative mb-16">
           <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-400 rounded-full border-4 border-gray-900 z-10"></div>
-          <div class="flex justify-start pl-8 md:pl-12">
-            <div class="w-full md:w-96 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+          <div class="relative">
+            <div class="absolute -right-96 top-32 w-72 h-56">
+              <img src={future} alt="2024-25 Season Highlights" class="w-full h-full object-cover rounded-xl" />
+            </div>
+            <div class="flex justify-start pl-8 md:pl-12">
+              <div class="w-full md:w-96 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div class="inline-block bg-blue-400 text-gray-900 px-4 py-2 rounded-full font-bold text-lg mb-6">
                 2024–25 Season
               </div>
