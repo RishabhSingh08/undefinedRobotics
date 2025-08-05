@@ -18,7 +18,11 @@
             <span class="text-2xl font-bold">Undefined Robotics</span>
           </div>
           <p class="text-gray-400 max-w-md mb-6">
+<<<<<<< Updated upstream
             A student-led STEM and robotics 501(c)3 NPO based in Plano, Texas that works to serve the underserved in our community and worldwide.
+=======
+            A student-led STEM and robotics 501(c)3 NPO based in Plano, Texas. Work to serve the underserved in our community and worldwide.
+>>>>>>> Stashed changes
           </p>
           <div class="flex space-x-6  mt-8">
             <a
