@@ -122,15 +122,15 @@
                 <div class="flex-1 flex flex-col justify-between">
                   <div>
                     <div class="flex items-center mb-4">
-                      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Smart Seniors (Video Series)</h4>
                     </div>
                     <p class="text-gray-300 mb-4">Partnered with Solace Global to teach senior citizens about online safety through an accessible video series focused on phishing, scams, and fraud prevention.</p>
                   </div>
                   <div>
-                    <div class="text-sm text-blue-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-blue-300 font-semibold">Educated 300+ seniors</div>
-                    <div class="text-sm text-blue-300 font-semibold">Created video series to increase digital literacy</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Educated 300+ seniors</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Created video series to increase digital literacy</div>
                   </div>
                 </div>
               </div>
@@ -139,14 +139,14 @@
                 <div class="flex-1 flex flex-col justify-between">
                   <div>
                     <div class="flex items-center mb-4">
-                      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Enviormental Workshop</h4>
                     </div>
                     <p class="text-gray-300 mb-4">Hosted a hands-on workshop in collaboration with Solace Global to demonstrate how robotics can help tackle environmental issues like waste and renewable energy.</p>
                   </div>
                   <div>
-                    <div class="text-sm text-green-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-green-300 font-semibold">Taught 20+ students about robotics and sustainability</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Taught 20+ students about robotics and sustainability</div>
                   </div>
                 </div>
               </div>
@@ -188,15 +188,15 @@
                 <div class="flex-1 flex flex-col justify-between">
                   <div>
                     <div class="flex items-center mb-4">
-                      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Career Literacy Program</h4>
                     </div>
                     <p class="text-gray-300 mb-4">Created 25+ career videos with Solace Global showcasing real-world engineering disciplines. Each video averaged 2,000 views, broadening access to STEM guidance.</p>
                   </div>
                   <div>
-                    <div class="text-sm text-blue-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-blue-300 font-semibold">Produced 25+ career videos</div>
-                    <div class="text-sm text-blue-300 font-semibold">Each received ~2,000 views</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Produced 25+ career videos</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Each received ~2,000 views</div>
                   </div>
                 </div>
               </div>
@@ -205,15 +205,15 @@
                 <div class="flex-1 flex flex-col justify-between">
                   <div>
                     <div class="flex items-center mb-4">
-                      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Spreading First in South Asia</h4>
                     </div>
                     <p class="text-gray-300 mb-4">Worked with Janajati Ashram and StepsToDo to introduce tribal children in rural India to STEM via hands-on windmill building and renewable energy concepts.</p>
                   </div>
                   <div>
-                    <div class="text-sm text-green-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-green-300 font-semibold">Empowered 40+ tribal children</div>
-                    <div class="text-sm text-green-300 font-semibold">Donated ₹10,000 in STEM supplies</div>
+                    <div class="text-sm  text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm  text-yellow-300 font-semibold">Empowered 40+ tribal children</div>
+                    <div class="text-sm  text-yellow-300 font-semibold">Donated ₹10,000 in STEM supplies</div>
                   </div>
                 </div>
               </div>
@@ -254,16 +254,16 @@
                 <div class="flex-1 flex flex-col justify-between">
                   <div>
                     <div class="flex items-center mb-4">
-                      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+                      <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Robotics for Climate Change</h4>
                     </div>
                     <p class="text-gray-300 mb-4">With a UTD researcher, taught students in grades 1–6 how to build and program SPARK PRIME robots for climate-related challenges. The project gained viral reach.
 </p>
                   </div>
                   <div>
-                    <div class="text-sm text-blue-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-blue-300 font-semibold">Introduced 15+ young students to STEM</div>
-                    <div class="text-sm text-blue-300 font-semibold">Earned 6,000+ TikTok views</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Introduced 15+ young students to STEM</div>
+                    <div class="text-sm text-yellow-300 font-semibold">Earned 6,000+ TikTok views</div>
                   </div>
                 </div>
               </div>
@@ -272,7 +272,7 @@
                 <div class="flex-1 flex flex-col justify-between">
                   <div>
                     <div class="flex items-center mb-4">
-                      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+                      <div class="w-3 h-3 bg-[#853dc4] rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Promoted FTC at TEDx Event</h4>
                     </div>
                     <p class="text-gray-300 mb-4">Represented and promoted the FIRST Tech Challenge program at a TEDx Youth event, inspiring attendees to explore robotics and get involved in hands-on STEM learning. Shared personal experiences to break down barriers and encourage participation.
@@ -280,8 +280,8 @@
 </p>
                   </div>
                   <div>
-                    <div class="text-sm text-green-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-green-300 font-semibold">Reached diverse TEDx audience with robotics awareness</div>
+                    <div class="text-sm text-[#853dc4] font-semibold">Impact:</div>
+                    <div class="text-sm text-[#853dc4] font-semibold">Reached diverse TEDx audience with robotics awareness</div>
                   </div>
                 </div>
               </div>
