@@ -15,6 +15,8 @@
   import ashwin from "../../lib/family/ashwin_gupta.png";
   import rishabh from "../../lib/family/rishabh_singh.png";
   import nishant from "../../lib/family/nishant_sinari.png";
+  import team from "../../lib/family/teamphoto.png";
+
 
   
   let activeTab = 'undefined';
@@ -326,15 +328,8 @@
     {#if activeTab === 'undefined'}
       <div class="team-content">
         <div class="mb-12">
-          <div class="w-full h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center border border-gray-700">
-            <div class="text-center">
-              <div class="w-24 h-24 bg-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg class="w-12 h-12 text-black" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
-                </svg>
-              </div>
-              <p class="text-gray-400">Team Photo Coming Soon</p>
-            </div>
+          <div class="w-full h-96 rounded-2xl overflow-hidden border border-gray-700">
+            <img src={team} alt="Undefined Robotics Team" class="w-full h-full object-cover"/>
           </div>
         </div>
 
