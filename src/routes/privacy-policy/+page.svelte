@@ -20,7 +20,7 @@
       
       <div class="mb-8">
         <div class="inline-block bg-blue-400 text-gray-900 px-4 py-2 rounded-full font-bold text-sm mb-4">
-          Effective Date: August 4, 2025
+          Effective Date: August 5, 2025
         </div>
         <p class="text-gray-200 leading-relaxed">
           Undefined Robotics ("we", "our", or "us") is committed to protecting your privacy. This policy explains how we collect, use, and safeguard the information you provide when you visit our website.
@@ -63,11 +63,26 @@
 
       <!-- Section 3 -->
       <div class="mb-8">
-        <h2 class="text-2xl font-bold text-white mb-4">3. Third-Party Handling</h2>
+        <h2 class="text-2xl font-bold text-white mb-4">3. Analytics & Tracking</h2>
+        <p class="text-gray-200 leading-relaxed mb-4">
+          We use third-party tools such as <strong class="text-white">Vercel Analytics</strong> to understand how visitors interact with our website. This helps us improve performance and user experience.
+        </p>
+        <p class="text-gray-200 leading-relaxed mb-4">
+          These tools may collect non-personally identifiable data including:
+        </p>
+        <ul class="list-disc list-inside space-y-1 mb-4 text-gray-200">
+          <li><strong class="text-white">IP address</strong></li>
+          <li><strong class="text-white">Geographic location (approximate)</strong></li>
+          <li><strong class="text-white">Browser type and version</strong></li>
+          <li><strong class="text-white">Operating system</strong></li>
+          <li><strong class="text-white">Referring URLs and pages visited</strong></li>
+          <li><strong class="text-white">Time spent on pages</strong></li>
+        </ul>
         <p class="text-gray-200 leading-relaxed">
-          Your form submission is relayed via <strong class="text-white">EmailJS</strong>, a trusted email-delivery service, directly into our nonprofit's inbox. We do not store your data on our servers or any external databases beyond what appears in our email account. For details on EmailJS's own practices, see their Privacy Policy.
+          This data is collected in aggregate form and is not used to personally identify you. It is stored and processed by Vercel in accordance with their own privacy practices.
         </p>
       </div>
+
 
       <!-- Section 4 -->
       <div class="mb-8">

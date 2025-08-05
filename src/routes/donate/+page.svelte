@@ -59,10 +59,10 @@
 
   <!-- Main content container, centered on the screen -->
   <div class="relative z-10 min-h-screen flex justify-center px-6 py-32">
-    <div class="max-w-4xl mx-auto w-full">
+    <div class="max-w-3xl mx-auto w-full">
         
         
-        <section class="relative z-10 px-4 ">
+        <section class="relative z-10 px-4 space-y-8">
           <div class="max-w-7xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-semibold mb-8">
                   Make a Donation

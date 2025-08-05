@@ -274,7 +274,7 @@
     </div>
     <!-- Chiefs Section -->
     <div class="mb-20">
-      <h2 class="text-3xl font-bold text-center mb-12 text-yellow-400">Leadership Team</h2>
+      <h2 class="text-3xl font-bold text-center mb-12 text-yellow-500">Leadership Team</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
         {#each chiefs as chief}
           <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center">
@@ -302,7 +302,8 @@
       <div class="border-b border-gray-700 mb-8">
         <nav class="flex space-x-8 justify-center">
           <button 
-            class="py-4 px-6 text-lg font-semibold transition-colors duration-200"
+
+            class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
             class:tab-active={activeTab === 'undefined'}
             class:text-gray-400={activeTab !== 'undefined'}
             class:hover:text-white={activeTab !== 'undefined'}
@@ -312,7 +313,7 @@
           </button>
 
           <button 
-            class="py-4 px-6 text-lg font-semibold transition-colors duration-200"
+            class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
             class:tab-active={activeTab === 'missing'}
             class:text-gray-400={activeTab !== 'missing'}
             class:hover:text-white={activeTab !== 'missing'}
@@ -393,7 +394,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
 
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
-            <h3 class="text-xl font-bold mb-4 text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Information</a></h3>
+            <h3 class="text-xl font-bold mb-4 text-purple-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Information</a></h3>
             <div class="space-y-3">
               <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">30801</span></div>
               <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Juniors</span></div>
@@ -402,7 +403,7 @@
             </div>
           </div>
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
-            <h3 class="text-xl font-bold mb-4 text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Our Story</a></h3>
+            <h3 class="text-xl font-bold mb-4 text-purple-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Our Story</a></h3>
             <p class="text-gray-300 leading-relaxed">
               <a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer"><u>Missing Amps</u></a> is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
               With experience at the UIL State Championship, we now compete in the FIRST® Tech Challenge while giving back through STEM outreach.
@@ -412,7 +413,7 @@
         </div>
 
         <div>
-          <h3 class="text-2xl font-bold mb-8 text-center text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Members</a></h3>
+          <h3 class="text-2xl font-bold mb-8 text-center text-purple-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Members</a></h3>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {#each missingAmpsMembers as member}
               <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center hover:border-gray-600 transition-all duration-300">
