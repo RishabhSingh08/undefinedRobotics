@@ -99,10 +99,7 @@
 
     <section class="relative z-10">
 <div class="h-screen flex items-center justify-center overflow-hidden relative">
-  <div class="absolute inset-0 z-0">
-    <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-5 transform -translate-y-1/2"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-700 rounded-full blur-3xl opacity-5 transform translate-y-1/2"></div>
-  </div>
+
 
   <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center h-full justify-center">
     <div class="space-y-6 sm:space-y-8 md:space-y-12 text-center">
@@ -135,8 +132,8 @@
         </div>
       </div>
     </div>
+    
   </div>
-
   <div class="absolute bottom-[1%] left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce opacity-70">
     <span class="text-xs sm:text-normal md:text-lg">Learn more about us</span>
     <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
