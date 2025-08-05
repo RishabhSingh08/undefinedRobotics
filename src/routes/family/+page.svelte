@@ -24,7 +24,7 @@
       name: "Akshat Kumar",
       grade: "12th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano West Senior High School",
+      school: "Plano Senior High School",
       image: akshat
     },
     {
@@ -53,7 +53,7 @@
       name: "Navin Rao",
       grade: "12th Grade",
       role: "CAD Modeler/Engineer",
-      school: "Plano West Senior High School",
+      school: "Plano Senior High School",
       image: navin
     },
     {
@@ -109,21 +109,21 @@
       name: "Mahit Cherku",
       grade: "12th Grade",
       role: "Outreach/Engineer",
-      school: "Plano West Senior High School",
+      school: "Memorial High School",
       image: mahit
     },
     {
       name: "Vedant Teware",
       grade: "12th Grade",
       role: "Outreach/Engineer",
-      school: "Plano West Senior High School",
+      school: "Lonestar High School",
       image: vedant
     },
     {
       name: "Ashwin Gupta",
       grade: "12th Grade",
       role: "Engineer",
-      school: "Plano West Senior High School",
+      school: "Plano Senior High School",
       image: ashwin
     },
     {
