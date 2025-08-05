@@ -82,8 +82,7 @@
                   <div class="w-3 h-3 bg-violet-400 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h3 class="text-xl font-bold text-white mb-2">Control Award – 2×</h3>
-                    <p class="text-gray-300 text-sm">FiT-North E&F Tournament</p>
-                    <p class="text-gray-300 text-sm">FiT-North Area Championship</p>
+                    <p class="text-gray-300 text-sm">FiT-North Area and E&F Championship</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-4">
@@ -111,7 +110,7 @@
                   <div class="w-3 h-3 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h3 class="text-xl font-bold text-white mb-2">Connect Award</h3>
-                    <p class="text-gray-300 text-sm">FiT-North Semi-Area Championship (Stage Right)</p>
+                    <p class="text-gray-300 text-sm">FiT-North Semi-Area Championship</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-4">
