@@ -53,110 +53,115 @@
   }
 </style>
 
-<main class="text-white overflow-hidden relative dm-sans min-h-screen">
+<main class="text-white overflow-hidden relative dm-sans">
+  <!-- Background pattern for visual effect -->
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
-  <div class="relative z-10 pt-32 pb-16 min-h-screen flex items-center justify-center px-4">
-    <div class="max-w-lg mx-auto w-full">
-      <div class="bg-[#10141c] border border-white/20 rounded-xl p-8 space-y-8">
-        
+  <!-- Main content container, centered on the screen -->
+  <div class="relative z-10 min-h-screen flex justify-center px-6 py-12">
+    <div class="max-w-4xl mx-auto w-full">
+      <div class="rounded-xl p-12 space-y-8 ">
+
+        <!-- Header section with title and description -->
         <div class="text-center space-y-4">
-          {#if IconLogo}
-            <img src={IconLogo} alt="Organization Logo" class="h-24 mx-auto" />
-          {/if}
-          
-          <h1 class="text-3xl md:text-4xl font-bold tracking-wide">
+          <h1 class="text-5xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-tight">
             Make a Donation
           </h1>
-          <p class="text-lg text-gray-300 leading-relaxed">
+          <p class="text-2xl lg:text-2xl text-gray-300 leading-relaxed">
             Support our mission to inspire the next generation through robotics and STEM education.
           </p>
         </div>
 
-        <form on:submit={handleSubmit} class="space-y-6">
-          <div class="space-y-2">
-            <label for="name" class="block text-sm font-medium text-gray-300">
+        <!-- Donation form -->
+        <form on:submit|preventDefault={handleSubmit} class="space-y-10">
+          <!-- Name input field -->
+          <div class="space-y-4">
+            <label for="name" class="block text-xl font-medium text-gray-300">
               Name
             </label>
             <input
               id="name"
               type="text"
               bind:value={name}
-              class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.name ? 'border-yellow-500' : ''}"
+              class="w-full px-6 py-5 bg-[#0f0e13] border border-white/20 rounded-lg text-2xl text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.name ? 'border-yellow-500' : ''}"
               placeholder="Your name"
             />
             {#if formErrors.name && showError}
-              <p class="text-yellow-400 text-sm">{formErrors.name}</p>
+              <p class="text-yellow-400 text-lg mt-2">{formErrors.name}</p>
             {/if}
           </div>
 
-          <div class="space-y-2">
-            <label for="email" class="block text-sm font-medium text-gray-300">
+          <!-- Email input field -->
+          <div class="space-y-4">
+            <label for="email" class="block text-xl font-medium text-gray-300">
               Email
             </label>
             <input
               id="email"
               type="email"
               bind:value={email}
-              class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.email ? 'border-yellow-500' : ''}"
+              class="w-full px-6 py-5 bg-[#0f0e13] border border-white/20 rounded-lg text-2xl text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.email ? 'border-yellow-500' : ''}"
               placeholder="your@email.com"
             />
             {#if formErrors.email && showError}
-              <p class="text-yellow-400 text-sm">{formErrors.email}</p>
+              <p class="text-yellow-400 text-lg mt-2">{formErrors.email}</p>
             {/if}
           </div>
 
-          <div class="space-y-3">
-            <label for="amount" class="block text-sm font-medium text-gray-300">
+          <!-- Amount input and quick selection buttons -->
+          <div class="space-y-5">
+            <label for="amount" class="block text-xl font-medium text-gray-300">
               Amount (USD)
             </label>
-            
-            <div class="grid grid-cols-4 gap-2">
+
+            <!-- Quick amount selection buttons -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
               {#each [25, 50, 100, 250] as quickAmount}
                 <button
                   type="button"
                   on:click={() => amount = quickAmount}
-                  class="px-3 py-2 bg-white/5 border border-white/20 rounded-lg text-white hover:bg-white/10 transition-colors {amount == quickAmount ? 'bg-yellow-500/20 border-yellow-500' : ''}"
+                  class="px-6 py-4 bg-[#0f0e13] border border-white/20 rounded-lg text-2xl text-white hover:bg-white/10 transition-colors {amount == quickAmount ? 'bg-yellow-500/20 border-yellow-500' : ''}"
                 >
                   ${quickAmount}
                 </button>
               {/each}
             </div>
 
+            <!-- Custom amount input field -->
             <div class="relative">
-              <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">$</span>
+              <span class="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 text-2xl">$</span>
               <input
                 id="amount"
                 type="number"
                 bind:value={amount}
                 min="0"
                 step="0.01"
-                class="w-full pl-8 pr-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.amount ? 'border-yellow-500' : ''}"
+                class="w-full pl-12 pr-6 py-5 bg-[#0f0e13] border border-white/20 rounded-lg text-2xl text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.amount ? 'border-yellow-500' : ''}"
                 placeholder="Custom amount"
               />
             </div>
-            
+
             {#if formErrors.amount && showError}
-              <p class="text-yellow-400 text-sm">{formErrors.amount}</p>
+              <p class="text-yellow-400 text-lg mt-2">{formErrors.amount}</p>
             {/if}
           </div>
 
+          <!-- Donate Now button -->
           <button
             type="submit"
-            class="w-full px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group"
+            class="w-full px-10 py-5 bg-yellow-500 text-black text-2xl font-bold rounded-lg hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group shadow-lg hover:cursor-pointer"
           >
             Donate Now
-            <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+            <span class="inline-block transition-transform group-hover:translate-x-1 ml-4 text-3xl">→</span>
           </button>
 
+          <!-- General error message -->
           {#if showError && Object.values(formErrors).some(Boolean)}
-            <p class="text-center text-yellow-400 text-sm">
-              Please fill in all required fields correctly
+            <p class="text-center text-yellow-400 text-lg">
+              Please fill in all required fields correctly.
             </p>
           {/if}
         </form>
-
-
       </div>
     </div>
   </div>
