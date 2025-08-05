@@ -133,17 +133,14 @@
       </div>
     </div>
     
-  </div>
-  <div class="absolute bottom-[1%] left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce opacity-70">
-    <span class="text-xs sm:text-normal md:text-lg">Learn more about us</span>
-    <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-    </svg>
+    <div class="absolute bottom-[1%] left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce opacity-70">
+      <span class="text-xs sm:text-normal md:text-lg">Learn more about us</span>
+      <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
   </div>
   
-  <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
-  <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
-  <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
 </div>
     </section>
 
