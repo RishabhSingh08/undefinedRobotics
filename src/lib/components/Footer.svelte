@@ -4,6 +4,8 @@
   import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
   import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 
+
+
 </script>
 
 <footer class=" backdrop-blur-sm border-t border-white/10 text-white dm-sans">
@@ -16,8 +18,7 @@
             <span class="text-2xl font-bold">Undefined Robotics</span>
           </div>
           <p class="text-gray-400 max-w-md mb-6">
-            A high school level private robotics team based in Plano, Texas, promoting a culture of learning and STEM in our community.
-          </p>
+One of the largest student-led robotics and STEM-related 501(c)3 non-profit organizations in Texas. Based in the Dallas-Fort Worth area but serve around the world.          </p>
 
           <div class="flex space-x-6  mt-8">
             <a
@@ -39,9 +40,19 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faYoutube} class="w-8 h-6" />
+              <FontAwesomeIcon icon={faYoutube} class="w-8" />
             </a>
-          
+<a
+  href="https://ftcscout.org/teams/25782"
+  aria-label="FTC Scout"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="text-gray-400 hover:text-yellow-400 transition-colors"
+>
+<i class="fa-solid fa-binoculars"></i></a>
+
+
+
             <p class="text-gray-400 hover:text-yellow-400 transition-colors">
               <FontAwesomeIcon icon={faDiscord} class="w-6 h-6" />
               <span>
