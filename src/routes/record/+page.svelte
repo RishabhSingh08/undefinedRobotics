@@ -1,6 +1,4 @@
 <script>
-    import achievements from '../../lib/images/bigImages/1.png';
-    import future from '../../lib/images/bigImages/1.png';
   
 </script>
 
