@@ -1,4 +1,6 @@
 <script>
+    import achievements from '../../lib/images/bigImages/1.png';
+    import future from '../../lib/images/bigImages/1.png';
   
 </script>
 
@@ -12,7 +14,7 @@
         Our Record
       </h1>
       <p class="text-lg md:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-        A journey of excellence, innovation, and continuous growth in robotics competition and community impact
+        A journey of excellence, innovation, and continuous growth in the renowned FIRST® Tech Challenge robotics competition.
       </p>
     </div>
 

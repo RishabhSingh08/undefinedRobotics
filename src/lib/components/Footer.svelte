@@ -18,8 +18,8 @@
             <span class="text-2xl font-bold">Undefined Robotics</span>
           </div>
           <p class="text-gray-400 max-w-md mb-6">
-One of the largest student-led robotics and STEM-related 501(c)3 non-profit organizations in Texas. Based in the Dallas-Fort Worth area but serve around the world.          </p>
-
+            A student-led STEM and robotics 501(c)3 NPO based in Plano, Texas that works to serve the underserved in our community and worldwide.
+          </p>
           <div class="flex space-x-6  mt-8">
             <a
               href="https://www.linktree.com/undefinedrobotics"

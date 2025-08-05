@@ -115,7 +115,7 @@
           UNDEFINED ROBOTICS
         </h1>
         <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-2xl mx-auto px-4">
-          A high school level private robotics team based in Plano, Texas, promoting a culture of learning and STEM in our community.
+          One of the largest student-led STEM and robotics 501(c)3 non-profit organizations in Texas. Based in Dallas-Fort Worth but serve around the world.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4"> 
           <a href="/impact">
@@ -272,11 +272,11 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="flex items-start space-x-4">
             <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
-              JUL 25
+              AUG 5
             </div>
             <div>
-              <h4 class="text-lg font-semibold text-white">Summer Workshop Series</h4>
-              <p class="text-gray-400 text-sm">Introduction to robotics for beginners</p>
+              <h4 class="text-lg font-semibold text-white">Website Revamp Launch</h4>
+              <p class="text-gray-400 text-sm">Version 2 launch of new NPO website</p>
             </div>
           </div>
           
@@ -285,48 +285,48 @@
               AUG 12
             </div>
             <div>
-              <h4 class="text-lg font-semibold text-white">Community Outreach Day</h4>
-              <p class="text-gray-400 text-sm">STEM demonstrations at local libraries</p>
+              <h4 class="text-lg font-semibold text-white">High School Begins</h4>
+              <p class="text-gray-400 text-sm">Summer projects and iniatives wrap up</p>
             </div>
           </div>
           
           <div class="flex items-start space-x-4">
             <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
-              AUG 30
+              SEP 6
             </div>
             <div>
-              <h4 class="text-lg font-semibold text-white">Season Kickoff</h4>
-              <p class="text-gray-400 text-sm">New challenge reveal and team planning</p>
+              <h4 class="text-lg font-semibold text-white">Est. Season Kickoff</h4>
+              <p class="text-gray-400 text-sm">New FTC challenge reveal and team planning</p>
             </div>
           </div>
           
           <div class="flex items-start space-x-4">
             <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
-              SEP 15
+              NOV #
             </div>
             <div>
-              <h4 class="text-lg font-semibold text-white">Fundraising Gala</h4>
-              <p class="text-gray-400 text-sm">Annual fundraising event for equipment</p>
+              <h4 class="text-lg font-semibold text-white">1st League meet</h4>
+              <p class="text-gray-400 text-sm">First robot competition of the season</p>
             </div>
           </div>
           
           <div class="flex items-start space-x-4">
             <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
-              OCT 10
+              DEC 13
             </div>
             <div>
-              <h4 class="text-lg font-semibold text-white">Scrimmage Tournament</h4>
-              <p class="text-gray-400 text-sm">Practice matches with regional teams</p>
+              <h4 class="text-lg font-semibold text-white">NLSS STEM Event</h4>
+              <p class="text-gray-400 text-sm">Major outreach event educating in STEM thru kits</p>
             </div>
           </div>
           
           <div class="flex items-start space-x-4">
             <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
-              NOV 22
+              JAN #
             </div>
             <div>
               <h4 class="text-lg font-semibold text-white">League Tournament</h4>
-              <p class="text-gray-400 text-sm">First official competition of the season</p>
+              <p class="text-gray-400 text-sm">First official tournament of the season</p>
             </div>
           </div>
         </div>

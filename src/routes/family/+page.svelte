@@ -346,10 +346,7 @@
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
             <h3 class="text-xl font-bold mb-4 text-yellow-400">Our Story</h3>
             <p class="text-gray-300 leading-relaxed">
-              Undefined was born from a shared passion for innovation and problem-solving. 
-              Our team combines diverse talents in engineering, programming, and design to create 
-              cutting-edge robotic solutions. We believe in pushing boundaries and exploring the 
-              undefined possibilities of robotics technology.
+              Our journey began as Team 19897 from the Jasper HS Robotics Club, where we discovered not just a passion for robotics and competition, but also a deep bond with one another. When that season came to an abrupt end, we thought it was the last time we’d compete together, as we were all moving on to different senior high schools. But our team captain, Akshat, wasn’t ready to let go of the team we had built. Determined to keep us together, he founded this organization and team 25782 under it, creating a new home where we could continue growing, learning, and competing as a family. That’s how our team was reborn—not just as a robotics team, but as a mission-driven community.
             </p>
           </div>
         </div>
