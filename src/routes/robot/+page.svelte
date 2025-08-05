@@ -114,5 +114,18 @@
   </div>
 </section>
 
+<!-- Redirect Button -->
+<div class="relative z-10 px-4 pb-16">
+  <div class="max-w-7xl mx-auto text-center">
+    <a
+      href="https://www.missingamps.team"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition duration-300"
+    >
+      View Missing Amps Robot
+    </a>
+  </div>
+</div>
 
 </main>

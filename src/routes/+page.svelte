@@ -138,7 +138,7 @@
   </div>
 
   <div class="absolute bottom-[1%] left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce opacity-70">
-    <span class="text-xs sm:text-sm md:text-base">Learn more about us</span>
+    <span class="text-xs sm:text-normal md:text-lg">Learn more about us</span>
     <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
     </svg>
@@ -200,11 +200,9 @@
     </div>
   </section>
 
-
-
-
-
-  <section id="events" class="px-4 py-32 relative z-10">
+<hr
+  class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+  <section id="events" class="px-4 pt-16 pb-32 relative z-10">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20">
         <p class="text-4xl md:text-6xl font-semibold text-center text-gray-100 tracking-tight mb-8">
@@ -340,11 +338,12 @@
           </div>
         </div>
       </div>
+      </div>
 
       
   </section>
  
-<section class="w-full  overflow-hidden relative z-10 bg-white/10">
+<section class="w-full  overflow-hidden relative z-10 bg-white/10 mb-6">
   <div class="carousel-container py-6">
     <div class="carousel-track">
       {#each [...sponsors, ...sponsors] as sponsor, i}
