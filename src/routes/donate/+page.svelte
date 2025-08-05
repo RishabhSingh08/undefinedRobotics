@@ -45,75 +45,119 @@
 </script>
 
 <style>
-  :global(body) {
-    background: #333030;
-    min-height: 100vh;
-    margin: 0;
+  .dm-sans {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 </style>
 
-<main class="rounded-3xl pt-32 pb-16 min-h-screen flex items-center justify-center" style="background: #000;">
-  <div class="max-w-lg mx-auto bg-white rounded-xl shadow-lg p-6 space-y-8">
-    <div class="text-center space-y-4">
-      {#if IconLogo}
-        <img src={IconLogo} alt="Organization Logo" class="h-24 mx-auto" />
-      {/if}
-      <h2 class="text-3xl font-bold text-gray-900">Make a Donation</h2>
-      <p class="text-gray-600">
-        Your generous contributions help us make a global impact. Join us in building a brighter future.
-      </p>
+<main class="text-white overflow-hidden relative dm-sans min-h-screen">
+  <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
+
+  <div class="relative z-10 pt-32 pb-16 min-h-screen flex items-center justify-center px-4">
+    <div class="max-w-lg mx-auto w-full">
+      <div class="bg-[#10141c] border border-white/20 rounded-xl p-8 space-y-8">
+        
+        <div class="text-center space-y-4">
+          {#if IconLogo}
+            <img src={IconLogo} alt="Organization Logo" class="h-24 mx-auto" />
+          {/if}
+          
+          <h1 class="text-3xl md:text-4xl font-bold tracking-wide">
+            Make a Donation
+          </h1>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            Support our mission to inspire the next generation through robotics and STEM education.
+          </p>
+        </div>
+
+        <form on:submit={handleSubmit} class="space-y-6">
+          <div class="space-y-2">
+            <label for="name" class="block text-sm font-medium text-gray-300">
+              Name
+            </label>
+            <input
+              id="name"
+              type="text"
+              bind:value={name}
+              class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.name ? 'border-yellow-500' : ''}"
+              placeholder="Your name"
+            />
+            {#if formErrors.name && showError}
+              <p class="text-yellow-400 text-sm">{formErrors.name}</p>
+            {/if}
+          </div>
+
+          <div class="space-y-2">
+            <label for="email" class="block text-sm font-medium text-gray-300">
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              bind:value={email}
+              class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.email ? 'border-yellow-500' : ''}"
+              placeholder="your@email.com"
+            />
+            {#if formErrors.email && showError}
+              <p class="text-yellow-400 text-sm">{formErrors.email}</p>
+            {/if}
+          </div>
+
+          <div class="space-y-3">
+            <label for="amount" class="block text-sm font-medium text-gray-300">
+              Amount (USD)
+            </label>
+            
+            <div class="grid grid-cols-4 gap-2">
+              {#each [25, 50, 100, 250] as quickAmount}
+                <button
+                  type="button"
+                  on:click={() => amount = quickAmount}
+                  class="px-3 py-2 bg-white/5 border border-white/20 rounded-lg text-white hover:bg-white/10 transition-colors {amount == quickAmount ? 'bg-yellow-500/20 border-yellow-500' : ''}"
+                >
+                  ${quickAmount}
+                </button>
+              {/each}
+            </div>
+
+            <div class="relative">
+              <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">$</span>
+              <input
+                id="amount"
+                type="number"
+                bind:value={amount}
+                min="0"
+                step="0.01"
+                class="w-full pl-8 pr-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-colors {formErrors.amount ? 'border-yellow-500' : ''}"
+                placeholder="Custom amount"
+              />
+            </div>
+            
+            {#if formErrors.amount && showError}
+              <p class="text-yellow-400 text-sm">{formErrors.amount}</p>
+            {/if}
+          </div>
+
+          <button
+            type="submit"
+            class="w-full px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group"
+          >
+            Donate Now
+            <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+          </button>
+
+          {#if showError && Object.values(formErrors).some(Boolean)}
+            <p class="text-center text-yellow-400 text-sm">
+              Please fill in all required fields correctly
+            </p>
+          {/if}
+        </form>
+
+
+      </div>
     </div>
-    <form on:submit={handleSubmit} class="space-y-6">
-      <div class="space-y-1">
-        <label for="name" class="block text-sm font-medium text-gray-700">Name*</label>
-        <input
-          id="name"
-          type="text"
-          bind:value={name}
-          class="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none {formErrors.name ? 'border-yellow-500' : 'border-gray-300'}"
-          placeholder="Your Name"
-        />
-        {#if formErrors.name && showError}
-          <p class="text-yellow-600 text-sm">{formErrors.name}</p>
-        {/if}
-      </div>
-      <div class="space-y-1">
-        <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
-        <input
-          id="email"
-          type="email"
-          bind:value={email}
-          class="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none {formErrors.email ? 'border-yellow-500' : 'border-gray-300'}"
-          placeholder="Your Email"
-        />
-        {#if formErrors.email && showError}
-          <p class="text-yellow-600 text-sm">{formErrors.email}</p>
-        {/if}
-      </div>
-      <div class="space-y-1">
-        <label for="amount" class="block text-sm font-medium text-gray-700">Amount (USD)*</label>
-        <input
-          id="amount"
-          type="number"
-          bind:value={amount}
-          min="0"
-          step="0.01"
-          class="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none {formErrors.amount ? 'border-yellow-500' : 'border-gray-300'}"
-          placeholder="Enter Amount"
-        />
-        {#if formErrors.amount && showError}
-          <p class="text-yellow-600 text-sm">{formErrors.amount}</p>
-        {/if}
-      </div>
-      <button
-        type="submit"
-        class="w-full px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
-      >
-        Donate Now
-      </button>
-      {#if showError && Object.values(formErrors).some(Boolean)}
-        <p class="text-center text-yellow-600 font-medium">Please fill in all required fields correctly</p>
-      {/if}
-    </form>
   </div>
 </main>
