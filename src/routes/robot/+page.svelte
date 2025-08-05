@@ -50,10 +50,10 @@
   <section class="relative z-10 px-4 ">
     <div class="max-w-7xl mx-auto text-center">
       <h1 class="text-4xl md:text-6xl font-semibold mb-8">
-        Infinemo
+        InfiNemo
       </h1>
       <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-        Meet our competition robot designed for the FTC "INTO THE DEEP" season
+        Meet our robot designed for the FTC "INTO THE DEEP" 24-25 season
       </p>
     </div>
       <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
@@ -73,8 +73,8 @@
       <div class="space-y-6">
         <div class=" p-6 ">
           <div class="">
-            <div class="inline-block bg-yellow-400 text-gray-900 py-3 px-6 rounded-lg font-bold text-2xl mb-4">
-              2024 - 2025 Season
+            <div class="inline-block text-gray-900 py-3 px-6 rounded-lg font-bold text-2xl mb-4" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
+              #25782 Undefined
             </div>
           </div>
 

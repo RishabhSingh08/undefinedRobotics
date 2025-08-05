@@ -105,7 +105,7 @@
                         class:md:pl-12={i % 2 !== 0}
                     >
                         <div class="w-full md:w-[45rem] bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                            <div class="inline-block {season.badgeBgColor} {season.badgeTextColor} px-4 py-2 rounded-full font-bold text-lg mb-6">
+                            <div class="inline-block {season.badgeTextColor} px-4 py-2 rounded-full font-bold text-lg mb-6" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
                                 🏆 {season.year}
                             </div>
                             
@@ -138,7 +138,7 @@
             The Next Step
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-            Building on our success, we're expanding our mission to create lasting impact in robotics education and community development
+            Building on our success, we're expanding our mission to create lasting impact in robotics/STEM education and community development.
           </p>
         </div>
   
@@ -146,7 +146,7 @@
   
         <div class="mb-12">
           <div class="text-center mb-8">
-            <div class="inline-block bg-green-400 text-gray-900 px-6 py-3 rounded-full font-bold text-xl mb-4">
+            <div class="inline-block text-gray-900 px-6 py-3 rounded-full font-bold text-xl mb-4" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               2024-25
             </div>
           </div>
