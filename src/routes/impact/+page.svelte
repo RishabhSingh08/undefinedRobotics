@@ -304,8 +304,7 @@
 </p>
                   </div>
                   <div>
-                    <div class="text-sm text-[#853dc4] font-semibold">Impact:</div>
-                    <div class="text-sm text-[#853dc4] font-semibold">Reached diverse TEDx audience with robotics awareness</div>
+                    <div class="text-sm text-purple-500 font-semibold">Reached diverse TEDx audience with robotics awareness</div>
                   </div>
                 </div>
               </div>
