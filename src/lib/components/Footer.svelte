@@ -65,7 +65,7 @@
           <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
           <div class="space-y-2 text-gray-400">
             <p>📍 Plano, Texas</p>
-            <p>📧 team@undefinedrobotics.org</p>
+            <p>📧 contact@undefinedrobotics.org</p>
             <p>📧 missingamps.ftc@gmail.com</p>
             <p>📱 (469) 819-7461</p>
           </div>

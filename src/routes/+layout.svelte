@@ -14,10 +14,17 @@ injectAnalytics();
 		font-weight: 400;
 		font-style: normal;
 	}
+	/* Offset for fixed navbar height (64px). Adjust if Navbar height changes. */
+	.app-content {
+		/* Match Navbar total height including borders/padding */
+		padding-top: 88px;
+	}
 </style>
 
 <main class="bg-gradient-to-b from-black to-gray-900 text-white dm-sans ">
 	<Navbar />
+	<div class="app-content">
 		{@render children()}
+	</div>
 	<Footer />
 </main>

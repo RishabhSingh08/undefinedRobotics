@@ -225,7 +225,6 @@
             </div>
             <div class="flex items-center text-sm text-gray-400 mt-auto">
               <span class="mr-4">Status: Finished</span>
-              <span>Due: September 2024</span>
             </div>
           </div>
         </a>
