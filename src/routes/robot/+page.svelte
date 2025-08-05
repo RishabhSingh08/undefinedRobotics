@@ -56,6 +56,10 @@
         Meet our competition robot designed for the FIRST Tech Challenge "INTO THE DEEP" season
       </p>
     </div>
+      <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
+  <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
+  <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
+
   </section>
 
 <section class="relative z-10 px-4 pt-16 ">
@@ -68,7 +72,12 @@
       </div>
       <div class="space-y-6">
         <div class=" p-6 ">
-          <h3 class="text-3xl font-bold  mb-4">2024 - 2025 Season</h3>
+          <div class="">
+            <div class="inline-block bg-yellow-400 text-gray-900 py-3 px-6 rounded-lg font-bold text-2xl mb-4">
+              2024 - 2025 Season
+            </div>
+          </div>
+
           <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempore libero explicabo nostrum in, voluptatem error provident voluptate ut voluptatum! Eveniet reiciendis minus veritatis voluptates unde placeat voluptate hic doloremque maiores eaque temporibus, veniam est pariatur, corrupti iure aperiam eos cum quam. Delectus, optio asperiores.</p>
         </div>
       </div>
@@ -78,12 +87,11 @@
 
 <div class="flex flex-col items-center">
     <div class="w-4 h-4 bg-white rounded-full border-2 border-gray-300"></div>
-    <div class="w-0.5 h-56 bg-gray-300"></div>
+    <div class="w-0.5 h-32 bg-gray-300"></div>
 </div>
 
 <section class="relative z-10 px-4 pb-16">
   <div class="max-w-7xl mx-auto relative">
-    <!-- Horizontal line behind cards (z-axis under) -->
     <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 transform -translate-y-1/2 z-0"></div>
     
     <div class="grid md:grid-cols-3 gap-8 relative z-10">
@@ -112,18 +120,21 @@
       </div>
     </div>
   </div>
+  
 </section>
 
 <!-- Redirect Button -->
-<div class="relative z-10 px-4 pb-16">
+<div class="relative z-10 px-4">
   <div class="max-w-7xl mx-auto text-center">
     <a
       href="https://www.missingamps.team"
       target="_blank"
       rel="noopener noreferrer"
-      class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition duration-300"
+      class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition duration-300"
     >
       View Missing Amps Robot
+      <span>
+<i class="fa-solid fa-up-right-from-square"></i>      </span>
     </a>
   </div>
 </div>
