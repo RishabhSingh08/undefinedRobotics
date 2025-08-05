@@ -67,9 +67,7 @@
             <h1 class="text-4xl md:text-6xl font-semibold mb-8">
                   Make a Donation
             </h1>
-            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-                  Support our mission to inspire the next generation through robotics and STEM education.
-            </p>
+
           </div>
             <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
         <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>

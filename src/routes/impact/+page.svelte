@@ -86,8 +86,32 @@
   </div>
 </div>
 
+  <hr
+  class="h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+        <div class="mt-12 mb-20 text-center">
+          <div class="inline-flex items-center justify-center gap-4">
+            <h2 class="text-5xl md:text-7xl font-semibold tracking-wide text-white">
+              Top Events
+            </h2>
+          </div>
+          <div class="flex justify-center mt-8">
+            <div class="flex justify-center gap-8 max-w-3xl">
   
-      <div class="space-y-16">
+              <div class="flex items-center">
+                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
+                <h4 class="text-xl font-semibold text-white">Undefined #25782</h4>
+              </div>
+  
+              <div class="flex items-center">
+                <div class="w-3 h-3 bg-[#853dc4] rounded-full mr-3"></div>
+                <h4 class="text-xl font-semibold text-white">Missing Amps #30801</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+            <div class="space-y-16">
         
         <div class="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10">
           <div class="relative bg-cover bg-center h-32" style="background-image: url({images.mentorshipBanner});">
