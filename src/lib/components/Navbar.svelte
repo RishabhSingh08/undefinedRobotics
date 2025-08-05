@@ -60,7 +60,7 @@
 
   <!-- Mobile Menu -->
   {#if mobileMenuOpen}
-    <div class="md:hidden mt-4 bg-black/95 backdrop-blur-sm rounded-lg border border-white/10">
+    <div class="md:hidden mt-4 backdrop-blur-sm rounded-lg border border-white/10">
       <div class="px-6 py-4 space-y-4">
         <a href="/family" class="block text-white hover:text-yellow-400 transition-colors duration-200 py-2" on:click={() => mobileMenuOpen = false}>Our Family</a>
         <a href="/robot" class="block text-white hover:text-yellow-400 transition-colors duration-200 py-2" on:click={() => mobileMenuOpen = false}>Robots</a>

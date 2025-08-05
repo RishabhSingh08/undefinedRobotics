@@ -237,11 +237,15 @@
 <style>
 
   
-  .tab-active {
-    border-bottom: 3px solid #f59e0b;
-    color: #f59e0b;
-  }
-  
+.tab-active-undefined {
+  border-bottom: 3px solid #eab308; /* yellow-500 */
+  color: #eab308;
+}
+
+.tab-active-missing {
+  border-bottom: 3px solid #a855f7; /* purple-500 */
+  color: #a855f7;
+}
   .team-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -303,26 +307,26 @@
     <div class="max-w-7xl mx-auto">
       <div class="border-b border-gray-700 mb-8">
         <nav class="flex space-x-8 justify-center">
-          <button 
+      <button 
+        class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
+        class:tab-active-undefined={activeTab === 'undefined'}
+        class:text-gray-400={activeTab !== 'undefined'}
+        class:hover:text-white={activeTab !== 'undefined'}
+        on:click={() => activeTab = 'undefined'}
+      >
+        Undefined
+      </button>
 
-            class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
-            class:tab-active={activeTab === 'undefined'}
-            class:text-gray-400={activeTab !== 'undefined'}
-            class:hover:text-white={activeTab !== 'undefined'}
-            on:click={() => activeTab = 'undefined'}
-          >
-            Undefined
-          </button>
+      <button 
+        class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
+        class:tab-active-missing={activeTab === 'missing'}
+        class:text-gray-400={activeTab !== 'missing'}
+        class:hover:text-white={activeTab !== 'missing'}
+        on:click={() => activeTab = 'missing'}
+      >
+        Missing Amps
+      </button>
 
-          <button 
-            class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
-            class:tab-active={activeTab === 'missing'}
-            class:text-gray-400={activeTab !== 'missing'}
-            class:hover:text-white={activeTab !== 'missing'}
-            on:click={() => activeTab = 'missing'}
-          >
-            Missing Amps
-          </button>
         </nav>
       </div>
 
