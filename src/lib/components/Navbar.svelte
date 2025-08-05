@@ -8,7 +8,8 @@
       { name: 'Our Family', href: '/family' },
       { name: 'Contact', href: '/contact' },
       { name: 'Impact', href: '/impact' },
-      { name: 'Record', href: '/record' }
+      { name: 'Record', href: '/record' },
+      { name: 'Donate', href: '/donate' }
     ];
   </script>
   
