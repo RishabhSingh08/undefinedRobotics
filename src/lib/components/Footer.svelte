@@ -75,9 +75,7 @@
           © 2025 Undefined Robotics. All rights reserved.
         </p>
         <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Terms of Service</a>
-          <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Code of Conduct</a>
+          <a href="/privacy-policy" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Privacy Policy</a>        
         </div>
       </div>
     </div>

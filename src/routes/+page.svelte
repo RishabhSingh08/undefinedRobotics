@@ -12,11 +12,11 @@
   import s7 from "../lib/images/sponsors/s7.png";
 
   const sponsors = [
-    { src: s, href: 'https://www.cafell.com/' },
-    { src: s1, href: 'https://bank.hackclub.com/' },
+    { src: s, href: 'https://www.cafelltech.com/' },
+    { src: s1, href: 'https://hackclub.com/' },
     { src: s2, href: 'https://polymaker.com/' },
     { src: s3, href: 'https://www.twc.texas.gov/' },
-    { src: s4, href: 'https://www.dekaresearch.com/about/deka-foundation/' },
+    { src: s4, href: 'https://dekaresearch.com/' },
     { src: s5, href: 'https://www.bosch.com/' },
     { src: s6, href: 'https://www.jabil.com/' },
     { src: s7, href: 'https://www.solaceglobal.world/' }
@@ -94,61 +94,60 @@
   }
 </style>
 
-<main class="text-white min-h-screen overflow-hidden  relative dm-sans">
+<main class="text-white overflow-hidden  relative dm-sans">
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
     <section class="relative z-10">
-      <div class="h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-          <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-5 transform -translate-y-1/2"></div>
-          <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-700 rounded-full blur-3xl opacity-5 transform translate-y-1/2"></div>
+<div class="h-screen flex items-center justify-center overflow-hidden relative">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-5 transform -translate-y-1/2"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-yellow-200 to-yellow-700 rounded-full blur-3xl opacity-5 transform translate-y-1/2"></div>
+  </div>
+
+  <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center h-full justify-center">
+    <div class="space-y-6 sm:space-y-8 md:space-y-12 text-center">
+      <div class="lg:col-span-3 flex justify-center">
+        <div class="relative">
+          <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-20 z-0"></div>
+          <img src={IconLogo} alt="Undefined Robotics Logo" class="w-48 sm:w-48 md:w-64 lg:w-80 xl:w-96 relative z-10"/>
         </div>
-
-        <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center h-full justify-center">
-          <div class="space-y-6 sm:space-y-8 md:space-y-12 text-center">
-            <div class="lg:col-span-3 flex justify-center">
-              <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-20 z-0"></div>
-                <img src={IconLogo} alt="Undefined Robotics Logo" class="w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 relative z-10"/>
-              </div>
-            </div>
-
-            <div class="space-y-4 sm:space-y-6 md:space-y-8">
-              <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl tracking-wider">
-                UNDEFINED ROBOTICS
-              </h1>
-              <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-2xl mx-auto px-4">
-                A high school level private robotics team based in Plano, Texas, promoting a culture of learning and STEM in our community.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4"> 
-                <a href="/impact">
-                  <button class="bg-white text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-gray-200 transition-colors group">
-                    Our Impact
-                    <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
-                  </button>
-                </a>
-                <a href="/record">
-                  <button class="border border-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-white hover:text-black transition-colors">
-                    View Our Achievements
-                  </button>
-                </a>
-
-              </div>
-            </div>
-
-            <div class="flex flex-col items-center animate-bounce">
-              <span class="text-xs sm:text-sm md:text-base text-gray-400 mb-2">Learn more about us</span>
-              <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
-        <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
-        <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
       </div>
+
+      <div class="space-y-4 sm:space-y-6 md:space-y-8">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl tracking-wider">
+          UNDEFINED ROBOTICS
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-2xl mx-auto px-4">
+          A high school level private robotics team based in Plano, Texas, promoting a culture of learning and STEM in our community.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4"> 
+          <a href="/impact">
+            <button class="bg-white text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-gray-200 transition-colors group hover:cursor-pointer">
+              Our Impact
+              <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+            </button>
+          </a>
+          <a href="/record">
+            <button class="border border-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-white hover:text-black transition-colors hover:cursor-pointer">
+              View Our Achievements
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-[5%] left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce opacity-70">
+    <span class="text-xs sm:text-sm md:text-base mb-2">Learn more about us</span>
+    <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+  
+  <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
+  <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
+  <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
+</div>
     </section>
 
 
@@ -158,8 +157,8 @@
           <img src={TeamPhoto} alt="Undefined Robotics Team" class="w-full h-full object-cover rounded-none" />
           <div class="absolute bottom-8 right-8">
             <a href="/family">
-              <button class="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition-colors duration-300 backdrop-blur-sm bg-white/20">
-                View Our Team
+              <button class="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition-colors duration-300 backdrop-blur-sm bg-white/20 hover:cursor-pointer">
+                View Our Family
               </button>
             </a>
           </div>
