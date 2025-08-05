@@ -130,7 +130,7 @@
             </button>
           </a>
         </div>
-
+        
         <!-- Learn more indicator moved into normal flow under buttons -->
         <div class="mt-6 sm:mt-8 md:mt-10 flex flex-col items-center animate-bounce opacity-70 pointer-events-none">
           <span class="text-xs sm:text-sm md:text-base">Learn more about us</span>

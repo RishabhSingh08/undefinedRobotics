@@ -73,15 +73,7 @@
                 }
             ]
         }
-        // To add another season, just copy the object structure above and paste it here.
-        // For example:
-        // {
-        //   year: '2022-23 Season',
-        //   nodeColor: 'bg-red-400',
-        //   badgeBgColor: 'bg-red-400',
-        //   badgeTextColor: 'text-gray-900',
-        //   awards: [ /* ... your awards here ... */ ]
-        // }
+
     ];
 </script>
 
