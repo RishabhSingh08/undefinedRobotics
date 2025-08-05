@@ -1,46 +1,119 @@
-// import IconLogo from "../../lib/images/logo.png";
+<!-- OG DONATION PAGE -->
+
+<script>
+  import { writable, derived } from 'svelte/store';
+    import IconLogo from "../../lib/images/logo.png";
 
 
+  // Props
+  
+  // Form state
+  let name = "";
+  let email = "";
+  let amount = "";
+  let showError = false;
+  let formErrors = {};
 
+  function validateForm() {
+    formErrors = {
+      name: !name.trim() && "Name is required",
+      email: !email.trim() && "Email is required",
+      amount: (!amount || parseFloat(amount) <= 0) && "Valid amount is required"
+    };
+    return !Object.values(formErrors).some(Boolean);
+  }
 
-<main class="relative min-h-screen flex items-center justify-center bg-black py-20 px-2 overflow-x-hidden">
-  <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
-  <div class="relative z-10 w-full max-w-6xl mx-auto">
-    <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center">
-      <!-- Left: Info Block (mirrored) -->
-      <div class="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-12 flex flex-col items-center border border-white/20 w-full md:w-1/2 order-2 md:order-1">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-yellow-400 mb-4 drop-shadow-lg tracking-tight text-center">Why Donate?</h1>
-        <ul class="text-lg md:text-xl text-gray-100 mb-6 space-y-3 max-w-md mx-auto list-disc list-inside">
-          <li><span class="text-yellow-300 font-bold">Expand STEM access</span> for underrepresented youth</li>
-          <li>Fund <span class="text-yellow-300 font-bold">robotics kits & outreach</span> in our community</li>
-          <li>Support <span class="text-yellow-300 font-bold">competition travel</span> and team growth</li>
-          <li>All donations are <span class="text-yellow-300 font-bold">tax-deductible</span> via Hack Club</li>
-        </ul>
-        <p class="text-base md:text-lg text-gray-300 text-center">Thank you for supporting <span class="text-yellow-300 font-bold">Undefined Robotics</span>!</p>
-      </div>
-      <!-- Right: Donation Iframe Block -->
-      <div class="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 md:p-12 flex flex-col items-center border border-white/20 w-full md:w-1/2 order-1 md:order-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-yellow-300 mb-4 text-center">Donate Now</h2>
-        <div class="w-full max-w-xl min-h-[600px] flex items-center justify-center bg-[#18181b] border border-[#23234b] rounded-2xl shadow-lg overflow-hidden">
-          <iframe 
-            src="https://hcb.hackclub.com/donations/start/undefined-robotics" 
-            style="background: transparent;" 
-            name="donateFrame" 
-            scrolling="yes" 
-            frameborder="0" 
-            marginheight="0px" 
-            marginwidth="0px" 
-            height="600px" 
-            width="100%" 
-            allowfullscreen 
-            title="Donate to Undefined Robotics via Hack Club"
-            class="w-full min-h-[600px]"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+  function generateDonationLink() {
+    if (!validateForm()) {
+      showError = true;
+      return null;
+    }
+    const params = new URLSearchParams({
+      name: name,
+      email: email,
+      message: `Total Donation: $${amount}`,
+      amount: (parseFloat(amount) * 100).toFixed(0)
+    });
+    return `https://hcb.hackclub.com/donations/start/undefined-robotics?${params.toString()}`;
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const link = generateDonationLink();
+    if (link) window.location.href = link;
+  }
+</script>
 
 <style>
+  :global(body) {
+    background: #333030;
+    min-height: 100vh;
+    margin: 0;
+  }
 </style>
+
+<main class="rounded-3xl pt-32 pb-16 min-h-screen flex items-center justify-center" style="background: #000;">
+  <div class="max-w-lg mx-auto bg-white rounded-xl shadow-lg p-6 space-y-8">
+    <div class="text-center space-y-4">
+      {#if IconLogo}
+        <img src={IconLogo} alt="Organization Logo" class="h-24 mx-auto" />
+      {/if}
+      <h2 class="text-3xl font-bold text-gray-900">Make a Donation</h2>
+      <p class="text-gray-600">
+        Your generous contributions help us make a global impact. Join us in building a brighter future.
+      </p>
+    </div>
+    <form on:submit={handleSubmit} class="space-y-6">
+      <div class="space-y-1">
+        <label for="name" class="block text-sm font-medium text-gray-700">Name*</label>
+        <input
+          id="name"
+          type="text"
+          bind:value={name}
+          class="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none {formErrors.name ? 'border-yellow-500' : 'border-gray-300'}"
+          placeholder="Your Name"
+        />
+        {#if formErrors.name && showError}
+          <p class="text-yellow-600 text-sm">{formErrors.name}</p>
+        {/if}
+      </div>
+      <div class="space-y-1">
+        <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
+        <input
+          id="email"
+          type="email"
+          bind:value={email}
+          class="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none {formErrors.email ? 'border-yellow-500' : 'border-gray-300'}"
+          placeholder="Your Email"
+        />
+        {#if formErrors.email && showError}
+          <p class="text-yellow-600 text-sm">{formErrors.email}</p>
+        {/if}
+      </div>
+      <div class="space-y-1">
+        <label for="amount" class="block text-sm font-medium text-gray-700">Amount (USD)*</label>
+        <input
+          id="amount"
+          type="number"
+          bind:value={amount}
+          min="0"
+          step="0.01"
+          class="w-full px-4 py-2 rounded-lg border focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none {formErrors.amount ? 'border-yellow-500' : 'border-gray-300'}"
+          placeholder="Enter Amount"
+        />
+        {#if formErrors.amount && showError}
+          <p class="text-yellow-600 text-sm">{formErrors.amount}</p>
+        {/if}
+      </div>
+      <button
+        type="submit"
+        class="w-full px-6 py-3 text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
+      >
+        Donate Now
+      </button>
+      {#if showError && Object.values(formErrors).some(Boolean)}
+        <p class="text-center text-yellow-600 font-medium">Please fill in all required fields correctly</p>
+      {/if}
+    </form>
+  </div>
+</main>
