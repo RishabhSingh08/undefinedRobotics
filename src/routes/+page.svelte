@@ -272,7 +272,7 @@
         <h3 class="text-3xl font-bold text-white mb-8 text-center">Upcoming Events</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="flex items-start space-x-4">
-            <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
+            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               AUG 5
             </div>
             <div>
@@ -282,7 +282,7 @@
           </div>
           
           <div class="flex items-start space-x-4">
-            <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
+            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               AUG 12
             </div>
             <div>
@@ -292,7 +292,7 @@
           </div>
           
           <div class="flex items-start space-x-4">
-            <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
+            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               SEP 6
             </div>
             <div>
@@ -302,7 +302,7 @@
           </div>
           
           <div class="flex items-start space-x-4">
-            <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
+            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               NOV #
             </div>
             <div>
@@ -312,7 +312,7 @@
           </div>
           
           <div class="flex items-start space-x-4">
-            <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
+            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               DEC 13
             </div>
             <div>
@@ -322,7 +322,7 @@
           </div>
           
           <div class="flex items-start space-x-4">
-            <div class="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0">
+            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               JAN #
             </div>
             <div>

@@ -404,7 +404,7 @@
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
             <h3 class="text-xl font-bold mb-4 text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Our Story</a></h3>
             <p class="text-gray-300 leading-relaxed">
-              <a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Missing Amps</a> is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
+              <a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer"><u>Missing Amps</u></a> is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
               With experience at the UIL State Championship, we now compete in the FIRST® Tech Challenge while giving back through STEM outreach.
               Our mission is to inspire the next generation of innovators by engaging local youth, partnering with businesses, and building a strong platform for future STEM leaders.
             </p>
