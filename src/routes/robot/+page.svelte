@@ -76,10 +76,22 @@
   </div>
 </section>
 
-<div class="flex flex-col items-center">
+<!-- Timeline + Branch Lines -->
+<div class="relative flex justify-center">
+  <div class="flex flex-col items-center z-10">
     <div class="w-4 h-4 bg-white rounded-full border-2 border-gray-300"></div>
-    <div class="w-0.5 h-96 bg-gray-300"></div>
+    <div class="w-0.5 h-72 bg-gray-300"></div>
+  </div>
+  <!-- Horizontal Branches -->
+  <div class="absolute top-40 w-7xl flex justify-center">
+    <div class="w-[70%] h-0.5 bg-gray-300 relative">
+      <!-- Vertical connectors -->
+      <div class="absolute left-0 top-0 h-56 w-0.5 bg-gray-300"></div>
+      <div class="absolute right-0 top-0 h-56 w-0.5 bg-gray-300"></div>
+    </div>
+  </div>
 </div>
+
 
   <section class="relative z-10 px-4 pb-16">
     <div class="max-w-7xl mx-auto">
