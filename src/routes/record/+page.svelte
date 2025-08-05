@@ -129,6 +129,93 @@
 
         </div>
     </div>
+    <div class="border-t border-white/20 pt-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-green-300 mb-4">
+          The Next Step
+        </h2>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+          Building on our success, we're expanding our mission to create lasting impact in robotics education and community development
+        </p>
+      </div>
+
+      <div class="mb-12 text-center">
+        <img 
+          alt="Future Vision and Goals" 
+          class="mx-auto rounded-2xl shadow-2xl border border-white/20 max-w-full h-auto"
+        />
+      </div>
+
+      <div class="mb-12">
+        <div class="text-center mb-8">
+          <div class="inline-block bg-green-400 text-gray-900 px-6 py-3 rounded-full font-bold text-xl mb-4">
+            2024-25
+          </div>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-3xl mx-auto">
+          <h3 class="text-2xl font-bold text-white mb-6 text-center">Our Roadmap</h3>
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="w-3 h-3 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-lg font-semibold text-white mb-2">Continue local events</h4>
+                <p class="text-gray-300">Maintain our commitment to local community engagement and mentorship</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div class="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-lg font-semibold text-white mb-2">Expand our reach (global connections)</h4>
+                <p class="text-gray-300">Establish partnerships with international organizations and schools</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-4">
+              <div class="w-3 h-3 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-lg font-semibold text-white mb-2">Have successful FTC (Robotics) season</h4>
+                <p class="text-gray-300">Continue our competitive excellence while mentoring the next generation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center hover:bg-white/10 transition-all duration-300">
+          <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-8 h-8 bg-white rounded-full"></div>
+          </div>
+          <h3 class="text-xl font-bold text-blue-300 mb-2">Connect</h3>
+          <p class="text-gray-300 text-sm">Connecting and establishing partnerships with other local non-profit organizations</p>
+        </div>
+        
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center hover:bg-white/10 transition-all duration-300">
+          <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-8 h-8 bg-white rounded-full"></div>
+          </div>
+          <h3 class="text-xl font-bold text-green-300 mb-2">Empower</h3>
+          <p class="text-gray-300 text-sm">Connecting with and teaching adoption centers and schools of underrepresented around the globe</p>
+        </div>
+        
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center hover:bg-white/10 transition-all duration-300">
+          <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-8 h-8 bg-white rounded-full"></div>
+          </div>
+          <h3 class="text-xl font-bold text-yellow-300 mb-2">Repeat</h3>
+          <p class="text-gray-300 text-sm">Raise money and partnerships to teach senior citizens about robotics and digital literacy</p>
+        </div>
+        
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center hover:bg-white/10 transition-all duration-300">
+          <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div class="w-8 h-8 bg-white rounded-full"></div>
+          </div>
+          <h3 class="text-xl font-bold text-purple-300 mb-2">Share</h3>
+          <p class="text-gray-300 text-sm">Continue mentoring, being involved in, and inspiring the future of local to global communities</p>
+        </div>
+      </div>
+    </div>
+
+    
 </section>
 
 <style>
