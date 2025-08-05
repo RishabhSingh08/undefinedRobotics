@@ -21,13 +21,15 @@
 
           <div class="flex space-x-6  mt-8">
             <a
-              href="https://www.instagram.com/undefinedrobotics"
+              href="https://www.linktree.com/undefinedrobotics"
               aria-label="Instagram"
               class="text-gray-400 hover:text-yellow-400 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faInstagram} class="w-6 h-6" />
+              <span>
+                <i class="fa-brands fa-linktree"></i>
+              </span>
             </a>
           
             <a
