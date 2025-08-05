@@ -273,14 +273,15 @@
                   <div>
                     <div class="flex items-center mb-4">
                       <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-                      <h4 class="text-xl font-semibold text-white">Stem Sticker to Shanti Bhavan</h4>
+                      <h4 class="text-xl font-semibold text-white">Promoted FTC at TEDx Event</h4>
                     </div>
-                    <p class="text-gray-300 mb-4">Collaborated with Shanti Bhavan and Hack Club to send 300+ STEM-themed stickers to children in India’s largest orphanage to spark tech curiosity.</p>
+                    <p class="text-gray-300 mb-4">Represented and promoted the FIRST Tech Challenge program at a TEDx Youth event, inspiring attendees to explore robotics and get involved in hands-on STEM learning. Shared personal experiences to break down barriers and encourage participation.
+
+</p>
                   </div>
                   <div>
                     <div class="text-sm text-green-300 font-semibold">Impact:</div>
-                    <div class="text-sm text-green-300 font-semibold">Delivered 300+ STEM stickers</div>
-                    <div class="text-sm text-green-300 font-semibold">Encouraged tech engagement and creativity</div>
+                    <div class="text-sm text-green-300 font-semibold">Reached diverse TEDx audience with robotics awareness</div>
                   </div>
                 </div>
               </div>

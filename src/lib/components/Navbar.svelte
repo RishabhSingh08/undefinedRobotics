@@ -6,10 +6,10 @@
     
     const navItems = [
       { name: 'Our Family', href: '/family' },
-      { name: 'Contact', href: '/contact' },
+      { name: 'Robots', href: '/robot' },
       { name: 'Impact', href: '/impact' },
       { name: 'Record', href: '/record' },
-      { name: 'Robot', href: '/robot' },
+      { name: 'Contact', href: '/contact' },
       { name: 'Donate', href: '/donate' }
     ];
   </script>
@@ -72,4 +72,3 @@
       </div>
     {/if}
   </nav>
-  
