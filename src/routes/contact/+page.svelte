@@ -75,9 +75,7 @@
         Contact
       </h1>
       <p class="text-lg md:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-        Have questions, want to become a sponsor, or interested in joining the team? Get in touch!
-
- 
+        Have questions? Want to sponsor us? Interested in a position? Get it touch!
       </p>
     </div>
 
