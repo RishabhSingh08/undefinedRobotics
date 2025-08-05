@@ -101,7 +101,7 @@
 <div class="h-screen flex items-center justify-center overflow-hidden relative">
 
 
-  <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center h-full justify-center">
+  <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center h-full justify-center pb-24 sm:pb-28">
     <div class="space-y-6 sm:space-y-8 md:space-y-12 text-center">
       <div class="lg:col-span-3 flex justify-center">
         <div class="relative">
@@ -110,7 +110,7 @@
         </div>
       </div>
 
-      <div class="space-y-4 sm:space-y-6 md:space-y-8">
+    <div class="space-y-4 sm:space-y-6 md:space-y-8">
         <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl tracking-wider">
           UNDEFINED ROBOTICS
         </h1>
@@ -130,14 +130,15 @@
             </button>
           </a>
         </div>
+
+        <!-- Learn more indicator moved into normal flow under buttons -->
+        <div class="mt-6 sm:mt-8 md:mt-10 flex flex-col items-center animate-bounce opacity-70 pointer-events-none">
+          <span class="text-xs sm:text-sm md:text-base">Learn more about us</span>
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </div>
       </div>
-    </div>
-    
-    <div class="absolute bottom-[1%] left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-bounce opacity-70">
-      <span class="text-xs sm:text-normal md:text-lg">Learn more about us</span>
-      <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
     </div>
   </div>
   
@@ -358,4 +359,3 @@
 </section>
 
 </main>
-

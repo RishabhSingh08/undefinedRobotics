@@ -78,7 +78,7 @@
             </div>
           </div>
 
-          <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempore libero explicabo nostrum in, voluptatem error provident voluptate ut voluptatum! Eveniet reiciendis minus veritatis voluptates unde placeat voluptate hic doloremque maiores eaque temporibus, veniam est pariatur, corrupti iure aperiam eos cum quam. Delectus, optio asperiores.</p>
+          <p class="text-xl">Features a multi-modular design focused on adaptability, utilizing a rotating linear extension arm paired with a 3-DOF claw intake for efficient sample collection. In the autonomous period, it can consistently deliver 5 samples or 4 specimens using various control strategies (odo pods + limelight). During tele-op period (controller), it can place up to 15 samples in bucket thru rapid cycling and parks during endgame.</p>
         </div>
       </div>
     </div>
