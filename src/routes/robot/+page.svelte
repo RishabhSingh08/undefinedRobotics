@@ -47,7 +47,7 @@
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
   <!-- Hero Section with Season Info -->
-  <section class="relative z-10 px-4">
+  <section class="relative z-10 px-4 ">
     <div class="max-w-7xl mx-auto text-center">
       <h1 class="text-4xl md:text-6xl font-semibold mb-8">
         Our Robot
@@ -58,134 +58,61 @@
     </div>
   </section>
 
-<section class="relative z-10 px-4 py-16">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid lg:grid-cols-3 items-center">
-      <div class="lg:col-span-2">
+<section class="relative z-10 px-4 pt-16 ">
+  <div class="max-w-7xl mx-auto ">
+    <div class="grid lg:grid-cols-2 items-center">
+      <div class="lg:col-span-1">
         <div class="flex items-center justify-center">
           <img src={robotMainImage} alt="Competition Robot" class="w-xl h-xl object-cover" />
         </div>
       </div>
-
       <div class="space-y-6">
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-          <h3 class="text-xl font-bold text-yellow-300 mb-4">Robot Specifications</h3>
-          <div class="space-y-3 text-gray-300">
-            <div class="flex justify-between">
-              <span>Height:</span>
-              <span class="text-white">X inches</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Width:</span>
-              <span class="text-white">X inches</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Length:</span>
-              <span class="text-white">X inches</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Weight:</span>
-              <span class="text-white">X lbs</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Drive Type:</span>
-              <span class="text-white">X</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-          <h3 class="text-xl font-bold text-green-300 mb-4">Key Features</h3>
-          <div class="space-y-3">
-            <div class="flex items-start">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <span class="text-gray-300 text-sm">some words here</span>
-            </div>
-            <div class="flex items-start">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <span class="text-gray-300 text-sm">some words here</span>
-            </div>
-            <div class="flex items-start">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <span class="text-gray-300 text-sm">some words here</span>
-            </div>
-            <div class="flex items-start">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <span class="text-gray-300 text-sm">some words here</span>
-            </div>
-          </div>
+        <div class=" p-6 ">
+          <h3 class="text-3xl font-bold  mb-4">2024 - 2025 Season</h3>
+          <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempore libero explicabo nostrum in, voluptatem error provident voluptate ut voluptatum! Eveniet reiciendis minus veritatis voluptates unde placeat voluptate hic doloremque maiores eaque temporibus, veniam est pariatur, corrupti iure aperiam eos cum quam. Delectus, optio asperiores.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-  <section class="relative z-10 px-4 py-16">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl md:text-5xl font-semibold text-center text-gray-100 tracking-tight mb-16">
-        Robot Components
-      </h2>
+<div class="flex flex-col items-center">
+    <div class="w-4 h-4 bg-white rounded-full border-2 border-gray-300"></div>
+    <div class="w-0.5 h-56 bg-gray-300"></div>
+</div>
+
+<section class="relative z-10 px-4 pb-16">
+  <div class="max-w-7xl mx-auto relative">
+    <!-- Horizontal line behind cards (z-axis under) -->
+    <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 transform -translate-y-1/2 z-0"></div>
+    
+    <div class="grid md:grid-cols-3 gap-8 relative z-10">
+      <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
+        <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
+          <img src={robotPart1} alt="Drive System Component" class="w-full h-full object-cover" />
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Drive System</h3>
+        <p class="text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur quisquam veniam natus fugit, accusantium nesciunt dicta aut incidunt cumque hic, aliquam, inventore qui illum.</p>
+      </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
-            <img src={robotPart1} alt="Drive System Component" class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Drive System</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur quisquam veniam natus fugit, accusantium nesciunt dicta aut incidunt cumque hic, aliquam, inventore qui illum.</p>
-
+      <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
+        <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
+          <img src={robotPart2} alt="Intake Mechanism Component" class="w-full h-full object-cover" />
         </div>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
-            <img src={robotPart2} alt="Intake Mechanism Component" class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Intake Mechanism</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tempore, nostrum repellat laudantium recusandae illum voluptatum aliquam veniam et illo quidem nulla. Aliquam, at molestiae.</p>
-
+        <h3 class="text-xl font-bold text-white mb-3">Intake Mechanism</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tempore, nostrum repellat laudantium recusandae illum voluptatum aliquam veniam et illo quidem nulla. Aliquam, at molestae.</p>
+      </div>
+      
+      <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
+        <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
+          <img src={robotPart3} alt="Scoring Arm Component" class="w-full h-full object-cover" />
         </div>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
-            <img src={robotPart3} alt="Scoring Arm Component" class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Scoring Arm</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, excepturi quaerat. Unde dolorum saepe, iusto ut nulla suscipit fugiat inventore et, recusandae laudantium deserunt ratione!</p>
-
-        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Scoring Arm</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, excepturi quaerat. Unde dolorum saepe, iusto ut nulla suscipit fugiat inventore et, recusandae laudantium deserunt ratione!</p>
       </div>
     </div>
-  </section>
-
-  <section class="relative z-10 px-4 py-16">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl md:text-5xl font-semibold text-center text-gray-100 tracking-tight mb-16">
-        Performance Statistics
-      </h2>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
-          <div class="text-3xl font-bold text-yellow-400 mb-2">X%</div>
-          <div class="text-gray-300">Statistic 1</div>
-        </div>
-        
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
-          <div class="text-3xl font-bold text-green-400 mb-2">X</div>
-          <div class="text-gray-300">Statistic 2</div>
-        </div>
-        
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
-          <div class="text-3xl font-bold text-blue-400 mb-2">X</div>
-          <div class="text-gray-300">Statistic 3</div>
-        </div>
-        
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
-          <div class="text-3xl font-bold text-purple-400 mb-2">X%</div>
-          <div class="text-gray-300">Statistic 4</div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
 
 </main>
