@@ -50,10 +50,10 @@
   <section class="relative z-10 px-4 ">
     <div class="max-w-7xl mx-auto text-center">
       <h1 class="text-4xl md:text-6xl font-semibold mb-8">
-        Our Robot
+        Infinemo
       </h1>
       <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-        Meet our competition robot designed for the FIRST Tech Challenge "INTO THE DEEP" season
+        Meet our competition robot designed for the FTC "INTO THE DEEP" season
       </p>
     </div>
   </section>
@@ -69,7 +69,7 @@
       <div class="space-y-6">
         <div class=" p-6 ">
           <h3 class="text-3xl font-bold  mb-4">2024 - 2025 Season</h3>
-          <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempore libero explicabo nostrum in, voluptatem error provident voluptate ut voluptatum! Eveniet reiciendis minus veritatis voluptates unde placeat voluptate hic doloremque maiores eaque temporibus, veniam est pariatur, corrupti iure aperiam eos cum quam. Delectus, optio asperiores.</p>
+          <p class="text-xl">Goon niggas I goon niggas I goon niggas Goon niggas I goon niggas I goon niggasGoon niggas I goon niggas I goon niggasGoon niggas I goon niggas I goon niggasGoon niggas I goon niggas I goon niggasGoon niggas I goon niggas I goon niggas</p>
         </div>
       </div>
     </div>

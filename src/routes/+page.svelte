@@ -238,7 +238,7 @@
 
           </p>
           <div class="flex items-center text-sm text-gray-400">
-            <span class="mr-4">Date: July 25, 2025</span>
+            <span class="mr-4">Date: August 1st, 2025</span>
           </div>
         </div>
 
