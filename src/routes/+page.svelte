@@ -171,25 +171,26 @@
     <div class="max-w-6xl mx-auto text-center">
 
       <p class="text-4xl md:text-6xl font-semibold text-center text-gray-100 tracking-tight mb-8">
-        Our Mission
+        Our Mission: Serve the Underserved
       </p>
       
       <div class="space-y-12 max-w-5xl mx-auto  ">
 
         <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
-          Undefined Robotics is a high school level private robotics team based in Plano, Texas. Our goal as a team is to promote a culture of learning and STEM in our community.
+          STEM should be for everyone.
+
         </p>
 
         <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
-          We believe robotics is a great way to make STEM education and participation fun and engaging, especially for young people who are able to practice and learn practical skills through a hands-on and collaborative approach.
+          Yet, far too often, underrepresented groups—women, senior citizens, tribal and native communities, and non-English speakers—are left out of these opportunities. After witnessing the toxic and exclusionary culture that can surround robotics and STEM at our school robotics club competitions, we made it our mission to change that.
         </p>
 
         <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
-          We strongly believe that robotics is for everyone and that anyone can be successful, not only as members of our robotics team, but also in learning and acquiring important skills through robotics.
+          We believe various backgrounds bring fresh perspective and innovation to STEM. Instead of just meeting a diversity quota or lowering the standard for certain groups, we staunchly believe in actually addressing the problem by building opportunities and resources for those underserved to learn, build, and thrive in STEM.
         </p>
 
         <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
-          As a community-based team, we hope to give back as much as possible by instilling this knowledge in students and young people in our own community.
+          Through education, outreach, hands-on opportunities, and real-world interactions, we strive to foster an open environment where everyone, regardless of background, can flourish.
         </p>
 
         <p class="text-xl md:text-2xl cedarville-cursive-regular text-right">
@@ -212,58 +213,63 @@
         </div>
 
       <div class="grid lg:grid-cols-3 gap-12 mb-16">
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="flex items-center mb-6">
-            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
-            <h3 class="text-2xl font-bold text-yellow-300">Current Project</h3>
+        <a href="/robot" class="block group h-full">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+            <div>
+              <div class="flex items-center mb-6">
+                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
+                <h3 class="text-2xl font-bold text-yellow-300">Our Robot</h3>
+              </div>
+              <h4 class="text-xl font-semibold text-white mb-4">FTC Competition Robot 2025</h4>
+              <p class="text-gray-300 leading-relaxed mb-4">
+                Designing and building an autonomous robot for the FIRST Tech Challenge "INTO THE DEEP" season. Our focus is on creating innovative solutions for underwater-themed challenges.
+              </p>
+            </div>
+            <div class="flex items-center text-sm text-gray-400 mt-auto">
+              <span class="mr-4">Status: Finished</span>
+              <span>Due: September 2024</span>
+            </div>
           </div>
-          <h4 class="text-xl font-semibold text-white mb-4">FTC Competition Robot 2025</h4>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Designing and building an autonomous robot for the FIRST Tech Challenge "INTO THE DEEP" season. Our focus is on creating innovative solutions for underwater-themed challenges.
-          </p>
-          <div class="flex items-center text-sm text-gray-400">
-            <span class="mr-4">Status: In Progress</span>
-            <span>Due: February 2025</span>
-          </div>
-        </div>
+        </a>
 
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
           <div class="flex items-center mb-6">
             <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
             <h3 class="text-2xl font-bold text-green-300">Most Recent Event</h3>
           </div>
-          <h4 class="text-xl font-semibold text-white mb-4">Dallas Regional Qualifier</h4>
+          <h4 class="text-xl font-semibold text-white mb-4">Manufacturing Facility Tour</h4>
           <p class="text-gray-300 leading-relaxed mb-4">
-            Competed against 32 teams from across North Texas. Our robot performed exceptionally in autonomous mode, securing 3rd place overall and advancing to state championships.
+            Our team had the opportunity to tour a local manufacturing facility, where we engaged in meaningful discussions with industry professionals and explored real-world applications of automation and engineering. It was an inspiring experience that opened the door for potential future collaboration.
+
+
           </p>
           <div class="flex items-center text-sm text-gray-400">
-            <span class="mr-4">Date: January 15, 2025</span>
-            <span>Result: 3rd Place</span>
+            <span class="mr-4">Date: July 25, 2025</span>
           </div>
         </div>
 
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <h3 class="text-2xl font-bold text-blue-300 mb-6">Season Highlights</h3>
+          <h3 class="text-2xl font-bold text-blue-300 mb-6">Recent Developments</h3>
           <div class="space-y-4">
             <div class="flex items-start">
               <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
               <div>
-                <p class="text-white font-semibold">Innovation Award</p>
-                <p class="text-gray-400 text-sm">Recognized for creative engineering solutions</p>
+                <p class="text-white font-semibold">New v2 website launch</p>
+                <p class="text-gray-400 text-sm">Much anticipated website revamp drops August 5th</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
               <div>
-                <p class="text-white font-semibold">Community Impact</p>
-                <p class="text-gray-400 text-sm">Mentored 150+ students this season</p>
+                <p class="text-white font-semibold">Socials updated</p>
+                <p class="text-gray-400 text-sm">Exciting new updates to our socials as we gear up for season</p>
               </div>
             </div>
             <div class="flex items-start">
               <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
               <div>
-                <p class="text-white font-semibold">Team Growth</p>
-                <p class="text-gray-400 text-sm">Expanded from 8 to 15 active members</p>
+                <p class="text-white font-semibold">Acquired new team</p>
+                <p class="text-gray-400 text-sm">Missing Amps #30801 joins Undefined Robotics NPO</p>
               </div>
             </div>
           </div>
