@@ -9,6 +9,7 @@
       { name: 'Contact', href: '/contact' },
       { name: 'Impact', href: '/impact' },
       { name: 'Record', href: '/record' },
+      { name: 'Robot', href: '/robot' },
       { name: 'Donate', href: '/donate' }
     ];
   </script>
