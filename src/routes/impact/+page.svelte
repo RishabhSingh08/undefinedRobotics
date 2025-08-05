@@ -288,7 +288,7 @@
           </div>
         </div>
   <div class="mb-16 text-center text-sm text-gray-400 italic px-4">
-  Certain events and projects are not displayed, as our season is still in progress.
+  Certain events and projects are not displayed as our season is still in progress.
 </div>
 
 

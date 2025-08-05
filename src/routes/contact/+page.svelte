@@ -75,7 +75,9 @@
         Contact
       </h1>
       <p class="text-lg md:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-        Want to become a sponsor? 
+        Have questions, want to become a sponsor, or interested in joining the team? Get in touch!
+
+ 
       </p>
     </div>
 

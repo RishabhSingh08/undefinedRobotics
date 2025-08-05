@@ -22,119 +22,113 @@
   const undefinedTeamMembers = [
     {
       name: "Akshat Kumar",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: akshat
     },
     {
       name: "Neel M",
       grade: "11th Grade",
       role: "Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://i.postimg.cc/44BsdgkP/Neel-PFP.webp"
     },
     {
       name: "Rishabh Singh",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Chief Technical Officer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: rishabh
     },
     {
       name: "Punit Lakhotiya",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Finance/Team Management/Engineer",
       school: "Plano West Senior High School",
       image: punit
     },
-    {
-      name: "Aarav G",
-      grade: "11th Grade",
-      role: "Outreach",
-      school: "Plano West Senior High School",
-      image: "https://i.postimg.cc/SxbTbnTv/AlooPFP.webp"
-    },
+
     {
       name: "Navin Rao",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: navin
     },
     {
       name: "Lucas Silva",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Engineer/Driver",
       school: "Plano West Senior High School",
       image: lucas
     },
     {
       name: "Swaraj Nibandhe",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Engineer/Team Lead",
       school: "Plano West Senior High School",
       image: swaraj
     },
     {
       name: "Xander Kuksov",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Programmer",
       school: "Plano West Senior High School",
       image: xander
     },
     {
       name: "Samanyu Earna",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Programmer",
       school: "Plano West Senior High School",
       image: samanyu
     },
     {
       name: "Azalea Tang",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Programmer",
-      school: "Texas Academy of Math and Science",
+      school: "Plano West Senior High School",
       image: azalea
     },
     {
       name: "Ainesh Gupta",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Engineer",
       school: "Plano West Senior High School",
       image: ainesh
     },
     {
       name: "Erik Wang",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Engineer/Outreach/Driver",
       school: "Plano West Senior High School",
       image: erik
     },
     {
       name: "Mahit Cherku",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Outreach/Engineer",
-      school: "Memorial High School",
+      school: "Plano West Senior High School",
       image: mahit
     },
     {
       name: "Vedant Teware",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Outreach/Engineer",
-      school: "Lone Star High School",
+      school: "Plano West Senior High School",
       image: vedant
     },
     {
       name: "Ashwin Gupta",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Engineer",
       school: "Plano West Senior High School",
       image: ashwin
     },
     {
       name: "Nishant Sinari",
-      grade: "11th Grade",
+      grade: "12th Grade",
       role: "Outreach/CAD Lead",
       school: "Plano West Senior High School",
       image: nishant
@@ -197,11 +191,39 @@
   ];
 
   // Chiefs (specified names)
-  const chiefNames = ["Akshat Kumar", "Rishabh Singh", "Punit Lakhotiya", "Neel M", "Aarav G"];
-  const chiefs = undefinedTeamMembers.filter(member => chiefNames.includes(member.name));
+  const chiefNames = ["Akshat Kumar", "Rishabh Singh", "Punit Lakhotiya", "Neel M", "Swaraj Nibandhe"];
+  // Map leadership roles and names for display only
+  const chiefs = [
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Akshat Kumar"),
+      role: "Founder and CEO",
+      grade: "12th Grade"
+    },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Rishabh Singh"),
+      role: "Chief Technical Officer",
+      grade: "12th Grade"
+    },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Punit Lakhotiya"),
+      role: "Chief Financial Officer",
+      grade: "12th Grade"
+    },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Swaraj Nibandhe"),
+      role: "Chief Operating Officer",
+      grade: "12th Grade"
+    },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Neel M"),
+      name: "Neel Tipnis",
+      role: "Head of Expansions",
+      grade: "11th Grade"
+    }
+  ];
 
-  // Non-chief members for Undefined Robotics
-  const undefinedNonChiefs = undefinedTeamMembers.filter(member => !chiefNames.includes(member.name));
+  // All team members (including chiefs)
+  // No filtering, so chiefs will appear in both sections
 
 
 
@@ -284,7 +306,7 @@
             class:hover:text-white={activeTab !== 'undefined'}
             on:click={() => activeTab = 'undefined'}
           >
-            Undefined Robotics
+            Undefined
           </button>
 
           <button 
@@ -316,21 +338,20 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
             <h3 class="text-xl font-bold mb-4 text-yellow-400">Team Information</h3>
             <div class="space-y-3">
               <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#25782</span></div>
-              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-2} Students</span></div>
+              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-4} Seniors</span></div>
               <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2024</span></div>
-              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC</span></div>
+              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT S-League</span></div>
             </div>
           </div>
-          
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
+          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
             <h3 class="text-xl font-bold mb-4 text-yellow-400">Our Story</h3>
             <p class="text-gray-300 leading-relaxed">
-              Undefined Robotics was born from a shared passion for innovation and problem-solving. 
+              Undefined was born from a shared passion for innovation and problem-solving. 
               Our team combines diverse talents in engineering, programming, and design to create 
               cutting-edge robotic solutions. We believe in pushing boundaries and exploring the 
               undefined possibilities of robotics technology.
@@ -341,7 +362,7 @@
         <div>
           <h3 class="text-2xl font-bold mb-8 text-center text-yellow-400">Team Members</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {#each undefinedNonChiefs as member}
+            {#each undefinedTeamMembers.filter(member => member.name !== 'Rishabh Singh' && member.name !== 'Neel M') as member}
               <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center hover:border-gray-600 transition-all duration-300">
                 <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
                   <img 
@@ -377,21 +398,20 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
-            <h3 class="text-xl font-bold mb-4 text-blue-400">Team Information</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
+            <h3 class="text-xl font-bold mb-4 text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Information</a></h3>
             <div class="space-y-3">
               <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#30801</span></div>
-              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Students</span></div>
+              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Juniors</span></div>
               <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2025</span></div>
-              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC</span></div>
+              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT F-League</span></div>
             </div>
           </div>
-          
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700">
-            <h3 class="text-xl font-bold mb-4 text-blue-400">Our Story</h3>
+          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
+            <h3 class="text-xl font-bold mb-4 text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Our Story</a></h3>
             <p class="text-gray-300 leading-relaxed">
-              Missing Amps is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
+              <a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Missing Amps</a> is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
               With experience at the UIL State Championship, we now compete in the FIRST® Tech Challenge while giving back through STEM outreach.
               Our mission is to inspire the next generation of innovators by engaging local youth, partnering with businesses, and building a strong platform for future STEM leaders.
             </p>
@@ -399,7 +419,7 @@
         </div>
 
         <div>
-          <h3 class="text-2xl font-bold mb-8 text-center text-blue-400">Team Members</h3>
+          <h3 class="text-2xl font-bold mb-8 text-center text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Members</a></h3>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {#each missingAmpsMembers as member}
               <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center hover:border-gray-600 transition-all duration-300">
