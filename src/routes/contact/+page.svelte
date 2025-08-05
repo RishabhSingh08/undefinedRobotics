@@ -14,7 +14,7 @@
 
 
     const contactInfo = {
-        email: 'team@undefinedrobotics.org',
+        email: 'contact@undefinedrobotics.org',
         phone: "(469) 819-7461",
         location: 'Plano, Texas',
         availability: 'Monday - Friday: 9:00 AM - 9:00 PM CST',

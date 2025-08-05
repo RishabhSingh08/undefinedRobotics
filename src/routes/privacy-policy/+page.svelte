@@ -124,7 +124,7 @@
           If you have questions about this Privacy Policy or our data practices, please reach out to:
         </p>
         <div class="space-y-2 text-gray-200">
-          <p><strong class="text-white">Email:</strong> team@undefinedrobotics.org</p>
+          <p><strong class="text-white">Email:</strong> contact@undefinedrobotics.org</p>
           <p><strong class="text-white">Phone:</strong> (469) 819-7461</p>
         </div>
       </div>

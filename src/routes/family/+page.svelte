@@ -269,7 +269,7 @@
         Our Family
       </h1>
       <p class="text-lg md:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-        Meet the incredible minds driving innovation in robotics across our organization
+        Meet the incredible minds driving innovation in robotics across our organization.
       </p>
     </div>
     <!-- Chiefs Section -->
@@ -337,7 +337,7 @@
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
             <h3 class="text-xl font-bold mb-4 text-yellow-400">Team Information</h3>
             <div class="space-y-3">
-              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#25782</span></div>
+              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">25782</span></div>
               <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-4} Seniors</span></div>
               <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2024</span></div>
               <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT S-League</span></div>
@@ -397,7 +397,7 @@
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
             <h3 class="text-xl font-bold mb-4 text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Information</a></h3>
             <div class="space-y-3">
-              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">#30801</span></div>
+              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">30801</span></div>
               <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Juniors</span></div>
               <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2025</span></div>
               <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT F-League</span></div>
