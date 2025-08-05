@@ -58,67 +58,67 @@
     </div>
   </section>
 
-  <section class="relative z-10 px-4 py-16">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2">
-          <div class="bg-gray-300 rounded-xl aspect-video flex items-center justify-center border border-gray-400 overflow-hidden">
-            <img src={robotMainImage} alt="Competition Robot" class="w-full h-full object-cover" />
+<section class="relative z-10 px-4 py-16">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-3 items-center">
+      <div class="lg:col-span-2">
+        <div class="flex items-center justify-center">
+          <img src={robotMainImage} alt="Competition Robot" class="w-xl h-xl object-cover" />
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <h3 class="text-xl font-bold text-yellow-300 mb-4">Robot Specifications</h3>
+          <div class="space-y-3 text-gray-300">
+            <div class="flex justify-between">
+              <span>Height:</span>
+              <span class="text-white">X inches</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Width:</span>
+              <span class="text-white">X inches</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Length:</span>
+              <span class="text-white">X inches</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Weight:</span>
+              <span class="text-white">X lbs</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Drive Type:</span>
+              <span class="text-white">X</span>
+            </div>
           </div>
         </div>
 
-        <div class="space-y-6">
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <h3 class="text-xl font-bold text-yellow-300 mb-4">Robot Specifications</h3>
-            <div class="space-y-3 text-gray-300">
-              <div class="flex justify-between">
-                <span>Height:</span>
-                <span class="text-white">X inches</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Width:</span>
-                <span class="text-white">X inches</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Length:</span>
-                <span class="text-white">X inches</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Weight:</span>
-                <span class="text-white">X lbs</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Drive Type:</span>
-                <span class="text-white">X</span>
-              </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+          <h3 class="text-xl font-bold text-green-300 mb-4">Key Features</h3>
+          <div class="space-y-3">
+            <div class="flex items-start">
+              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+              <span class="text-gray-300 text-sm">some words here</span>
             </div>
-          </div>
-
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-            <h3 class="text-xl font-bold text-green-300 mb-4">Key Features</h3>
-            <div class="space-y-3">
-              <div class="flex items-start">
-                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span class="text-gray-300 text-sm">some words here</span>
-              </div>
-              <div class="flex items-start">
-                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span class="text-gray-300 text-sm">some words here</span>
-              </div>
-              <div class="flex items-start">
-                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span class="text-gray-300 text-sm">some words here</span>
-              </div>
-              <div class="flex items-start">
-                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span class="text-gray-300 text-sm">some words here</span>
-              </div>
+            <div class="flex items-start">
+              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+              <span class="text-gray-300 text-sm">some words here</span>
+            </div>
+            <div class="flex items-start">
+              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+              <span class="text-gray-300 text-sm">some words here</span>
+            </div>
+            <div class="flex items-start">
+              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+              <span class="text-gray-300 text-sm">some words here</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="relative z-10 px-4 py-16">
     <div class="max-w-7xl mx-auto">
