@@ -43,7 +43,7 @@
                 <div class="flex items-start space-x-4">
                   <div class="w-3 h-3 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <h3 class="text-xl font-bold text-white mb-2">Innovation Award</h3>
+                    <h3 class="text-xl font-bold text-white mb-2">RTX Innovate Award</h3>
                     <p class="text-gray-300 text-sm">FiT-North Area Championship – Stage Left</p>
                   </div>
                 </div>

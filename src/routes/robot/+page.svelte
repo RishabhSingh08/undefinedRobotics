@@ -99,8 +99,8 @@
         <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
           <img src={robotPart1} alt="Drive System Component" class="w-full h-full object-cover" />
         </div>
-        <h3 class="text-xl font-bold text-white mb-3">Drive System</h3>
-        <p class="text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur quisquam veniam natus fugit, accusantium nesciunt dicta aut incidunt cumque hic, aliquam, inventore qui illum.</p>
+        <h3 class="text-xl font-bold text-white mb-3">Custom Chassis</h3>
+        <p class="text-gray-300">Custom aluminum machined parallel structure chassis with pentagonal pocketing boasting new grippy mecanum wheels for responsive omnidirectional movement powered by quad-motor setup.</p>
       </div>
       
       <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
@@ -108,7 +108,7 @@
           <img src={robotPart2} alt="Intake Mechanism Component" class="w-full h-full object-cover" />
         </div>
         <h3 class="text-xl font-bold text-white mb-3">Intake Mechanism</h3>
-        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tempore, nostrum repellat laudantium recusandae illum voluptatum aliquam veniam et illo quidem nulla. Aliquam, at molestae.</p>
+        <p class="text-gray-300">3D modeled (Fusion 360) and printed Intake griper with 3 degrees of freedom powered by Axon minis with sequential programming enhancements and feedback control loops.</p>
       </div>
       
       <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
@@ -116,7 +116,7 @@
           <img src={robotPart3} alt="Scoring Arm Component" class="w-full h-full object-cover" />
         </div>
         <h3 class="text-xl font-bold text-white mb-3">Scoring Arm</h3>
-        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, excepturi quaerat. Unde dolorum saepe, iusto ut nulla suscipit fugiat inventore et, recusandae laudantium deserunt ratione!</p>
+        <p class="text-gray-300">Misumi linear slides with single motor control featuring custom 3D printed inserts and nylon coated continuous double spool stringing with counter-spring retraction for smooth linear extension.</p>
       </div>
     </div>
   </div>
