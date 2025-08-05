@@ -394,6 +394,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
             <h3 class="text-xl font-bold mb-4 text-blue-400"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer">Team Information</a></h3>
             <div class="space-y-3">
