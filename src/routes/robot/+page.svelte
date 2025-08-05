@@ -2,7 +2,7 @@
   // Dummy robot component images
     
 
-  import robotMainImage from "../../lib/images/robot/image2.png";
+  import robotMainImage from "../../lib/images/robot/image.png";
   import robotPart1 from "../../lib/images/robot/part1.png";
   import robotPart2 from "../../lib/images/robot/part2.png";
   import robotPart3 from "../../lib/images/robot/part3.png";
@@ -76,51 +76,43 @@
   </div>
 </section>
 
-<!-- Timeline + Branch Lines -->
-<div class="relative flex justify-center">
-  <div class="flex flex-col items-center z-10">
+<div class="flex flex-col items-center">
     <div class="w-4 h-4 bg-white rounded-full border-2 border-gray-300"></div>
-    <div class="w-0.5 h-72 bg-gray-300"></div>
-  </div>
-  <!-- Horizontal Branches -->
-  <div class="absolute top-40 w-7xl flex justify-center">
-    <div class="w-[70%] h-0.5 bg-gray-300 relative">
-      <!-- Vertical connectors -->
-      <div class="absolute left-0 top-0 h-56 w-0.5 bg-gray-300"></div>
-      <div class="absolute right-0 top-0 h-56 w-0.5 bg-gray-300"></div>
-    </div>
-  </div>
+    <div class="w-0.5 h-56 bg-gray-300"></div>
 </div>
 
-
-  <section class="relative z-10 px-4 pb-16">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
-            <img src={robotPart1} alt="Drive System Component" class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Drive System</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur quisquam veniam natus fugit, accusantium nesciunt dicta aut incidunt cumque hic, aliquam, inventore qui illum.</p>
+<section class="relative z-10 px-4 pb-16">
+  <div class="max-w-7xl mx-auto relative">
+    <!-- Horizontal line behind cards (z-axis under) -->
+    <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 transform -translate-y-1/2 z-0"></div>
+    
+    <div class="grid md:grid-cols-3 gap-8 relative z-10">
+      <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
+        <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
+          <img src={robotPart1} alt="Drive System Component" class="w-full h-full object-cover" />
         </div>
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
-            <img src={robotPart2} alt="Intake Mechanism Component" class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Intake Mechanism</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tempore, nostrum repellat laudantium recusandae illum voluptatum aliquam veniam et illo quidem nulla. Aliquam, at molestiae.</p>
+        <h3 class="text-xl font-bold text-white mb-3">Drive System</h3>
+        <p class="text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur quisquam veniam natus fugit, accusantium nesciunt dicta aut incidunt cumque hic, aliquam, inventore qui illum.</p>
+      </div>
+      
+      <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
+        <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
+          <img src={robotPart2} alt="Intake Mechanism Component" class="w-full h-full object-cover" />
         </div>
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
-            <img src={robotPart3} alt="Scoring Arm Component" class="w-full h-full object-cover" />
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Scoring Arm</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, excepturi quaerat. Unde dolorum saepe, iusto ut nulla suscipit fugiat inventore et, recusandae laudantium deserunt ratione!</p>
+        <h3 class="text-xl font-bold text-white mb-3">Intake Mechanism</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tempore, nostrum repellat laudantium recusandae illum voluptatum aliquam veniam et illo quidem nulla. Aliquam, at molestae.</p>
+      </div>
+      
+      <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">
+        <div class="bg-gray-300 rounded-lg aspect-square mb-6 flex items-center justify-center border border-gray-400 overflow-hidden">
+          <img src={robotPart3} alt="Scoring Arm Component" class="w-full h-full object-cover" />
         </div>
+        <h3 class="text-xl font-bold text-white mb-3">Scoring Arm</h3>
+        <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, excepturi quaerat. Unde dolorum saepe, iusto ut nulla suscipit fugiat inventore et, recusandae laudantium deserunt ratione!</p>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
 
 
 </main>
