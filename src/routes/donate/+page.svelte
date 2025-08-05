@@ -151,7 +151,8 @@
           <!-- Donate Now button -->
           <button
             type="submit"
-            class="w-full px-10 py-5 bg-yellow-500 text-black text-xl font-bold rounded-lg hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group shadow-lg hover:cursor-pointer"
+            class="w-full px-10 py-5 text-black text-xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group shadow-lg hover:cursor-pointer"
+            style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);"
           >
             Donate Now
             <span class="inline-block transition-transform group-hover:translate-x-1 ml-4 text-3xl">→</span>
