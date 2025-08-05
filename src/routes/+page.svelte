@@ -342,8 +342,15 @@
 
       
   </section>
- 
-<section class="w-full  overflow-hidden relative z-10 bg-white/10 mb-6">
+  <hr
+  class="mb-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+  <h2 class="text-4xl sm:text-7xl  text-center text-white mt-32 mb-16 cedarville-cursive-regular">
+  Thank You to Our Sponsors and Partners
+  </h2>
+<section class="w-full overflow-hidden relative z-10 bg-white/10 mb-32">
+
+  
   <div class="carousel-container py-6">
     <div class="carousel-track">
       {#each [...sponsors, ...sponsors] as sponsor, i}
