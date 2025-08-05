@@ -80,7 +80,7 @@
 <section id="record" class="px-6 md:px-8 lg:px-10 py-32 relative z-10 min-h-screen">
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
-    <div class="max-w-[115rem] mx-auto px-0">
+    <div class="max-w-[105rem] mx-auto px-0">
         <div class="text-center mb-16">
             <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
                 Our Record
