@@ -54,15 +54,12 @@
 </style>
 
 <main class="text-white overflow-hidden relative dm-sans min-h-screen">
-  <!-- Background Pattern -->
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
   <div class="relative z-10 pt-32 pb-16 min-h-screen flex items-center justify-center px-4">
     <div class="max-w-lg mx-auto w-full">
-      <!-- Main Container -->
       <div class="bg-[#10141c] border border-white/20 rounded-xl p-8 space-y-8">
         
-        <!-- Header Section -->
         <div class="text-center space-y-4">
           {#if IconLogo}
             <img src={IconLogo} alt="Organization Logo" class="h-24 mx-auto" />
@@ -76,9 +73,7 @@
           </p>
         </div>
 
-        <!-- Form Section -->
         <form on:submit={handleSubmit} class="space-y-6">
-          <!-- Name Field -->
           <div class="space-y-2">
             <label for="name" class="block text-sm font-medium text-gray-300">
               Name
@@ -95,7 +90,6 @@
             {/if}
           </div>
 
-          <!-- Email Field -->
           <div class="space-y-2">
             <label for="email" class="block text-sm font-medium text-gray-300">
               Email
@@ -112,13 +106,11 @@
             {/if}
           </div>
 
-          <!-- Amount Field -->
           <div class="space-y-3">
             <label for="amount" class="block text-sm font-medium text-gray-300">
               Amount (USD)
             </label>
             
-            <!-- Quick Amount Buttons -->
             <div class="grid grid-cols-4 gap-2">
               {#each [25, 50, 100, 250] as quickAmount}
                 <button
@@ -131,7 +123,6 @@
               {/each}
             </div>
 
-            <!-- Custom Amount Input -->
             <div class="relative">
               <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">$</span>
               <input
@@ -150,7 +141,6 @@
             {/if}
           </div>
 
-          <!-- Submit Button -->
           <button
             type="submit"
             class="w-full px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group"
@@ -159,7 +149,6 @@
             <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
           </button>
 
-          <!-- Error Summary -->
           {#if showError && Object.values(formErrors).some(Boolean)}
             <p class="text-center text-yellow-400 text-sm">
               Please fill in all required fields correctly

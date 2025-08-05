@@ -142,49 +142,49 @@
       name: "Neel T.",
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://i.postimg.cc/44BsdgkP/Neel-PFP.webp"
     },
     {
-      name: "Big HD",
+      name: "Harsheel Desai",
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://images.emojiterra.com/twitter/v14.0/1024px/1f633.png"
     },
     {
       name: "Ishaan N.",
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://i.postimg.cc/7L0qYJwJ/Ishaan-PFP.webp"
     },
     {
       name: "Aarav B.",
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://i.postimg.cc/SxbTbnTv/AlooPFP.webp"
     },
     {
       name: "Rishabh M.",
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://i.postimg.cc/FRFFWsXf/Rishabh-Zest.webp"
     },
     {
       name: "Goutham R.",
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://i.postimg.cc/VNJPdrwW/Goutham-Goon.webp"
     },
     {
       name: "Hrudhai L.",
       grade: "11th Grade",
       role: "Captain/CAD Modeler/Engineer",
-      school: "Plano Senior High School",
+      school: "Plano West Senior High School",
       image: "https://i.postimg.cc/52r0VSg9/cropped-image-min.png"
     },
     
@@ -196,7 +196,7 @@
   const chiefs = [
     {
       ...undefinedTeamMembers.find(m => m.name === "Akshat Kumar"),
-      role: "Founder and CEO",
+      role: "Founder & President",
       grade: "12th Grade"
     },
     {
