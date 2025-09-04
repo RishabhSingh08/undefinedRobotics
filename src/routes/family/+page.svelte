@@ -133,7 +133,7 @@
     {
       name: "Nishant Sinari",
       grade: "12th Grade",
-      role: "Outreach/CAD Lead",
+      role: "Chief Engagement Officer",
       school: "Plano West Senior High School",
       image: nishant
     },
@@ -195,7 +195,7 @@
   ];
 
   // Chiefs (specified names)
-  const chiefNames = ["Akshat Kumar", "Rishabh Singh", "Punit Lakhotiya", "Neel M", "Swaraj Nibandhe"];
+  const chiefNames = ["Akshat Kumar", "Rishabh Singh", "Punit Lakhotiya", "Neel Tipnis", "Swaraj Nibandhe", "Nishant Sinari"];
   // Map leadership roles and names for display only
   const chiefs = [
     {
@@ -223,7 +223,12 @@
       name: "Neel Tipnis",
       role: "Head of Expansions",
       grade: "11th Grade"
-    }
+    },
+    {
+    ...undefinedTeamMembers.find(m => m.name === "Nishant Sinari"),
+      role: "Chief Engagement Officer",
+      grade: "12th Grade"
+    },
   ];
 
   // All team members (including chiefs)
@@ -281,7 +286,7 @@
     <!-- Chiefs Section -->
     <div class="mb-20">
       <h2 class="text-3xl font-bold text-center mb-12 text-yellow-500">Leadership Team</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {#each chiefs as chief}
           <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center">
             <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
