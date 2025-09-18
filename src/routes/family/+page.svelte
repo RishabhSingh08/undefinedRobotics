@@ -61,6 +61,13 @@
       image: navin
     },
     {
+      name: "Nishant Sinari",
+      grade: "12th Grade",
+      role: "Outreach Lead/Engineer",
+      school: "Plano West Senior High School",
+      image: nishant
+    },
+    {
       name: "Lucas Silva",
       grade: "12th Grade",
       role: "Engineer/Driver",
@@ -130,13 +137,7 @@
       school: "Plano Senior High School",
       image: ashwin
     },
-    {
-      name: "Nishant Sinari",
-      grade: "12th Grade",
-      role: "Chief Engagement Officer",
-      school: "Plano West Senior High School",
-      image: nishant
-    },
+
     
   ];
 
