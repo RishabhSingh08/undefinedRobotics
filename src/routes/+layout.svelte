@@ -17,7 +17,7 @@ injectAnalytics();
 	/* Offset for fixed navbar height (64px). Adjust if Navbar height changes. */
 	.app-content {
 		/* Match Navbar total height including borders/padding */
-		padding-top: 88px;
+		/* padding-top: 88px; */
 	}
 </style>
 

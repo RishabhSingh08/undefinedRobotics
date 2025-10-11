@@ -69,23 +69,23 @@
               
    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
   <div class="text-center">
-    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">$25K+</div>
+    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">$25K+</div>
     <div class="text-gray-300">Value Raised</div>
   </div>
   <div class="text-center">
-    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">4,000+</div>
+    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">4,000+</div>
     <div class="text-gray-300">Underserved Individuals Reached</div>
   </div>
   <div class="text-center">
-    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">36+</div>
+    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">36+</div>
     <div class="text-gray-300">FTC Teams Connected</div>
   </div>
   <div class="text-center">
-    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">10+</div>
+    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">10+</div>
     <div class="text-gray-300">Regional/National Awards</div>
   </div>
   <div class="text-center">
-    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">15+</div>
+    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">15+</div>
     <div class="text-gray-300">Proffesionals Connected</div>
   </div>
 </div>

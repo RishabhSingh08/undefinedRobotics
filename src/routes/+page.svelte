@@ -1,6 +1,21 @@
 <script>
+  import { onMount, onDestroy } from 'svelte';
   import IconLogo from "../lib/images/logo.png";
   import TeamPhoto from "../lib/images/team.png";
+
+  import hero1 from "../lib/images/hero/1.JPG";
+  import hero2 from "../lib/images/hero/2.JPG";
+  import hero3 from "../lib/images/hero/3.JPG";
+  import hero4 from "../lib/images/hero/4.JPG";
+  import hero5 from "../lib/images/hero/5.png";
+  import hero6 from "../lib/images/hero/6.png";
+  import hero7 from "../lib/images/hero/7.png";
+  import hero8 from "../lib/images/hero/8.png";
+  import hero9 from "../lib/images/hero/9.png";
+  import hero10 from "../lib/images/hero/10.png";
+  import hero11 from "../lib/images/hero/11.png";
+  import hero12 from "../lib/images/hero/12.png";
+
 
   import s from "../lib/images/sponsors/s.png";
   import s1 from "../lib/images/sponsors/s1.png";
@@ -10,6 +25,10 @@
   import s5 from "../lib/images/sponsors/s5.png";
   import s6 from "../lib/images/sponsors/s6.png";
   import s7 from "../lib/images/sponsors/s7.png";
+  
+  import AdBanner from "../lib/images/sponsors/AdBanner.png";
+  import Ad1 from "../lib/images/sponsors/Ad1.png";
+  import Ad2 from "../lib/images/sponsors/Ad2.png";
 
   const sponsors = [
     { src: s, href: 'https://www.cafelltech.com/' },
@@ -21,6 +40,13 @@
     { src: s6, href: 'https://www.jabil.com/' },
     // { src: s7, href: 'https://www.solaceglobal.world/' }
   ];
+
+  const heroImages = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8, hero9, hero10, hero11, hero12];
+  
+  // Create 3 columns with different image arrangements
+  const column1 = [hero8, hero6, hero12, hero9];
+  const column2 = [hero5, hero10, hero7, hero11];
+  const column3 = [hero2, hero4, hero1, hero3];
 
 </script>
 
@@ -73,80 +99,165 @@
     }
   }
 
-  .carousel-container {
+  .sponsor-carousel-container {
     overflow: hidden;
     white-space: nowrap; 
   }
 
-  .carousel-track {
+  .sponsor-carousel-track {
     display: inline-flex; 
     animation: scroll-left 20s linear infinite; 
   }
 
-  .carousel-track:hover {
-    animation-play-state: paused; 
-  }
-
-  .carousel-item {
+  .sponsor-carousel-item {
     display: inline-block; 
     padding: 0 5rem; 
     flex-shrink: 0; 
+  }
+
+  @keyframes scroll-vertical {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  .carousel-column {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+  }
+
+  .carousel-track {
+    display: flex;
+    flex-direction: column;
+    animation: scroll-vertical linear infinite;
+  }
+
+  .carousel-track-1 {
+    animation-duration: 90s;
+  }
+
+  .carousel-track-2 {
+    animation-duration: 110s;
+  }
+
+  .carousel-track-3 {
+    animation-duration: 100s;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: 33.333vh;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .hero-background-grid {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%);
+    pointer-events: none;
+    z-index: 1;
   }
 </style>
 
 <main class="text-white overflow-hidden  relative dm-sans">
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
-    <section class="relative z-10">
-<div class="h-screen flex items-center justify-center overflow-hidden relative">
-
-
-  <div class="z-20 max-w-7xl mx-auto px-4 flex flex-col items-center h-full justify-center pb-24 sm:pb-28">
-    <div class="space-y-6 sm:space-y-8 md:space-y-12 text-center">
-      <div class="lg:col-span-3 flex justify-center">
-        <div class="relative">
-          <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-20 z-0"></div>
-          <img src={IconLogo} alt="Undefined Robotics Logo" class="w-48 sm:w-48 md:w-64 lg:w-80 xl:w-96 relative z-10"/>
+  <!-- hero section -->
+    <section class="relative z-10 h-screen overflow-hidden pt-[80px]">
+      
+      <!-- 3 Column Vertical Carousel -->
+      <div class="w-full h-screen flex relative">
+        
+        <!-- Column 1 - Slow Speed (20s) -->
+        <div class="carousel-column flex-1">
+          <div class="carousel-track carousel-track-1">
+            {#each [...column1, ...column1, ...column1] as image}
+              <img src={image} alt="Team" class="carousel-image" />
+            {/each}
+          </div>
         </div>
+
+        <!-- Column 2 - Medium Speed (25s) -->
+        <div class="carousel-column flex-1">
+          <div class="carousel-track carousel-track-2">
+            {#each [...column2, ...column2, ...column2] as image}
+              <img src={image} alt="Team" class="carousel-image" />
+            {/each}
+          </div>
+        </div>
+
+        <!-- Column 3 - Fast Speed (30s) -->
+        <div class="carousel-column flex-1">
+          <div class="carousel-track carousel-track-3">
+            {#each [...column3, ...column3, ...column3] as image}
+              <img src={image} alt="Team" class="carousel-image" />
+            {/each}
+          </div>
+        </div>
+
       </div>
 
-    <div class="space-y-4 sm:space-y-6 md:space-y-8">
-        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl tracking-wider">
-          UNDEFINED ROBOTICS
-        </h1>
-        <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-2xl mx-auto px-4">
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent pointer-events-none z-20"></div>
+
+      <!-- Ad Banner - Top Center -->
+      <div class="absolute top-24 left-1/2 transform -translate-x-1/2 z-30">
+        <img 
+          src={AdBanner} 
+          alt="Sponsor Banner" 
+          class="h-16 md:h-20 lg:h-24 w-auto rounded-lg"
+        />
+      </div>
+
+      <!-- Text Overlay - Bottom Left -->
+      <div class="absolute bottom-0 left-0 z-30 p-10 md:p-14 lg:p-20 max-w-4xl">
+        
+        <!-- Logo and Title Side by Side -->
+        <div class="flex items-center gap-6 mb-6">
+          <img 
+            src={IconLogo} 
+            alt="Undefined Robotics Logo" 
+            class="w-24 md:w-32 lg:w-40"
+          />
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+            UNDEFINED<br/>
+            <span class="text-yellow-400">ROBOTICS</span>
+          </h1>
+        </div>
+
+        <!-- Description -->
+        <p class="text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed mb-10">
           One of the largest student-led STEM and robotics 501(c)3 non-profit projects in Texas. Based in Dallas-Fort Worth but serve around the world.
         </p>
-        <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4"> 
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-5 pointer-events-auto">
           <a href="/impact">
-            <button class="bg-white text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-gray-200 transition-colors group hover:cursor-pointer">
+            <button class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition-colors duration-200 group">
               Our Impact
               <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
             </button>
           </a>
           <a href="/record">
-            <button class="border border-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full text-sm sm:text-base md:text-lg hover:bg-white hover:text-black transition-colors hover:cursor-pointer">
+            <button class="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 hover:text-black transition-colors duration-200">
               View Our Achievements
             </button>
           </a>
         </div>
-        
-        <!-- Learn more indicator moved into normal flow under buttons -->
-        <div class="mt-6 sm:mt-8 md:mt-10 flex flex-col items-center animate-bounce opacity-70 pointer-events-none">
-          <span class="text-xs sm:text-sm md:text-base">Learn more about us</span>
-          <svg class="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </div>
+
       </div>
-    </div>
-  </div>
-  
-</div>
     </section>
 
 
-    <section class="relative z-10 overflow-hidden">
+    <!-- <section class="relative z-10 overflow-hidden">
       <div class="w-full flex justify-center items-center min-h-[500px]">
         <div class="relative w-full h-full">
           <img src={TeamPhoto} alt="Undefined Robotics Team" class="w-full h-full object-cover rounded-none" />
@@ -159,7 +270,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
   <section id="mission" class="px-4 py-32 relative z-10">
@@ -194,6 +305,53 @@
       </div>
     </div>
   </section>
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
+    <div class="text-center">
+      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">$25K+</div>
+      <div class="text-gray-300">Value Raised</div>
+    </div>
+    <div class="text-center">
+      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">4,000+</div>
+      <div class="text-gray-300">Underserved Individuals Reached</div>
+    </div>
+    <div class="text-center">
+      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">36+</div>
+      <div class="text-gray-300">FTC Teams Connected</div>
+    </div>
+    <div class="text-center">
+      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">10+</div>
+      <div class="text-gray-300">Regional/National Awards</div>
+    </div>
+    <div class="text-center">
+      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">15+</div>
+      <div class="text-gray-300">Proffesionals Connected</div>
+    </div>
+  </div>
+  
+<hr
+  class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+  <!-- Sponsor Ads Section -->
+  <section class="px-4 py-16 relative z-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+          <img 
+            src={Ad1} 
+            alt="Sponsor Advertisement 1" 
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+          <img 
+            src={Ad2} 
+            alt="Sponsor Advertisement 2" 
+            class="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 
 <hr
   class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
@@ -211,7 +369,7 @@
             <div>
               <div class="flex items-center mb-6">
                 <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
-                <h3 class="text-2xl font-bold text-yellow-300">Our Robot</h3>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
               </div>
               <h4 class="text-xl font-semibold text-white mb-4">FTC Competition Robot 2025</h4>
               <p class="text-gray-300 leading-relaxed mb-4">
@@ -227,7 +385,7 @@
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
           <div class="flex items-center mb-6">
             <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-            <h3 class="text-2xl font-bold text-green-300">Most Recent Event</h3>
+            <h3 class="text-2xl font-bold bg-gradient-to-r from-green-200 to-green-400 bg-clip-text text-transparent">Most Recent Event</h3>
           </div>
           <h4 class="text-xl font-semibold text-white mb-4">Manufacturing Facility Tour</h4>
           <p class="text-gray-300 leading-relaxed mb-4">
@@ -241,7 +399,7 @@
         </div>
 
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <h3 class="text-2xl font-bold text-blue-300 mb-6">Recent Developments</h3>
+          <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent mb-6">Recent Developments</h3>
           <div class="space-y-4">
             <div class="flex items-start">
               <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -342,13 +500,13 @@
   <h2 class="text-4xl sm:text-7xl  text-center text-white mt-32 mb-24 cedarville-cursive-regular">
   Thank You to Our Sponsors and Partners!
   </h2>
-<section class="w-full overflow-hidden relative z-10 bg-white/10 mb-32">
 
-  
-  <div class="carousel-container py-6">
-    <div class="carousel-track">
+
+<section class="w-full overflow-hidden relative z-10 bg-white/10 mb-32">
+  <div class="sponsor-carousel-container py-6">
+    <div class="sponsor-carousel-track">
       {#each [...sponsors, ...sponsors] as sponsor, i}
-        <div class="carousel-item">
+        <div class="sponsor-carousel-item">
           <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label="Sponsor {i + 1}">
             <img src={sponsor.src} alt="Sponsor Logo {i + 1}" class="h-16 sm:h-20 max-w-none" />
           </a>

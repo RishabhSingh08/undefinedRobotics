@@ -134,7 +134,7 @@
     <div class="flex justify-center">
       <div class="border-t border-white/20 pt-16 max-w-7xl">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-green-300 mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-white bg-clip-text text-transparent mb-4">
             The Next Step
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -183,7 +183,7 @@
             <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <div class="w-8 h-8 bg-white rounded-full"></div>
             </div>
-            <h3 class="text-xl font-bold text-blue-300 mb-2">Connect</h3>
+            <h3 class="text-xl font-bold bg-gradient-to-r to-white from-blue-400 bg-clip-text text-transparent mb-2">Connect</h3>
             <p class="text-gray-300 text-sm">Connecting and establishing partnerships with other local non-profit projects</p>
           </div>
           
@@ -191,7 +191,7 @@
             <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <div class="w-8 h-8 bg-white rounded-full"></div>
             </div>
-            <h3 class="text-xl font-bold text-green-300 mb-2">Empower</h3>
+            <h3 class="text-xl font-bold bg-gradient-to-r to-white from-green-400 bg-clip-text text-transparent mb-2">Empower</h3>
             <p class="text-gray-300 text-sm">Connecting with and teaching adoption centers and schools of underrepresented around the globe</p>
           </div>
           
@@ -199,7 +199,7 @@
             <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <div class="w-8 h-8 bg-white rounded-full"></div>
             </div>
-            <h3 class="text-xl font-bold text-yellow-300 mb-2">Repeat</h3>
+            <h3 class="text-xl font-bold bg-gradient-to-r to-white from-yellow-400 bg-clip-text text-transparent mb-2">Repeat</h3>
             <p class="text-gray-300 text-sm">Raise money and partnerships to teach senior citizens about robotics and digital literacy</p>
           </div>
           
@@ -207,7 +207,7 @@
             <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <div class="w-8 h-8 bg-white rounded-full"></div>
             </div>
-            <h3 class="text-xl font-bold text-purple-300 mb-2">Share</h3>
+            <h3 class="text-xl font-bold bg-gradient-to-r to-white from-purple-400 bg-clip-text text-transparent mb-2">Share</h3>
             <p class="text-gray-300 text-sm">Continue mentoring, being involved in, and inspiring the future of local to global communities</p>
           </div>
         </div>
