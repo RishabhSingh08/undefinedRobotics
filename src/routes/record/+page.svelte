@@ -1,4 +1,35 @@
 <script>
+    import { onMount } from 'svelte';
+    import hero5 from "../../lib/images/hero/5.png";
+    import hero6 from "../../lib/images/hero/6.png";
+    import hero7 from "../../lib/images/hero/7.png";
+    import hero8 from "../../lib/images/hero/8.png";
+    import hero9 from "../../lib/images/hero/9.png";
+    import hero10 from "../../lib/images/hero/10.png";
+    import hero11 from "../../lib/images/hero/11.png";
+    import hero12 from "../../lib/images/hero/12.png";
+
+    const carouselImages1 = [hero5, hero6, hero7, hero8];
+    const carouselImages2 = [hero9, hero10, hero11, hero12];
+
+    let currentIndex1 = 0;
+    let currentIndex2 = 0;
+
+    onMount(() => {
+        const interval1 = setInterval(() => {
+            currentIndex1 = (currentIndex1 + 1) % carouselImages1.length;
+        }, 3000);
+
+        const interval2 = setInterval(() => {
+            currentIndex2 = (currentIndex2 + 1) % carouselImages2.length;
+        }, 3500);
+
+        return () => {
+            clearInterval(interval1);
+            clearInterval(interval2);
+        };
+    });
+
     // All your timeline data is now in this single array of objects.
     // To add, remove, or change awards, you only need to edit this data structure.
     const seasons = [
@@ -77,6 +108,31 @@
     ];
 </script>
 
+<style>
+  .slideshow-carousel {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .slideshow-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .slideshow-image.active {
+    opacity: 1;
+  }
+</style>
+
 <section id="record" class="px-6 md:px-8 lg:px-10 py-32 relative z-10 min-h-screen">
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
@@ -98,13 +154,30 @@
                 <div class="relative mb-16">
                     <div class="hidden lg:block absolute left-[calc(theme(spacing.10))] md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 {season.nodeColor} rounded-full border-4 border-gray-900 z-10"></div>
                     
-                    <div 
-                        class="flex justify-start"
-                        class:md:justify-end={i % 2 === 0}
-                        class:md:pr-12={i % 2 === 0}
-                        class:md:pl-12={i % 2 !== 0}
-                    >
-                        <div class="w-full md:w-[45rem] bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div class="flex items-center gap-8">
+                        <!-- Left Carousel (for 2024-25 season, i=0) -->
+                        {#if i === 0}
+                            <div class="hidden lg:flex flex-1 justify-center items-center">
+                                <div class="slideshow-carousel">
+                                    {#each carouselImages1 as image, idx}
+                                        <img 
+                                            src={image} 
+                                            alt="Team {idx + 1}" 
+                                            class="slideshow-image"
+                                            class:active={idx === currentIndex1}
+                                        />
+                                    {/each}
+                                </div>
+                            </div>
+                        {/if}
+
+                        <div 
+                            class="flex justify-start flex-1"
+                            class:md:justify-end={i % 2 === 0}
+                            class:md:pr-12={i % 2 === 0}
+                            class:md:pl-12={i % 2 !== 0}
+                        >
+                            <div class="w-full md:w-[45rem] bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
                             <div class="inline-block {season.badgeTextColor} px-4 py-2 rounded-full font-bold text-lg mb-6" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
                                 🏆 {season.year}
                             </div>
@@ -122,7 +195,24 @@
                                     </div>
                                 {/each}
                             </div>
+                            </div>
                         </div>
+
+                        <!-- Right Carousel (for 2023-24 season, i=1) -->
+                        {#if i === 1}
+                            <div class="hidden lg:flex flex-1 justify-center items-center">
+                                <div class="slideshow-carousel">
+                                    {#each carouselImages2 as image, idx}
+                                        <img 
+                                            src={image} 
+                                            alt="Team {idx + 1}" 
+                                            class="slideshow-image"
+                                            class:active={idx === currentIndex2}
+                                        />
+                                    {/each}
+                                </div>
+                            </div>
+                        {/if}
                     </div>
                 </div>
             {/each}
@@ -217,6 +307,3 @@
 
     
 </section>
-
-<style>
-</style>
