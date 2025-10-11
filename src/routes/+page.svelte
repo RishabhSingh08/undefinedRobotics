@@ -243,8 +243,8 @@
       <!-- Gradient Overlay -->
       <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 pointer-events-none z-20"></div>
 
-      <!-- Ad Banner - Top Center -->
-      <div class="absolute top-4 lg:top-24 left-1/2 transform -translate-x-1/2 z-30">
+      <!-- Ad Banner - Top Center (Desktop only) -->
+      <div class="hidden lg:block absolute top-4 lg:top-24 left-1/2 transform -translate-x-1/2 z-30">
         <img 
           src={AdBanner} 
           alt="Sponsor Banner" 
@@ -369,8 +369,17 @@
   class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
   <!-- Sponsor Ads Section -->
-  <section class="px-4 py-16 relative z-10">
+  <section class="px-4 relative z-10">
     <div class="max-w-7xl mx-auto">
+      <!-- Ad Banner - Mobile Only (Above Sponsor Ads) -->
+      <div class="md:hidden flex justify-center mb-8">
+        <img 
+          src={AdBanner} 
+          alt="Sponsor Banner" 
+          class="h-16 w-auto rounded-lg"
+        />
+      </div>
+      
       <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
           <img 
