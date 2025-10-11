@@ -559,7 +559,7 @@
     </div>
   </div>
   
-  <div class="hidden md:block sponsor-carousel-container py-6">
+  <div class="hidden md:block sponsor-carousel-container py-6 bg-white/20">
     <div class="sponsor-carousel-track">
       {#each [...sponsors, ...sponsors] as sponsor, i}
         <div class="sponsor-carousel-item">
