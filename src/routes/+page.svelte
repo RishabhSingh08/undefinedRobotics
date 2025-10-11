@@ -1,5 +1,6 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
+  import StatsGrid from '../lib/components/StatsGrid.svelte';
   import IconLogo from "../lib/images/logo.png";
   import TeamPhoto from "../lib/images/team.png";
 
@@ -340,29 +341,8 @@
       </div>
     </div>
   </section>
-  <div class="max-w-7xl mx-auto px-4">
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 mb-20">
-    <div class="text-center">
-      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">$25K+</div>
-      <div class="text-gray-300">Value Raised</div>
-    </div>
-    <div class="text-center">
-      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">4,000+</div>
-      <div class="text-gray-300">Underserved Individuals Reached</div>
-    </div>
-    <div class="text-center">
-      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">36+</div>
-      <div class="text-gray-300">FTC Teams Connected</div>
-    </div>
-    <div class="text-center">
-      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">10+</div>
-      <div class="text-gray-300">Regional/National Awards</div>
-    </div>
-    <div class="text-center">
-      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">15+</div>
-      <div class="text-gray-300">Proffesionals Connected</div>
-    </div>
-  </div>
+  <div class="max-w-7xl mx-auto px-4 mb-20">
+    <StatsGrid />
   </div>
   
 <hr
@@ -422,9 +402,6 @@
                 Designing and building an autonomous robot for the FIRST Tech Challenge "INTO THE DEEP" season. Our focus is on creating innovative solutions for underwater-themed challenges.
               </p>
             </div>
-            <div class="flex items-center text-sm text-gray-400 mt-auto">
-              <span class="mr-4">Status: Finished</span>
-            </div>
           </div>
         </a>
 
@@ -439,9 +416,6 @@
 
 
           </p>
-          <div class="flex items-center text-sm text-gray-400">
-            <span class="mr-4">Date: August 1st, 2025</span>
-          </div>
         </div>
 
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">

@@ -17,6 +17,7 @@
   import nishant from "../../lib/family/nishant_sinari.png";
   import team from "../../lib/family/teamphoto.png";
   import harsh from "../../lib/family/harsh.jpg";
+  import yash from "../../lib/family/yash.jpg";
 
 
 
@@ -78,7 +79,7 @@
       grade: "12th Grade",
       role: "Outreach + Socials",
       school: "Plano West Senior High School",
-      image: "https://via.placeholder.com/80x80/6B7280/FFFFFF?text=YG"
+      image: yash
     },
     {
       name: "Navin Rao",
@@ -202,7 +203,7 @@
   ];
 
   // Chiefs (specified names)
-  const chiefNames = ["Akshat Kumar", "Rishabh Singh", "Punit Lakhotiya", "Neel Tipnis", "Swaraj Nibandhe", "Nishant Sinari"];
+  const chiefNames = ["Akshat Kumar", "Nishant Sinari", "Swaraj Nibandhe", "Punit Lakhotiya", "Rishabh Singh", "Neel Tipnis"];
   // Map leadership roles and names for display only
   const chiefs = [
     {
@@ -210,13 +211,8 @@
       grade: "12th Grade"
     },
     {
-      ...undefinedTeamMembers.find(m => m.name === "Rishabh Singh"),
-      role: "Chief Technical Officer",
-      grade: "12th Grade"
-    },
-    {
-      ...undefinedTeamMembers.find(m => m.name === "Punit Lakhotiya"),
-      role: "Chief Financial Officer",
+      ...undefinedTeamMembers.find(m => m.name === "Nishant Sinari"),
+      role: "Chief Engagement Officer",
       grade: "12th Grade"
     },
     {
@@ -225,21 +221,22 @@
       grade: "12th Grade"
     },
     {
+      ...undefinedTeamMembers.find(m => m.name === "Punit Lakhotiya"),
+      role: "Chief Financial Officer",
+      grade: "12th Grade"
+    },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Rishabh Singh"),
+      role: "Chief Technical Officer",
+      grade: "12th Grade"
+    },
+    {
       ...undefinedTeamMembers.find(m => m.name === "Neel M"),
       name: "Neel Tipnis",
       role: "Head of Expansions",
       grade: "11th Grade"
     },
-    {
-    ...undefinedTeamMembers.find(m => m.name === "Nishant Sinari"),
-      role: "Chief Engagement Officer",
-      grade: "12th Grade"
-    },
   ];
-
-  // All team members (including chiefs)
-  // No filtering, so chiefs will appear in both sections
-
 
 
 
