@@ -1,5 +1,6 @@
 <script>
   import IconLogo from "../images/logo.png";
+  import AdBanner from "../images/sponsors/AdBanner.png";
   let mobileMenuOpen = false;
 </script>
 
@@ -67,7 +68,18 @@
         <a href="/impact" class="block text-white hover:text-yellow-400 transition-colors duration-200 py-2" on:click={() => mobileMenuOpen = false}>Impact</a>
         <a href="/record" class="block text-white hover:text-yellow-400 transition-colors duration-200 py-2" on:click={() => mobileMenuOpen = false}>Record</a>
         <a href="/contact" class="block text-white hover:text-yellow-400 transition-colors duration-200 py-2" on:click={() => mobileMenuOpen = false}>Contact</a>
-        <a href="/donate" class="block text-white hover:text-yellow-400 transition-colors duration-200 py-2" on:click={() => mobileMenuOpen = false}>Donate</a>
+        <a href="/donate" class="block text-white hover:text-yellow-400 transition-colors duration-200 py-2 font-bold" on:click={() => mobileMenuOpen = false}>Donate</a>
+        
+        <!-- Divider -->
+        <div class="border-t border-white/20 pt-4">
+          <div class="flex justify-center">
+            <img 
+              src={AdBanner} 
+              alt="Sponsor Banner" 
+              class="h-12 w-auto rounded-lg opacity-100"
+            />
+          </div>
+        </div>
       </div>
     </div>
   {/if}

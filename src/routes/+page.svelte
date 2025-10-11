@@ -48,6 +48,18 @@
   const column2 = [hero5, hero10, hero7, hero11];
   const column3 = [hero2, hero4, hero1, hero3];
 
+  let currentHeroIndex = 0;
+
+  onMount(() => {
+    const heroInterval = setInterval(() => {
+      currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
+    }, 4000);
+
+    return () => {
+      clearInterval(heroInterval);
+    };
+  });
+
 </script>
 
 <style>
@@ -155,6 +167,21 @@
     flex-shrink: 0;
   }
 
+  .hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .hero-bg-image.active {
+    opacity: 1;
+  }
+
   .hero-background-grid {
     position: absolute;
     inset: 0;
@@ -171,10 +198,10 @@
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
   <!-- hero section -->
-    <section class="relative z-10 h-screen overflow-hidden pt-[80px]">
+    <section class="relative z-10 overflow-hidden pt-[80px]">
       
-      <!-- 3 Column Vertical Carousel -->
-      <div class="w-full h-screen flex relative">
+      <!-- Desktop: 3 Column Vertical Carousel -->
+      <div class="hidden lg:flex w-full h-screen relative">
         
         <!-- Column 1 - Slow Speed (20s) -->
         <div class="carousel-column flex-1">
@@ -202,57 +229,65 @@
             {/each}
           </div>
         </div>
+      </div>
 
+      <!-- Mobile: Slideshow Background -->
+      <div class="lg:hidden relative h-auto min-h-[600px]">
+        {#each heroImages as image, idx}
+          <div class="hero-bg-image" class:active={idx === currentHeroIndex}>
+            <img src={image} alt="Team {idx + 1}" class="w-full h-full object-cover" />
+          </div>
+        {/each}
       </div>
 
       <!-- Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent pointer-events-none z-20"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 pointer-events-none z-20"></div>
 
       <!-- Ad Banner - Top Center -->
-      <div class="absolute top-24 left-1/2 transform -translate-x-1/2 z-30">
+      <div class="absolute top-4 lg:top-24 left-1/2 transform -translate-x-1/2 z-30">
         <img 
           src={AdBanner} 
           alt="Sponsor Banner" 
-          class="h-16 md:h-20 lg:h-24 w-auto rounded-lg"
+          class="h-12 md:h-16 lg:h-24 w-auto rounded-lg"
         />
       </div>
 
-      <!-- Text Overlay - Bottom Left -->
-      <div class="absolute bottom-0 left-0 z-30 p-6 md:p-14 lg:p-20 max-w-4xl">
-        
-        <!-- Logo and Title Side by Side -->
-        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-4 sm:mb-6">
-          <img 
-            src={IconLogo} 
-            alt="Undefined Robotics Logo" 
-            class="w-16 sm:w-24 md:w-32 lg:w-40"
-          />
-          <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            UNDEFINED<br/>
-            <span class="text-yellow-400">ROBOTICS</span>
-          </h1>
+      <!-- Text Overlay - Centered on Mobile, Bottom Left on Desktop -->
+      <div class="absolute inset-0 lg:inset-auto lg:bottom-0 lg:left-0 z-30 flex items-center justify-center lg:block p-6 md:p-14 lg:p-20 max-w-4xl">
+        <div class="text-center lg:text-left w-full">
+          <!-- Logo and Title -->
+          <div class="flex flex-col items-center lg:flex-row lg:items-center gap-4 sm:gap-6 mb-6">
+            <img 
+              src={IconLogo} 
+              alt="Undefined Robotics Logo" 
+              class="w-20 sm:w-24 md:w-32 lg:w-40"
+            />
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+              UNDEFINED<br/>
+              <span class="text-yellow-400">ROBOTICS</span>
+            </h1>
+          </div>
+
+          <!-- Description -->
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed mb-8">
+            One of the largest student-led STEM and robotics 501(c)3 non-profit projects in Texas. Based in Dallas-Fort Worth but serve around the world.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 pointer-events-auto justify-center lg:justify-start">
+            <a href="/impact" class="w-full sm:w-auto">
+              <button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all duration-200 group shadow-lg">
+                Our Impact
+                <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+              </button>
+            </a>
+            <a href="/record" class="w-full sm:w-auto">
+              <button class="w-full bg-gradient-to-r from-transparent to-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-400 hover:to-yellow-500 hover:text-black hover:border-transparent transition-all duration-200 shadow-lg">
+                View Our Achievements
+              </button>
+            </a>
+          </div>
         </div>
-
-        <!-- Description -->
-        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed mb-6 sm:mb-10">
-          One of the largest student-led STEM and robotics 501(c)3 non-profit projects in Texas. Based in Dallas-Fort Worth but serve around the world.
-        </p>
-
-        <!-- Buttons -->
-        <div class="flex flex-col sm:flex-row gap-3 sm:gap-5 pointer-events-auto">
-          <a href="/impact" class="w-full sm:w-auto">
-            <button class="w-full bg-yellow-400 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-yellow-500 transition-colors duration-200 group">
-              Our Impact
-              <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
-            </button>
-          </a>
-          <a href="/record" class="w-full sm:w-auto">
-            <button class="w-full border-2 border-yellow-400 text-yellow-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-yellow-400 hover:text-black transition-colors duration-200">
-              View Our Achievements
-            </button>
-          </a>
-        </div>
-
       </div>
     </section>
 
@@ -280,22 +315,22 @@
         Our Mission: Serve the Underserved
       </p>
       
-      <div class="space-y-12 max-w-5xl mx-auto  ">
+      <div class="space-y-10 max-w-5xl mx-auto  ">
 
-        <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
+        <p class="text-xl md:text-3xl text-gray-300 leading-relaxed">
           STEM should be for everyone.
 
         </p>
 
-        <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
+        <p class="text-xl md:text-3xl text-gray-300 leading-relaxed">
           Yet, far too often, underrepresented groups—women, senior citizens, tribal and native communities, and non-English speakers—are left out of these opportunities. After witnessing the toxic and exclusionary culture that can surround robotics and STEM at our school robotics club competitions, we made it our mission to change that.
         </p>
 
-        <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
+        <p class="text-xl md:text-3xl text-gray-300 leading-relaxed">
           We believe various backgrounds bring fresh perspective and innovation to STEM. Instead of just meeting a diversity quota or lowering the standard for certain groups, we staunchly believe in actually addressing the problem by building opportunities and resources for those underserved to learn, build, and thrive in STEM.
         </p>
 
-        <p class="text-2xl md:text-3xl text-gray-300 leading-relaxed">
+        <p class="text-xl md:text-3xl text-gray-300 leading-relaxed">
           Through education, outreach, hands-on opportunities, and real-world interactions, we strive to foster an open environment where everyone, regardless of background, can flourish.
         </p>
 
