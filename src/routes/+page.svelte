@@ -218,36 +218,36 @@
       </div>
 
       <!-- Text Overlay - Bottom Left -->
-      <div class="absolute bottom-0 left-0 z-30 p-10 md:p-14 lg:p-20 max-w-4xl">
+      <div class="absolute bottom-0 left-0 z-30 p-6 md:p-14 lg:p-20 max-w-4xl">
         
         <!-- Logo and Title Side by Side -->
-        <div class="flex items-center gap-6 mb-6">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-4 sm:mb-6">
           <img 
             src={IconLogo} 
             alt="Undefined Robotics Logo" 
-            class="w-24 md:w-32 lg:w-40"
+            class="w-16 sm:w-24 md:w-32 lg:w-40"
           />
-          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+          <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
             UNDEFINED<br/>
             <span class="text-yellow-400">ROBOTICS</span>
           </h1>
         </div>
 
         <!-- Description -->
-        <p class="text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed mb-10">
+        <p class="text-sm sm:text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed mb-6 sm:mb-10">
           One of the largest student-led STEM and robotics 501(c)3 non-profit projects in Texas. Based in Dallas-Fort Worth but serve around the world.
         </p>
 
         <!-- Buttons -->
-        <div class="flex flex-col sm:flex-row gap-5 pointer-events-auto">
-          <a href="/impact">
-            <button class="bg-yellow-400 text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition-colors duration-200 group">
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-5 pointer-events-auto">
+          <a href="/impact" class="w-full sm:w-auto">
+            <button class="w-full bg-yellow-400 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-yellow-500 transition-colors duration-200 group">
               Our Impact
               <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
             </button>
           </a>
-          <a href="/record">
-            <button class="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-400 hover:text-black transition-colors duration-200">
+          <a href="/record" class="w-full sm:w-auto">
+            <button class="w-full border-2 border-yellow-400 text-yellow-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-yellow-400 hover:text-black transition-colors duration-200">
               View Our Achievements
             </button>
           </a>
@@ -299,13 +299,14 @@
           Through education, outreach, hands-on opportunities, and real-world interactions, we strive to foster an open environment where everyone, regardless of background, can flourish.
         </p>
 
-        <p class="text-xl md:text-2xl cedarville-cursive-regular text-right">
+        <p class="text-xl md:text-2xl cedarville-cursive-regular text-center md:text-right">
           ~ The Undefined Robotics team
         </p>
       </div>
     </div>
   </section>
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
+  <div class="max-w-7xl mx-auto px-4">
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 mb-20">
     <div class="text-center">
       <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">$25K+</div>
       <div class="text-gray-300">Value Raised</div>
@@ -326,6 +327,7 @@
       <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">15+</div>
       <div class="text-gray-300">Proffesionals Connected</div>
     </div>
+  </div>
   </div>
   
 <hr
@@ -502,8 +504,18 @@
   </h2>
 
 
-<section class="w-full overflow-hidden relative z-10 bg-white/10 mb-32">
-  <div class="sponsor-carousel-container py-6">
+<section class="w-full overflow-hidden relative z-10  mb-32">
+  <div class="block md:hidden px-4 py-8">
+    <div class="grid grid-cols-2 gap-6 max-w-md mx-auto">
+      {#each sponsors as sponsor, i}
+        <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label="Sponsor {i + 1}" class="flex items-center justify-center p-4 bg-white/20 rounded-lg hover:bg-white/10 transition-all">
+          <img src={sponsor.src} alt="Sponsor Logo {i + 1}" class="h-12 w-auto max-w-full object-contain" />
+        </a>
+      {/each}
+    </div>
+  </div>
+  
+  <div class="hidden md:block sponsor-carousel-container py-6">
     <div class="sponsor-carousel-track">
       {#each [...sponsors, ...sponsors] as sponsor, i}
         <div class="sponsor-carousel-item">

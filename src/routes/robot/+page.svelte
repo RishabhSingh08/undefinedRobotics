@@ -92,7 +92,11 @@
 
 <section class="relative z-10 px-4 pb-16">
   <div class="max-w-7xl mx-auto relative">
-    <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 transform -translate-y-1/2 z-0"></div>
+    <!-- Horizontal line for desktop -->
+    <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 transform -translate-y-1/2 z-0"></div>
+    
+    <!-- Vertical line for mobile -->
+    <div class="md:hidden absolute top-0 bottom-0 left-1/2 w-0.5 bg-gray-300 transform -translate-x-1/2 z-0"></div>
     
     <div class="grid md:grid-cols-3 gap-8 relative z-10">
       <div class="bg-[#20242c] backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-[#2A2F34] transition-all duration-300">

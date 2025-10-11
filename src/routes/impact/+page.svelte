@@ -100,16 +100,16 @@
             </h2>
           </div>
           <div class="flex justify-center mt-8">
-            <div class="flex justify-center gap-8 max-w-3xl">
+            <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 max-w-3xl">
   
-              <div class="flex items-center">
+              <div class="flex items-center justify-center md:justify-start">
                 <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
-                <h4 class="text-xl font-semibold text-white">Undefined #25782</h4>
+                <h4 class="text-lg md:text-xl font-semibold text-white">Undefined #25782</h4>
               </div>
   
-              <div class="flex items-center">
+              <div class="flex items-center justify-center md:justify-start">
                 <div class="w-3 h-3 bg-[#853dc4] rounded-full mr-3"></div>
-                <h4 class="text-xl font-semibold text-white">Missing Amps #30801</h4>
+                <h4 class="text-lg md:text-xl font-semibold text-white">Missing Amps #30801</h4>
               </div>
             </div>
           </div>
@@ -187,8 +187,8 @@
         <div class="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10">
           <div class="relative bg-cover bg-center h-32" style="background-image: url({images.communityBanner});">
             <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/60"></div>
-            <div class="relative h-full flex items-center justify-center">
-              <h3 class="text-3xl font-bold text-blue-100">Connecting With the Community</h3>
+            <div class="relative h-full flex items-center justify-center px-4">
+              <h3 class="text-2xl md:text-3xl font-bold text-blue-100 text-center">Connecting With the Community</h3>
             </div>
           </div>
           
