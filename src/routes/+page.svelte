@@ -199,12 +199,11 @@
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
   <!-- hero section -->
-    <section class="relative z-10 overflow-hidden ">
+    <section class="relative z-10 overflow-hidden pt-[80px] md:pt-0">
       
       <!-- Desktop: 3 Column Vertical Carousel -->
       <div class="hidden lg:flex w-full h-screen relative">
         
-        <!-- Column 1 - Slow Speed (20s) -->
         <div class="carousel-column flex-1">
           <div class="carousel-track carousel-track-1">
             {#each [...column1, ...column1, ...column1] as image}
@@ -213,7 +212,6 @@
           </div>
         </div>
 
-        <!-- Column 2 - Medium Speed (25s) -->
         <div class="carousel-column flex-1">
           <div class="carousel-track carousel-track-2">
             {#each [...column2, ...column2, ...column2] as image}
@@ -222,7 +220,6 @@
           </div>
         </div>
 
-        <!-- Column 3 - Fast Speed (30s) -->
         <div class="carousel-column flex-1">
           <div class="carousel-track carousel-track-3">
             {#each [...column3, ...column3, ...column3] as image}
@@ -232,7 +229,6 @@
         </div>
       </div>
 
-      <!-- Mobile: Slideshow Background -->
       <div class="lg:hidden relative h-auto min-h-[600px]">
         {#each heroImages as image, idx}
           <div class="hero-bg-image" class:active={idx === currentHeroIndex}>
@@ -244,7 +240,7 @@
       <!-- Gradient Overlay -->
       <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 pointer-events-none z-20"></div>
 
-      <!-- Ad Banner - Top Center (Desktop only) -->
+      <!-- Ad Banner - (Desktop only) -->
       <div class="hidden lg:block absolute top-4 lg:top-24 left-1/2 transform -translate-x-1/2 z-30">
         <img 
           src={AdBanner} 
@@ -356,7 +352,7 @@
         <img 
           src={AdBanner} 
           alt="Sponsor Banner" 
-          class="h-16 w-auto rounded-lg"
+          class="h-auto max-h-16 w-auto rounded-lg"
         />
       </div>
       

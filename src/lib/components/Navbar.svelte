@@ -76,7 +76,7 @@
             <img 
               src={AdBanner} 
               alt="Sponsor Banner" 
-              class="h-12 w-auto rounded-lg opacity-100"
+              class="h-auto max-h-16 w-auto rounded-lg"
             />
           </div>
         </div>
