@@ -163,7 +163,7 @@
 
   .sponsor-carousel-track {
     display: inline-flex; 
-    animation: scroll-left 20s linear infinite; 
+    animation: scroll-left 30s linear infinite; 
   }
 
   .sponsor-carousel-item {
