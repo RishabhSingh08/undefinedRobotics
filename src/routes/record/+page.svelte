@@ -304,6 +304,52 @@
       </div>
     </div>
     
+    <!-- Financial Documents Section -->
+    <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-16">
+      <div class="border-t border-white/20 pt-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            Financial Transparency
+          </h2>
+          <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+            As a financially sponsored organization under Hack Club, we are committed to upholding the highest level of transparency and accountability. To ensure our stakeholders and supporters are fully informed about our operations, we release an annual report detailing our financial activities.
+
+
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/src/lib/images/files/IRS Letter (1).pdf" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+            <div class="flex items-center justify-center mb-4">
+              <svg class="w-16 h-16 text-yellow-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 text-center">IRS 501(c)(3) Letter</h3>
+            <p class="text-gray-300 text-sm text-center">Official tax-exempt status determination letter</p>
+          </a>
+          
+          <a href="/src/lib/images/files/Certificate of Status.pdf" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+            <div class="flex items-center justify-center mb-4">
+              <svg class="w-16 h-16 text-blue-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 text-center">Certificate of Status</h3>
+            <p class="text-gray-300 text-sm text-center">Official state registration certificate</p>
+          </a>
+          
+          <a href="/src/lib/images/files/fiscal_sponsorship_letter (1).pdf" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+            <div class="flex items-center justify-center mb-4">
+              <svg class="w-16 h-16 text-green-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 text-center">Fiscal Sponsorship Letter</h3>
+            <p class="text-gray-300 text-sm text-center">Fiscal sponsorship agreement documentation</p>
+          </a>
+        </div>
+      </div>
+    </div>
 
     
 </section>
