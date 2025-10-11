@@ -19,7 +19,7 @@
     { src: s4, href: 'https://dekaresearch.com/' },
     { src: s5, href: 'https://www.bosch.com/' },
     { src: s6, href: 'https://www.jabil.com/' },
-    { src: s7, href: 'https://www.solaceglobal.world/' }
+    // { src: s7, href: 'https://www.solaceglobal.world/' }
   ];
 
 </script>
@@ -115,7 +115,7 @@
           UNDEFINED ROBOTICS
         </h1>
         <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-400 max-w-2xl mx-auto px-4">
-          One of the largest student-led STEM and robotics 501(c)3 non-profit organizations in Texas. Based in Dallas-Fort Worth but serve around the world.
+          One of the largest student-led STEM and robotics 501(c)3 non-profit projects in Texas. Based in Dallas-Fort Worth but serve around the world.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4"> 
           <a href="/impact">
@@ -261,7 +261,7 @@
               <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
               <div>
                 <p class="text-white font-semibold">Acquired new team</p>
-                <p class="text-gray-400 text-sm">Missing Amps #30801 joins Undefined Robotics NPO</p>
+                <p class="text-gray-400 text-sm">Missing Amps #30801 joins Undefined Robotics NPP</p>
               </div>
             </div>
           </div>
@@ -277,7 +277,7 @@
             </div>
             <div>
               <h4 class="text-lg font-semibold text-white">Website Revamp Launch</h4>
-              <p class="text-gray-400 text-sm">Version 2 launch of new NPO website</p>
+              <p class="text-gray-400 text-sm">Version 2 launch of new NPP website</p>
             </div>
           </div>
           

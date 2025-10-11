@@ -27,9 +27,107 @@
     {
       name: "Akshat Kumar",
       grade: "12th Grade",
-      role: "Captain/CAD Modeler/Engineer",
+      role: "Captain + CAD/Engineer Lead",
       school: "Plano Senior High School",
       image: akshat
+    },
+    {
+      name: "Punit Lakhotiya",
+      grade: "12th Grade",
+      role: "Team Management + Outreach",
+      school: "Plano West Senior High School",
+      image: punit
+    },
+    {
+      name: "Swaraj Nibandhe",
+      grade: "12th Grade",
+      role: "Fundraising Lead + Engineer",
+      school: "Plano West Senior High School",
+      image: swaraj
+    },
+    {
+      name: "Nishant Sinari",
+      grade: "12th Grade",
+      role: "Outreach Lead",
+      school: "Plano West Senior High School",
+      image: nishant
+    },
+    {
+      name: "Lucas Silva",
+      grade: "12th Grade",
+      role: "Engineer + Driver",
+      school: "Plano West Senior High School",
+      image: lucas
+    },
+    {
+      name: "Erik Wang",
+      grade: "12th Grade",
+      role: "Engineer",
+      school: "Plano West Senior High School",
+      image: erik
+    },
+    {
+      name: "Xander Kuksov",
+      grade: "12th Grade",
+      role: "Programming Lead",
+      school: "Plano West Senior High School",
+      image: xander
+    },
+    {
+      name: "Yash Giriyapura",
+      grade: "12th Grade",
+      role: "Outreach + Socials",
+      school: "Plano West Senior High School",
+      image: "https://via.placeholder.com/80x80/6B7280/FFFFFF?text=YG"
+    },
+    {
+      name: "Navin Rao",
+      grade: "12th Grade",
+      role: "CAD Modeler + Engineer",
+      school: "Plano Senior High School",
+      image: navin
+    },
+    {
+      name: "Samanyu Earna",
+      grade: "12th Grade",
+      role: "Programmer + Outreach",
+      school: "Plano West Senior High School",
+      image: samanyu
+    },
+    {
+      name: "Azalea Tang",
+      grade: "12th Grade",
+      role: "Programmer",
+      school: "Plano West Senior High School",
+      image: azalea
+    },
+    {
+      name: "Ainesh Gupta",
+      grade: "12th Grade",
+      role: "Engineer + Outreach",
+      school: "Plano West Senior High School",
+      image: ainesh
+    },
+    {
+      name: "Ashwin Gupta",
+      grade: "12th Grade",
+      role: "Engineer + Socials",
+      school: "Plano Senior High School",
+      image: ashwin
+    },
+    {
+      name: "Mahit Cherku",
+      grade: "12th Grade",
+      role: "Outreach",
+      school: "Memorial High School",
+      image: mahit
+    },
+    {
+      name: "Vedant Teware",
+      grade: "12th Grade",
+      role: "Outreach",
+      school: "Lonestar High School",
+      image: vedant
     },
     {
       name: "Neel M",
@@ -44,98 +142,6 @@
       role: "Chief Technical Officer",
       school: "Plano West Senior High School",
       image: rishabh
-    },
-    {
-      name: "Punit Lakhotiya",
-      grade: "12th Grade",
-      role: "Finance/Team Management/Engineer",
-      school: "Plano West Senior High School",
-      image: punit
-    },
-
-    {
-      name: "Navin Rao",
-      grade: "12th Grade",
-      role: "CAD Modeler/Engineer",
-      school: "Plano Senior High School",
-      image: navin
-    },
-    {
-      name: "Nishant Sinari",
-      grade: "12th Grade",
-      role: "Outreach Lead/Engineer",
-      school: "Plano West Senior High School",
-      image: nishant
-    },
-    {
-      name: "Lucas Silva",
-      grade: "12th Grade",
-      role: "Engineer/Driver",
-      school: "Plano West Senior High School",
-      image: lucas
-    },
-    {
-      name: "Swaraj Nibandhe",
-      grade: "12th Grade",
-      role: "Engineer/Team Lead",
-      school: "Plano West Senior High School",
-      image: swaraj
-    },
-    {
-      name: "Xander Kuksov",
-      grade: "12th Grade",
-      role: "Programmer",
-      school: "Plano West Senior High School",
-      image: xander
-    },
-    {
-      name: "Samanyu Earna",
-      grade: "12th Grade",
-      role: "Programmer",
-      school: "Plano West Senior High School",
-      image: samanyu
-    },
-    {
-      name: "Azalea Tang",
-      grade: "12th Grade",
-      role: "Programmer",
-      school: "Plano West Senior High School",
-      image: azalea
-    },
-    {
-      name: "Ainesh Gupta",
-      grade: "12th Grade",
-      role: "Engineer",
-      school: "Plano West Senior High School",
-      image: ainesh
-    },
-    {
-      name: "Erik Wang",
-      grade: "12th Grade",
-      role: "Engineer/Outreach/Driver",
-      school: "Plano West Senior High School",
-      image: erik
-    },
-    {
-      name: "Mahit Cherku",
-      grade: "12th Grade",
-      role: "Outreach/Engineer",
-      school: "Memorial High School",
-      image: mahit
-    },
-    {
-      name: "Vedant Teware",
-      grade: "12th Grade",
-      role: "Outreach/Engineer",
-      school: "Lonestar High School",
-      image: vedant
-    },
-    {
-      name: "Ashwin Gupta",
-      grade: "12th Grade",
-      role: "Engineer",
-      school: "Plano Senior High School",
-      image: ashwin
     },
 
     
@@ -201,7 +207,6 @@
   const chiefs = [
     {
       ...undefinedTeamMembers.find(m => m.name === "Akshat Kumar"),
-      role: "Founder & President",
       grade: "12th Grade"
     },
     {
@@ -351,7 +356,7 @@
             <h3 class="text-xl font-bold mb-4 text-yellow-400">Team Information</h3>
             <div class="space-y-3">
               <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">25782</span></div>
-              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-2} Seniors</span></div>
+              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-2} Members</span></div>
               <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2024</span></div>
               <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT S-League</span></div>
             </div>

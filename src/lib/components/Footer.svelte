@@ -3,13 +3,9 @@
   import { faInstagram, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons';
   import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
   import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
-
-
-
 </script>
 
 <footer class=" backdrop-blur-sm border-t border-white/10 text-white dm-sans">
-
     <div class="max-w-7xl mx-auto px-4 py-12">
       <div class="grid md:grid-cols-4 gap-8">
         <div class="md:col-span-2">
@@ -18,7 +14,7 @@
             <span class="text-2xl font-bold">Undefined Robotics</span>
           </div>
           <p class="text-gray-400 max-w-md mb-6">
-            A student-led STEM and robotics 501(c)3 NPO based in Plano, Texas that works to serve the underserved in our community and worldwide.
+            A student-led STEM and robotics 501(c)3 NPP based in Plano, Texas that works to serve the underserved in our community and worldwide.
           </p>
           <div class="flex space-x-6  mt-8">
             <a
@@ -42,17 +38,16 @@
             >
               <FontAwesomeIcon icon={faYoutube} class="w-8" />
             </a>
-<a
-  href="https://ftcscout.org/teams/25782"
-  aria-label="FTC Scout"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="text-gray-400 hover:text-yellow-400 transition-colors"
->
-<i class="fa-solid fa-binoculars"></i></a>
-
-
-
+              <a
+                href="https://ftcscout.org/teams/25782"
+                aria-label="FTC Scout"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-yellow-400 transition-colors"
+              >
+              <i class="fa-solid fa-binoculars">
+              </i>
+            </a>
             <p class="text-gray-400 hover:text-yellow-400 transition-colors">
               <FontAwesomeIcon icon={faDiscord} class="w-6 h-6" />
               <span>
@@ -83,15 +78,25 @@
             <p>📱 (469) 819-7461</p>
           </div>
         </div>
+        <div>
+
+
+        </div>
       </div>
       
       <div class="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-400 text-sm">
           © 2025 Undefined Robotics. All rights reserved.
         </p>
+
         <div class="flex space-x-6 mt-4 md:mt-0">
           <a href="/privacy-policy" class="text-gray-400 hover:text-yellow-400 transition-colors text-sm">Privacy Policy</a>        
         </div>
+
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <p class="text-gray-400 text-sm">Website made by Rishabh Singh, Punit Lakhotiya, Akshat Kumar</p>        
+        </div>  
+
       </div>
     </div>
   </footer>

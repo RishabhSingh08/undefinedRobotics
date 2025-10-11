@@ -184,7 +184,7 @@
               <div class="w-8 h-8 bg-white rounded-full"></div>
             </div>
             <h3 class="text-xl font-bold text-blue-300 mb-2">Connect</h3>
-            <p class="text-gray-300 text-sm">Connecting and establishing partnerships with other local non-profit organizations</p>
+            <p class="text-gray-300 text-sm">Connecting and establishing partnerships with other local non-profit projects</p>
           </div>
           
           <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center hover:bg-white/10 transition-all duration-300">

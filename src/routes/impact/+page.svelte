@@ -67,7 +67,7 @@
         </div>
       </div>
               
-   <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+   <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-20">
   <div class="text-center">
     <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">$25K+</div>
     <div class="text-gray-300">Value Raised</div>
@@ -78,11 +78,15 @@
   </div>
   <div class="text-center">
     <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">36+</div>
-    <div class="text-gray-300">FTC Teams Supported</div>
+    <div class="text-gray-300">FTC Teams Connected</div>
   </div>
   <div class="text-center">
     <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">10+</div>
     <div class="text-gray-300">Regional/National Awards</div>
+  </div>
+  <div class="text-center">
+    <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">15+</div>
+    <div class="text-gray-300">Proffesionals Connected</div>
   </div>
 </div>
 
@@ -149,7 +153,7 @@
                       <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Smart Seniors (Video Series)</h4>
                     </div>
-                    <p class="text-gray-300 mb-4">Partnered with Solace Global to teach senior citizens about online safety through an accessible video series focused on phishing, scams, and fraud prevention.</p>
+                    <p class="text-gray-300 mb-4">Taught senior citizens about online safety through an accessible video series focused on phishing, scams, and fraud prevention.</p>
                   </div>
                   <div>
                     <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
@@ -166,7 +170,7 @@
                       <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Enviormental Workshop</h4>
                     </div>
-                    <p class="text-gray-300 mb-4">Hosted a hands-on workshop in collaboration with Solace Global to demonstrate how robotics can help tackle environmental issues like waste and renewable energy.</p>
+                    <p class="text-gray-300 mb-4">Hosted a hands-on workshop to demonstrate how robotics can help tackle environmental issues like waste and renewable energy.</p>
                   </div>
                   <div>
                     <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
@@ -215,7 +219,7 @@
                       <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
                       <h4 class="text-xl font-semibold text-white">Career Literacy Program</h4>
                     </div>
-                    <p class="text-gray-300 mb-4">Created 25+ career videos with Solace Global showcasing real-world engineering disciplines. Each video averaged 2,000 views, broadening access to STEM guidance.</p>
+                    <p class="text-gray-300 mb-4">Created 25+ career videos showcasing real-world engineering disciplines. Each video averaged 2,000 views, broadening access to STEM guidance.</p>
                   </div>
                   <div>
                     <div class="text-sm text-yellow-300 font-semibold">Impact:</div>
