@@ -140,7 +140,7 @@
         </p>
         <div class="space-y-2 text-gray-200">
           <p><strong class="text-white">Email:</strong> contact@undefinedrobotics.org</p>
-          <p><strong class="text-white">Phone:</strong> (469) 819-7461</p>
+          <p><strong class="text-white">Instagram:</strong> @undefinedrobotics</p>
         </div>
       </div>
 

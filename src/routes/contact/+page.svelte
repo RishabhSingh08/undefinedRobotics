@@ -2,6 +2,9 @@
     import IconLogo from "../../lib/images/logo.png";
     import { onMount } from 'svelte';
     import emailjs from '@emailjs/browser';
+    import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+    import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+    import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
     let formData = {
         name: '',
@@ -15,7 +18,7 @@
 
     const contactInfo = {
         email: 'contact@undefinedrobotics.org',
-        phone: "(469) 819-7461",
+        instagram: "@undefinedrobotics",
         location: 'Plano, Texas',
         availability: 'Monday - Friday: 9:00 AM - 9:00 PM CST',
         response: 'We typically respond within 24 hours'
@@ -87,7 +90,9 @@
                         <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
                         <div class="space-y-6">
                             <div class="flex items-center space-x-4">
-                                <span class="text-2xl">📧</span>
+                                <div class="w-10 h-10 flex items-center justify-center text-xl bg-yellow-400/10 rounded-lg">
+                                    <FontAwesomeIcon icon={faEnvelope} class="w-5 h-5 text-yellow-400" />
+                                </div>
                                 <div>
                                     <p class="font-semibold">Email</p>
                                     <a href="mailto:Stryng.dev@gmail.com" class="text-gray-400 hover:text-white transition-colors">
@@ -96,16 +101,20 @@
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4">
-                                <span class="text-2xl">📱</span>
+                                <div class="w-10 h-10 flex items-center justify-center text-xl bg-yellow-400/10 rounded-lg">
+                                    <FontAwesomeIcon icon={faInstagram} class="w-5 h-5 text-yellow-400" />
+                                </div>
                                 <div>
-                                    <p class="font-semibold">Phone</p>
-                                    <a href="tel:9726969564" class="text-gray-400 hover:text-white transition-colors">
-                                        {contactInfo.phone}
+                                    <p class="font-semibold">Instagram</p>
+                                    <a href="https://www.instagram.com/undefinedrobotics" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+                                        {contactInfo.instagram}
                                     </a>
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4">
-                                <span class="text-2xl">📍</span>
+                                <div class="w-10 h-10 flex items-center justify-center text-xl bg-yellow-400/10 rounded-lg">
+                                    <FontAwesomeIcon icon={faLocationDot} class="w-5 h-5 text-yellow-400" />
+                                </div>
                                 <div>
                                     <p class="font-semibold">Location</p>
                                     <p class="text-gray-400">{contactInfo.location}</p>

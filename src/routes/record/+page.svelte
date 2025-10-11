@@ -8,6 +8,10 @@
     import hero10 from "../../lib/images/hero/10.png";
     import hero11 from "../../lib/images/hero/11.png";
     import hero12 from "../../lib/images/hero/12.png";
+    
+    import irsLetter from "../../lib/images/files/IRS Letter (1).pdf";
+    import certificateOfStatus from "../../lib/images/files/Certificate of Status.pdf";
+    import fiscalSponsorshipLetter from "../../lib/images/files/fiscal_sponsorship_letter (1).pdf";
 
     const carouselImages1 = [hero5, hero6, hero7, hero8];
     const carouselImages2 = [hero9, hero10, hero11, hero12];
@@ -224,7 +228,7 @@
     <div class="flex justify-center">
       <div class="border-t border-white/20 pt-16 max-w-7xl">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-400 to-white bg-clip-text text-transparent mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent mb-4">
             The Next Step
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -235,11 +239,6 @@
   
   
         <div class="mb-12">
-          <div class="text-center mb-8">
-            <div class="inline-block text-gray-900 px-6 py-3 rounded-full font-bold text-xl mb-4" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
-              2024-25
-            </div>
-          </div>
           <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-3xl mx-auto">
             <h3 class="text-2xl font-bold text-white mb-6 text-center">Our Roadmap</h3>
             <div class="space-y-6">
@@ -304,7 +303,6 @@
       </div>
     </div>
     
-    <!-- Financial Documents Section -->
     <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-16">
       <div class="border-t border-white/20 pt-16">
         <div class="text-center mb-12">
@@ -312,13 +310,12 @@
             Financial Transparency
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-            As a financially sponsored organization under Hack Club, we are committed to upholding the highest level of transparency and accountability. To ensure our stakeholders and supporters are fully informed about our operations, we release an annual report detailing our financial activities.
-
-
+            Fiscally sponsored by the Hack Foundation, the Undefined Robotics Non Profit Project is working with Candid to deliver full transparency to everyone.
+          </p>
         </div>
         
         <div class="grid md:grid-cols-3 gap-6">
-          <a href="/src/lib/images/files/IRS Letter (1).pdf" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+          <a href={irsLetter} target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
             <div class="flex items-center justify-center mb-4">
               <svg class="w-16 h-16 text-yellow-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -328,7 +325,7 @@
             <p class="text-gray-300 text-sm text-center">Official tax-exempt status determination letter</p>
           </a>
           
-          <a href="/src/lib/images/files/Certificate of Status.pdf" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+          <a href={certificateOfStatus} target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
             <div class="flex items-center justify-center mb-4">
               <svg class="w-16 h-16 text-blue-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -338,7 +335,7 @@
             <p class="text-gray-300 text-sm text-center">Official state registration certificate</p>
           </a>
           
-          <a href="/src/lib/images/files/fiscal_sponsorship_letter (1).pdf" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+          <a href={fiscalSponsorshipLetter} target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
             <div class="flex items-center justify-center mb-4">
               <svg class="w-16 h-16 text-green-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

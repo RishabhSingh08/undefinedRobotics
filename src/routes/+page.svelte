@@ -26,6 +26,9 @@
   import s5 from "../lib/images/sponsors/s5.png";
   import s6 from "../lib/images/sponsors/s6.png";
   import s7 from "../lib/images/sponsors/s7.png";
+  import s8 from "../lib/images/sponsors/s8.png";
+  import s9 from "../lib/images/sponsors/s9.png";
+  import s10 from "../lib/images/sponsors/s10.png";
   
   import AdBanner from "../lib/images/sponsors/AdBanner.png";
   import Ad1 from "../lib/images/sponsors/Ad1.png";
@@ -39,6 +42,9 @@
     { src: s4, href: 'https://dekaresearch.com/' },
     { src: s5, href: 'https://www.bosch.com/' },
     { src: s6, href: 'https://www.jabil.com/' },
+    { src: s8, href: 'https://svtronics.com/' },
+    { src: s9, href: 'https://www.mmmfg.com/' },
+    { src: s10, href: 'https://buildshowlive.com/' }
     // { src: s7, href: 'https://www.solaceglobal.world/' }
   ];
 
@@ -50,6 +56,44 @@
   const column3 = [hero2, hero4, hero1, hero3];
 
   let currentHeroIndex = 0;
+
+  const featuredCards = [
+    {
+      title: 'Our Robot',
+      subtitle: 'FTC Competition Robot 2025',
+      description: 'Designing and building an autonomous robot for the FIRST Tech Challenge "INTO THE DEEP" season. Our focus is on creating innovative solutions for underwater-themed challenges.',
+      dotColor: 'bg-yellow-400',
+      gradientFrom: 'yellow-200',
+      gradientTo: 'yellow-400',
+      animate: true,
+      link: '/robot'
+    },
+    {
+      title: 'Most Recent Event',
+      subtitle: 'Manufacturing Facility Tour',
+      description: 'Our team had the opportunity to tour a local manufacturing facility, where we engaged in meaningful discussions with industry professionals and explored real-world applications of automation and engineering.',
+      dotColor: 'bg-green-400',
+      gradientFrom: 'green-200',
+      gradientTo: 'green-400',
+      animate: false,
+      link: null
+    }
+  ];
+
+  const recentDevelopments = [
+    { title: 'New v2 website launch', description: 'Much anticipated website revamp drops August 5th' },
+    { title: 'Socials updated', description: 'Exciting new updates to our socials as we gear up for season' },
+    { title: 'Acquired new team', description: 'Missing Amps #30801 joins Undefined Robotics NPP' }
+  ];
+
+  const upcomingEvents = [
+    { date: 'SEP 06', title: 'Season Kickoff', description: 'New FTC challenge reveal and team planning' },
+    { date: 'OCT 11', title: 'Website Update Drop', description: 'Version 2.1 of new NPP website' },
+    { date: 'OCT 17', title: 'Build Show Expo', description: 'Come join us in this 2 day event'},
+    { date: 'NOV 08', title: '1st League meet', description: 'First robot competition of the season' },
+    { date: 'DEC 13', title: 'NLSS STEM Event', description: 'Major outreach event educating in STEM thru kits' },
+    { date: 'JAN #', title: 'League Tournament', description: 'First official tournament of the season' }
+  ];
 
   onMount(() => {
     const heroInterval = setInterval(() => {
@@ -261,7 +305,7 @@
             />
             <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               UNDEFINED<br/>
-              <span class="text-yellow-400">ROBOTICS</span>
+              <span class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent">ROBOTICS</span>
             </h1>
           </div>
 
@@ -273,13 +317,13 @@
           <!-- Buttons -->
           <div class="flex flex-col sm:flex-row gap-3 pointer-events-auto justify-center lg:justify-start">
             <a href="/impact" class="w-full sm:w-auto">
-              <button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-500 hover:to-yellow-600 transition-all duration-200 group shadow-lg">
+              <button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-400 hover:to-yellow-100 group shadow-lg">
                 Our Impact
                 <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
               </button>
             </a>
             <a href="/record" class="w-full sm:w-auto">
-              <button class="w-full bg-gradient-to-r from-transparent to-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-400 hover:to-yellow-500 hover:text-black hover:border-transparent transition-all duration-200 shadow-lg">
+              <button class="w-full bg-gradient-to-r from-transparent to-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-400 hover:to-yellow-200 hover:text-black hover:border-transparent transition-all duration-200 shadow-lg">
                 View Our Achievements
               </button>
             </a>
@@ -386,58 +430,44 @@
         </div>
 
       <div class="grid lg:grid-cols-3 gap-12 mb-16">
-        <a href="/robot" class="block group h-full">
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
-            <div>
-              <div class="flex items-center mb-6">
-                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
-                <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
+        {#each featuredCards as card}
+          {#if card.link}
+            <a href={card.link} class="block group h-full">
+              <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+                <div>
+                  <div class="flex items-center mb-6">
+                    <div class="w-3 h-3 {card.dotColor} rounded-full mr-3 {card.animate ? 'animate-pulse' : ''}"></div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-{card.gradientFrom} to-{card.gradientTo} bg-clip-text text-transparent">{card.title}</h3>
+                  </div>
+                  <h4 class="text-xl font-semibold text-white mb-4">{card.subtitle}</h4>
+                  <p class="text-gray-300 leading-relaxed mb-4">{card.description}</p>
+                </div>
               </div>
-              <h4 class="text-xl font-semibold text-white mb-4">FTC Competition Robot 2025</h4>
-              <p class="text-gray-300 leading-relaxed mb-4">
-                Designing and building an autonomous robot for the FIRST Tech Challenge "INTO THE DEEP" season. Our focus is on creating innovative solutions for underwater-themed challenges.
-              </p>
+            </a>
+          {:else}
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+              <div class="flex items-center mb-6">
+                <div class="w-3 h-3 {card.dotColor} rounded-full mr-3"></div>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-{card.gradientFrom} to-{card.gradientTo} bg-clip-text text-transparent">{card.title}</h3>
+              </div>
+              <h4 class="text-xl font-semibold text-white mb-4">{card.subtitle}</h4>
+              <p class="text-gray-300 leading-relaxed mb-4">{card.description}</p>
             </div>
-          </div>
-        </a>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="flex items-center mb-6">
-            <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-            <h3 class="text-2xl font-bold bg-gradient-to-r from-green-200 to-green-400 bg-clip-text text-transparent">Most Recent Event</h3>
-          </div>
-          <h4 class="text-xl font-semibold text-white mb-4">Manufacturing Facility Tour</h4>
-          <p class="text-gray-300 leading-relaxed mb-4">
-            Our team had the opportunity to tour a local manufacturing facility, where we engaged in meaningful discussions with industry professionals and explored real-world applications of automation and engineering.
-
-
-          </p>
-        </div>
+          {/if}
+        {/each}
 
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
           <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent mb-6">Recent Developments</h3>
           <div class="space-y-4">
-            <div class="flex items-start">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <div>
-                <p class="text-white font-semibold">New v2 website launch</p>
-                <p class="text-gray-400 text-sm">Much anticipated website revamp drops August 5th</p>
+            {#each recentDevelopments as dev}
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <p class="text-white font-semibold">{dev.title}</p>
+                  <p class="text-gray-400 text-sm">{dev.description}</p>
+                </div>
               </div>
-            </div>
-            <div class="flex items-start">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <div>
-                <p class="text-white font-semibold">Socials updated</p>
-                <p class="text-gray-400 text-sm">Exciting new updates to our socials as we gear up for season</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-              <div>
-                <p class="text-white font-semibold">Acquired new team</p>
-                <p class="text-gray-400 text-sm">Missing Amps #30801 joins Undefined Robotics NPP</p>
-              </div>
-            </div>
+            {/each}
           </div>
         </div>
       </div>
@@ -445,65 +475,17 @@
       <div class="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
         <h3 class="text-3xl font-bold text-white mb-8 text-center">Upcoming Events</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="flex items-start space-x-4">
-            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
-              AUG 5
+          {#each upcomingEvents as event}
+            <div class="flex items-start space-x-4">
+              <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
+                {event.date}
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-white">{event.title}</h4>
+                <p class="text-gray-400 text-sm">{event.description}</p>
+              </div>
             </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white">Website Revamp Launch</h4>
-              <p class="text-gray-400 text-sm">Version 2 launch of new NPP website</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-4">
-            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
-              AUG 12
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white">High School Begins</h4>
-              <p class="text-gray-400 text-sm">Summer projects and iniatives wrap up</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-4">
-            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
-              SEP 6
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white">Est. Season Kickoff</h4>
-              <p class="text-gray-400 text-sm">New FTC challenge reveal and team planning</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-4">
-            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
-              NOV #
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white">1st League meet</h4>
-              <p class="text-gray-400 text-sm">First robot competition of the season</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-4">
-            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
-              DEC 13
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white">NLSS STEM Event</h4>
-              <p class="text-gray-400 text-sm">Major outreach event educating in STEM thru kits</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-4">
-            <div class="text-black px-3 py-1 rounded-full text-sm font-bold flex-shrink-0" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
-              JAN #
-            </div>
-            <div>
-              <h4 class="text-lg font-semibold text-white">League Tournament</h4>
-              <p class="text-gray-400 text-sm">First official tournament of the season</p>
-            </div>
-          </div>
+          {/each}
         </div>
       </div>
       </div>

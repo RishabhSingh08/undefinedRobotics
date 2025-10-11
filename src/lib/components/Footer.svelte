@@ -16,10 +16,10 @@
           <p class="text-gray-400 max-w-md mb-6">
             A student-led STEM and robotics 501(c)3 NPP based in Plano, Texas that works to serve the underserved in our community and worldwide.
           </p>
-          <div class="flex space-x-6  mt-8">
+          <div class="flex space-x-4 text-xl mt-8">
             <a
               href="https://www.linktree.com/undefinedrobotics"
-              aria-label="Instagram"
+              aria-label="Linktree"
               class="text-gray-400 hover:text-yellow-400 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -27,6 +27,16 @@
               <span>
                 <i class="fa-brands fa-linktree"></i>
               </span>
+            </a>
+          
+            <a
+              href="https://www.instagram.com/undefinedrobotics"
+              aria-label="Instagram"
+              class="text-gray-400 hover:text-yellow-400 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram} class="w-8" />
             </a>
           
             <a
@@ -75,7 +85,6 @@
             <p>📍 Plano, Texas</p>
             <p>📧 contact@undefinedrobotics.org</p>
             <p>📧 missingamps.ftc@gmail.com</p>
-            <p>📱 (469) 819-7461</p>
           </div>
         </div>
         <div>

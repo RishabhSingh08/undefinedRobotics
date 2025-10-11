@@ -33,6 +33,13 @@
       image: akshat
     },
     {
+      name: "Nishant Sinari",
+      grade: "12th Grade",
+      role: "Outreach Lead",
+      school: "Plano West Senior High School",
+      image: nishant
+    },
+    {
       name: "Punit Lakhotiya",
       grade: "12th Grade",
       role: "Team Management + Outreach",
@@ -45,13 +52,6 @@
       role: "Fundraising Lead + Engineer",
       school: "Plano West Senior High School",
       image: swaraj
-    },
-    {
-      name: "Nishant Sinari",
-      grade: "12th Grade",
-      role: "Outreach Lead",
-      school: "Plano West Senior High School",
-      image: nishant
     },
     {
       name: "Lucas Silva",
@@ -148,7 +148,6 @@
     
   ];
 
-  // Dummy data for Missing Amps team
   const missingAmpsMembers = [
     {
       name: "Neel T.",
@@ -202,22 +201,11 @@
     
   ];
 
-  // Chiefs (specified names)
-  const chiefNames = ["Akshat Kumar", "Nishant Sinari", "Swaraj Nibandhe", "Punit Lakhotiya", "Rishabh Singh", "Neel Tipnis"];
-  // Map leadership roles and names for display only
+  const chiefNames = ["Akshat Kumar", "Punit Lakhotiya", "Rishabh Singh", "Swaraj Nibandhe", "Neel Tipnis", "Nishant Sinari"];
   const chiefs = [
     {
       ...undefinedTeamMembers.find(m => m.name === "Akshat Kumar"),
-      grade: "12th Grade"
-    },
-    {
-      ...undefinedTeamMembers.find(m => m.name === "Nishant Sinari"),
-      role: "Chief Engagement Officer",
-      grade: "12th Grade"
-    },
-    {
-      ...undefinedTeamMembers.find(m => m.name === "Swaraj Nibandhe"),
-      role: "Chief Operating Officer",
+      role: "Founder & Executive Director",
       grade: "12th Grade"
     },
     {
@@ -231,11 +219,21 @@
       grade: "12th Grade"
     },
     {
+      ...undefinedTeamMembers.find(m => m.name === "Swaraj Nibandhe"),
+      role: "Chief Operating Officer",
+      grade: "12th Grade"
+    },
+    {
       ...undefinedTeamMembers.find(m => m.name === "Neel M"),
       name: "Neel Tipnis",
       role: "Head of Expansions",
       grade: "11th Grade"
     },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Nishant Sinari"),
+      role: "Chief Engagement Officer",
+      grade: "12th Grade"
+    }
   ];
 
 
@@ -246,13 +244,21 @@
 
   
 .tab-active-undefined {
-  border-bottom: 3px solid #eab308; /* yellow-500 */
-  color: #eab308;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #facc15, #fef08a) 1;
+  background: linear-gradient(to right, #facc15, #fef08a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .tab-active-missing {
-  border-bottom: 3px solid #a855f7; /* purple-500 */
-  color: #a855f7;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to left, #a78bfa, #9837ff) 1;
+  background: linear-gradient(to left, #a78bfa, #9837ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
   .team-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -302,8 +308,8 @@
                 }}
               />
             </div>
-            <h3 class="text-lg font-semibold mb-2 text-white">{chief.name}</h3>
-            <p class="text-yellow-400 font-medium mb-2 text-sm">{chief.role}</p>
+            <h3 class="text-lg font-semibold text-white">{chief.name}</h3>
+            <p class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent font-medium mb-2 text-md">{chief.role}</p>
             <p class="text-gray-400 text-sm mb-1">{chief.school}</p>
             <p class="text-gray-500 text-xs">{chief.grade}</p>
           </div>
@@ -382,7 +388,7 @@
                   />
                 </div>
                 <h3 class="text-base font-semibold mb-2 text-white">{member.name}</h3>
-                <p class="text-yellow-400 font-medium mb-2 text-sm">{member.role}</p>
+                <p class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent font-medium mb-2 text-sm">{member.role}</p>
                 <p class="text-gray-400 text-xs mb-1">{member.school}</p>
                 <p class="text-gray-500 text-xs">{member.grade}</p>
               </div>
@@ -408,7 +414,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
 
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
-            <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent">Team Information</a></h3>
+            <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Team Information</a></h3>
             <div class="space-y-3">
               <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">30801</span></div>
               <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Juniors</span></div>
@@ -417,7 +423,7 @@
             </div>
           </div>
           <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
-            <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent">Our Story</a></h3>
+            <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Our Story</a></h3>
             <p class="text-gray-300 leading-relaxed">
               <a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer"><u>Missing Amps</u></a> is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
               With experience at the UIL State Championship, we now compete in the FIRST® Tech Challenge while giving back through STEM outreach.
@@ -427,7 +433,7 @@
         </div>
 
         <div>
-          <h3 class="text-2xl font-bold mb-8 text-center"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent">Team Members</a></h3>
+          <h3 class="text-2xl font-bold mb-8 text-center"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Team Members</a></h3>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {#each missingAmpsMembers as member}
               <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center hover:border-gray-600 transition-all duration-300">

@@ -1,7 +1,7 @@
 <script>
   const stats = [
     { value: '$38.5K+', label: 'Value Raised' },
-    { value: '4,000+', label: 'Underserved Individuals Reached' },
+    { value: '3,000+', label: 'Underserved Individuals Reached' },
     { value: '36', label: 'FTC Teams Connected' },
     { value: '12', label: 'Regional/National Awards' },
     { value: '42', label: 'Profesionals Connected' }
