@@ -198,7 +198,7 @@
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
   <!-- hero section -->
-    <section class="relative z-10 overflow-hidden pt-[80px]">
+    <section class="relative z-10 overflow-hidden ">
       
       <!-- Desktop: 3 Column Vertical Carousel -->
       <div class="hidden lg:flex w-full h-screen relative">
