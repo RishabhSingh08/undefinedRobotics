@@ -57,28 +57,15 @@
 
   let currentHeroIndex = 0;
 
-  const featuredCards = [
-    {
-      title: 'Our Robot',
-      subtitle: 'FTC Competition Robot 2025',
-      description: 'Designing and building an autonomous robot for the FIRST Tech Challenge "INTO THE DEEP" season. Our focus is on creating innovative solutions for underwater-themed challenges.',
-      dotColor: 'bg-yellow-400',
-      gradientFrom: 'yellow-200',
-      gradientTo: 'yellow-400',
-      animate: true,
-      link: '/robot'
-    },
-    {
-      title: 'Most Recent Event',
-      subtitle: 'Manufacturing Facility Tour',
-      description: 'Our team had the opportunity to tour a local manufacturing facility, where we engaged in meaningful discussions with industry professionals and explored real-world applications of automation and engineering.',
-      dotColor: 'bg-green-400',
-      gradientFrom: 'green-200',
-      gradientTo: 'green-400',
-      animate: false,
-      link: null
-    }
-  ];
+  const ourRobot = {
+    subtitle: 'FTC Competition Robot 2025',
+    description: 'Designing and building an autonomous robot for the FIRST Tech Challenge "INTO THE DEEP" season. Our focus is on creating innovative solutions for underwater-themed challenges.'
+  };
+
+  const recentEvent = {
+    subtitle: 'Manufacturing Facility Tour',
+    description: 'Our team had the opportunity to tour a local manufacturing facility, where we engaged in meaningful discussions with industry professionals and explored real-world applications of automation and engineering.'
+  };
 
   const recentDevelopments = [
     { title: 'New v2 website launch', description: 'Much anticipated website revamp drops August 5th' },
@@ -430,31 +417,27 @@
         </div>
 
       <div class="grid lg:grid-cols-3 gap-12 mb-16">
-        {#each featuredCards as card}
-          {#if card.link}
-            <a href={card.link} class="block group h-full">
-              <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
-                <div>
-                  <div class="flex items-center mb-6">
-                    <div class="w-3 h-3 {card.dotColor} rounded-full mr-3 {card.animate ? 'animate-pulse' : ''}"></div>
-                    <h3 class="text-2xl font-bold bg-gradient-to-r from-{card.gradientFrom} to-{card.gradientTo} bg-clip-text text-transparent">{card.title}</h3>
-                  </div>
-                  <h4 class="text-xl font-semibold text-white mb-4">{card.subtitle}</h4>
-                  <p class="text-gray-300 leading-relaxed mb-4">{card.description}</p>
-                </div>
-              </div>
-            </a>
-          {:else}
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+        <a href="/robot" class="block group h-full">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+            <div>
               <div class="flex items-center mb-6">
-                <div class="w-3 h-3 {card.dotColor} rounded-full mr-3"></div>
-                <h3 class="text-2xl font-bold bg-gradient-to-r from-{card.gradientFrom} to-{card.gradientTo} bg-clip-text text-transparent">{card.title}</h3>
+                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
+                <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
               </div>
-              <h4 class="text-xl font-semibold text-white mb-4">{card.subtitle}</h4>
-              <p class="text-gray-300 leading-relaxed mb-4">{card.description}</p>
+              <h4 class="text-xl font-semibold text-white mb-4">{ourRobot.subtitle}</h4>
+              <p class="text-gray-300 leading-relaxed mb-4">{ourRobot.description}</p>
             </div>
-          {/if}
-        {/each}
+          </div>
+        </a>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+            <h3 class="text-2xl font-bold bg-gradient-to-r from-green-200 to-green-400 bg-clip-text text-transparent">Most Recent Event</h3>
+          </div>
+          <h4 class="text-xl font-semibold text-white mb-4">{recentEvent.subtitle}</h4>
+          <p class="text-gray-300 leading-relaxed mb-4">{recentEvent.description}</p>
+        </div>
 
         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
           <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent mb-6">Recent Developments</h3>
