@@ -230,12 +230,15 @@
                         </div>
                         <p class="text-gray-300 mb-4">{event.description}</p>
                       </div>
-                      <div class="space-y-1">
-                        {#each event.impacts as impact}
-                          <div class="text-sm text-gray-400">
-                            - {impact}
-                          </div>
-                        {/each}
+                      <div>
+                        <p class="font-medium" style="background: linear-gradient(to right, {event.dotColor || '#facc15'}, {event.dotColor ? `${event.dotColor}cc` : '#fde68a'}); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block">Impact</p>
+                        <div class="space-y-1">
+                          {#each event.impacts as impact}
+                            <div class="text-sm text-gray-400">
+                              - {impact}
+                            </div>
+                          {/each}
+                        </div>
                       </div>
                     </div>
                   </div>

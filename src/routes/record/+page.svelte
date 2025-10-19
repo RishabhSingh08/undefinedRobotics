@@ -46,12 +46,12 @@
                 {
                     title: 'Control Award',
                     color: 'bg-violet-400', // Color for the small dot next to the award
-                    locations: ['FiT-North Area Championship – Stage Left']
+                    locations: ['FiT-North Area (Pre-Worlds Stage) Championship – Stage Left']
                 },
                 {
                     title: 'RTX Innovate Award',
                     color: 'bg-cyan-400',
-                    locations: ['FiT-North Area Championship – Stage Left']
+                    locations: ['FiT-North Area (Pre-Worlds Stage) Championship – Stage Left']
                 },
                 {
                     title: 'Connect Award',
@@ -66,7 +66,7 @@
                 {
                     title: 'Winning Alliance',
                     color: 'bg-orange-400',
-                    locations: ['FiT-North Area Championship – Stage Left']
+                    locations: ['FiT-North Area (Pre-Worlds Stage) Championship – Stage Left']
                 }
             ]
         },
@@ -303,14 +303,14 @@
       </div>
     </div>
     
-    <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-16">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-16 ">
       <div class="border-t border-white/20 pt-16">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
             Financial Transparency
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-            Fiscally sponsored by the Hack Foundation, the Undefined Robotics Non Profit Project is working with Candid to deliver full transparency to everyone.
+            Fiscally sponsored by the <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Undefined Robotics Non Profit Project</a> is working with <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone.
           </p>
         </div>
         

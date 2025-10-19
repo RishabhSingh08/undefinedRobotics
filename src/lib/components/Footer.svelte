@@ -82,9 +82,15 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
           <div class="space-y-2 text-gray-400">
-            <p>📍 Plano, Texas</p>
-            <p>📧 contact@undefinedrobotics.org</p>
-            <p>📧 missingamps.ftc@gmail.com</p>
+            <p class=""><i class="fa-solid fa-map-marker-alt"></i> Plano, Texas</p>
+            <p class=""><i class="fa-solid fa-envelope"></i> contact@undefinedrobotics.org</p>
+            <p class=""><i class="fa-solid fa-envelope"></i> missingamps.ftc@gmail.com</p>
+            <a href="https://www.instagram.com/undefinedrobotics" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 ">
+              <span>
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </span> @undefinedrobotics
+            </a>
+            
           </div>
         </div>
         <div>

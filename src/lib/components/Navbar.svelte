@@ -34,9 +34,11 @@
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center space-x-8 relative">
       {#each navLinks as link}
-        <a href={link.href} class=" transition-all duration-200 relative group py-4 text-white">
-          <span class="bg-clip-text group-hover:text-transparent group-hover:bg-gradient-to-r  group-hover:from-yellow-400 group-hover:to-yellow-200">{link.label}</span>
-          <span class="absolute -bottom-4 left-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-200 transition-all duration-200 {currentPath === link.href ? 'w-full' : 'w-0 group-hover:w-full'}"></span>
+        <a href={link.href} class="relative group py-4 text-white">
+          <span class="relative">
+            {link.label}
+            <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-200 transition-all duration-200 group-hover:w-full"></span>
+          </span>
         </a>
       {/each}
     </div>

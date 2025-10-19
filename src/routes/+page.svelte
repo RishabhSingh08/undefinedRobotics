@@ -1,8 +1,15 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
-  import StatsGrid from '../lib/components/StatsGrid.svelte';
   import IconLogo from "../lib/images/logo.png";
   import TeamPhoto from "../lib/images/team.png";
+
+  const stats = [
+    { value: '$38.5K+', label: 'Value Raised' },
+    { value: '3,000+', label: 'Underserved Individuals Reached' },
+    { value: '36', label: 'FTC Teams Connected' },
+    { value: '12', label: 'Regional/National Awards' },
+    { value: '42', label: 'Professionals Connected' }
+  ];
 
   import hero1 from "../lib/images/hero/1.JPG";
   import hero2 from "../lib/images/hero/2.JPG";
@@ -44,8 +51,8 @@
     { src: s6, href: 'https://www.jabil.com/' },
     { src: s8, href: 'https://svtronics.com/' },
     { src: s9, href: 'https://www.mmmfg.com/' },
-    { src: s10, href: 'https://buildshowlive.com/' }
-    // { src: s7, href: 'https://www.solaceglobal.world/' }
+    { src: s10, href: 'https://buildshowlive.com/' },
+    { src: s7, href: 'https://www.solaceglobal.world/' }
   ];
 
   const heroImages = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8, hero9, hero10, hero11, hero12];
@@ -272,13 +279,15 @@
       <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 pointer-events-none z-20"></div>
 
       <!-- Ad Banner - (Desktop only) -->
-      <div class="hidden lg:block absolute top-4 lg:top-24 left-1/2 transform -translate-x-1/2 z-30">
-        <img 
-          src={AdBanner} 
-          alt="Sponsor Banner" 
-          class="h-12 md:h-16 lg:h-24 w-auto rounded-lg"
-        />
-      </div>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
+        <div class="hidden lg:block absolute top-4 lg:top-24 left-1/2 transform -translate-x-1/2 z-30">
+          <img 
+            src={AdBanner} 
+            alt="Sponsor Banner" 
+            class="h-12 md:h-16 lg:h-24 w-auto rounded-lg"
+          />
+        </div>
+      </a>
 
       <!-- Text Overlay - Centered on Mobile, Bottom Left on Desktop -->
       <div class="absolute inset-0 lg:inset-auto lg:bottom-0 lg:left-0 z-30 flex items-center justify-center lg:block p-6 md:p-14 lg:p-20 max-w-4xl">
@@ -302,19 +311,18 @@
           </p>
 
           <!-- Buttons -->
-          <div class="flex flex-col sm:flex-row gap-3 pointer-events-auto justify-center lg:justify-start">
-            <a href="/impact" class="w-full sm:w-auto">
-              <button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-400 hover:to-yellow-100 group shadow-lg">
-                Our Impact
-                <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
-              </button>
-            </a>
-            <a href="/record" class="w-full sm:w-auto">
-              <button class="w-full bg-gradient-to-r from-transparent to-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-3 rounded-lg text-base font-semibold hover:from-yellow-400 hover:to-yellow-200 hover:text-black hover:border-transparent transition-all duration-200 shadow-lg">
-                View Our Achievements
-              </button>
-            </a>
-          </div>
+<div class="flex flex-col sm:flex-row gap-3 pointer-events-auto justify-center lg:justify-start"> 
+  <a href="/impact" class="w-full sm:w-auto"> 
+<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-8 py-3.5 rounded-md hover:cursor-pointer text-base font-bold hover:brightness-110 hover:scale-105 transition-all duration-200 shadow-xl flex items-center justify-center">      Our Impact
+      <span class="ml-2">→</span>
+    </button> 
+  </a> 
+  <a href="/record" class="w-full sm:w-auto"> 
+    <button class="w-full bg-transparent text-yellow-400 border-2 border-yellow-300 px-8 py-3.5 rounded-md hover:cursor-pointer text-base font-bold hover:bg-yellow-400/10 hover:scale-105 transition-all duration-200 shadow-xl flex items-center justify-center"> 
+      View Our Achievements
+    </button> 
+  </a> 
+</div>
         </div>
       </div>
     </section>
@@ -351,7 +359,7 @@
         </p>
 
         <p class="text-xl md:text-3xl text-gray-300 leading-relaxed">
-          Yet, far too often, underrepresented groups—women, senior citizens, tribal and native communities, and non-English speakers—are left out of these opportunities. After witnessing the toxic and exclusionary culture that can surround robotics and STEM at our school robotics club competitions, we made it our mission to change that.
+          Yet, far too often, underrepresented groups—abuse victims, senior citizens, tribal and native communities, and non-English speakers—are left out of these opportunities. After witnessing the toxic and exclusionary culture that can surround robotics and STEM at our school robotics club competitions, we made it our mission to change that.
         </p>
 
         <p class="text-xl md:text-3xl text-gray-300 leading-relaxed">
@@ -369,7 +377,16 @@
     </div>
   </section>
   <div class="max-w-7xl mx-auto px-4 mb-20">
-    <StatsGrid />
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+      {#each stats as stat, index}
+        <div class="text-center {index === stats.length - 1 ? 'col-span-2 md:col-span-1' : ''}">
+          <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">
+            {stat.value}
+          </div>
+          <div class="text-gray-300">{stat.label}</div>
+        </div>
+      {/each}
+    </div>
   </div>
   
 <hr
@@ -380,28 +397,34 @@
     <div class="max-w-7xl mx-auto">
       <!-- Ad Banner - Mobile Only (Above Sponsor Ads) -->
       <div class="md:hidden flex justify-center mb-8">
-        <img 
-          src={AdBanner} 
-          alt="Sponsor Banner" 
-          class="h-auto max-h-16 w-auto rounded-lg"
-        />
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
+          <img 
+            src={AdBanner} 
+            alt="Sponsor Banner" 
+            class="h-auto max-h-16 w-auto rounded-lg"
+          />
+        </a>
       </div>
       
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-          <img 
-            src={Ad1} 
-            alt="Sponsor Advertisement 1" 
-            class="w-full h-auto rounded-lg"
-          />
-        </div>
-        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-          <img 
-            src={Ad2} 
-            alt="Sponsor Advertisement 2" 
-            class="w-full h-auto rounded-lg"
-          />
-        </div>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+            <img 
+              src={Ad1} 
+              alt="Sponsor Advertisement 1" 
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
+          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+            <img 
+              src={Ad2} 
+              alt="Sponsor Advertisement 2" 
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+        </a>
       </div>
     </div>
   </section>

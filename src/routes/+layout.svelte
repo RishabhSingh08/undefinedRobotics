@@ -19,6 +19,14 @@ injectAnalytics();
 		/* Match Navbar total height including borders/padding */
 		/* padding-top: 88px; */
 	}
+
+	/* Ensure text is always selectable */
+	:global(*) {
+		user-select: text;
+		-webkit-user-select: text;
+		-moz-user-select: text;
+		-ms-user-select: text;
+	}
 </style>
 
 <main class="bg-gradient-to-b from-black to-gray-900 text-white dm-sans ">

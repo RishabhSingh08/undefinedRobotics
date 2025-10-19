@@ -4,7 +4,7 @@
     { value: '3,000+', label: 'Underserved Individuals Reached' },
     { value: '36', label: 'FTC Teams Connected' },
     { value: '12', label: 'Regional/National Awards' },
-    { value: '42', label: 'Profesionals Connected' }
+    { value: '42', label: 'Professionals Connected' }
   ];
 </script>
 

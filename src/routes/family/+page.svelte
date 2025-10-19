@@ -15,13 +15,10 @@
   import ashwin from "../../lib/family/ashwin_gupta.png";
   import rishabh from "../../lib/family/rishabh_singh.png";
   import nishant from "../../lib/family/nishant_sinari.png";
-  import team from "../../lib/family/teamphoto.png";
+  import team from "../../lib/images/team.png";
   import harsh from "../../lib/family/harsh.jpg";
   import yash from "../../lib/family/yash.jpg";
 
-
-
-  
   let activeTab = 'undefined';
 
   const undefinedTeamMembers = [
