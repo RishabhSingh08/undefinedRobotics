@@ -3,6 +3,7 @@
 <script>
   import { writable, derived } from 'svelte/store';
     import IconLogo from "../../lib/images/logo.png";
+    import SponsorshipPackage from "../../lib/images/Undefined Sponsorship Package.png";
 
 
   // Props
@@ -13,6 +14,7 @@
   let amount = "";
   let showError = false;
   let formErrors = {};
+  let showSponsorshipPackage = false;
 
   function validateForm() {
     formErrors = {
@@ -61,22 +63,20 @@
   <div class="relative z-10 min-h-screen flex justify-center px-6 py-32">
     <div class="max-w-3xl mx-auto w-full">
         
-        
         <section class="relative z-10 px-4 space-y-8">
           <div class="max-w-7xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-semibold mb-8">
-                  Make a Donation
+              Make a Donation
             </h1>
-
           </div>
-            <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
-        <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
-        <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
+          <div class="absolute top-1/4 left-10 w-24 h-24 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-0"></div>
+          <div class="absolute top-1/3 right-10 w-24 h-24 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-0"></div>
+          <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
         </section>
 
         <!-- Donation form -->
         <form on:submit|preventDefault={handleSubmit} class="space-y-10">
-          <!-- Name input field -->
+            <!-- Name input field -->
           <div class="space-y-4">
             <label for="name" class="block text-xl font-medium text-gray-300">
               Name
@@ -165,6 +165,29 @@
             </p>
           {/if}
         </form>
+
+        <!-- Sponsorship Package Dropdown -->
+        <div class="mt-16">
+          <button
+            on:click={() => showSponsorshipPackage = !showSponsorshipPackage}
+            class="w-full flex items-center justify-between px-6 py-4 bg-[#0f0e13] border border-white/20 rounded-lg text-xl text-white hover:bg-white/10 transition-colors"
+          >
+            <span class="font-semibold">Sponsorship Packages</span>
+            <span class="text-2xl transform transition-transform {showSponsorshipPackage ? 'rotate-180' : ''}">
+              ▼
+            </span>
+          </button>
+          
+          {#if showSponsorshipPackage}
+            <div class="mt-4 rounded-lg overflow-hidden border border-white/20 shadow-2xl">
+              <img 
+                src={SponsorshipPackage} 
+                alt="Undefined Robotics Sponsorship Packages" 
+                class="w-full h-auto"
+              />
+            </div>
+          {/if}
+        </div>
     </div>
   </div>
 </main>
