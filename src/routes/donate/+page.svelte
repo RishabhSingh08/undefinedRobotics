@@ -170,12 +170,17 @@
         <div class="mt-16">
           <button
             on:click={() => showSponsorshipPackage = !showSponsorshipPackage}
-            class="w-full flex items-center justify-between px-6 py-4 bg-[#0f0e13] border border-white/20 rounded-lg text-xl text-white hover:bg-white/10 transition-colors"
+            class="w-full flex items-center justify-between px-6 py-4 bg-[#0f0e13] border border-white/20 rounded-lg text-xl text-white hover:bg-white/10 transition-colors hover:cursor-pointer"
           >
             <span class="font-semibold">Sponsorship Packages</span>
-            <span class="text-2xl transform transition-transform {showSponsorshipPackage ? 'rotate-180' : ''}">
-              ▼
-            </span>
+            <svg 
+              class="w-6 h-6 transform transition-transform {showSponsorshipPackage ? 'rotate-180' : ''}" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
           </button>
           
           {#if showSponsorshipPackage}
