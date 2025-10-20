@@ -3,13 +3,9 @@
   import IconLogo from "../lib/images/logo.png";
   import TeamPhoto from "../lib/images/team.png";
 
-  const stats = [
-    { value: '$38.5K+', label: 'Value Raised' },
-    { value: '3,000+', label: 'Underserved Individuals Reached' },
-    { value: '36', label: 'FTC Teams Connected' },
-    { value: '12', label: 'Regional/National Awards' },
-    { value: '42', label: 'Professionals Connected' }
-  ];
+  import StatsGrid from '../lib/components/StatsGrid.svelte';
+
+
 
   import hero1 from "../lib/images/hero/1.JPG";
   import hero2 from "../lib/images/hero/2.JPG";
@@ -228,7 +224,6 @@
     background-size: 80px 80px;
     mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%);
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%);
-    pointer-events: none;
     z-index: 1;
   }
 </style>
@@ -276,7 +271,7 @@
       </div>
 
       <!-- Gradient Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 pointer-events-none z-20"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 z-20"></div>
 
       <!-- Ad Banner - (Desktop only) -->
       <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
@@ -311,7 +306,7 @@
           </p>
 
           <!-- Buttons -->
-<div class="flex flex-col sm:flex-row gap-3 pointer-events-auto justify-center lg:justify-start"> 
+<div class="flex flex-col sm:flex-row gap-3  justify-center lg:justify-start"> 
   <a href="/impact" class="w-full sm:w-auto"> 
 <button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-8 py-3.5 rounded-md hover:cursor-pointer text-base font-bold hover:brightness-110 hover:scale-105 transition-all duration-200 shadow-xl flex items-center justify-center">      Our Impact
       <span class="ml-2">→</span>
@@ -376,17 +371,8 @@
       </div>
     </div>
   </section>
-  <div class="max-w-7xl mx-auto px-4 mb-20">
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-      {#each stats as stat, index}
-        <div class="text-center {index === stats.length - 1 ? 'col-span-2 md:col-span-1' : ''}">
-          <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">
-            {stat.value}
-          </div>
-          <div class="text-gray-300">{stat.label}</div>
-        </div>
-      {/each}
-    </div>
+  <div class="max-w-7xl mx-auto px-4 mb-20 relative z-30">
+     <StatsGrid />
   </div>
   
 <hr
