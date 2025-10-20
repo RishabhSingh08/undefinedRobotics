@@ -60,7 +60,7 @@
     {
       name: "Erik Wang",
       grade: "12th Grade",
-      role: "Engineer",
+      role: "Engineer + Driver",
       school: "Plano West Senior High School",
       image: erik
     },
