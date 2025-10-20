@@ -141,7 +141,7 @@
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
     <div class="max-w-[105rem] mx-auto px-0">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 relative z-30">
             <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
                 Our Record
             </h1>
@@ -303,7 +303,7 @@
       </div>
     </div>
     
-    <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-16 ">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-16 relative z-30">
       <div class="border-t border-white/20 pt-16">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
