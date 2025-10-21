@@ -1,19 +1,32 @@
 <script>
   let showModal = false;
   
+  const breakdownData = [
+    { category: 'Gift Matching Donations', amount: '$11,700' },
+    { category: 'Grants (Government, FIRST, etc.)', amount: '$8,250' },
+    { category: 'Sponsorships/Partnerships', amount: '$8,967' },
+    { category: 'Team services & setup', amount: '$11,600' }
+  ];
+  
+  // Calculate total value raised from breakdown data
+  function calculateTotalValue() {
+    const total = breakdownData.reduce((sum, item) => {
+      // Remove $ and commas, then parse as number
+      const amount = parseFloat(item.amount.replace(/[$,]/g, ''));
+      return sum + amount;
+    }, 0);
+    
+    // Format as K (thousands) with one decimal place
+    const totalInK = (total / 1000).toFixed(1);
+    return `$${totalInK}K+`;
+  }
+  
   const stats = [
-    { value: '$38.5K+', label: 'Value Raised' },
+    { value: calculateTotalValue(), label: 'Value Raised' },
     { value: '3,000+', label: 'Underserved Individuals Reached' },
     { value: '36', label: 'FTC Teams Connected' },
     { value: '12', label: 'Regional/National Awards' },
     { value: '42', label: 'Professionals Connected' }
-  ];
-  
-  const breakdownData = [
-    { category: 'Gift Matching Donations', amount: '$11,700' },
-    { category: 'Grants (Government, FIRST, etc.)', amount: '$8,250' },
-    { category: 'Sponsorships/Partnerships', amount: '$6,967' },
-    { category: 'Team services & setup', amount: '$13,600' }
   ];
   
   function openModal() {
@@ -74,7 +87,7 @@
 
       <div class="border-t border-gray-700 mb-4"></div>
 
-      <p class="text-gray-400 text-sm mb-3">Total Contributions and Savings to Date:</p>
+      <p class="text-gray-400 text-sm mb-3">Sectors of Funding and Savings to Date:</p>
 
       <div class="flex flex-col space-y-2 mb-4">
         {#each breakdownData as item}

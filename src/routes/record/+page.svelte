@@ -307,10 +307,10 @@
       <div class="border-t border-white/20 pt-16">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-            Financial Transparency
+            Fundraising Overview
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-            Fiscally sponsored by the <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Undefined Robotics Non Profit Project</a> is working with <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone.
+            Fiscally sponsored by the <a href="https://the.hackfoundation.org/" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the Undefined Robotics Non Profit Project is working with <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone.
           </p>
         </div>
         

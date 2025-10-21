@@ -32,23 +32,30 @@
   import s8 from "../lib/images/sponsors/s8.png";
   import s9 from "../lib/images/sponsors/s9.png";
   import s10 from "../lib/images/sponsors/s10.png";
+  import s11 from "../lib/images/sponsors/s11.png";
+  import s12 from "../lib/images/sponsors/s12.png";
   
   import AdBanner from "../lib/images/sponsors/AdBanner.png";
   import Ad1 from "../lib/images/sponsors/Ad1.png";
   import Ad2 from "../lib/images/sponsors/Ad2.png";
 
-  const sponsors = [
-    { src: s, href: 'https://www.cafelltech.com/' },
-    { src: s1, href: 'https://hackclub.com/' },
-    { src: s2, href: 'https://polymaker.com/' },
-    { src: s3, href: 'https://www.twc.texas.gov/' },
-    { src: s4, href: 'https://dekaresearch.com/' },
-    { src: s5, href: 'https://www.bosch.com/' },
-    { src: s6, href: 'https://www.jabil.com/' },
-    { src: s8, href: 'https://svtronics.com/' },
-    { src: s9, href: 'https://www.mmmfg.com/' },
-    { src: s10, href: 'https://buildshowlive.com/' },
-    { src: s7, href: 'https://www.solaceglobal.world/' }
+  // Platinum Sponsors - Static display
+  const platinumSponsors = [
+    { src: s10, href: 'https://buildshowlive.com/', name: 'BuildShow Live' },
+    { src: s7, href: 'https://www.solaceglobal.world/', name: 'Solace Global' },
+    { src: s11, href: 'https://ghaasfoundation.org/', name: 'Gene Haas Foundation' },
+    { src: s, href: 'https://www.cafelltech.com/', name: 'Cafell Tech' },
+    { src: s12, href: 'https://www.firstinspires.org/', name: 'FIRST' }
+  ];
+
+  // Regular Sponsors - Carousel display
+  const regularSponsors = [
+    { src: s2, href: 'https://polymaker.com/', name: 'Polymaker' },
+    { src: s3, href: 'https://www.twc.texas.gov/', name: 'TWC' },
+    { src: s5, href: 'https://www.bosch.com/', name: 'Bosch' },
+    { src: s6, href: 'https://www.jabil.com/', name: 'Jabil' },
+    { src: s8, href: 'https://svtronics.com/', name: 'SVTronics' },
+    { src: s9, href: 'https://www.mmmfg.com/', name: 'M&M Manufacturing' }
   ];
 
   const heroImages = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8, hero9, hero10, hero11, hero12];
@@ -453,7 +460,7 @@
           <div class="space-y-4">
             {#each recentDevelopments as dev}
               <div class="flex items-start">
-                <div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 <div>
                   <p class="text-white font-semibold">{dev.title}</p>
                   <p class="text-gray-400 text-sm">{dev.description}</p>
@@ -492,26 +499,58 @@
   </h2>
 
 
-<section class="w-full overflow-hidden relative z-10  mb-32">
-  <div class="block md:hidden px-4 py-8">
-    <div class="grid grid-cols-2 gap-6 max-w-md mx-auto">
-      {#each sponsors as sponsor, i}
-        <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label="Sponsor {i + 1}" class="flex items-center justify-center p-4 bg-white/20 rounded-lg hover:bg-white/10 transition-all">
-          <img src={sponsor.src} alt="Sponsor Logo {i + 1}" class="h-12 w-auto max-w-full object-contain" />
+<section class="w-full relative z-10 mb-32">
+  <!-- Platinum Sponsors Section -->
+  <div class="mb-12">
+    <h3 class="text-3xl text-center text-gray-300 mb-8">Platinum Partners</h3>
+    
+    <!-- Mobile: 2 per row, larger -->
+    <div class="block md:hidden px-4 py-8">
+      <div class="grid grid-cols-2 gap-6 max-w-md mx-auto">
+        {#each platinumSponsors as sponsor}
+          <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name} class="flex items-center justify-center p-4 bg-white/20 rounded-lg hover:bg-white/10 transition-all">
+            <img src={sponsor.src} alt={sponsor.name} class="h-16 w-auto max-w-full object-contain" />
+          </a>
+        {/each}
+      </div>
+    </div>
+    
+    <!-- Desktop: Static grid -->
+    <div class="hidden md:flex justify-center items-center gap-16 lg:gap-20 px-12 py-12 bg-white/20">
+      {#each platinumSponsors as sponsor}
+        <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name} class="flex items-center justify-center hover:opacity-80 transition-opacity">
+          <img src={sponsor.src} alt={sponsor.name} class="h-24 lg:h-28 w-auto max-w-[250px] object-contain" />
         </a>
       {/each}
     </div>
   </div>
-  
-  <div class="hidden md:block sponsor-carousel-container py-6 bg-white/20">
-    <div class="sponsor-carousel-track">
-      {#each [...sponsors, ...sponsors] as sponsor, i}
-        <div class="sponsor-carousel-item">
-          <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label="Sponsor {i + 1}">
-            <img src={sponsor.src} alt="Sponsor Logo {i + 1}" class="h-16 sm:h-20 max-w-none" />
+
+  <!-- Regular Sponsors Section -->
+  <div>
+    <h3 class="text-3xl text-center text-gray-300  mb-8">Supporting Sponsors</h3>
+    
+    <!-- Mobile: 3 per row, smaller -->
+    <div class="block md:hidden px-4 py-8">
+      <div class="grid grid-cols-3 gap-4 max-w-lg mx-auto">
+        {#each regularSponsors as sponsor}
+          <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name} class="flex items-center justify-center p-3 bg-white/20 rounded-lg hover:bg-white/10 transition-all">
+            <img src={sponsor.src} alt={sponsor.name} class="h-10 w-auto max-w-full object-contain" />
           </a>
-        </div>
-      {/each}
+        {/each}
+      </div>
+    </div>
+    
+    <!-- Desktop: Carousel -->
+    <div class="hidden md:block sponsor-carousel-container py-6 bg-white/20 overflow-hidden">
+      <div class="sponsor-carousel-track">
+        {#each [...regularSponsors, ...regularSponsors] as sponsor, i}
+          <div class="sponsor-carousel-item">
+            <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name}>
+              <img src={sponsor.src} alt={sponsor.name} class="h-16 sm:h-20 max-w-none" />
+            </a>
+          </div>
+        {/each}
+      </div>
     </div>
   </div>
 </section>
