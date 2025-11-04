@@ -64,16 +64,7 @@
         {/each}
         
         <!-- Divider -->
-        <div class="border-t border-white/20 pt-4">
-          <div class="flex justify-center">
-            <img 
-              src={AdBanner} 
-              alt="Sponsor Banner" 
-              class="h-auto max-h-16 w-auto rounded-lg"
-            />
-          </div>
         </div>
-      </div>
     </div>
   {/if}
 </nav>

@@ -5,8 +5,6 @@
 
   import StatsGrid from '../lib/components/StatsGrid.svelte';
 
-
-
   import hero1 from "../lib/images/hero/1.JPG";
   import hero2 from "../lib/images/hero/2.JPG";
   import hero3 from "../lib/images/hero/3.JPG";
@@ -19,7 +17,6 @@
   import hero10 from "../lib/images/hero/10.png";
   import hero11 from "../lib/images/hero/11.png";
   import hero12 from "../lib/images/hero/12.png";
-
 
   import s from "../lib/images/sponsors/s.png";
   import s1 from "../lib/images/sponsors/s1.png";
@@ -39,23 +36,26 @@
   import Ad1 from "../lib/images/sponsors/Ad1.png";
   import Ad2 from "../lib/images/sponsors/Ad2.png";
 
-  // Platinum Sponsors - Static display
+  // Platinum Sponsors
   const platinumSponsors = [
-    { src: s10, href: 'https://buildshowlive.com/', name: 'BuildShow Live' },
+    { src: s10, href: 'https://buildshowlive.com/', name: 'Build Show' },
     { src: s7, href: 'https://www.solaceglobal.world/', name: 'Solace Global' },
-    { src: s11, href: 'https://ghaasfoundation.org/', name: 'Gene Haas Foundation' },
-    { src: s, href: 'https://www.cafelltech.com/', name: 'Cafell Tech' },
-    { src: s12, href: 'https://www.firstinspires.org/', name: 'FIRST' }
+    { src: s11, href: 'https://ghaasfoundation.org/', name: 'Gene Haas' },
+    { src: s12, href: 'https://www.firstinspires.org/', name: 'FIRST Robotics' }
   ];
 
-  // Regular Sponsors - Carousel display
-  const regularSponsors = [
+  // Gold Sponsors
+  const goldSponsors = [
+    { src: s9, href: 'https://www.mmmfg.com/', name: 'M&M' },
     { src: s2, href: 'https://polymaker.com/', name: 'Polymaker' },
-    { src: s3, href: 'https://www.twc.texas.gov/', name: 'TWC' },
+    { src: s3, href: 'https://www.twc.texas.gov/', name: 'TWC Commission' }
+  ];
+
+  // Silver Sponsors
+  const silverSponsors = [
+    { src: s8, href: 'https://svtronics.com/', name: 'SV Tronics' },
     { src: s5, href: 'https://www.bosch.com/', name: 'Bosch' },
-    { src: s6, href: 'https://www.jabil.com/', name: 'Jabil' },
-    { src: s8, href: 'https://svtronics.com/', name: 'SVTronics' },
-    { src: s9, href: 'https://www.mmmfg.com/', name: 'M&M Manufacturing' }
+    { src: s6, href: 'https://www.jabil.com/', name: 'Jabil' }
   ];
 
   const heroImages = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8, hero9, hero10, hero11, hero12];
@@ -142,31 +142,6 @@
 
   .animation-delay-4000 {
     animation-delay: 4s;
-  }
-
-  @keyframes scroll-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); 
-    }
-  }
-
-  .sponsor-carousel-container {
-    overflow: hidden;
-    white-space: nowrap; 
-  }
-
-  .sponsor-carousel-track {
-    display: inline-flex; 
-    animation: scroll-left 30s linear infinite; 
-  }
-
-  .sponsor-carousel-item {
-    display: inline-block; 
-    padding: 0 5rem; 
-    flex-shrink: 0; 
   }
 
   @keyframes scroll-vertical {
@@ -281,15 +256,6 @@
       <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30 z-20"></div>
 
       <!-- Ad Banner - (Desktop only) -->
-      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
-        <div class="hidden lg:block absolute top-4 lg:top-24 left-1/2 transform -translate-x-1/2 z-30">
-          <img 
-            src={AdBanner} 
-            alt="Sponsor Banner" 
-            class="h-12 md:h-16 lg:h-24 w-auto rounded-lg"
-          />
-        </div>
-      </a>
 
       <!-- Text Overlay - Centered on Mobile, Bottom Left on Desktop -->
       <div class="absolute inset-0 lg:inset-auto lg:bottom-0 lg:left-0 z-30 flex items-center justify-center lg:block p-6 md:p-14 lg:p-20 max-w-4xl">
@@ -329,23 +295,6 @@
       </div>
     </section>
 
-
-    <!-- <section class="relative z-10 overflow-hidden">
-      <div class="w-full flex justify-center items-center min-h-[500px]">
-        <div class="relative w-full h-full">
-          <img src={TeamPhoto} alt="Undefined Robotics Team" class="w-full h-full object-cover rounded-none" />
-          <div class="absolute bottom-8 right-8">
-            <a href="/family">
-              <button class="border border-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition-colors duration-300 backdrop-blur-sm bg-white/20 hover:cursor-pointer">
-                View Our Family
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
   <section id="mission" class="px-4 py-32 relative z-10">
     <div class="max-w-6xl mx-auto text-center">
 
@@ -382,48 +331,8 @@
      <StatsGrid />
   </div>
   
-<hr
-  class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
-  <!-- Sponsor Ads Section -->
-  <section class="px-4 relative z-10">
-    <div class="max-w-7xl mx-auto">
-      <!-- Ad Banner - Mobile Only (Above Sponsor Ads) -->
-      <div class="md:hidden flex justify-center mb-8">
-        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
-          <img 
-            src={AdBanner} 
-            alt="Sponsor Banner" 
-            class="h-auto max-h-16 w-auto rounded-lg"
-          />
-        </a>
-      </div>
-      
-      <div class="grid md:grid-cols-2 gap-8">
-        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
-          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-            <img 
-              src={Ad1} 
-              alt="Sponsor Advertisement 1" 
-              class="w-full h-auto rounded-lg"
-            />
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7382943776895459328/" target="_blank" rel="noopener noreferrer">
-          <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-            <img 
-              src={Ad2} 
-              alt="Sponsor Advertisement 2" 
-              class="w-full h-auto rounded-lg"
-            />
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-<hr
-  class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+<hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
   <section id="events" class="px-4 pt-16 pb-32 relative z-10">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20">
@@ -498,61 +407,40 @@
   Thank You to Our Sponsors and Partners!
   </h2>
 
+<section class="w-full relative z-10 mb-32 px-4">
+  {#each [
+    { title: "Platinum Partners", sponsors: platinumSponsors, maxW: "max-w-6xl", imgH: "h-26" },
+    { title: "Gold Partners", sponsors: goldSponsors, maxW: "max-w-4xl", imgH: "h-28" },
+    { title: "Silver Partners", sponsors: silverSponsors, maxW: "max-w-4xl", imgH: "h-20" }
+  ] as tier}
+    <div class="mb-16">
+      <h3 class="text-3xl text-center text-gray-300 mb-8">{tier.title}</h3>
 
-<section class="w-full relative z-10 mb-32">
-  <!-- Platinum Sponsors Section -->
-  <div class="mb-12">
-    <h3 class="text-3xl text-center text-gray-300 mb-8">Platinum Partners</h3>
-    
-    <!-- Mobile: 2 per row, larger -->
-    <div class="block md:hidden px-4 py-8">
-      <div class="grid grid-cols-2 gap-6 max-w-md mx-auto">
-        {#each platinumSponsors as sponsor}
-          <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name} class="flex items-center justify-center p-4 bg-white/20 rounded-lg hover:bg-white/10 transition-all">
-            <img src={sponsor.src} alt={sponsor.name} class="h-16 w-auto max-w-full object-contain" />
-          </a>
-        {/each}
-      </div>
-    </div>
-    
-    <!-- Desktop: Static grid -->
-    <div class="hidden md:flex justify-center items-center gap-16 lg:gap-20 px-12 py-12 bg-white/20">
-      {#each platinumSponsors as sponsor}
-        <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name} class="flex items-center justify-center hover:opacity-80 transition-opacity">
-          <img src={sponsor.src} alt={sponsor.name} class="h-24 lg:h-28 w-auto max-w-[250px] object-contain" />
-        </a>
-      {/each}
-    </div>
-  </div>
-
-  <!-- Regular Sponsors Section -->
-  <div>
-    <h3 class="text-3xl text-center text-gray-300  mb-8">Supporting Sponsors</h3>
-    
-    <!-- Mobile: 3 per row, smaller -->
-    <div class="block md:hidden px-4 py-8">
-      <div class="grid grid-cols-3 gap-4 max-w-lg mx-auto">
-        {#each regularSponsors as sponsor}
-          <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name} class="flex items-center justify-center p-3 bg-white/20 rounded-lg hover:bg-white/10 transition-all">
-            <img src={sponsor.src} alt={sponsor.name} class="h-10 w-auto max-w-full object-contain" />
-          </a>
-        {/each}
-      </div>
-    </div>
-    
-    <!-- Desktop: Carousel -->
-    <div class="hidden md:block sponsor-carousel-container py-6 bg-white/20 overflow-hidden">
-      <div class="sponsor-carousel-track">
-        {#each [...regularSponsors, ...regularSponsors] as sponsor, i}
-          <div class="sponsor-carousel-item">
-            <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name}>
-              <img src={sponsor.src} alt={sponsor.name} class="h-16 sm:h-20 max-w-none" />
+      <!-- Mobile: 3 per row for all tiers -->
+      <div class="block md:hidden">
+        <div class="grid grid-cols-3 gap-3 max-w-md mx-auto">
+          {#each tier.sponsors as sponsor}
+            <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name}
+               class="flex items-center justify-center w-full  bg-white/10 rounded-lg hover:bg-white/20 transition-all">
+              <img src={sponsor.src} alt={sponsor.name} class="h-12 w-auto object-contain" />
             </a>
-          </div>
-        {/each}
+          {/each}
+        </div>
+      </div>
+
+      <!-- Desktop: Consistent grid design -->
+      <div class="hidden md:block">
+        <div class="flex flex-wrap justify-center items-center gap-10 lg:gap-14 px-8 py-10 bg-white/10 rounded-xl {tier.maxW} mx-auto">
+          {#each tier.sponsors as sponsor}
+            <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name}
+               class="flex items-center justify-center w-48 h-32  rounded-lg hover:bg-white/10 transition-all">
+              <img src={sponsor.src} alt={sponsor.name} class="{tier.imgH} w-auto object-contain" />
+            </a>
+          {/each}
+        </div>
       </div>
     </div>
-  </div>
+  {/each}
 </section>
 
 </main>
