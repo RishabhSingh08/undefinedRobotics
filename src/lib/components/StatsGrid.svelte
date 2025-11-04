@@ -10,16 +10,16 @@
   ];
   
   const underservedData = [
-    { name: 'International Girls Robotics Program', base: 15, multiplier: 0.7, adjusted: 10.5 },
-    { name: 'Spreading FIRST to Tribes in South Asia', base: 40, multiplier: 0.7, adjusted: 28.0 },
+    { name: 'International Girls Robotics Program', base: 15, multiplier: 1.5, adjusted: 22.5 },
+    { name: 'Spreading FIRST to Tribes in South Asia', base: 40, multiplier: 1.5, adjusted: 60.0 },
     { name: 'STEM Sticker Delivery (Shanti Bhavan)', base: 150, multiplier: 0.5, adjusted: 75.0 },
-    { name: 'Weekly Girls Coding Classes', base: 25, multiplier: 0.7, adjusted: 17.5 },
-    { name: '3D Print Showcase', base: 200, multiplier: 0.25, adjusted: 50.0 },
+    { name: 'Weekly Girls Coding Classes', base: 25, multiplier: 1.5, adjusted: 37.5 },
+    { name: '3D Print Showcase', base: 200, multiplier: 1.0, adjusted: 200.0 },
     { name: 'Smart Seniors (Video Series)', base: 300, multiplier: 0.25, adjusted: 75.0 },
-    { name: 'Autonomic Robots for Climate Change', base: 20, multiplier: 0.7, adjusted: 14.0 },
+    { name: 'Autonomic Robots for Climate Change', base: 20, multiplier: 1.5, adjusted: 30.0 },
     { name: 'Titkok - Autonomic Robotics for Climates', base: 6000, multiplier: 0.25, adjusted: 1500.0 },
     { name: 'Career Literacy Program', base: 5000, multiplier: 0.25, adjusted: 1250.0 },
-    { name: 'Environmental Sustainability Workshop', base: 50, multiplier: 0.7, adjusted: 35.0 }
+    { name: 'Environmental Sustainability Workshop', base: 50, multiplier: 1.0, adjusted: 50.0 }
   ];
   
   // Calculate total value raised from breakdown data
@@ -182,14 +182,15 @@
 
       <div class="flex justify-between items-center text-lg font-bold mb-3">
         <span class="text-white">Total Individuals Reached</span>
-        <span class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent text-2xl">3,055</span>
+        <span class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent text-2xl">3,300</span>
       </div>
 
       <div class="text-xs text-gray-400">
         <p class="mb-1"><strong>Multiplier Key:</strong></p>
-        <p>• Human: 0.7</p>
+        <p>• Reinforced: 1.5</p>
+        <p>• Hands-On: 1.0</p>
         <p>• Community / Outreach: 0.5</p>
-        <p>• Video: 0.25</p>
+        <p>• Video / Media: 0.25</p>
       </div>
 
     </div>
