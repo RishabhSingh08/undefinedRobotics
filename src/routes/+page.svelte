@@ -275,7 +275,7 @@
 
           <!-- Description -->
           <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed mb-8">
-            One of the largest student-led STEM and robotics 501(c)3 non-profit projects in Texas. Based in Dallas-Fort Worth but serve around the world.
+One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonprofit projects in Texas. Based in Dallas-Fort Worth but serve around the world.
           </p>
 
           <!-- Buttons -->
