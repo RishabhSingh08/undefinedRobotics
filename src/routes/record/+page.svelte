@@ -46,27 +46,27 @@
                 {
                     title: 'Control Award',
                     color: 'bg-violet-400', // Color for the small dot next to the award
-                    locations: ['FiT-North Area (Pre-Worlds Stage) Championship – Stage Left']
+                    locations: ['FiT-North Pre-Worlds Championship']
                 },
                 {
                     title: 'RTX Innovate Award',
                     color: 'bg-cyan-400',
-                    locations: ['FiT-North Area (Pre-Worlds Stage) Championship – Stage Left']
+                    locations: ['FiT-North Pre-Worlds Championship']
                 },
                 {
                     title: 'Connect Award',
                     color: 'bg-rose-400',
-                    locations: ['Texas FTC Championship – Sapphire Division']
+                    locations: ['Texas FTC Championship']
                 },
                 {
                     title: 'Finalist Alliance Captain',
                     color: 'bg-lime-400',
-                    locations: ['Texas FTC Championship – Sapphire Division']
+                    locations: ['Texas FTC Championship']
                 },
                 {
                     title: 'Winning Alliance',
                     color: 'bg-orange-400',
-                    locations: ['FiT-North Area (Pre-Worlds Stage) Championship – Stage Left']
+                    locations: ['FiT-North Pre-Worlds Championship']
                 }
             ]
         },
@@ -99,7 +99,7 @@
                 {
                     title: 'Connect Award',
                     color: 'bg-rose-400',
-                    locations: ['FiT-North Semi-Area Championship (Stage Right)']
+                    locations: ['FiT-North Semi-Area Championship']
                 },
                 {
                     title: 'Winning Alliance',
