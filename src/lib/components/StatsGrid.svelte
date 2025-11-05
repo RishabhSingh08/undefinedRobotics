@@ -41,7 +41,6 @@
     { value: '36', label: 'FTC Teams Connected' },
     { value: '12', label: 'Regional/National Awards' },
     { value: '102', label: 'Professionals Connected' },
-    { value: 'Top 100', label: 'Robots in the World' },
   ];
   
   function openModal() {
@@ -61,7 +60,7 @@
   }
 </script>
 
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-8">
   {#each stats as stat, index}
     <div class="flex flex-col items-center text-center">
       <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">
