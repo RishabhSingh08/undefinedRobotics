@@ -38,7 +38,7 @@
     // To add, remove, or change awards, you only need to edit this data structure.
     const seasons = [
         {
-            year: '2024–25 Season',
+            year: '2024-25 Season',
             nodeColor: 'bg-yellow-400', // Color for the large circle on the timeline
             badgeBgColor: 'bg-yellow-400',
             badgeTextColor: 'text-gray-900',
@@ -67,22 +67,27 @@
                     title: 'Winning Alliance',
                     color: 'bg-orange-400',
                     locations: ['FiT-North Pre-Worlds Championship']
-                }
+                },
+                {
+                    title: 'Peak Top 100 Robot in the World',
+                    color: 'bg-indigo-400',
+                    locations: ['Semi-Area Competition']
+                },
             ]
         },
         {
-            year: '2023–24 Season',
+            year: '2023-24 Season',
             nodeColor: 'bg-blue-400',
             badgeBgColor: 'bg-blue-400',
             badgeTextColor: 'text-gray-900',
             awards: [
                 {
-                    title: 'Control Award – 2×',
+                    title: 'Control Award - 2×',
                     color: 'bg-violet-400',
                     locations: ['FiT-North E&F Tournament', 'FiT-North Area Championship']
                 },
                 {
-                    title: 'Design Award – 2×',
+                    title: 'Design Award - 2×',
                     color: 'bg-indigo-400',
                     locations: ['FiT-North Last Call Qualifier']
                 },
