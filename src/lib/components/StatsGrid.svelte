@@ -37,7 +37,7 @@
   
   const stats = [
     { value: calculateTotalValue(), label: 'Value Raised' },
-    { value: '3,000+', label: 'Underserved Individuals Reached' },
+    { value: '3,000+', label: 'Underserved Engagement' },
     { value: '36', label: 'FTC Teams Connected' },
     { value: '12', label: 'Regional/National Awards' },
     { value: '102', label: 'Professionals Connected' },
@@ -154,7 +154,7 @@
       tabindex="-1"
     >
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-xl font-bold text-white">Underserved Individuals Reached</h2>
+        <h2 class="text-xl font-bold text-white">Underserved Engagement</h2>
         <button 
           on:click={closeUnderservedModal}
           class="text-gray-400 hover:text-white hover:cursor-pointer transition-colors text-2xl"

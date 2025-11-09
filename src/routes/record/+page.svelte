@@ -191,11 +191,11 @@
                                 🏆 {season.year}
                             </div>
                             
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 md:auto-rows-fr">
                                 {#each season.awards as award}
                                     <div class="flex items-start space-x-4">
                                         <div class="w-3 h-3 {award.color} rounded-full mt-2 flex-shrink-0"></div>
-                                        <div>
+                                        <div class="flex-1">
                                             <h3 class="text-xl font-bold text-white mb-2">{award.title}</h3>
                                             {#each award.locations as location}
                                                 <p class="text-gray-300 text-sm">{location}</p>

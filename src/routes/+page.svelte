@@ -279,14 +279,15 @@ One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonp
           </p>
 
           <!-- Buttons -->
-<div class="flex flex-col sm:flex-row gap-3  justify-center lg:justify-start"> 
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"> 
   <a href="/impact" class="w-full sm:w-auto"> 
-<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-8 py-3.5 rounded-md hover:cursor-pointer text-base font-bold hover:brightness-110 hover:scale-105 transition-all duration-200 shadow-xl flex items-center justify-center">      Our Impact
+    <button class="w-full h-[54px] bg-gradient-to-r from-yellow-400 to-yellow-300 text-black px-8 rounded-md hover:cursor-pointer text-base font-bold hover:from-yellow-300 hover:to-yellow-200 hover:shadow-[0_0_20px_rgba(250,204,21,0.5)] transition-all duration-300 shadow-xl flex items-center justify-center">
+      Our Impact
       <span class="ml-2">→</span>
     </button> 
   </a> 
   <a href="/record" class="w-full sm:w-auto"> 
-    <button class="w-full bg-transparent text-yellow-400 border-2 border-yellow-300 px-8 py-3.5 rounded-md hover:cursor-pointer text-base font-bold hover:bg-yellow-400/10 hover:scale-105 transition-all duration-200 shadow-xl flex items-center justify-center"> 
+    <button class="w-full h-[54px] bg-transparent text-yellow-400 border-2 border-yellow-400 px-8 rounded-md hover:cursor-pointer text-base font-bold hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-300 hover:text-black hover:border-yellow-300 transition-all duration-300 shadow-xl flex items-center justify-center">
       View Our Achievements
     </button> 
   </a> 
