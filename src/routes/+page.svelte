@@ -309,44 +309,47 @@ One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonp
         </p>
         </div>
 
-      <div class="grid lg:grid-cols-3 gap-12 mb-16">
-        <a href="/robot" class="block group h-full">
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
-            <div>
-              <div class="flex items-center mb-6">
-                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
-                <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
-              </div>
-              <h4 class="text-xl font-semibold text-white mb-4">{ourRobot.subtitle}</h4>
-              <p class="text-gray-300 leading-relaxed mb-4">{ourRobot.description}</p>
-            </div>
-          </div>
-        </a>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="flex items-center mb-6">
-            <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-            <h3 class="text-2xl font-bold bg-gradient-to-r from-green-200 to-green-400 bg-clip-text text-transparent">Most Recent Event</h3>
-          </div>
-          <h4 class="text-xl font-semibold text-white mb-4">{recentEvent.subtitle}</h4>
-          <p class="text-gray-300 leading-relaxed mb-4">{recentEvent.description}</p>
+<div class="grid lg:grid-cols-3 gap-12 mb-16">
+  <a href="/robot" class="block group h-full">
+    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+      <div>
+        <div class="flex items-center mb-6">
+          <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
+          <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
         </div>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent mb-6">Recent Developments</h3>
-          <div class="space-y-4">
-            {#each recentDevelopments as dev}
-              <div class="flex items-start">
-                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <div>
-                  <p class="text-white font-semibold">{dev.title}</p>
-                  <p class="text-gray-400 text-sm">{dev.description}</p>
-                </div>
-              </div>
-            {/each}
-          </div>
-        </div>
+        <h4 class="text-xl font-semibold text-white mb-4">{ourRobot.subtitle}</h4>
+        <p class="text-gray-300 leading-relaxed mb-4">{ourRobot.description}</p>
       </div>
+    </div>
+  </a>
+
+  <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+    <div class="flex items-center mb-6">
+      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+      <h3 class="text-2xl font-bold bg-gradient-to-r from-green-200 to-green-400 bg-clip-text text-transparent">Most Recent Event</h3>
+    </div>
+    <h4 class="text-xl font-semibold text-white mb-4">{recentEvent.subtitle}</h4>
+    <p class="text-gray-300 leading-relaxed mb-4">{recentEvent.description}</p>
+  </div>
+
+  <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+    <div class="flex items-center mb-6">
+      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+      <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent">Recent Developments</h3>
+    </div>
+    <div class="space-y-4">
+      {#each recentDevelopments as dev}
+        <div class="flex items-start">
+          <div class="mr-3">-</div>
+          <div>
+            <p class="text-white font-semibold">{dev.title}</p>
+            <p class="text-gray-400 text-sm">{dev.description}</p>
+          </div>
+        </div>
+      {/each}
+    </div>
+  </div>
+</div>
 
       <div class="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
         <h3 class="text-3xl font-bold text-white mb-8 text-center">Upcoming Events</h3>

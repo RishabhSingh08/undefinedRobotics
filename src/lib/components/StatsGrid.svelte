@@ -129,6 +129,16 @@
 
       <div class="border-t border-gray-700 mt-2 mb-3"></div>
 
+      <a 
+        href="https://docs.google.com/spreadsheets/d/1qDcwu3IL-yFm5ke4N2TmhjPN0Sr_KaEwJxRXgPcNs78/edit?gid=0#gid=0"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 underline text-yellow-400 hover:text-yellow-300 transition-colors text-sm mb-3"
+      >
+        Our finances in detail
+        <i class="fa-solid fa-up-right-from-square"></i>
+      </a>
+
       <div class="flex justify-between items-center text-lg font-bold">
         <span class="text-white">Total Value</span>
         <span class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent text-2xl">$40.5K</span>

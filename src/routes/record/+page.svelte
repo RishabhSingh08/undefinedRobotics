@@ -34,18 +34,16 @@
         };
     });
 
-    // All your timeline data is now in this single array of objects.
-    // To add, remove, or change awards, you only need to edit this data structure.
     const seasons = [
         {
             year: '2024-25 Season',
-            nodeColor: 'bg-yellow-400', // Color for the large circle on the timeline
+            nodeColor: 'bg-yellow-400',
             badgeBgColor: 'bg-yellow-400',
             badgeTextColor: 'text-gray-900',
             awards: [
                 {
                     title: 'Control Award',
-                    color: 'bg-violet-400', // Color for the small dot next to the award
+                    color: 'bg-violet-400',
                     locations: ['FiT-North Pre-Worlds Championship']
                 },
                 {

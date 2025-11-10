@@ -1,4 +1,3 @@
-
 <script>
     import StatsGrid from '../../lib/components/StatsGrid.svelte';
     import hero from '../../lib/images/bigImages/1.png';
@@ -14,7 +13,10 @@
     import int from '../../lib/events/int.jpg';
     import climate from '../../lib/events/climate.jpg';
     import sticker from '../../lib/events/sticky.jpg';
-
+    import bsl from '../../lib/events/bsl.jpg';
+    import mnm from '../../lib/events/mnm.jpg';
+    import indhero from '../../lib/events/indhero.jpg';
+    import g1 from '../../lib/events/Screenshot 2025-11-09 200540.png';
     export let images = {
       hero,
       mentorshipBanner,
@@ -28,7 +30,11 @@
       tribe,
       int,
       climate,
-      sticker
+      sticker,
+      bsl,
+      mnm,
+      indhero,
+      g1
     };
 
     const impactSections = [
@@ -106,7 +112,7 @@
         textColor: 'purple-100',
         dotColor: 'yellow-400',
         impactColor: 'yellow-300',
-        gridCols: 'md:grid-cols-2 lg:grid-cols-3',
+        gridCols: 'md:grid-cols-3',
         events: [
           {
             image: int,
@@ -132,7 +138,45 @@
             impactColor: 'purple-500'
           }
         ]
+      },
+      {
+        title: 'Industry Connections & Insights',
+        banner: indhero,
+        gradientFrom: 'green-900/80',
+        gradientTo: 'green-800/60',
+        textColor: 'green-100',
+        dotColor: 'green-400',
+        impactColor: 'green-300',
+        gridCols: 'md:grid-cols-2 lg:grid-cols-3',
+        events: [
+          {
+            image: bsl,
+            imageAlt: 'Build Show Live 2025',
+            title: 'Build Show Live 2025',
+            description: 'At Build Show LIVE 2024 in Dallas, our team met industry leaders to discuss robotics, STEM outreach, and how technology can empower future builders.',
+            impacts: ['Connected students with industry professionals', 'Expanded STEM and robotics outreach network']
+          },
+          {
+            image: mnm,
+            imageAlt: 'Mentorship Session with M&M Engineering Supervisor',
+            title: 'M&M Engineering Mentorship',
+            description: 'Team members met with M&M Engineering Supervisor Mr. Neaves to present robot designs, discuss improvements, and gain expert feedback on this year’s challenge.',
+            impacts: ['Enhanced robot design through expert feedback', 'Strengthened partnership with M&M Engineering']
+          },
+{
+  image: g1,
+  imageAlt: 'Industry Engagements',
+  title: 'Industry Engagements',
+  description: 'Our team met leaders from aerospace, manufacturing, and tech sectors, learning how robotics and automation drive modern industries and inspire our own STEM work.',
+  impacts: [
+    'Gained insight into real-world robotics',
+    'Built connections with major industry innovators',
+  ]
+}
+
+        ]
       }
+      
     ];
     
   </script>
@@ -204,6 +248,11 @@
                 <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/60"></div>
                 <div class="relative h-full flex items-center justify-center px-4">
                   <h3 class="text-2xl md:text-3xl font-bold text-blue-100 text-center">{section.title}</h3>
+                </div>
+              {:else if section.title === 'Industry Connections & Insights'}
+                <div class="absolute inset-0 bg-gradient-to-r from-green-900/80 to-green-800/60"></div>
+                <div class="relative h-full flex items-center justify-center px-4">
+                  <h3 class="text-2xl md:text-3xl font-bold text-green-100 text-center">{section.title}</h3>
                 </div>
               {:else}
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-purple-800/60"></div>
