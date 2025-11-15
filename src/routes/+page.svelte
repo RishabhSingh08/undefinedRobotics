@@ -4,6 +4,7 @@
   import TeamPhoto from "../lib/images/team.png";
 
   import StatsGrid from '../lib/components/StatsGrid.svelte';
+  import Sponsors from '../lib/components/Sponsors.svelte';
 
   import hero1 from "../lib/images/hero/1.JPG";
   import hero2 from "../lib/images/hero/2.JPG";
@@ -18,45 +19,11 @@
   import hero11 from "../lib/images/hero/11.png";
   import hero12 from "../lib/images/hero/12.png";
 
-  import s from "../lib/images/sponsors/s.png";
-  import s1 from "../lib/images/sponsors/s1.png";
-  import s2 from "../lib/images/sponsors/s2.png";
-  import s3 from "../lib/images/sponsors/s3.png";
-  import s4 from "../lib/images/sponsors/s4.png";
-  import s5 from "../lib/images/sponsors/s5.png";
-  import s6 from "../lib/images/sponsors/s6.png";
-  import s7 from "../lib/images/sponsors/s7.png";
-  import s8 from "../lib/images/sponsors/s8.png";
-  import s9 from "../lib/images/sponsors/s9.png";
-  import s10 from "../lib/images/sponsors/s10.png";
-  import s11 from "../lib/images/sponsors/s11.png";
-  import s12 from "../lib/images/sponsors/s12.png";
+
   
   import AdBanner from "../lib/images/sponsors/AdBanner.png";
   import Ad1 from "../lib/images/sponsors/Ad1.png";
   import Ad2 from "../lib/images/sponsors/Ad2.png";
-
-  // Platinum Sponsors
-  const platinumSponsors = [
-    { src: s10, href: 'https://buildshowlive.com/', name: 'Build Show' },
-    { src: s7, href: 'https://www.solaceglobal.world/', name: 'Solace Global' },
-    { src: s11, href: 'https://ghaasfoundation.org/', name: 'Gene Haas' },
-    { src: s12, href: 'https://www.firstinspires.org/', name: 'FIRST Robotics' }
-  ];
-
-  // Gold Sponsors
-  const goldSponsors = [
-    { src: s9, href: 'https://www.mmmfg.com/', name: 'M&M' },
-    { src: s2, href: 'https://polymaker.com/', name: 'Polymaker' },
-    { src: s3, href: 'https://www.twc.texas.gov/', name: 'TWC Commission' }
-  ];
-
-  // Silver Sponsors
-  const silverSponsors = [
-    { src: s8, href: 'https://svtronics.com/', name: 'SV Tronics' },
-    { src: s5, href: 'https://www.bosch.com/', name: 'Bosch' },
-    { src: s6, href: 'https://www.jabil.com/', name: 'Jabil' }
-  ];
 
   const heroImages = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8, hero9, hero10, hero11, hero12];
   
@@ -342,44 +309,47 @@ One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonp
         </p>
         </div>
 
-      <div class="grid lg:grid-cols-3 gap-12 mb-16">
-        <a href="/robot" class="block group h-full">
-          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
-            <div>
-              <div class="flex items-center mb-6">
-                <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
-                <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
-              </div>
-              <h4 class="text-xl font-semibold text-white mb-4">{ourRobot.subtitle}</h4>
-              <p class="text-gray-300 leading-relaxed mb-4">{ourRobot.description}</p>
-            </div>
-          </div>
-        </a>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="flex items-center mb-6">
-            <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
-            <h3 class="text-2xl font-bold bg-gradient-to-r from-green-200 to-green-400 bg-clip-text text-transparent">Most Recent Event</h3>
-          </div>
-          <h4 class="text-xl font-semibold text-white mb-4">{recentEvent.subtitle}</h4>
-          <p class="text-gray-300 leading-relaxed mb-4">{recentEvent.description}</p>
+<div class="grid lg:grid-cols-3 gap-12 mb-16">
+  <a href="/robot" class="block group h-full">
+    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
+      <div>
+        <div class="flex items-center mb-6">
+          <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
+          <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
         </div>
-
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent mb-6">Recent Developments</h3>
-          <div class="space-y-4">
-            {#each recentDevelopments as dev}
-              <div class="flex items-start">
-                <div class="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <div>
-                  <p class="text-white font-semibold">{dev.title}</p>
-                  <p class="text-gray-400 text-sm">{dev.description}</p>
-                </div>
-              </div>
-            {/each}
-          </div>
-        </div>
+        <h4 class="text-xl font-semibold text-white mb-4">{ourRobot.subtitle}</h4>
+        <p class="text-gray-300 leading-relaxed mb-4">{ourRobot.description}</p>
       </div>
+    </div>
+  </a>
+
+  <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+    <div class="flex items-center mb-6">
+      <div class="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
+      <h3 class="text-2xl font-bold bg-gradient-to-r from-green-200 to-green-400 bg-clip-text text-transparent">Most Recent Event</h3>
+    </div>
+    <h4 class="text-xl font-semibold text-white mb-4">{recentEvent.subtitle}</h4>
+    <p class="text-gray-300 leading-relaxed mb-4">{recentEvent.description}</p>
+  </div>
+
+  <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300">
+    <div class="flex items-center mb-6">
+      <div class="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
+      <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-200 to-blue-400 bg-clip-text text-transparent">Recent Developments</h3>
+    </div>
+    <div class="space-y-4">
+      {#each recentDevelopments as dev}
+        <div class="flex items-start">
+          <div class="mr-3">-</div>
+          <div>
+            <p class="text-white font-semibold">{dev.title}</p>
+            <p class="text-gray-400 text-sm">{dev.description}</p>
+          </div>
+        </div>
+      {/each}
+    </div>
+  </div>
+</div>
 
       <div class="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
         <h3 class="text-3xl font-bold text-white mb-8 text-center">Upcoming Events</h3>
@@ -404,44 +374,9 @@ One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonp
   <hr
   class="mb-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
-  <h2 class="text-4xl sm:text-7xl  text-center text-white mt-32 mb-24 cedarville-cursive-regular">
-  Thank You to Our Sponsors and Partners!
-  </h2>
 
-<section class="w-full relative z-10 mb-32 px-4">
-  {#each [
-    { title: "Platinum Partners", sponsors: platinumSponsors, maxW: "max-w-6xl", imgH: "h-26" },
-    { title: "Gold Partners", sponsors: goldSponsors, maxW: "max-w-4xl", imgH: "h-28" },
-    { title: "Silver Partners", sponsors: silverSponsors, maxW: "max-w-4xl", imgH: "h-20" }
-  ] as tier}
-    <div class="mb-16">
-      <h3 class="text-3xl text-center text-gray-300 mb-8">{tier.title}</h3>
+  <Sponsors />
 
-      <!-- Mobile: 3 per row for all tiers -->
-      <div class="block md:hidden">
-        <div class="grid grid-cols-3 gap-3 max-w-md mx-auto">
-          {#each tier.sponsors as sponsor}
-            <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name}
-               class="flex items-center justify-center w-full  bg-white/10 rounded-lg hover:bg-white/20 transition-all">
-              <img src={sponsor.src} alt={sponsor.name} class="h-12 w-auto object-contain" />
-            </a>
-          {/each}
-        </div>
-      </div>
 
-      <!-- Desktop: Consistent grid design -->
-      <div class="hidden md:block">
-        <div class="flex flex-wrap justify-center items-center gap-10 lg:gap-14 px-8 py-10 bg-white/10 rounded-xl {tier.maxW} mx-auto">
-          {#each tier.sponsors as sponsor}
-            <a href={sponsor.href} target="_blank" rel="noopener noreferrer" aria-label={sponsor.name}
-               class="flex items-center justify-center w-48 h-32  rounded-lg hover:bg-white/10 transition-all">
-              <img src={sponsor.src} alt={sponsor.name} class="{tier.imgH} w-auto object-contain" />
-            </a>
-          {/each}
-        </div>
-      </div>
-    </div>
-  {/each}
-</section>
 
 </main>

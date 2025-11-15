@@ -39,7 +39,7 @@
     {
       name: "Punit Lakhotiya",
       grade: "12th Grade",
-      role: "Team Management + Outreach",
+      role: "Reserve Engineer + Outreach",
       school: "Plano West Senior High School",
       image: punit
     },
@@ -74,7 +74,7 @@
     {
       name: "Yash Giriyapura",
       grade: "12th Grade",
-      role: "Outreach + Socials",
+      role: "Engineer + Outreach",
       school: "Plano West Senior High School",
       image: yash
     },
@@ -88,7 +88,7 @@
     {
       name: "Samanyu Earna",
       grade: "12th Grade",
-      role: "Programmer + Outreach",
+      role: "Reserve Engineer + Outreach",
       school: "Plano West Senior High School",
       image: samanyu
     },
@@ -109,14 +109,14 @@
     {
       name: "Ashwin Gupta",
       grade: "12th Grade",
-      role: "Engineer + Socials",
+      role: "Engineer + Programmer",
       school: "Plano Senior High School",
       image: ashwin
     },
     {
       name: "Mahit Cherku",
       grade: "12th Grade",
-      role: "Outreach",
+      role: "Reserve Engineer + Outreach",
       school: "Memorial High School",
       image: mahit
     },
@@ -141,8 +141,6 @@
       school: "Plano West Senior High School",
       image: rishabh
     },
-
-    
   ];
 
   const missingAmpsMembers = [
@@ -195,7 +193,6 @@
       school: "Plano West Senior High School",
       image: "https://i.postimg.cc/52r0VSg9/cropped-image-min.png"
     },
-    
   ];
 
   const chiefNames = ["Akshat Kumar", "Punit Lakhotiya", "Rishabh Singh", "Swaraj Nibandhe", "Neel Tipnis", "Nishant Sinari"];
@@ -233,30 +230,30 @@
     }
   ];
 
-
-
+  const akshatChief = chiefs[0];
+  const otherChiefs = chiefs.slice(1);
+  const filteredUndefinedMembers = undefinedTeamMembers.filter(member => member.name !== 'Rishabh Singh' && member.name !== 'Neel M');
 </script>
 
 <style>
+  .tab-active-undefined {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #facc15, #fef08a) 1;
+    background: linear-gradient(to right, #facc15, #fef08a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-  
-.tab-active-undefined {
-  border-bottom: 3px solid;
-  border-image: linear-gradient(to right, #facc15, #fef08a) 1;
-  background: linear-gradient(to right, #facc15, #fef08a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+  .tab-active-missing {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to left, #a78bfa, #9837ff) 1;
+    background: linear-gradient(to left, #a78bfa, #9837ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-.tab-active-missing {
-  border-bottom: 3px solid;
-  border-image: linear-gradient(to left, #a78bfa, #9837ff) 1;
-  background: linear-gradient(to left, #a78bfa, #9837ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
   .team-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -289,10 +286,55 @@
         Meet the incredible minds driving innovation in robotics across our organization.
       </p>
     </div>
+
     <!-- Chiefs Section -->
     <div class="mb-20">
       <h2 class="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent">Leadership Team</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      
+      <!-- Akshat - Full Width on Mobile Only -->
+      <div class="max-w-6xl mx-auto mb-6 md:hidden">
+        <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
+            <img 
+              src={akshatChief.image} 
+              alt={akshatChief.name} 
+              class="w-full h-full object-cover"
+              on:error={(e) => {
+                e.target.src = `https://via.placeholder.com/96x96/6B7280/FFFFFF?text=${akshatChief.name.split(' ').map(n => n[0]).join('')}`;
+              }}
+            />
+          </div>
+          <h3 class="text-lg font-semibold text-white">{akshatChief.name}</h3>
+          <p class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent font-medium mb-2 text-md">{akshatChief.role}</p>
+          <p class="text-gray-400 text-sm mb-1">{akshatChief.school}</p>
+          <p class="text-gray-500 text-xs">{akshatChief.grade}</p>
+        </div>
+      </div>
+
+      <!-- Other Chiefs - 2 Columns on Mobile Only -->
+      <div class="grid grid-cols-2 gap-4 max-w-6xl mx-auto md:hidden">
+        {#each otherChiefs as chief}
+          <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-4 text-center">
+            <div class="w-16 h-16 mx-auto mb-3 rounded-full overflow-hidden bg-gray-700">
+              <img 
+                src={chief.image} 
+                alt={chief.name} 
+                class="w-full h-full object-cover"
+                on:error={(e) => {
+                  e.target.src = `https://via.placeholder.com/96x96/6B7280/FFFFFF?text=${chief.name.split(' ').map(n => n[0]).join('')}`;
+                }}
+              />
+            </div>
+            <h3 class="text-sm font-semibold text-white">{chief.name}</h3>
+            <p class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent font-medium mb-1 text-xs">{chief.role}</p>
+            <p class="text-gray-400 text-xs mb-1">{chief.school}</p>
+            <p class="text-gray-500 text-xs">{chief.grade}</p>
+          </div>
+        {/each}
+      </div>
+
+      <!-- All Chiefs - Desktop Only -->
+      <div class="hidden md:grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {#each chiefs as chief}
           <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center">
             <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
@@ -318,141 +360,138 @@
     <div class="max-w-7xl mx-auto">
       <div class="border-b border-gray-700 mb-8">
         <nav class="flex space-x-8 justify-center">
-      <button 
-        class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
-        class:tab-active-undefined={activeTab === 'undefined'}
-        class:text-gray-400={activeTab !== 'undefined'}
-        class:hover:text-white={activeTab !== 'undefined'}
-        on:click={() => activeTab = 'undefined'}
-      >
-        Undefined
-      </button>
+          <button 
+            class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
+            class:tab-active-undefined={activeTab === 'undefined'}
+            class:text-gray-400={activeTab !== 'undefined'}
+            class:hover:text-white={activeTab !== 'undefined'}
+            on:click={() => activeTab = 'undefined'}
+          >
+            Undefined
+          </button>
 
-      <button 
-        class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
-        class:tab-active-missing={activeTab === 'missing'}
-        class:text-gray-400={activeTab !== 'missing'}
-        class:hover:text-white={activeTab !== 'missing'}
-        on:click={() => activeTab = 'missing'}
-      >
-        Missing Amps
-      </button>
-
+          <button 
+            class="py-4 px-6 text-lg font-semibold transition-colors duration-200 hover:cursor-pointer"
+            class:tab-active-missing={activeTab === 'missing'}
+            class:text-gray-400={activeTab !== 'missing'}
+            class:hover:text-white={activeTab !== 'missing'}
+            on:click={() => activeTab = 'missing'}
+          >
+            Missing Amps
+          </button>
         </nav>
       </div>
 
-
       <!-- Team Content -->
-    {#if activeTab === 'undefined'}
-      <div class="team-content">
-        <div class="mb-12">
-          <div class="w-full h-96 rounded-2xl overflow-hidden border border-gray-700">
-            <img src={team} alt="Undefined Robotics Team" class="w-full h-full object-cover"/>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
-            <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent">Team Information</h3>
-            <div class="space-y-3">
-              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">25782</span></div>
-              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-2} Members</span></div>
-              <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2024</span></div>
-              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT S-League</span></div>
+      {#if activeTab === 'undefined'}
+        <div class="team-content">
+          <div class="mb-12">
+            <div class="w-full h-96 rounded-2xl overflow-hidden border border-gray-700">
+              <img src={team} alt="Undefined Robotics Team" class="w-full h-full object-cover"/>
             </div>
           </div>
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
-            <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-white bg-clip-text text-transparent">Our Story</h3>
-            <p class="text-gray-300 leading-relaxed">
-              Our journey began as Team 19897 from the Jasper HS Robotics Club, where we discovered not just a passion for robotics and competition, but also a deep bond with one another. When that season came to an abrupt end, we thought it was the last time we’d compete together, as we were all moving on to different senior high schools. But our team captain, Akshat, wasn’t ready to let go of the team we had built. Determined to keep us together, he founded this organization and team 25782 under it, creating a new home where we could continue growing, learning, and competing as a family. That’s how our team was reborn—not just as a robotics team, but as a mission-driven community.
-            </p>
-          </div>
-        </div>
 
-        <div>
-          <h3 class="text-2xl font-bold mb-8 text-center bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent">Team Members</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {#each undefinedTeamMembers.filter(member => member.name !== 'Rishabh Singh' && member.name !== 'Neel M') as member}
-              <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center hover:border-gray-600 transition-all duration-300">
-                <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    class="w-full h-full object-cover"
-                    on:error={(e) => {
-                      e.target.src = `https://via.placeholder.com/80x80/6B7280/FFFFFF?text=${member.name.split(' ').map(n => n[0]).join('')}`;
-                    }}
-                  />
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
+              <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent">Team Information</h3>
+              <div class="space-y-3">
+                <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">25782</span></div>
+                <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{undefinedTeamMembers.length-2} Members</span></div>
+                <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2024</span></div>
+                <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT S-League</span></div>
+              </div>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
+              <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-white bg-clip-text text-transparent">Our Story</h3>
+              <p class="text-gray-300 leading-relaxed">
+                Our journey began as Team 19897 from the Jasper HS Robotics Club, where we discovered not just a passion for robotics and competition, but also a deep bond with one another. When that season came to an abrupt end, we thought it was the last time we'd compete together, as we were all moving on to different senior high schools. But our team captain, Akshat, wasn't ready to let go of the team we had built. Determined to keep us together, he founded this organization and team 25782 under it, creating a new home where we could continue growing, learning, and competing as a family. That's how our team was reborn—not just as a robotics team, but as a mission-driven community.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold mb-8 text-center bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent">Team Members</h3>
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+              {#each filteredUndefinedMembers as member}
+                <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-4 md:p-6 text-center hover:border-gray-600 transition-all duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 md:mb-4 rounded-full overflow-hidden bg-gray-700">
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      class="w-full h-full object-cover"
+                      on:error={(e) => {
+                        e.target.src = `https://via.placeholder.com/80x80/6B7280/FFFFFF?text=${member.name.split(' ').map(n => n[0]).join('')}`;
+                      }}
+                    />
+                  </div>
+                  <h3 class="text-sm md:text-base font-semibold mb-2 text-white">{member.name}</h3>
+                  <p class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent font-medium mb-2 text-xs md:text-sm">{member.role}</p>
+                  <p class="text-gray-400 text-xs mb-1">{member.school}</p>
+                  <p class="text-gray-500 text-xs">{member.grade}</p>
                 </div>
-                <h3 class="text-base font-semibold mb-2 text-white">{member.name}</h3>
-                <p class="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent font-medium mb-2 text-sm">{member.role}</p>
-                <p class="text-gray-400 text-xs mb-1">{member.school}</p>
-                <p class="text-gray-500 text-xs">{member.grade}</p>
-              </div>
-            {/each}
-          </div>
-        </div>
-      </div>
-    {:else if activeTab === 'missing'}
-      <div class="team-content">
-        <div class="mb-12">
-          <div class="w-full h-80 bg-gradient-to-br from-blue-900 to-purple-900 rounded-2xl flex items-center justify-center border border-gray-700">
-            <div class="text-center">
-              <div class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
-                </svg>
-              </div>
-              <p class="text-gray-400">Team Photo Coming Soon</p>
+              {/each}
             </div>
           </div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
-            <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Team Information</a></h3>
-            <div class="space-y-3">
-              <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">30801</span></div>
-              <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Juniors</span></div>
-              <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2025</span></div>
-              <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT F-League</span></div>
-            </div>
-          </div>
-          <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
-            <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Our Story</a></h3>
-            <p class="text-gray-300 leading-relaxed">
-              <a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer"><u>Missing Amps</u></a> is a passionate robotics team founded by alumni of Jasper High School’s award-winning FTC team (#11419).
-              With experience at the UIL State Championship, we now compete in the FIRST® Tech Challenge while giving back through STEM outreach.
-              Our mission is to inspire the next generation of innovators by engaging local youth, partnering with businesses, and building a strong platform for future STEM leaders.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h3 class="text-2xl font-bold mb-8 text-center"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Team Members</a></h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {#each missingAmpsMembers as member}
-              <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center hover:border-gray-600 transition-all duration-300">
-                <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    class="w-full h-full object-cover"
-                    on:error={(e) => {
-                      e.target.src = `https://via.placeholder.com/80x80/3B82F6/FFFFFF?text=${member.name.split(' ').map(n => n[0]).join('')}`;
-                    }}
-                  />
+      {:else if activeTab === 'missing'}
+        <div class="team-content">
+          <div class="mb-12">
+            <div class="w-full h-80 bg-gradient-to-br from-blue-900 to-purple-900 rounded-2xl flex items-center justify-center border border-gray-700">
+              <div class="text-center">
+                <div class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                  </svg>
                 </div>
-                <h3 class="text-base font-semibold mb-2 text-white">{member.name}</h3>
-                <p class="text-gray-400 text-xs mb-1">{member.school}</p>
-                <p class="text-gray-500 text-xs">{member.grade}</p>
+                <p class="text-gray-400">Team Photo Coming Soon</p>
               </div>
-            {/each}
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-1">
+              <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Team Information</a></h3>
+              <div class="space-y-3">
+                <div><span class="text-gray-400">Team Number:</span> <span class="text-white font-semibold">30801</span></div>
+                <div><span class="text-gray-400">Members:</span> <span class="text-white font-semibold">{missingAmpsMembers.length} Juniors</span></div>
+                <div><span class="text-gray-400">Founded:</span> <span class="text-white font-semibold">2025</span></div>
+                <div><span class="text-gray-400">Competition:</span> <span class="text-white font-semibold">FTC FiT F-League</span></div>
+              </div>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl border border-gray-700 md:col-span-2">
+              <h3 class="text-xl font-bold mb-4"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Our Story</a></h3>
+              <p class="text-gray-300 leading-relaxed">
+                <a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer"><u>Missing Amps</u></a> is a passionate robotics team founded by alumni of Jasper High School's award-winning FTC team (#11419).
+                With experience at the UIL State Championship, we now compete in the FIRST® Tech Challenge while giving back through STEM outreach.
+                Our mission is to inspire the next generation of innovators by engaging local youth, partnering with businesses, and building a strong platform for future STEM leaders.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold mb-8 text-center"><a href="https://www.missingamps.team/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-purple-400 bg-clip-text text-transparent">Team Members</a></h3>
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+              {#each missingAmpsMembers as member}
+                <div class="team-card bg-gray-900 rounded-xl border border-gray-700 p-4 md:p-6 text-center hover:border-gray-600 transition-all duration-300">
+                  <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 md:mb-4 rounded-full overflow-hidden bg-gray-700">
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      class="w-full h-full object-cover"
+                      on:error={(e) => {
+                        e.target.src = `https://via.placeholder.com/80x80/3B82F6/FFFFFF?text=${member.name.split(' ').map(n => n[0]).join('')}`;
+                      }}
+                    />
+                  </div>
+                  <h3 class="text-sm md:text-base font-semibold mb-2 text-white">{member.name}</h3>
+                  <p class="text-gray-400 text-xs mb-1">{member.school}</p>
+                  <p class="text-gray-500 text-xs">{member.grade}</p>
+                </div>
+              {/each}
+            </div>
           </div>
         </div>
-      </div>
-    {/if}
+      {/if}
     </div>
   </div>
 </main>
