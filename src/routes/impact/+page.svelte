@@ -248,7 +248,7 @@
           </div>
         {/each}
   <div class="text-center text-sm text-gray-400 italic px-4">
-  Certain events and projects are not displayed as the 25-26 season is in progress.
+  Certain events and programs/initiatives are not displayed for confidentiality through the 25-26 season.
 </div>
 
 

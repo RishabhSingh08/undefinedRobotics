@@ -315,7 +315,7 @@
             Fundraising Overview
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-            Fiscally sponsored by the <a href="https://the.hackfoundation.org/" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the Undefined Robotics Non Profit Project is working with <a href="https://candid.org" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone.
+            Fiscally sponsored by the <a href="https://the.hackfoundation.org/" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the Undefined Robotics Non Profit Project is working with <a href="https://app.candid.org/profile/16402866/undefined-robotics" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone.
           </p>
         </div>
         
