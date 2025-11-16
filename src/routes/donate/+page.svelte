@@ -151,11 +151,11 @@
           <!-- Donate Now button -->
           <button
             type="submit"
-            class="w-full px-10 py-5 text-black text-xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group shadow-lg hover:cursor-pointer"
+            class="w-full px-10 py-5 text-black text-xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group shadow-lg hover:cursor-pointer flex items-center justify-center"
             style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);"
           >
-            Donate Now
-            <span class="inline-block transition-transform group-hover:translate-x-1 ml-4 text-3xl">→</span>
+            <span>Donate Now</span>
+            <span class="inline-block transition-transform group-hover:translate-x-1 ml-3 text-2xl">→</span>
           </button>
 
           <!-- General error message -->
