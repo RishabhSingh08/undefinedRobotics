@@ -153,7 +153,7 @@
             image: bsl,
             imageAlt: 'Build Show Live 2025',
             title: 'Build Show Live 2025',
-            description: 'At Build Show LIVE 2024 in Dallas, our team met industry leaders to discuss robotics, STEM outreach, and how technology can empower future builders.',
+            description: 'At Build Show LIVE 2025 in Dallas, our team met industry leaders to discuss robotics, STEM outreach, and how technology can empower future builders.',
             impacts: ['Connected students with industry professionals', 'Expanded STEM and robotics outreach network']
           },
           {
@@ -161,7 +161,7 @@
             imageAlt: 'Mentorship Session with M&M Engineering Supervisor',
             title: 'M&M Engineering Mentorship',
             description: 'Team members met with M&M Engineering Supervisor Mr. Neaves to present robot designs, discuss improvements, and gain expert feedback on this year’s challenge.',
-            impacts: ['Enhanced robot design through expert feedback', 'Strengthened partnership with M&M Engineering']
+            impacts: ['Enhanced robot design through expert feedback', 'Strengthened partnership with M&M Engineering with 5 hour tour and 2 hour review session']
           },
 {
   image: g1,
@@ -170,7 +170,7 @@
   description: 'Our team met leaders from aerospace, manufacturing, and tech sectors, learning how robotics and automation drive modern industries and inspire our own STEM work.',
   impacts: [
     'Gained insight into real-world robotics',
-    'Built connections with major industry innovators',
+    'Connected with 15 Fortune 500 companies to learn engineering process',
   ]
 }
 
