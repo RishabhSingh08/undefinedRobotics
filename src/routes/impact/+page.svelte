@@ -153,13 +153,41 @@
             image: bsl,
             imageAlt: 'Build Show Live 2025',
             title: 'Build Show Live 2025',
+<<<<<<< Updated upstream
             description: 'At Build Show LIVE 2025 in Dallas, our team met industry leaders to discuss robotics, STEM outreach, and how technology can empower future builders.',
+=======
+<<<<<<< HEAD
+            description: 'At Build Show LIVE 2025 in Dallas, the team reached an impact of 5,400 attendees by showcasing an expo robot chassis, live 3D printing demonstrations, and hands-on arm module experiences that highlighted nonprofit outreach and FIRST principles. The event facilitated connections with over 35 industry professionals from 15 Fortune 500 and major tech companies, including senior executives who shared engineering insights that enriched the team\'s technical approach.',
+=======
+            description: 'At Build Show LIVE 2025 in Dallas, our team met industry leaders to discuss robotics, STEM outreach, and how technology can empower future builders.',
+>>>>>>> 8ce84da9c07a1ded52ed0d406bf5e18ceb78c606
+>>>>>>> Stashed changes
             impacts: ['Connected students with industry professionals', 'Expanded STEM and robotics outreach network']
           },
           {
             image: mnm,
             imageAlt: 'Mentorship Session with M&M Engineering Supervisor',
             title: 'M&M Engineering Mentorship',
+<<<<<<< Updated upstream
+            description: 'Team members met with M&M Engineering Supervisor Mr. Neaves to present robot designs, discuss improvements, and gain expert feedback on this year’s challenge.',
+            impacts: ['Enhanced robot design through expert feedback', 'Strengthened partnership with M&M Engineering with 5 hour tour and 2 hour review session']
+=======
+<<<<<<< HEAD
+            description: 'Team members engaged in a comprehensive seven-hour collaboration with M&M Engineering Supervisor Mr. Neaves, including a 5+ facility tour and 2+ CAD review session. During this visit, the team presented robot designs, discussed design improvements for this year\'s challenge, and received expert technical feedback that provided valuable insights for optimizing their engineering approach.',
+            impacts: ['Enhanced robot design through expert feedback', 'Strengthened partnership with M&M Engineering']
+>>>>>>> Stashed changes
+          },
+          {
+            image: g1,
+            imageAlt: 'Industry Engagements',
+            title: 'Industry Engagements',
+            description: 'The team connected with industry leaders across aerospace, manufacturing, and technology sectors, gaining firsthand insights into how robotics and automation are transforming production processes, addressing labor challenges, and driving innovation. These conversations illuminated real-world applications that directly inform and elevate the team\'s STEM projects and technical approach.',
+            impacts: [
+              'Gained insight into real-world robotics',
+              'Built connections with major industry innovators',
+            ]
+          }
+=======
             description: 'Team members met with M&M Engineering Supervisor Mr. Neaves to present robot designs, discuss improvements, and gain expert feedback on this year’s challenge.',
             impacts: ['Enhanced robot design through expert feedback', 'Strengthened partnership with M&M Engineering with 5 hour tour and 2 hour review session']
           },
@@ -174,9 +202,9 @@
   ]
 }
 
+>>>>>>> 8ce84da9c07a1ded52ed0d406bf5e18ceb78c606
         ]
       }
-      
     ];
     
   </script>
