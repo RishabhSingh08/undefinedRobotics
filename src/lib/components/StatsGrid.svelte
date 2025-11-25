@@ -3,25 +3,25 @@
   let showUnderservedModal = false;
   
   const grantSources = [
-    { name: 'FIRST 24-25: Gift Matching', amount: '$3,600.00', date: '12/12/2024' },
-    { name: 'FIRST 24-25: Texas Workforce Commission', amount: '$1,500.00', date: '8/4/2025' },
-    { name: 'FIRST 24-25: Hurd Ship Grant', amount: '$750.00', date: '10/13/2024' },
-    { name: 'FIRST 24-25: Argosy FTC SIM Canada', amount: '$1,000.00', date: '9/2/2024' },
-    { name: 'FIRST 25-26: Gift Matching', amount: '$3,949.00', date: '10/3/2025' },
-    { name: 'FIRST 25-26: GENE HAAS', amount: '$2,000.00', date: '10/21/2025' },
-    { name: 'FIRST 25-26: Hack Club Bank: Starting Amount', amount: '$150.00', date: '7/1/2025' },
-    { name: 'FIRST 25-26: Leidos', amount: '$1,083.00', date: '7/1/2025' },
-    { name: 'FIRST 25-26: GENE HAAS - Missing Amps', amount: '$2,000.00', date: '9/23/2025' }
+    { name: '24-25: Gift Matching', amount: '$3,600.00', date: '12/12/2024' },
+    { name: '24-25: Texas Workforce Commission', amount: '$1,500.00', date: '8/4/2025' },
+    { name: '24-25: Hardship Grant', amount: '$750.00', date: '10/13/2024' },
+    { name: '24-25: Argosy FTC SIM Canada', amount: '$1,000.00', date: '9/2/2024' },
+    { name: '25-26: Gift Matching', amount: '$3,949.00', date: '10/3/2025' },
+    { name: '25-26: GENE HAAS', amount: '$2,000.00', date: '10/21/2025' },
+    { name: '25-26: Hack Club Bank: Starting Amount', amount: '$150.00', date: '7/1/2025' },
+    { name: '25-26: Leidos', amount: '$1,083.00', date: '7/1/2025' },
+    { name: '25-26: GENE HAAS - Missing Amps', amount: '$2,000.00', date: '9/23/2025' }
   ];
   
   const sponsorshipSources = [
-    { name: 'FIRST 24-25: Cafelli Technologies', amount: '$1,000.00', date: '11/3/2024' },
-    { name: 'FIRST 24-25: Polymaker', amount: '$400.00', date: '10/27/2024' },
-    { name: 'FIRST 25-26: Build Live', amount: '$5,467.00', date: '10/1/2025' },
-    { name: 'FIRST 25-26: Team Fees', amount: '$3,008.01', date: '7/16/2025' },
-    { name: 'FIRST 25-26: Satya Karri', amount: '$100.00', date: '7/31/2025' },
-    { name: 'FIRST 25-26: Parts carried on', amount: '$4,500.00', date: '' },
-    { name: 'FIRST 25-26: Team parts Robotics Parts and Services', amount: '$10,143.00', date: '' }
+    { name: '24-25: Cafelli Technologies', amount: '$1,000.00', date: '11/3/2024' },
+    { name: '24-25: Polymaker', amount: '$400.00', date: '10/27/2024' },
+    { name: '25-26: Build Live', amount: '$5,467.00', date: '10/1/2025' },
+    { name: '25-26: Team Fees', amount: '$3,008.01', date: '7/16/2025' },
+    { name: '25-26: Satya Karri', amount: '$100.00', date: '7/31/2025' },
+    { name: '25-26: Parts carried on', amount: '$4,500.00', date: '' },
+    { name: '25-26: Team parts Robotics Parts and Services', amount: '$10,143.00', date: '' }
   ];
   
   const underservedData = [
