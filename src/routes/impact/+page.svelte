@@ -17,6 +17,7 @@
     import mnm from '../../lib/events/mnm.jpg';
     import indhero from '../../lib/events/indhero.jpg';
     import g1 from '../../lib/events/Screenshot 2025-11-09 200540.png';
+    import mont from '../../lib/images/mont event.jpg';
     export let images = {
       hero,
       mentorshipBanner,
@@ -34,7 +35,8 @@
       bsl,
       mnm,
       indhero,
-      g1
+      g1,
+      mont
     };
 
     const impactSections = [
@@ -59,14 +61,14 @@
             image: smart,
             imageAlt: 'Smart Seniors!',
             title: 'Smart Seniors (Video Series)',
-            description: 'Taught senior citizens about online safety through an accessible video series focused on phishing, scams, and fraud prevention.',
+            description: 'Educated senior citizens on digital safety through a tailored video series designed to prevent exploitation, teaching actionable strategies to identify and avoid phishing, scams, and financial fraud.',
             impacts: ['Educated 300+ seniors', 'Created video series to increase digital literacy']
           },
           {
             image: env,
             imageAlt: 'Enviromental Workshop',
             title: 'Enviormental Workshop',
-            description: 'Hosted a hands-on workshop to demonstrate how robotics can help tackle environmental issues like waste and renewable energy.',
+            description: 'Hosted a hands-on workshop demonstrating how robotics can address climate challenges by having students program a SPARK Prime robot for autonomous waste collection. Participants used the robot\'s claw and sensor systems to clear litter, applying engineering solutions to environmental issues.',
             impacts: ['Taught 20+ students about robotics and sustainability']
           }
         ]
@@ -85,21 +87,21 @@
             image: week,
             imageAlt: 'Weekly Coding Classes',
             title: 'Weekly Girls Coding Classes',
-            description: 'Collaborated with Code.org to host an 8-week beginner-friendly course based on AP Computer Science Principles for girls aged 10–14.',
+            description: 'Partnered with Code.org to host an 8-week AP Computer Science Principles course for girls aged 10–14, translating advanced concepts into an accessible, beginner-friendly curriculum that fostered fundamental coding skills.',
             impacts: ['Introduced 50+ girls to coding', 'Built multiple real-world applications']
           },
           {
-            image: career,
-            imageAlt: 'Career',
-            title: 'Career Literacy Program',
-            description: 'Created 25+ career videos showcasing real-world engineering disciplines. Each video averaged 2,000 views, broadening access to STEM guidance.',
-            impacts: ['Produced 25+ career videos', 'Each received ~2,000 views']
+            image: mont,
+            imageAlt: 'Robotics Workshop for Kids USA Montessori',
+            title: 'Montessori Robotics Workshop',
+            description: 'Undefined Robotics partnered with Solace Global to lead a robotics workshop at Kids USA Montessori. Students rotated through stations featuring functional robot components to learn basic mechanics and teamwork through hands-on experimentation.',
+            impacts: ['Engaged 20 students in interactive STEM learning', 'Facilitated 90 minutes of technical instruction']
           },
           {
             image: tribe,
             imageAlt: 'Career',
             title: 'Spreading First in South Asia',
-            description: 'Worked with Janajati Ashram and StepsToDo to introduce tribal children in rural India to STEM via hands-on windmill building and renewable energy concepts.',
+            description: 'In collaboration with Janajati Ashram and StepsToDo, delivered a hands-on STEM workshop to tribal children in rural India. Students learned basic engineering by constructing working windmill models, exploring how mechanical systems convert motion into usable energy.',
             impacts: ['Empowered 40+ tribal children', 'Donated ₹10,000 in STEM supplies']
           }
         ]
@@ -132,7 +134,7 @@
             image: sticker,
             imageAlt: 'Sticker',
             title: 'Promoted FTC at TEDx Event',
-            description: 'Represented and promoted the FIRST Tech Challenge program at a TEDx Youth event, inspiring attendees to explore robotics and get involved in hands-on STEM learning. Shared personal experiences to break down barriers and encourage participation.',
+            description: 'Represented and promoted the FIRST Tech Challenge program at a TEDx Youth event, inspiring attendees to explore robotics and get involved in hands-on STEM learning.',
             impacts: ['Reached diverse TEDx audience with robotics awareness'],
             dotColor: '#853dc4',
             impactColor: 'purple-500'
@@ -153,25 +155,22 @@
             image: bsl,
             imageAlt: 'Build Show Live 2025',
             title: 'Build Show Live 2025',
-            description: 'At Build Show LIVE in Dallas, the team showcased an expo robot chassis, demonstrated live 3D printing, and offered hands-on arm module activities that emphasized nonprofit outreach and FIRST values. The event also led to meaningful conversations with industry professionals and tech leaders, whose insights strengthened the team’s technical direction.',
-              impacts: ['Reached 5,400 attendees', 'Connected with over 35 industry professionals']
+            description: 'At Build Show LIVE in Dallas, the team showcased an expo robot chassis, demonstrated live 3D printing, and offered hands-on arm module activities that emphasized nonprofit outreach and FIRST values. The event also led to meaningful conversations with industry professionals and tech leaders, whose insights strengthened the team\'s technical direction.',
+            impacts: ['Reached 5,400 attendees', 'Connected with over 35 industry professionals']
           },
           {
             image: mnm,
             imageAlt: 'Mentorship Session with M&M Engineering Supervisor',
             title: 'M&M Engineering Mentorship',
-            description: 'Team members participated in an in-depth collaboration with M&M Engineering Supervisor Mr. Neaves, exploring the facility, reviewing CAD work, and presenting robot designs. They discussed improvements for this year’s challenge and received expert technical feedback that strengthened their overall engineering approach.',
+            description: 'Team members participated in an in-depth collaboration with M&M Engineering Supervisor Mr. Neaves, exploring the facility, reviewing CAD work, and presenting robot designs. They discussed improvements for this year\'s challenge and received expert technical feedback that strengthened their overall engineering approach.',
             impacts: ['7-hour M&M Engineering collaboration', 'Improved design through expert feedback']
           },
           {
             image: g1,
             imageAlt: 'Industry Engagements',
             title: 'Industry Engagements',
-            description: 'The team met with industry leaders across aerospace, manufacturing, and technology, gaining firsthand insights into how robotics and automation transform production, address labor challenges, and drive innovation. These discussions highlighted real-world applications that enhance the team’s STEM projects and technical approach.',
-            impacts: [
-              'Learned from industry robotics leaders',
-              'Connected with 15 Fortune 500 companies'
-            ]
+            description: 'The team met with industry leaders across aerospace, manufacturing, and technology, gaining firsthand insights into how robotics and automation transform production, address labor challenges, and drive innovation. These discussions highlighted real-world applications that enhance the team\'s STEM projects and technical approach.',
+            impacts: ['Learned from industry robotics leaders', 'Connected with 15 Fortune 500 companies']
           }
         ]
       }
@@ -261,7 +260,7 @@
             </div>
             
             <div class="p-8">
-              <div class="grid {section.gridCols} gap-6">
+              <div class="grid {section.gridCols} gap-6 auto-rows-fr">
                 {#each section.events as event}
                   <div class="impact-card flex flex-col bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
                     <img src={event.image} alt={event.imageAlt} class="w-full h-40 object-cover rounded-md mb-4" style="min-height:10rem; max-height:10rem;" />

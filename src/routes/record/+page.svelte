@@ -2,19 +2,14 @@
     import { onMount } from 'svelte';
     import hero5 from "../../lib/images/hero/5.png";
     import hero6 from "../../lib/images/hero/6.png";
-    import hero7 from "../../lib/images/hero/7.png";
-    import hero8 from "../../lib/images/hero/8.png";
-    import hero9 from "../../lib/images/hero/9.png";
-    import hero10 from "../../lib/images/hero/10.png";
-    import hero11 from "../../lib/images/hero/11.png";
     import hero12 from "../../lib/images/hero/12.png";
     
     import irsLetter from "../../lib/images/files/IRS Letter (1).pdf";
     import certificateOfStatus from "../../lib/images/files/Certificate of Status.pdf";
     import fiscalSponsorshipLetter from "../../lib/images/files/fiscal_sponsorship_letter (1).pdf";
 
-    const carouselImages1 = [hero5, hero6, hero7, hero8];
-    const carouselImages2 = [hero9, hero10, hero11, hero12];
+    const carouselImages1 = [hero5, hero6];
+    const carouselImages2 = [hero12];
 
     let currentIndex1 = 0;
     let currentIndex2 = 0;
