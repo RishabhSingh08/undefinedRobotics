@@ -1,0 +1,10 @@
+robots.txt for Undefined Robotics (https://undefinedrobotics.org)
+
+Allow all bots access to the entire site
+
+User-agent: *
+Disallow:
+
+Specify the location of the sitemap file
+
+Sitemap: https://www.google.com/search?q=https://undefinedrobotics.org/sitemap.xml

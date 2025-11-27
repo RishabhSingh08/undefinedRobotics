@@ -68,6 +68,49 @@
     }
 </script>
 
+<svelte:head>
+  <title>Undefined Robotics | Contact</title>
+  <meta name="description" content="Get in touch with the Undefined Robotics team for sponsorship opportunities, outreach requests, media inquiries, or general questions about our STEM nonprofit in Plano, Texas." />
+
+  <link rel="canonical" href="https://undefinedrobotics.org/contact" />
+
+  <meta property="og:title" content="Contact Undefined Robotics" />
+  <meta property="og:description" content="Reach out to our student-led team for questions about our FTC robotics programs, partnership opportunities, or STEM outreach." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://undefinedrobotics.org/contact" />
+  <meta property="og:type" content="ContactPage" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Get in Touch with Undefined Robotics" />
+  <meta name="twitter:description" content="Sponsor, partner, or ask a question. We look forward to hearing from you!" />
+  <meta name="twitter:image" content="/og-image.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "about": "Undefined Robotics",
+      "description": "Contact form and information for Undefined Robotics, a student-led 501(c)3 nonprofit organization.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-ROBOTIC", 
+          "contactType": "general inquiry",
+          "email": "contact@undefinedrobotics.org",
+          "areaServed": "Worldwide",
+          "availableLanguage": "English"
+        }
+      ],
+      "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Plano",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+      }
+    }
+  </script>
+</svelte:head>
+
 <main id="contact" class="px-4 py-32 relative z-10 min-h-screen">
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
@@ -84,7 +127,6 @@
 
             <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-16 ">
-                <!-- Contact Information -->
                 <div class="space-y-12 motion-duration-2000 motion-preset-slide-right-lg">
                     <div>
                         <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
@@ -95,7 +137,7 @@
                                 </div>
                                 <div>
                                     <p class="font-semibold">Email</p>
-                                    <a href="mailto:Stryng.dev@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                                    <a href="mailto:{contactInfo.email}" class="text-gray-400 hover:text-white transition-colors">
                                         {contactInfo.email}
                                     </a>
                                 </div>
@@ -140,7 +182,6 @@
                   </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="bg-gray-800/50 backdrop-blur-lg border border-gray-700 p-8 rounded-xl motion-duration-2000 motion-preset-slide-left-lg">
                     <form on:submit|preventDefault={handleSubmit} class="space-y-6" method="POST">
 
@@ -219,5 +260,3 @@
 
 <style>
 </style>
-
-

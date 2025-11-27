@@ -70,6 +70,47 @@
   });
 
 </script>
+<!-- SEO HEAD TAGS -->
+<svelte:head>
+  <title>Undefined Robotics | Home</title>
+  <meta name="description" content="Undefined Robotics is one of Texas’ largest student-led STEM and robotics 501(c)3 nonprofit programs. We serve underserved and underrepresented communities through outreach, engineering education, and FTC robotics." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://undefinedrobotics.org/" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Undefined Robotics | Student-Led STEM Nonprofit" />
+  <meta property="og:description" content="A student-led 501(c)3 robotics nonprofit providing STEM education and outreach to underserved communities worldwide." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://undefinedrobotics.org/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Undefined Robotics | FTC Robotics Team & STEM Nonprofit" />
+  <meta name="twitter:description" content="Empowering underserved communities through robotics education, engineering, and STEM outreach." />
+  <meta name="twitter:image" content="/og-image.png" />
+
+  <!-- Accessibility / indexing -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Undefined Robotics",
+    "url": "https://undefinedrobotics.org",
+    "logo": "https://undefinedrobotics.org/logo.png",
+    "description": "Student-led 501(c)3 STEM & robotics nonprofit serving underserved communities.",
+    "sameAs": [
+      "https://instagram.com/undefinedrobotics",
+      "https://twitter.com/undefinedrobotics",
+      "https://youtube.com/undefinedrobotics"
+    ]
+  }
+  </script>
+</svelte:head>
 
 <style>
   .dm-sans {

@@ -1,5 +1,3 @@
-<!-- OG DONATION PAGE -->
-
 <script>
   import { writable, derived } from 'svelte/store';
     import IconLogo from "../../lib/images/logo.png";
@@ -46,6 +44,46 @@
   }
 </script>
 
+<svelte:head>
+  <title>Undefined Robotics | Donate</title>
+  <meta name="description" content="Support Undefined Robotics, a student-led 501(c)3 nonprofit. Your tax-deductible donation funds FTC robots, STEM outreach, and engineering education programs." />
+
+  <link rel="canonical" href="https://undefinedrobotics.org/donate" />
+
+  <meta property="og:title" content="Make a Donation to Undefined Robotics" />
+  <meta property="og:description" content="Your tax-deductible contribution directly powers our robotics team, community outreach, and STEM educational efforts." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://undefinedrobotics.org/donate" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Support Undefined Robotics STEM Programs" />
+  <meta name="twitter:description" content="Help fund our FTC robotics season and global STEM outreach programs with a tax-deductible donation." />
+  <meta name="twitter:image" content="/og-image.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Donation Page",
+      "description": "Page for making a charitable donation to Undefined Robotics, a 501(c)3 nonprofit organization.",
+      "potentialAction": {
+        "@type": "DonateAction",
+        "name": "Donate Now",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://hcb.hackclub.com/donations/start/undefined-robotics",
+          "actionStatus": "PotentialActionStatus"
+        },
+        "recipient": {
+          "@type": "NonprofitOrganization",
+          "name": "Undefined Robotics"
+        }
+      }
+    }
+  </script>
+</svelte:head>
+
 <style>
   .dm-sans {
     font-family: "DM Sans", sans-serif;
@@ -56,10 +94,8 @@
 </style>
 
 <main class="text-white overflow-hidden relative dm-sans">
-  <!-- Background pattern for visual effect -->
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
-  <!-- Main content container, centered on the screen -->
   <div class="relative z-10 min-h-screen flex justify-center px-6 py-32">
     <div class="max-w-3xl mx-auto w-full">
         
@@ -74,10 +110,8 @@
           <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
         </section>
 
-        <!-- Donation form -->
         <form on:submit|preventDefault={handleSubmit} class="space-y-10">
-            <!-- Name input field -->
-          <div class="space-y-4">
+            <div class="space-y-4">
             <label for="name" class="block text-xl font-medium text-gray-300">
               Name
             </label>
@@ -93,7 +127,6 @@
             {/if}
           </div>
 
-          <!-- Email input field -->
           <div class="space-y-4">
             <label for="email" class="block text-xl font-medium text-gray-300">
               Email
@@ -110,13 +143,11 @@
             {/if}
           </div>
 
-          <!-- Amount input and quick selection buttons -->
           <div class="space-y-5">
             <label for="amount" class="block text-xl font-medium text-gray-300">
               Amount (USD)
             </label>
 
-            <!-- Quick amount selection buttons -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
               {#each [25, 50, 100, 250] as quickAmount}
                 <button
@@ -129,7 +160,6 @@
               {/each}
             </div>
 
-            <!-- Custom amount input field -->
             <div class="relative">
               <span class="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl">$</span>
               <input
@@ -148,7 +178,6 @@
             {/if}
           </div>
 
-          <!-- Donate Now button -->
           <button
             type="submit"
             class="w-full px-10 py-5 text-black text-xl font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors group shadow-lg hover:cursor-pointer flex items-center justify-center"
@@ -158,7 +187,6 @@
             <span class="inline-block transition-transform group-hover:translate-x-1 ml-3 text-2xl">→</span>
           </button>
 
-          <!-- General error message -->
           {#if showError && Object.values(formErrors).some(Boolean)}
             <p class="text-center text-yellow-400 text-lg">
               Please fill in all required fields correctly.
@@ -166,7 +194,6 @@
           {/if}
         </form>
 
-        <!-- Sponsorship Package Dropdown -->
         <div class="mt-16">
           <button
             on:click={() => showSponsorshipPackage = !showSponsorshipPackage}
@@ -187,7 +214,7 @@
             <div class="mt-4 rounded-lg overflow-hidden border border-white/20 shadow-2xl">
               <img 
                 src={SponsorshipPackage} 
-                alt="Undefined Robotics Sponsorship Packages" 
+                alt="Undefined Robotics Sponsorship Packages details, listing tiers and benefits." 
                 class="w-full h-auto"
               />
             </div>

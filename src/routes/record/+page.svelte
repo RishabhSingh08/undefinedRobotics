@@ -110,6 +110,46 @@
     ];
 </script>
 
+<svelte:head>
+  <title>Undefined Robotics | Record</title>
+  <meta name="description" content="Explore the history of Undefined Robotics (Team #25782). View our FTC awards, including Inspire, Innovate, and Winning Alliance, plus our 501(c)(3) nonprofit documentation." />
+  <meta name="keywords" content="FTC Awards, Inspire Award, Winning Alliance, Robotics Competition Record, 501(c)(3) Nonprofit, Undefined Robotics History, Hack Foundation" />
+
+  <link rel="canonical" href="https://undefinedrobotics.org/record" />
+
+  <meta property="og:title" content="Our Record | Undefined Robotics Awards & History" />
+  <meta property="og:description" content="From Winning Alliance to the Inspire Award. See our journey through the FIRST Tech Challenge seasons and our nonprofit milestones." />
+  <meta property="og:image" content="https://undefinedrobotics.org/record-og.png" />
+  <meta property="og:url" content="https://undefinedrobotics.org/record" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Undefined Robotics Competition Record" />
+  <meta name="twitter:description" content="Our trophy case and legal standing. See how we are making an impact in STEM." />
+  <meta name="twitter:image" content="https://undefinedrobotics.org/record-og.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Undefined Robotics",
+    "funder": {
+        "@type": "Organization",
+        "name": "The Hack Foundation"
+    },
+    "awards": [
+        "Inspire Award",
+        "Winning Alliance",
+        "RTX Innovate Award",
+        "Control Award",
+        "Connect Award",
+        "Design Award"
+    ],
+    "description": "A student-led 501(c)(3) robotics nonprofit with a history of excellence in FIRST Tech Challenge."
+  }
+  </script>
+</svelte:head>
+
 <style>
   .slideshow-carousel {
     width: 700px;
@@ -157,14 +197,13 @@
                     <div class="hidden lg:block absolute left-[calc(theme(spacing.10))] md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 {season.nodeColor} rounded-full border-4 border-gray-900 z-10"></div>
                     
                     <div class="flex items-center gap-8">
-                        <!-- Left Carousel (for 2024-25 season, i=0) -->
                         {#if i === 0}
                             <div class="hidden lg:flex flex-1 justify-center items-center">
                                 <div class="slideshow-carousel">
                                     {#each carouselImages1 as image, idx}
                                         <img 
                                             src={image} 
-                                            alt="Team {idx + 1}" 
+                                            alt="Undefined Robotics 2024-25 Season Competition Photo {idx + 1}" 
                                             class="slideshow-image"
                                             class:active={idx === currentIndex1}
                                         />
@@ -200,14 +239,13 @@
                             </div>
                         </div>
 
-                        <!-- Right Carousel (for 2023-24 season, i=1) -->
                         {#if i === 1}
                             <div class="hidden lg:flex flex-1 justify-center items-center">
                                 <div class="slideshow-carousel">
                                     {#each carouselImages2 as image, idx}
                                         <img 
                                             src={image} 
-                                            alt="Team {idx + 1}" 
+                                            alt="Undefined Robotics 2023-24 Season Competition Photo {idx + 1}" 
                                             class="slideshow-image"
                                             class:active={idx === currentIndex2}
                                         />
@@ -345,6 +383,4 @@
         </div>
       </div>
     </div>
-
-    
 </section>

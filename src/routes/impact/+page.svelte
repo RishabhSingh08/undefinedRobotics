@@ -4,6 +4,8 @@
     import mentorshipBanner from '../../lib/images/bigImages/2.png';
     import communityBanner from '../../lib/images/bigImages/3.png';
     import inspiringBanner from '../../lib/images/bigImages/1.png';
+    
+    // Event Images
     import three from '../../lib/events/3d.jpg';
     import env from '../../lib/events/env.jpg';
     import smart from '../../lib/events/smart.jpg';
@@ -18,6 +20,7 @@
     import indhero from '../../lib/events/indhero.jpg';
     import g1 from '../../lib/events/Screenshot 2025-11-09 200540.png';
     import mont from '../../lib/images/mont event.jpg';
+
     export let images = {
       hero,
       mentorshipBanner,
@@ -52,21 +55,21 @@
         events: [
           {
             image: three,
-            imageAlt: '3D',
+            imageAlt: '3D Printing STEM Showcase Event', // Optimized Alt Text
             title: '3D Print Showcase',
             description: 'Organized a multi-location STEM outreach event across North Texas. Distributed over 200 eco-friendly 3D-printed robots to families in malls and parks. Engaged professionals from Tesla and Amazon to spark STEM dialogue.',
             impacts: ['Engaged 500+ families in STEM', 'Distributed 200+ 3D-printed robots']
           },
           {
             image: smart,
-            imageAlt: 'Smart Seniors!',
+            imageAlt: 'Smart Seniors Digital Literacy Workshop', // Optimized Alt Text
             title: 'Smart Seniors (Video Series)',
             description: 'Educated senior citizens on digital safety through a tailored video series designed to prevent exploitation, teaching actionable strategies to identify and avoid phishing, scams, and financial fraud.',
             impacts: ['Educated 300+ seniors', 'Created video series to increase digital literacy']
           },
           {
             image: env,
-            imageAlt: 'Enviromental Workshop',
+            imageAlt: 'Environmental Robotics Workshop', // Optimized Alt Text
             title: 'Enviormental Workshop',
             description: 'Hosted a hands-on workshop demonstrating how robotics can address climate challenges by having students program a SPARK Prime robot for autonomous waste collection. Participants used the robot\'s claw and sensor systems to clear litter, applying engineering solutions to environmental issues.',
             impacts: ['Taught 20+ students about robotics and sustainability']
@@ -85,7 +88,7 @@
         events: [
           {
             image: week,
-            imageAlt: 'Weekly Coding Classes',
+            imageAlt: 'Weekly Girls Coding Classes with Code.org', // Optimized Alt Text
             title: 'Weekly Girls Coding Classes',
             description: 'Partnered with Code.org to host an 8-week AP Computer Science Principles course for girls aged 10–14, translating advanced concepts into an accessible, beginner-friendly curriculum that fostered fundamental coding skills.',
             impacts: ['Introduced 50+ girls to coding', 'Built multiple real-world applications']
@@ -99,7 +102,7 @@
           },
           {
             image: tribe,
-            imageAlt: 'Career',
+            imageAlt: 'Rural India STEM Workshop', // Optimized Alt Text
             title: 'Spreading First in South Asia',
             description: 'In collaboration with Janajati Ashram and StepsToDo, delivered a hands-on STEM workshop to tribal children in rural India. Students learned basic engineering by constructing working windmill models, exploring how mechanical systems convert motion into usable energy.',
             impacts: ['Empowered 40+ tribal children', 'Donated ₹10,000 in STEM supplies']
@@ -118,21 +121,21 @@
         events: [
           {
             image: int,
-            imageAlt: 'International Girls Robotics ',
+            imageAlt: 'International Girls Robotics Donation', // Optimized Alt Text
             title: 'International Girl Robotics',
             description: 'Partnered with Naihati New Life Society, West India\'s largest orphanage for girls affected by abuse, to donate EV3 and SPIKE Prime kits and host robotics/STEM workshops.',
             impacts: ['Reached 15+ abuse survivors', 'Donated $3,000 in robotics kits']
           },
           {
             image: climate,
-            imageAlt: 'Career',
+            imageAlt: 'Robotics for Climate Change Workshop', // Optimized Alt Text
             title: 'Robotics for Climate Change',
             description: 'With a UTD researcher, taught students in grades 1–6 how to build and program SPARK PRIME robots for climate-related challenges. The project gained viral reach.',
             impacts: ['Introduced 15+ young students to STEM', 'Earned 6,000+ TikTok views']
           },
           {
             image: sticker,
-            imageAlt: 'Sticker',
+            imageAlt: 'FTC Robot Demo at TEDx Event', // Optimized Alt Text
             title: 'Promoted FTC at TEDx Event',
             description: 'Represented and promoted the FIRST Tech Challenge program at a TEDx Youth event, inspiring attendees to explore robotics and get involved in hands-on STEM learning.',
             impacts: ['Reached diverse TEDx audience with robotics awareness'],
@@ -153,7 +156,7 @@
         events: [
           {
             image: bsl,
-            imageAlt: 'Build Show Live 2025',
+            imageAlt: 'Build Show Live 2025 Expo Robot', // Optimized Alt Text
             title: 'Build Show Live 2025',
             description: 'At Build Show LIVE in Dallas, the team showcased an expo robot chassis, demonstrated live 3D printing, and offered hands-on arm module activities that emphasized nonprofit outreach and FIRST values. The event also led to meaningful conversations with industry professionals and tech leaders, whose insights strengthened the team\'s technical direction.',
             impacts: ['Reached 5,400 attendees', 'Connected with over 35 industry professionals']
@@ -167,7 +170,7 @@
           },
           {
             image: g1,
-            imageAlt: 'Industry Engagements',
+            imageAlt: 'Industry Engagements with Fortune 500 Companies', // Optimized Alt Text
             title: 'Industry Engagements',
             description: 'The team met with industry leaders across aerospace, manufacturing, and technology, gaining firsthand insights into how robotics and automation transform production, address labor challenges, and drive innovation. These discussions highlighted real-world applications that enhance the team\'s STEM projects and technical approach.',
             impacts: ['Learned from industry robotics leaders', 'Connected with 15 Fortune 500 companies']
@@ -177,17 +180,55 @@
     ];
     
   </script>
+
+  <svelte:head>
+  <title>Undefined Robotics | Impact</title>
+    <meta name="description" content="Undefined Robotics impacts thousands globally through STEM workshops, senior digital literacy, and robotics mentorship. Reaching 5000+ people and 15+ Fortune 500 companies." />
+    <meta name="keywords" content="STEM Outreach, Robotics Mentorship, Digital Literacy, FTC Community Service, Undefined Robotics Impact, 3D Printing Workshop, Girls in STEM" />
+
+    <link rel="canonical" href="https://undefinedrobotics.org/impact" />
+
+    <meta property="og:title" content="Our Impact | Undefined Robotics" />
+    <meta property="og:description" content="Transforming communities through robotics education. From local libraries to rural India, see how we are making a difference." />
+    <meta property="og:image" content="https://undefinedrobotics.org/impact-og.png" />
+    <meta property="og:url" content="https://undefinedrobotics.org/impact" />
+    <meta property="og:type" content="article" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Undefined Robotics Community Impact" />
+    <meta name="twitter:description" content="Reaching 5,400+ attendees and empowering students worldwide through engineering and STEM." />
+    <meta name="twitter:image" content="https://undefinedrobotics.org/impact-og.png" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Undefined Robotics",
+      "description": "Student-led 501(c)(3) robotics nonprofit providing STEM access.",
+      "department": [
+        {
+          "@type": "Organization",
+          "name": "STEM Mentorship",
+          "description": "Weekly coding classes and robotics workshops for underserved youth."
+        },
+        {
+          "@type": "Organization",
+          "name": "Community Outreach",
+          "description": "Smart Seniors digital literacy and environmental robotics workshops."
+        }
+      ]
+    }
+    </script>
+  </svelte:head>
   
   <section id="impact" class="px-4 py-32 relative z-10">
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
-
-
 
     <div class="max-w-7xl mx-auto">
       <div class="relative mb-20 rounded-3xl overflow-hidden text-white">
         <img
           src={images.hero}
-          alt="Mentorship"
+          alt="Undefined Robotics Team Impact and Outreach"
           class="w-full h-[500px] object-cover"
         />
       

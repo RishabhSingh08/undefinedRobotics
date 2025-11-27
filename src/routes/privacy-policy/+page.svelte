@@ -2,6 +2,41 @@
   // Add any necessary imports or logic here
 </script>
 
+<svelte:head>
+  <title>Privacy Policy | Undefined Robotics</title>
+  <meta name="description" content="Read the Privacy Policy for Undefined Robotics. Learn about how we collect, use, and protect the information you provide via our contact and donation forms, and through Vercel Analytics." />
+
+  <link rel="canonical" href="https://undefinedrobotics.org/privacy-policy" />
+
+  <meta property="og:title" content="Privacy Policy - Undefined Robotics" />
+  <meta property="og:description" content="We are committed to protecting your privacy. Review our policy on data collection, use, security, and your rights." />
+  <meta property="og:url" content="https://undefinedrobotics.org/privacy-policy" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Undefined Robotics Privacy Policy" />
+  <meta name="twitter:description" content="Our commitment to safeguarding your personal information." />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Privacy Policy",
+      "description": "The official privacy policy for Undefined Robotics, detailing data practices and user rights.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Undefined Robotics",
+        "url": "https://undefinedrobotics.org",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "privacy policy questions",
+          "email": "contact@undefinedrobotics.org"
+        }
+      }
+    }
+  </script>
+</svelte:head>
+
 <section id="privacy" class="px-4 py-32 relative z-10 min-h-screen">
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
@@ -27,7 +62,6 @@
         </p>
       </div>
 
-      <!-- Section 1 -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-white mb-4">1. Information We Collect</h2>
         <p class="text-gray-200 leading-relaxed mb-4">
@@ -45,7 +79,6 @@
         </p>
       </div>
 
-      <!-- Section 2 -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-white mb-4">2. How We Use Your Information</h2>
         <p class="text-gray-200 leading-relaxed mb-4">
@@ -61,7 +94,6 @@
         </p>
       </div>
 
-      <!-- Section 3 -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-white mb-4">3. Analytics & Tracking</h2>
         <p class="text-gray-200 leading-relaxed mb-4">
@@ -84,7 +116,6 @@
       </div>
 
 
-      <!-- Section 4 -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-white mb-4">4. Data Retention & Security</h2>
         <div class="space-y-4">
@@ -103,7 +134,6 @@
         </div>
       </div>
 
-      <!-- Section 5 -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-white mb-4">5. Children's Privacy</h2>
         <p class="text-gray-200 leading-relaxed">
@@ -111,7 +141,6 @@
         </p>
       </div>
 
-      <!-- Section 6 -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-white mb-4">6. Your Rights</h2>
         <p class="text-gray-200 leading-relaxed mb-4">
@@ -124,7 +153,6 @@
         </ul>
       </div>
 
-      <!-- Section 7 -->
       <div class="mb-8">
         <h2 class="text-2xl font-bold text-white mb-4">7. Updates to This Policy</h2>
         <p class="text-gray-200 leading-relaxed">
@@ -132,7 +160,6 @@
         </p>
       </div>
 
-      <!-- Section 8 -->
       <div>
         <h2 class="text-2xl font-bold text-white mb-4">8. Contact Us</h2>
         <p class="text-gray-200 leading-relaxed mb-4">

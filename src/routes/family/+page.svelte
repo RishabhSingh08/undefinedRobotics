@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte'; // onMount added to avoid error if using $app/stores
   import IconLogo from "../../lib/images/logo.png";
   import akshat from "../../lib/family/akshat_kumar.png";
   import punit from "../../lib/family/punit_lakhotiya.png";
@@ -233,9 +234,63 @@
   const akshatChief = chiefs[0];
   const otherChiefs = chiefs.slice(1);
   const filteredUndefinedMembers = undefinedTeamMembers.filter(member => member.name !== 'Rishabh Singh' && member.name !== 'Neel M');
+
+  // Utility function to generate Person JSON-LD for a member
+  function generatePersonSchema(member, teamType) {
+    const defaultImage = `https://via.placeholder.com/96x96/6B7280/FFFFFF?text=${member.name.split(' ').map(n => n[0]).join('')}`;
+    return {
+      "@type": "Person",
+      "name": member.name,
+      "jobTitle": member.role,
+      "alumniOf": member.school,
+      "image": member.image.startsWith('http') ? member.image : `https://undefinedrobotics.org${member.image.replace('..', '')}`,
+      "description": `Member of Undefined Robotics, part of the ${teamType} team. Grade: ${member.grade}.`,
+    };
+  }
+  
+  // Combine all members for JSON-LD ItemList
+  const allMembers = [...undefinedTeamMembers, ...missingAmpsMembers.filter(m => !undefinedTeamMembers.some(u => u.name === m.name))];
+  const itemListElements = allMembers.map((member, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": generatePersonSchema(member, member.team === 'missing' ? 'Missing Amps' : 'Undefined')
+  }));
 </script>
 
+<svelte:head>
+  <title>Undefined Robotics | Family</title>
+  <meta name="description" content="Meet the full family of Undefined Robotics and our FTC partner team, Missing Amps. See our dedicated student leaders, engineers, and outreach members." />
+
+  <link rel="canonical" href="https://undefinedrobotics.org/family" />
+
+  <meta property="og:title" content="Our Family | Undefined Robotics Team Members" />
+  <meta property="og:description" content="Meet the student leaders, engineers, programmers, and outreach members of Undefined Robotics and Missing Amps." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://undefinedrobotics.org/family" />
+  <meta property="og:type" content="CollectionPage" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Undefined Robotics | Family & Team Members" />
+  <meta name="twitter:description" content="Meet our incredible student-led robotics teams: Undefined Robotics and our partner team, Missing Amps." />
+  <meta name="twitter:image" content="/og-image.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Undefined Robotics Team Members",
+      "description": "Meet the full family of Undefined Robotics and our FTC partner team, Missing Amps, including all leaders and members.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Team Roster",
+        "itemListElement": {$JSON.stringify(itemListElements)}
+      }
+    }
+  </script>
+</svelte:head>
+
 <style>
+  /* ... your existing styles ... */
   .tab-active-undefined {
     border-bottom: 3px solid;
     border-image: linear-gradient(to right, #facc15, #fef08a) 1;
@@ -269,7 +324,6 @@
 </style>
 
 <main class="px-4 py-32 relative z-10 min-h-screen">
-  <!-- Background Effects -->
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
   <div class="absolute inset-0 z-0">
     <div class="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-yellow-500 to-yellow-200 rounded-full blur-3xl opacity-10"></div>
@@ -277,7 +331,6 @@
   </div>
 
   <div class="relative z-10 container mx-auto px-6">
-    <!-- Header -->
     <div class="text-center mb-16">
       <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
         Our Family
@@ -287,17 +340,15 @@
       </p>
     </div>
 
-    <!-- Chiefs Section -->
     <div class="mb-20">
       <h2 class="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent">Leadership Team</h2>
       
-      <!-- Akshat - Full Width on Mobile Only -->
       <div class="max-w-6xl mx-auto mb-6 md:hidden">
         <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center">
           <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
             <img 
               src={akshatChief.image} 
-              alt={akshatChief.name} 
+              alt="{akshatChief.name} - {akshatChief.role}" 
               class="w-full h-full object-cover"
               on:error={(e) => {
                 e.target.src = `https://via.placeholder.com/96x96/6B7280/FFFFFF?text=${akshatChief.name.split(' ').map(n => n[0]).join('')}`;
@@ -311,14 +362,13 @@
         </div>
       </div>
 
-      <!-- Other Chiefs - 2 Columns on Mobile Only -->
       <div class="grid grid-cols-2 gap-4 max-w-6xl mx-auto md:hidden">
         {#each otherChiefs as chief}
           <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-4 text-center">
             <div class="w-16 h-16 mx-auto mb-3 rounded-full overflow-hidden bg-gray-700">
               <img 
                 src={chief.image} 
-                alt={chief.name} 
+                alt="{chief.name} - {chief.role}" 
                 class="w-full h-full object-cover"
                 on:error={(e) => {
                   e.target.src = `https://via.placeholder.com/96x96/6B7280/FFFFFF?text=${chief.name.split(' ').map(n => n[0]).join('')}`;
@@ -333,14 +383,13 @@
         {/each}
       </div>
 
-      <!-- All Chiefs - Desktop Only -->
       <div class="hidden md:grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
         {#each chiefs as chief}
           <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center">
             <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
               <img 
                 src={chief.image} 
-                alt={chief.name} 
+                alt="{chief.name} - {chief.role}" 
                 class="w-full h-full object-cover"
                 on:error={(e) => {
                   e.target.src = `https://via.placeholder.com/96x96/6B7280/FFFFFF?text=${chief.name.split(' ').map(n => n[0]).join('')}`;
@@ -356,7 +405,6 @@
       </div>
     </div>
 
-    <!-- Team Tabs -->
     <div class="max-w-7xl mx-auto">
       <div class="border-b border-gray-700 mb-8">
         <nav class="flex space-x-8 justify-center">
@@ -382,12 +430,11 @@
         </nav>
       </div>
 
-      <!-- Team Content -->
       {#if activeTab === 'undefined'}
         <div class="team-content">
           <div class="mb-12">
             <div class="w-full h-96 rounded-2xl overflow-hidden border border-gray-700">
-              <img src={team} alt="Undefined Robotics Team" class="w-full h-full object-cover"/>
+              <img src={team} alt="Official team photo of Undefined Robotics, FTC Team 25782" class="w-full h-full object-cover"/>
             </div>
           </div>
 
@@ -417,7 +464,7 @@
                   <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 md:mb-4 rounded-full overflow-hidden bg-gray-700">
                     <img 
                       src={member.image} 
-                      alt={member.name} 
+                      alt="{member.name}, {member.role} for Undefined Robotics" 
                       class="w-full h-full object-cover"
                       on:error={(e) => {
                         e.target.src = `https://via.placeholder.com/80x80/6B7280/FFFFFF?text=${member.name.split(' ').map(n => n[0]).join('')}`;
@@ -476,7 +523,7 @@
                   <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 md:mb-4 rounded-full overflow-hidden bg-gray-700">
                     <img 
                       src={member.image} 
-                      alt={member.name} 
+                      alt="{member.name}, {member.role} for Missing Amps" 
                       class="w-full h-full object-cover"
                       on:error={(e) => {
                         e.target.src = `https://via.placeholder.com/80x80/3B82F6/FFFFFF?text=${member.name.split(' ').map(n => n[0]).join('')}`;
