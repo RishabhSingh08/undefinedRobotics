@@ -116,7 +116,7 @@
 
   <div class="max-w-5xl mx-auto">
     
-    <div class="text-center mb-16">
+    <div class="text-center mb-16 animate-fade-down">
       <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
         Contact
       </h1>
@@ -125,9 +125,9 @@
       </p>
     </div>
 
-            <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-16 ">
-                <div class="space-y-12 motion-duration-2000 motion-preset-slide-right-lg">
+            <div class="max-w-7xl mx-auto px-4 ">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="space-y-12 animate-fade-right">
                     <div>
                         <h2 class="text-3xl font-bold mb-8">Contact Information</h2>
                         <div class="space-y-6">
@@ -182,7 +182,7 @@
                   </div>
                 </div>
 
-                <div class="bg-gray-800/50 backdrop-blur-lg border border-gray-700 p-8 rounded-xl motion-duration-2000 motion-preset-slide-left-lg">
+                <div class="bg-gray-800/50 backdrop-blur-lg border border-gray-700 p-8 rounded-xl animate-fade-left">
                     <form on:submit|preventDefault={handleSubmit} class="space-y-6" method="POST">
 
 

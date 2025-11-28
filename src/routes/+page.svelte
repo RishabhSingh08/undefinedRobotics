@@ -140,17 +140,6 @@
     }
   }
 
-  .animate-blob {
-    animation: blob 7s infinite;
-  }
-
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-
-  .animation-delay-4000 {
-    animation-delay: 4s;
-  }
 
   @keyframes scroll-vertical {
     0% {
@@ -207,15 +196,6 @@
     opacity: 1;
   }
 
-  .hero-background-grid {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px);
-    background-size: 80px 80px;
-    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.8) 100%);
-    z-index: 1;
-  }
 </style>
 
 <main class="text-white overflow-hidden  relative dm-sans">
@@ -266,7 +246,7 @@
       <!-- Ad Banner - (Desktop only) -->
 
       <!-- Text Overlay - Centered on Mobile, Bottom Left on Desktop -->
-      <div class="absolute inset-0 lg:inset-auto lg:bottom-0 lg:left-0 z-30 flex items-center justify-center lg:block p-6 md:p-14 lg:p-20 max-w-4xl">
+      <div class="absolute inset-0 lg:inset-auto lg:bottom-0 lg:left-0 z-30 flex items-center justify-center lg:block p-6 md:p-14 lg:p-20 max-w-4xl animate-fade-right">
         <div class="text-center lg:text-left w-full">
           <!-- Logo and Title -->
           <div class="flex flex-col items-center lg:flex-row lg:items-center gap-4 sm:gap-6 mb-6">
@@ -304,7 +284,7 @@ One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonp
       </div>
     </section>
 
-  <section id="mission" class="px-4 py-32 relative z-10">
+  <section id="mission" class="px-4 py-32 relative z-10 animate-fade">
     <div class="max-w-6xl mx-auto text-center">
 
       <p class="text-4xl md:text-6xl font-semibold text-center text-gray-100 tracking-tight mb-8">
@@ -336,13 +316,13 @@ One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonp
       </div>
     </div>
   </section>
-  <div class="max-w-7xl mx-auto px-4 mb-20 relative z-30">
+  <div class="max-w-7xl mx-auto px-4 mb-20 relative z-30 animate-fade-up">
      <StatsGrid />
   </div>
   
 
 <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
-  <section id="events" class="px-4 pt-16 pb-32 relative z-10">
+  <section id="events" class="px-4 pt-16 pb-32 relative z-10 animate-fade-down">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20">
         <p class="text-4xl md:text-6xl font-semibold text-center text-gray-100 tracking-tight mb-8">
@@ -355,7 +335,7 @@ One of the largest student-led STEM and robotics fiscally sponsored 501(c)3 nonp
     <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 group-hover:bg-white/15 transition-all duration-300 h-full flex flex-col">
       <div>
         <div class="flex items-center mb-6">
-          <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3 animate-pulse"></div>
+          <div class="w-3 h-3 bg-yellow-400 rounded-full mr-3"></div>
           <h3 class="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-yellow-400 bg-clip-text text-transparent">Our Robot</h3>
         </div>
         <h4 class="text-xl font-semibold text-white mb-4">{ourRobot.subtitle}</h4>

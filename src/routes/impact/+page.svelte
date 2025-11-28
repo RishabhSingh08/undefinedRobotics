@@ -224,8 +224,8 @@
   <section id="impact" class="px-4 py-32 relative z-10">
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
-    <div class="max-w-7xl mx-auto">
-      <div class="relative mb-20 rounded-3xl overflow-hidden text-white">
+    <div class="max-w-7xl mx-auto ">
+      <div class="relative mb-20 rounded-3xl overflow-hidden text-white animate-fade-down">
         <img
           src={images.hero}
           alt="Undefined Robotics Team Impact and Outreach"
@@ -244,14 +244,14 @@
         </div>
       </div>
               
-   <div class="mb-20 relative z-30">
+   <div class="mb-20 relative z-30 animate-fade-up">
      <StatsGrid />
    </div>
 
   <hr
   class="h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
-        <div class="mt-12 mb-20 text-center relative z-20">
+        <div class="mt-12 mb-20 text-center relative z-20 animate-fade-down">
           <div class="inline-flex items-center justify-center gap-4">
             <h2 class="text-5xl md:text-7xl font-semibold tracking-wide text-white">
               Top Events
@@ -273,7 +273,7 @@
           </div>
         </div>
           
-            <div class="space-y-16">
+            <div class="space-y-16 animate-fade">
         {#each impactSections as section}
           <div class="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10">
             <div class="relative bg-cover bg-center h-32" style="background-image: url({section.banner});">

@@ -82,8 +82,8 @@
   <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
   <section class="relative z-10 px-4 ">
-    <div class="max-w-7xl mx-auto text-center">
-      <h1 class="text-4xl md:text-6xl font-semibold mb-8">
+    <div class="max-w-7xl mx-auto text-center animate-fade-down">
+      <h1 class="text-4xl md:text-6xl font-semibold mb-8 ">
         InfiNemo
       </h1>
       <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
@@ -100,12 +100,12 @@
   <div class="max-w-7xl mx-auto ">
     <div class="grid lg:grid-cols-2 items-center">
       <div class="lg:col-span-1">
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center animate-fade-right">
           <img src={robotMainImage} alt="InfiNemo FTC Competition Robot Main View" class="w-xl h-xl object-cover" />
         </div>
       </div>
       <div class="space-y-6">
-        <div class=" p-6 ">
+        <div class=" p-6 animate-fade-left">
           <div class="">
             <div class="inline-block text-gray-900 py-3 px-6 rounded-lg font-bold text-2xl mb-4" style="background: linear-gradient(135deg, #ffe281 0%, #ffb63c 100%);">
               #25782 Undefined
@@ -119,12 +119,12 @@
   </div>
 </section>
 
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center animate-fade-up">
     <div class="w-4 h-4 bg-white rounded-full border-2 border-gray-300"></div>
     <div class="w-0.5 h-32 bg-gray-300"></div>
 </div>
 
-<section class="relative z-10 px-4 pb-16">
+<section class="relative z-10 px-4 pb-16 animate-fade-up">
   <div class="max-w-7xl mx-auto relative">
     <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 transform -translate-y-1/2 z-0"></div>
     
@@ -159,7 +159,7 @@
   
 </section>
 
-<div class="relative z-10 px-4">
+<div class="relative z-10 px-4 animate-fade">
   <div class="max-w-7xl mx-auto text-center">
     <a
       href="https://www.missingamps.team"

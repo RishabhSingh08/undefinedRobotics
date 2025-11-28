@@ -99,7 +99,7 @@
   <div class="relative z-10 min-h-screen flex justify-center px-6 py-32">
     <div class="max-w-3xl mx-auto w-full">
         
-        <section class="relative z-10 px-4 space-y-8">
+        <section class="relative z-10 px-4 space-y-8 animate-fade-down">
           <div class="max-w-7xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-semibold mb-8">
               Make a Donation
@@ -110,7 +110,7 @@
           <div class="absolute bottom-1/4 left-1/3 w-24 h-24 bg-yellow-700 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000 z-0"></div>
         </section>
 
-        <form on:submit|preventDefault={handleSubmit} class="space-y-10">
+        <form on:submit|preventDefault={handleSubmit} class="space-y-10 animate-fade">
             <div class="space-y-4">
             <label for="name" class="block text-xl font-medium text-gray-300">
               Name
@@ -194,7 +194,7 @@
           {/if}
         </form>
 
-        <div class="mt-16">
+        <div class="mt-16 animate-fade-down animate-delay-300">
           <button
             on:click={() => showSponsorshipPackage = !showSponsorshipPackage}
             class="w-full flex items-center justify-between px-6 py-4 bg-[#0f0e13] border border-white/20 rounded-lg text-xl text-white hover:bg-white/10 transition-colors hover:cursor-pointer"
