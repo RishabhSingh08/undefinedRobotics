@@ -40,7 +40,7 @@
     {
       name: "Punit Lakhotiya",
       grade: "12th Grade",
-      role: "Reserve Engineer + Outreach",
+      role: "Team Management + Outreach",
       school: "Plano West Senior High School",
       image: punit
     },
@@ -75,7 +75,7 @@
     {
       name: "Yash Giriyapura",
       grade: "12th Grade",
-      role: "Engineer + Outreach",
+      role: "Engineer",
       school: "Plano West Senior High School",
       image: yash
     },
@@ -89,7 +89,7 @@
     {
       name: "Samanyu Earna",
       grade: "12th Grade",
-      role: "Reserve Engineer + Outreach",
+      role: "Programmer + Outreach",
       school: "Plano West Senior High School",
       image: samanyu
     },
@@ -117,7 +117,7 @@
     {
       name: "Mahit Cherku",
       grade: "12th Grade",
-      role: "Reserve Engineer + Outreach",
+      role: "Outreach",
       school: "Memorial High School",
       image: mahit
     },
@@ -141,6 +141,20 @@
       role: "Chief Technical Officer",
       school: "Plano West Senior High School",
       image: rishabh
+    },
+    {
+      name: "Ida Zou",
+      grade: "12th Grade",
+      role: "Outreach",
+      school: "Plano West Senior High School",
+      image: IconLogo
+    },
+    {
+      name: "Arnav Rentala",
+      grade: "12th Grade",
+      role: "Programmer",
+      school: "Plano West Senior High School",
+      image: IconLogo
     },
   ];
 
