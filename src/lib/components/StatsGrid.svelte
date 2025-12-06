@@ -90,8 +90,8 @@
 
 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-8">
   {#each stats as stat, index}
-    <div class="flex flex-col items-center text-center">
-      <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">
+    <div class="flex flex-col items-center text-center animate-fade-up animate-delay-{index * 100}">  
+        <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-100 bg-clip-text text-transparent mb-2">
         {stat.value}
       </div>
 
@@ -125,6 +125,7 @@
     role="button"
     tabindex="-1"
   >
+    <!-- svelte-ignore a11y_click_events_have_key_events -->
     <div 
       class="bg-gray-900 rounded-lg p-6 max-w-2xl w-full shadow-2xl border border-yellow-500/30 max-h-[90vh] overflow-y-auto"
       on:click={(e) => e.stopPropagation()}
@@ -222,6 +223,7 @@
     role="button"
     tabindex="-1"
   >
+    <!-- svelte-ignore a11y_click_events_have_key_events -->
     <div 
       class="bg-gray-900 rounded-lg p-6 max-w-md w-full shadow-2xl border border-yellow-500/30"
       on:click={(e) => e.stopPropagation()}

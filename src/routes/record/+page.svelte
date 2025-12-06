@@ -179,7 +179,7 @@
     <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:80px_80px] z-0"></div>
 
     <div class="max-w-[105rem] mx-auto px-0">
-        <div class="text-center mb-16 relative z-30">
+        <div class="text-center mb-16 relative z-30  animate-fade-down">
             <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
                 Our Record
             </h1>
@@ -188,7 +188,7 @@
             </p>
         </div>
 
-        <div class="relative mx-auto">
+        <div class="relative mx-auto animate-fade">
           <div class="hidden lg:block absolute left-[calc(theme(spacing.10))] md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-green-400 rounded-full border-4 border-gray-900 z-10 bottom-0"></div>
             <div class="hidden lg:block absolute left-[calc(theme(spacing.12))] md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-yellow-400 via-blue-400 to-green-400 rounded-full"></div>
 
@@ -196,7 +196,7 @@
                 <div class="relative mb-16">
                     <div class="hidden lg:block absolute left-[calc(theme(spacing.10))] md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 {season.nodeColor} rounded-full border-4 border-gray-900 z-10"></div>
                     
-                    <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-8 ">
                         {#if i === 0}
                             <div class="hidden lg:flex flex-1 justify-center items-center">
                                 <div class="slideshow-carousel">
@@ -261,8 +261,9 @@
     </div>
 
 
-    <div class="flex justify-center">
+    <div class="flex justify-center ">
       <div class="border-t border-white/20 pt-16 max-w-7xl">
+        <div class=" animate-fade-up">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent mb-4">
             The Next Step
@@ -337,11 +338,15 @@
           </div>
         </div>
       </div>
+      </div>
+
+      
     </div>
     
     <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-10 py-16 relative z-30">
       <div class="border-t border-white/20 pt-16">
-        <div class="text-center mb-12">
+        <div class="animate-fade">
+        <div class="text-center mb-12 ">
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
             Fundraising Overview
           </h2>
@@ -383,6 +388,8 @@
             <h3 class="text-xl font-bold text-white mb-2 text-center">Fiscal Sponsorship Letter</h3>
             <p class="text-gray-300 text-sm text-center">Fiscal sponsorship agreement documentation</p>
           </a>
+        </div>
+
         </div>
       </div>
     </div>

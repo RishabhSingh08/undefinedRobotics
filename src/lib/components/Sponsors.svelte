@@ -80,13 +80,13 @@
 </style>
 
 <div>
-  <h2 class="text-3xl sm:text-5xl md:text-7xl text-center text-white mt-20 sm:mt-32 mb-16 sm:mb-24 px-4 cedarville-cursive-regular">
+  <h2 class="text-3xl sm:text-5xl md:text-7xl text-center text-white mt-20 sm:mt-32 mb-16 sm:mb-24 px-4 cedarville-cursive-regular animate-fade">
     Thank You to Our Sponsors and Partners!
   </h2>
 
-  <section class="w-full relative z-10 mb-20 px-4">
+  <section class="w-full relative z-10 mb-20 px-4 animate-fade">
     <div class="max-w-7xl mx-auto">
-      <h3 class="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+      <h3 class="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent ">
         Platinum Sponsors
       </h3>
       
@@ -110,7 +110,7 @@
     </div>
   </section>
 
-  <section class="w-full relative z-10 pb-20 sm:pb-32 md:overflow-hidden">
+  <section class="w-full relative z-10 pb-20 sm:pb-32 md:overflow-hidden animate-fade">
     <div class="max-w-7xl mx-auto px-4 mb-6 sm:mb-8">
       <h3 class="text-xl sm:text-2xl md:text-4xl font-bold text-center bg-gradient-to-r from-yellow-400 via-gray-300 to-yellow-400 bg-clip-text text-transparent">
         Gold & Silver Sponsors

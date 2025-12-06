@@ -331,7 +331,7 @@
   </div>
 
   <div class="relative z-10 container mx-auto px-6">
-    <div class="text-center mb-16">
+    <div class="text-center mb-16  animate-fade-down">
       <h1 class="text-4xl md:text-6xl font-semibold text-white mb-6">
         Our Family
       </h1>
@@ -340,7 +340,7 @@
       </p>
     </div>
 
-    <div class="mb-20">
+    <div class="mb-20 animate-fade-up">
       <h2 class="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-yellow-400 to-yellow-100 bg-clip-text text-transparent">Leadership Team</h2>
       
       <div class="max-w-6xl mx-auto mb-6 md:hidden">
@@ -405,7 +405,7 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto animate-fade">
       <div class="border-b border-gray-700 mb-8">
         <nav class="flex space-x-8 justify-center">
           <button 
