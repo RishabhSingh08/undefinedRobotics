@@ -15,7 +15,7 @@
   ];
   
   const sponsorshipSources = [
-    { name: '24-25: Cafelli Technologies', amount: '$1,000.00', date: '11/3/2024' },
+    { name: '24-25: Cafell Technologies', amount: '$1,000.00', date: '11/3/2024' },
     { name: '24-25: Polymaker', amount: '$400.00', date: '10/27/2024' },
     { name: '25-26: Build Live', amount: '$5,467.00', date: '10/1/2025' },
     { name: '25-26: Team Fees', amount: '$3,008.01', date: '7/16/2025' },

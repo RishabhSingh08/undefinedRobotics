@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { fade, scale } from 'svelte/transition';
     import hero5 from "../../lib/images/hero/5.png";
     import hero6 from "../../lib/images/hero/6.png";
     import hero12 from "../../lib/images/hero/12.png";
@@ -7,12 +8,14 @@
     import irsLetter from "../../lib/images/files/IRS Letter (1).pdf";
     import certificateOfStatus from "../../lib/images/files/Certificate of Status.pdf";
     import fiscalSponsorshipLetter from "../../lib/images/files/fiscal_sponsorship_letter (1).pdf";
+    import candidScreenshot from "../../lib/images/candidscreenshot.png";
 
     const carouselImages1 = [hero5, hero6];
     const carouselImages2 = [hero12];
 
     let currentIndex1 = 0;
     let currentIndex2 = 0;
+    let showCandidModal = false;
 
     onMount(() => {
         const interval1 = setInterval(() => {
@@ -358,7 +361,7 @@
           </p>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <a href={irsLetter} target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group">
             <div class="flex items-center justify-center mb-4">
               <svg class="w-16 h-16 text-yellow-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -388,9 +391,51 @@
             <h3 class="text-xl font-bold text-white mb-2 text-center">Fiscal Sponsorship Letter</h3>
             <p class="text-gray-300 text-sm text-center">Fiscal sponsorship agreement documentation</p>
           </a>
+
+          <button on:click={() => showCandidModal = true} class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group text-left w-full">
+            <div class="flex items-center justify-center mb-4">
+              <svg class="w-16 h-16 text-purple-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 text-center">Unofficial Candid Verification</h3>
+            <p class="text-gray-300 text-sm text-center">Unofficial verification of Platinum Seal status</p>
+          </button>
         </div>
 
         </div>
       </div>
     </div>
 </section>
+
+{#if showCandidModal}
+  <div 
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md" 
+    on:click={() => showCandidModal = false}
+    transition:fade={{ duration: 200 }}
+  >
+    <div 
+      class="relative max-w-5xl w-full bg-gray-900 rounded-2xl border border-white/10 shadow-2xl overflow-hidden" 
+      on:click|stopPropagation
+      transition:scale={{ duration: 200, start: 0.95 }}
+    >
+      <!-- Header -->
+      <div class="flex items-center justify-between p-4 border-b border-white/10 bg-white/5">
+        <h3 class="text-xl font-bold text-white">Unofficial Candid Verification</h3>
+        <button 
+          class="p-2 text-gray-400 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
+          on:click={() => showCandidModal = false}
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Content -->
+      <div class="p-1 bg-black/40 overflow-y-auto max-h-[80vh]">
+        <img src={candidScreenshot} alt="Candid Verification Screenshot" class="w-full h-auto rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </div>
+{/if}

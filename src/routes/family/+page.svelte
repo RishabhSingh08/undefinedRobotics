@@ -448,7 +448,7 @@
         <div class="team-content">
           <div class="mb-12">
             <div class="w-full h-96 rounded-2xl overflow-hidden border border-gray-700">
-              <img src={team} alt="Official team photo of Undefined Robotics, FTC Team 25782" class="w-full h-full object-cover"/>
+              <img src={team} alt="Undefined Robotics, FTC Team 25782" class="w-full h-full object-cover"/>
             </div>
           </div>
 
