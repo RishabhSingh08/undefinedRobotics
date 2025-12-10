@@ -8,14 +8,13 @@
     import irsLetter from "../../lib/images/files/IRS Letter (1).pdf";
     import certificateOfStatus from "../../lib/images/files/Certificate of Status.pdf";
     import fiscalSponsorshipLetter from "../../lib/images/files/fiscal_sponsorship_letter (1).pdf";
-    import candidScreenshot from "../../lib/images/candidscreenshot.png";
+    import candidSeal from "../../lib/images/candid-seal-platinum 2025.png";
 
     const carouselImages1 = [hero5, hero6];
     const carouselImages2 = [hero12];
 
     let currentIndex1 = 0;
     let currentIndex2 = 0;
-    let showCandidModal = false;
 
     onMount(() => {
         const interval1 = setInterval(() => {
@@ -354,10 +353,10 @@
             Fundraising Overview
           </h2>
           <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-6">
-            Fiscally sponsored by the <a href="https://the.hackfoundation.org/" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the Undefined Robotics Non Profit Project is working with <a href="https://app.candid.org/profile/16402866/undefined-robotics" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone and has been unofficially verified for the Platinum Seal*.
+            Fiscally sponsored by the <a href="https://the.hackfoundation.org/" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the Undefined Robotics Non Profit is working with <a href="https://app.candid.org/profile/16402866/undefined-robotics" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone and has been verified for the Platinum Seal*.
           </p>
           <p class="text-sm text-gray-400 max-w-2xl mx-auto">
-            * We are one of the first few HCB fiscally sponsored projects to make a profile under Candid and among the very few first to be unofficially verified for the Platinum Seal by the Candid Director of Partnerships. Public facing seals for FSPs will start rolling out early 2026 (our FSP will be one of the first to receive).
+            * We are one of the first few HCB fiscally sponsored projects to make a profile under Candid and among the very few first to be verified for the Platinum Seal by the Candid Director of Partnerships.
           </p>
         </div>
         
@@ -392,50 +391,12 @@
             <p class="text-gray-300 text-sm text-center">Fiscal sponsorship agreement documentation</p>
           </a>
 
-          <button on:click={() => showCandidModal = true} class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group text-left w-full">
-            <div class="flex items-center justify-center mb-4">
-              <svg class="w-16 h-16 text-purple-400 group-hover:scale-110 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-white mb-2 text-center">Unofficial Candid Verification</h3>
-            <p class="text-gray-300 text-sm text-center">Unofficial verification of Platinum Seal status</p>
-          </button>
+          <a href="https://app.candid.org/profile/16402866/undefined-robotics" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group flex items-center justify-center">
+             <img src={candidSeal} alt="Candid Platinum Seal" class="w-full h-auto max-h-32 object-contain group-hover:scale-110 transition-transform duration-200" />
+          </a>
         </div>
 
         </div>
       </div>
     </div>
 </section>
-
-{#if showCandidModal}
-  <div 
-    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md" 
-    on:click={() => showCandidModal = false}
-    transition:fade={{ duration: 200 }}
-  >
-    <div 
-      class="relative max-w-5xl w-full bg-gray-900 rounded-2xl border border-white/10 shadow-2xl overflow-hidden" 
-      on:click|stopPropagation
-      transition:scale={{ duration: 200, start: 0.95 }}
-    >
-      <!-- Header -->
-      <div class="flex items-center justify-between p-4 border-b border-white/10 bg-white/5">
-        <h3 class="text-xl font-bold text-white">Unofficial Candid Verification</h3>
-        <button 
-          class="p-2 text-gray-400 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
-          on:click={() => showCandidModal = false}
-        >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      
-      <!-- Content -->
-      <div class="p-1 bg-black/40 overflow-y-auto max-h-[80vh]">
-        <img src={candidScreenshot} alt="Candid Verification Screenshot" class="w-full h-auto rounded-lg shadow-lg" />
-      </div>
-    </div>
-  </div>
-{/if}
