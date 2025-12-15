@@ -172,7 +172,7 @@
             image: g1,
             imageAlt: 'Industry Engagements with Fortune 500 Companies', // Optimized Alt Text
             title: 'Industry Engagements',
-            description: 'The team met with industry leaders across aerospace, manufacturing, and technology, gaining firsthand insights into how robotics and automation transform production, address labor challenges, and drive innovation. These discussions highlighted real-world applications that enhance the team\'s STEM projects and technical approach.',
+            description: 'The team met with industry leaders across aerospace, manufacturing, and technology, gaining insights into how robotics, automation, and electronics improve production and reliability. Experiences with SVTronics, Boeing, and M&M Manufacturing strengthened our design, testing, and iteration mindset for STEM projects.',
             impacts: ['Learned from industry robotics leaders', 'Connected with 15 Fortune 500 companies']
           }
         ]
