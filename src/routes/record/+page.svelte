@@ -356,7 +356,7 @@
             Fiscally sponsored by the <a href="https://the.hackfoundation.org/" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Hack Foundation</a>, the Undefined Robotics Non Profit is working with <a href="https://app.candid.org/profile/16402866/undefined-robotics" target="_blank" rel="noopener noreferrer" class="underline hover:text-yellow-400">Candid</a> to deliver full transparency to everyone and has been verified for the Platinum Seal*.
           </p>
           <p class="text-sm text-gray-400 max-w-2xl mx-auto">
-            * We are one of the first few HCB fiscally sponsored projects to make a profile under Candid and among the very few first to be verified for the Platinum Seal by the Candid Director of Partnerships.
+            * We were among the first five HCB fiscally sponsored nonprofits to be listed on Candid—and the first HCB fiscally sponsored project to earn the Platinum Seal.
           </p>
         </div>
         
