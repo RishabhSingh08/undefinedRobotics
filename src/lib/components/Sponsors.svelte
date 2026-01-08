@@ -14,6 +14,7 @@
   import s10 from "../images/sponsors/s10.png";
   import s11 from "../images/sponsors/s11.png";
   import s12 from "../images/sponsors/s12.png";
+  import fabworks from "../images/fabworks.png";
 
   const platinumSponsors = [
     { src: s10, href: 'https://buildshowlive.com/', name: 'Build Show' },
@@ -31,7 +32,8 @@
     { src: s12, href: 'https://www.firstinspires.org/', name: 'FIRST Robotics' },
     { src: s8, href: 'https://svtronics.com/', name: 'SV Tronics' },
     { src: s5, href: 'https://www.bosch.com/', name: 'Bosch' },
-    { src: s6, href: 'https://www.jabil.com/', name: 'Jabil' }
+    { src: s6, href: 'https://www.jabil.com/', name: 'Jabil' },
+    { src: fabworks, href: 'https://www.fabworks.com/', name: 'Fabworks' }
   ];
 
   const carouselSponsors = [
@@ -64,7 +66,10 @@
   .platinum-shimmer { background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%); background-size: 1000px 100%; animation: shimmer 3s infinite; }
 
   @media (min-width: 768px) {
-    .desktop-carousel-track { animation: scroll 30s linear infinite; }
+    .desktop-carousel-track {
+      width: max-content;
+      animation: scroll 30s linear infinite;
+    }
     .desktop-carousel-track:hover { animation-play-state: paused; }
 
     /* Grayscale images on desktop only */
