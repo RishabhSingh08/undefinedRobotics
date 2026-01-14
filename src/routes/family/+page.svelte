@@ -210,8 +210,7 @@
     },
   ];
 
-  const chiefNames = ["Akshat Kumar", "Punit Lakhotiya", "Rishabh Singh", "Swaraj Nibandhe", "Neel Tipnis", "Nishant Sinari"];
-  const chiefs = [
+  const leadershipTeam = [
     {
       ...undefinedTeamMembers.find(m => m.name === "Akshat Kumar"),
       role: "Founder & Executive Director",
@@ -225,6 +224,11 @@
     {
       ...undefinedTeamMembers.find(m => m.name === "Rishabh Singh"),
       role: "Chief Technical Officer",
+      grade: "12th Grade"
+    },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Ainesh Gupta"),
+      role: "Engineering Lead",
       grade: "12th Grade"
     },
     {
@@ -242,11 +246,16 @@
       ...undefinedTeamMembers.find(m => m.name === "Nishant Sinari"),
       role: "Chief Engagement Officer",
       grade: "12th Grade"
+    },
+    {
+      ...undefinedTeamMembers.find(m => m.name === "Xander Kuksov"),
+      role: "Programming Lead",
+      grade: "12th Grade"
     }
   ];
 
-  const akshatChief = chiefs[0];
-  const otherChiefs = chiefs.slice(1);
+  const akshatChief = leadershipTeam[0];
+  const otherChiefs = leadershipTeam.slice(1);
   const filteredUndefinedMembers = undefinedTeamMembers.filter(member => member.name !== 'Rishabh Singh' && member.name !== 'Neel M');
 
   // Utility function to generate Person JSON-LD for a member
@@ -397,8 +406,8 @@
         {/each}
       </div>
 
-      <div class="hidden md:grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        {#each chiefs as chief}
+      <div class="hidden md:grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {#each leadershipTeam as chief}
           <div class="team-card chief-card bg-gray-900 rounded-xl border border-gray-700 p-6 text-center">
             <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-700">
               <img 
