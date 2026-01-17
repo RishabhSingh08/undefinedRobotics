@@ -228,7 +228,7 @@
     },
     {
       ...undefinedTeamMembers.find(m => m.name === "Ainesh Gupta"),
-      role: "Engineering Lead",
+      role: "Engineering Specialist",
       grade: "12th Grade"
     },
     {
